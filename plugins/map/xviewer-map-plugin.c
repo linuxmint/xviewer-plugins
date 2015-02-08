@@ -399,7 +399,8 @@ impl_activate (XviewerWindowActivatable *activatable)
 	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	bbox = gtk_toolbar_new ();
 
-	button = GTK_WIDGET (gtk_tool_button_new_from_stock (GTK_STOCK_JUMP_TO));
+	button = GTK_WIDGET (gtk_tool_button_new (NULL, NULL));
+	gtk_tool_button_set_icon_name (GTK_TOOL_BUTTON (button), "go-jump-symbolic");
 	gtk_widget_set_tooltip_text (button, _("Jump to current image's location"));
 	g_signal_connect (button,
 			  "clicked",
@@ -411,7 +412,8 @@ impl_activate (XviewerWindowActivatable *activatable)
 	button = GTK_WIDGET (gtk_separator_tool_item_new ());
 	gtk_container_add (GTK_CONTAINER (bbox), button);
 
-	button = GTK_WIDGET (gtk_tool_button_new_from_stock (GTK_STOCK_ZOOM_IN));
+	button = GTK_WIDGET (gtk_tool_button_new (NULL, NULL));
+	gtk_tool_button_set_icon_name (GTK_TOOL_BUTTON (button), "zoom-in-symbolic");
 	gtk_widget_set_tooltip_text (button, _("Zoom in"));
 	g_signal_connect (button,
 			  "clicked",
@@ -419,7 +421,8 @@ impl_activate (XviewerWindowActivatable *activatable)
 			  plugin->map);
 	gtk_container_add (GTK_CONTAINER (bbox), button);
 
-	button = GTK_WIDGET (gtk_tool_button_new_from_stock (GTK_STOCK_ZOOM_OUT));
+	button = GTK_WIDGET (gtk_tool_button_new (NULL, NULL));
+	gtk_tool_button_set_icon_name (GTK_TOOL_BUTTON (button), "zoom-out-symbolic");
 	gtk_widget_set_tooltip_text (button, _("Zoom out"));
 	g_signal_connect (button,
 			  "clicked",
