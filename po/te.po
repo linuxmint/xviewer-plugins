@@ -1,14 +1,14 @@
-# translation of eog-plugins.master.te.po to Telugu
+# translation of xviewer-plugins.master.te.po to Telugu
 # Copyright (C) 2011 gnome telugu contributors
-# This file is distributed under the same license as the eog-plugins package.
+# This file is distributed under the same license as the xviewer-plugins package.
 #
 # Krishna Babu K <kkrothap@redhat.com>, 2009.
 # Praveen Illa <mail2ipn@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eog-plugins.master.te\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eog-"
+"Project-Id-Version: xviewer-plugins.master.te\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=xviewer-"
 "plugins&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2011-11-09 22:06+0000\n"
 "PO-Revision-Date: 2011-12-04 11:46+0530\n"
@@ -19,13 +19,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: ../plugins/exif-display/eog-exif-display-plugin.c:105
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:105
 msgid " (invalid Unicode)"
 msgstr " (చెల్లని యూనికోడ్)"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:183
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:183
 #, c-format
 msgid "%.1fmm (lens)"
 msgstr "%.1fmm (lens)"
@@ -33,7 +33,7 @@ msgstr "%.1fmm (lens)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:194
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:194
 #, c-format
 msgid "%.1fmm (35mm film)"
 msgstr "%.1fmm (35mm film)"
@@ -94,28 +94,28 @@ msgstr "మీటరింగ్:"
 msgid "Zoom:"
 msgstr "జూమ్:"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:91
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:91
 msgid "Fit to width"
 msgstr "వెడల్పునకు అమర్చు"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:93
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:93
 #: ../plugins/fit-to-width/fit-to-width.plugin.desktop.in.h:1
 msgid "Zoom to fit image width"
 msgstr "బొమ్మ వెడల్పు అమర్చుటకు జూమ్‌చేయి"
 
-#: ../plugins/map/eog-map-plugin.c:396
+#: ../plugins/map/xviewer-map-plugin.c:396
 msgid "Jump to current image's location"
 msgstr "ప్రస్తుత బొమ్మ యొక్క స్థానమునకు వెళ్ళండి"
 
-#: ../plugins/map/eog-map-plugin.c:408
+#: ../plugins/map/xviewer-map-plugin.c:408
 msgid "Zoom in"
 msgstr "జూమ్ చేయి"
 
-#: ../plugins/map/eog-map-plugin.c:416
+#: ../plugins/map/xviewer-map-plugin.c:416
 msgid "Zoom out"
 msgstr "జూమ్ చేయవద్దు"
 
-#: ../plugins/map/eog-map-plugin.c:430
+#: ../plugins/map/xviewer-map-plugin.c:430
 #: ../plugins/map/map.plugin.desktop.in.h:2
 msgid "Map"
 msgstr "మాప్"
@@ -124,57 +124,57 @@ msgstr "మాప్"
 msgid "Display the geolocation of the image on a map"
 msgstr "మాప్‌నందు ప్రతిబింబముయొక్క geolocationను ప్రదర్శించుము"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:126
+#: ../plugins/postasa/xviewer-postasa-plugin.c:126
 #| msgid "Upload to Flickr"
 msgid "Upload to PicasaWeb"
 msgstr "పికాసావెబ్‌కు ఎక్కించండి"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:128
+#: ../plugins/postasa/xviewer-postasa-plugin.c:128
 #: ../plugins/postasa/postasa.plugin.desktop.in.h:2
 #| msgid "Upload your pictures to Flickr"
 msgid "Upload your pictures to PicasaWeb"
 msgstr "మీ చిత్రాలను పికాసావెబ్‌కు ఎక్కించుము"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:323
+#: ../plugins/postasa/xviewer-postasa-plugin.c:323
 msgid "Uploading..."
 msgstr "ఎక్కిస్తున్నది..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:369
+#: ../plugins/postasa/xviewer-postasa-plugin.c:369
 #| msgid "Flickr Uploader"
 msgid "Uploaded"
 msgstr "ఎక్కించబడింది"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:373
+#: ../plugins/postasa/xviewer-postasa-plugin.c:373
 msgid "Cancelled"
 msgstr "రద్దుచేయబడింది"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:376
+#: ../plugins/postasa/xviewer-postasa-plugin.c:376
 msgid "Failed"
 msgstr "విఫలమైంది"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:599
+#: ../plugins/postasa/xviewer-postasa-plugin.c:599
 #, c-format
 msgid "Login failed. %s"
 msgstr "ప్రవేశం విఫలమైంది. %s"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:603
+#: ../plugins/postasa/xviewer-postasa-plugin.c:603
 msgid "Logged in successully."
 msgstr "విజయవంతంగా లోనికి ప్రవేశించారు."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:604
+#: ../plugins/postasa/xviewer-postasa-plugin.c:604
 msgid "Close"
 msgstr "మూసివేయి"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:625
+#: ../plugins/postasa/xviewer-postasa-plugin.c:625
 msgid "Cancel"
 msgstr "రద్దుచేయి"
 
 #. TODO: want to handle passwords more securely
-#: ../plugins/postasa/eog-postasa-plugin.c:631
+#: ../plugins/postasa/xviewer-postasa-plugin.c:631
 msgid "Logging in..."
 msgstr "ప్రవేశిస్తున్నారు..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:676
+#: ../plugins/postasa/xviewer-postasa-plugin.c:676
 msgid "Please log in to continue upload."
 msgstr "ఎక్కింపును కొనసాగించుటకు దయచేసి లోనికి ప్రవేశించండి."
 
@@ -227,11 +227,11 @@ msgstr "ఎక్కింపులు:"
 msgid "PicasaWeb Uploader"
 msgstr "పికాసావెబ్ ఎక్కింపరి"
 
-#: ../plugins/postr/eog-postr-plugin.c:62
+#: ../plugins/postr/xviewer-postr-plugin.c:62
 msgid "Upload to Flickr"
 msgstr "ఫ్లిక్కర్‌కు ఎక్కించుము"
 
-#: ../plugins/postr/eog-postr-plugin.c:64
+#: ../plugins/postr/xviewer-postr-plugin.c:64
 #: ../plugins/postr/postr.plugin.desktop.in.h:2
 msgid "Upload your pictures to Flickr"
 msgstr "మీ చిత్రాలను ఫ్లిక్కర్‌కు ఎక్కించుము"
@@ -245,14 +245,14 @@ msgid "Python Console"
 msgstr "పైథాన్ కన్సోల్"
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for Eye of GNOME"
-msgstr "Eye of GNOME కొరకు పైథాన్ కన్సోలు"
+msgid "Python console for xplayer"
+msgstr "xplayer కొరకు పైథాన్ కన్సోలు"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:63
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
 msgid "Send by Mail"
 msgstr "మెయిల్ ద్వారా పంపు"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:65
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:65
 msgid "Send the selected images by mail"
 msgstr "ఎంపికచేసిన ప్రతిబింబములను మెయిల్ ద్వారా పంపుము"
 

@@ -16,34 +16,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:1
 msgid "Flickr Uploader"
 msgstr "Подигнувач за Flickr"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
-#: ../plugins/postr/eog-postr-plugin.c:50
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:2
+#: ../plugins/postr/xviewer-postr-plugin.c:50
 msgid "Upload your pictures to Flickr"
 msgstr "Подигнете ги Вашите слики на Flickr"
 
-#: ../plugins/postr/eog-postr-plugin.c:48
+#: ../plugins/postr/xviewer-postr-plugin.c:48
 msgid "Upload to Flickr"
 msgstr "Подигни на Flickr"
 
-#: ../plugins/reload/reload.eog-plugin.desktop.in.h:1
-#: ../plugins/reload/eog-reload-plugin.c:47
+#: ../plugins/reload/reload.xviewer-plugin.desktop.in.h:1
+#: ../plugins/reload/xviewer-reload-plugin.c:47
 msgid "Reload Image"
 msgstr "Освежи слика"
 
-#: ../plugins/reload/reload.eog-plugin.desktop.in.h:2
-#: ../plugins/reload/eog-reload-plugin.c:49
+#: ../plugins/reload/reload.xviewer-plugin.desktop.in.h:2
+#: ../plugins/reload/xviewer-reload-plugin.c:49
 msgid "Reload current image"
 msgstr "Освежи ја тековната слика"
 
-#: ../plugins/fullscreen/fullscreen.eog-plugin.desktop.in.h:1
+#: ../plugins/fullscreen/fullscreen.xviewer-plugin.desktop.in.h:1
 msgid "Activate fullscreen mode with double-click"
 msgstr "Активирај го режимот за цел екран со двојно кликнување"
 
-#: ../plugins/fullscreen/fullscreen.eog-plugin.desktop.in.h:2
+#: ../plugins/fullscreen/fullscreen.xviewer-plugin.desktop.in.h:2
 msgid "Fullscreen with double-click"
 msgstr "Цел екран со двојно кликнување"
 

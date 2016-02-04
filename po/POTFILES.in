@@ -1,42 +1,42 @@
-plugins/exif-display/eog-exif-display-plugin.c
+plugins/exif-display/xviewer-exif-display-plugin.c
 [type: gettext/glade]plugins/exif-display/exif-display-config.ui
 plugins/exif-display/exif-display.plugin.desktop.in
-plugins/exif-display/eog-exif-display.metainfo.xml.in
+plugins/exif-display/xviewer-exif-display.metainfo.xml.in
 [type: gettext/glade]plugins/exif-display/exif-display.ui
-plugins/export-to-folder/eog-export-to-folder.metainfo.xml.in
+plugins/export-to-folder/xviewer-export-to-folder.metainfo.xml.in
 plugins/export-to-folder/export-to-folder.plugin.desktop.in
 plugins/export-to-folder/export-to-folder.py
-[type: gettext/gsettings]plugins/export-to-folder/org.gnome.eog.plugins.export-to-folder.gschema.xml.in
+[type: gettext/gsettings]plugins/export-to-folder/org.x.viewer.plugins.export-to-folder.gschema.xml.in
 [type: gettext/glade]plugins/export-to-folder/preferences_dialog.ui
-plugins/fit-to-width/eog-fit-to-width.metainfo.xml.in
-plugins/fit-to-width/eog-fit-to-width-plugin.c
+plugins/fit-to-width/xviewer-fit-to-width.metainfo.xml.in
+plugins/fit-to-width/xviewer-fit-to-width-plugin.c
 plugins/fit-to-width/fit-to-width.plugin.desktop.in
-plugins/fullscreenbg/eog-fullscreenbg.metainfo.xml.in
+plugins/fullscreenbg/xviewer-fullscreenbg.metainfo.xml.in
 plugins/fullscreenbg/fullscreenbg.plugin.desktop.in
-[type: gettext/gsettings]plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in
+[type: gettext/gsettings]plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in
 [type: gettext/glade]plugins/fullscreenbg/preferences_dialog.ui
-plugins/hide-titlebar/eog-hide-titlebar.metainfo.xml.in
+plugins/hide-titlebar/xviewer-hide-titlebar.metainfo.xml.in
 plugins/hide-titlebar/hide-titlebar.plugin.desktop.in
-plugins/light-theme/eog-light-theme.metainfo.xml.in
+plugins/light-theme/xviewer-light-theme.metainfo.xml.in
 plugins/light-theme/light-theme.plugin.desktop.in
-plugins/map/eog-map.metainfo.xml.in
-plugins/map/eog-map-plugin.c
+plugins/map/xviewer-map.metainfo.xml.in
+plugins/map/xviewer-map-plugin.c
 plugins/map/map.plugin.desktop.in
-plugins/postasa/eog-postasa.metainfo.xml.in
-plugins/postasa/eog-postasa-plugin.c
+plugins/postasa/xviewer-postasa.metainfo.xml.in
+plugins/postasa/xviewer-postasa-plugin.c
 [type: gettext/glade]plugins/postasa/postasa-config.xml
 plugins/postasa/postasa.plugin.desktop.in
 [type: gettext/glade]plugins/postasa/postasa-uploads.xml
-plugins/postr/eog-postr.metainfo.xml.in
-plugins/postr/eog-postr-plugin.c
+plugins/postr/xviewer-postr.metainfo.xml.in
+plugins/postr/xviewer-postr-plugin.c
 plugins/postr/postr.plugin.desktop.in
 [type: gettext/glade]plugins/pythonconsole/config.ui
-plugins/pythonconsole/eog-pythonconsole.metainfo.xml.in
+plugins/pythonconsole/xviewer-pythonconsole.metainfo.xml.in
 plugins/pythonconsole/__init__.py
-[type: gettext/gsettings]plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in
+[type: gettext/gsettings]plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in
 plugins/pythonconsole/pythonconsole.plugin.desktop.in
-plugins/send-by-mail/eog-send-by-mail.metainfo.xml.in
-plugins/send-by-mail/eog-send-by-mail-plugin.c
+plugins/send-by-mail/xviewer-send-by-mail.metainfo.xml.in
+plugins/send-by-mail/xviewer-send-by-mail-plugin.c
 plugins/send-by-mail/send-by-mail.plugin.desktop.in
-plugins/slideshowshuffle/eog-slideshowshuffle.metainfo.xml.in
+plugins/slideshowshuffle/xviewer-slideshowshuffle.metainfo.xml.in
 plugins/slideshowshuffle/slideshowshuffle.plugin.desktop.in

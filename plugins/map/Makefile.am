@@ -1,23 +1,23 @@
 # Champlain plugin
-plugindir = $(libdir)/eog/plugins
+plugindir = $(libdir)/xviewer/plugins
 appstreamdir = $(datadir)/appdata
 
 AM_CPPFLAGS = \
 	-I$(top_srcdir) 				\
-	$(EOG_CFLAGS) 					\
+	$(XVIEWER_CFLAGS) 					\
 	$(CHAMPLAIN_CFLAGS) 		\
 	$(WARN_CFLAGS)					\
-	-DEOG_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
+	-DXVIEWER_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
 
 plugin_LTLIBRARIES = libmap.la
 
 libmap_la_SOURCES = \
-	eog-map-plugin.h				\
-	eog-map-plugin.c
+	xviewer-map-plugin.h				\
+	xviewer-map-plugin.c
 
 libmap_la_LDFLAGS = \
 	$(PLUGIN_LIBTOOL_FLAGS)				\
-	$(EOG_LIBS) \
+	$(XVIEWER_LIBS) \
 	$(CHAMPLAIN_LIBS)
 
 # Plugin Info
@@ -28,7 +28,7 @@ plugin_in_files = map.plugin.desktop.in
 
 plugin_DATA = $(plugin_in_files:.plugin.desktop.in=.plugin)
 
-appstream_in_files = eog-map.metainfo.xml.in
+appstream_in_files = xviewer-map.metainfo.xml.in
 
 appstream_DATA = $(appstream_in_files:.xml.in=.xml)
 @INTLTOOL_XML_RULE@

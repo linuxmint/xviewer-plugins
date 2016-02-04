@@ -1,13 +1,13 @@
-# Catalan translation of eog-plugins.
+# Catalan translation of xviewer-plugins.
 # Copyright (C) 2007, 2008 Free Software Foundation, Inc.
-# This file is distributed under the same license as the eog-plugins package.
+# This file is distributed under the same license as the xviewer-plugins package.
 # Gil Forcada  <gilforcada@guifi.net>, 2007.
 # Marc Dabad <marcdabad@yahoo.ca>, 2010.
 # Sílvia Miranda <silvia@softcatala.cat>, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eog-plugins\n"
+"Project-Id-Version: xviewer-plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-19 00:55+0100\n"
 "PO-Revision-Date: 2012-02-19 00:55+0100\n"
@@ -19,13 +19,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../plugins/exif-display/eog-exif-display-plugin.c:105
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:105
 msgid " (invalid Unicode)"
 msgstr " (Unicode no vàlid)"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:183
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:183
 #, c-format
 msgid "%.1fmm (lens)"
 msgstr "%.1f mm (lent)"
@@ -33,7 +33,7 @@ msgstr "%.1f mm (lent)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:194
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:194
 #, c-format
 msgid "%.1fmm (35mm film)"
 msgstr "%.1f mm (pel·lícula de 35 mm)"
@@ -94,11 +94,11 @@ msgstr "Correcció d'exposició:"
 msgid "Description:"
 msgstr "Descripció:"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:91
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:91
 msgid "Fit to width"
 msgstr "Ajusta a l'amplada"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:93
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:93
 #: ../plugins/fit-to-width/fit-to-width.plugin.desktop.in.h:1
 msgid "Zoom to fit image width"
 msgstr "Amplia per ajustar-se a l'amplada de la imatge"
@@ -111,19 +111,19 @@ msgstr ""
 msgid "Enables changing background in fullscreen mode"
 msgstr ""
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:1
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:1
 msgid "Use custom background settings"
 msgstr ""
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:2
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:2
 msgid "Whether the plugin should use global settings or its own."
 msgstr ""
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:3
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:3
 msgid "Background color in fullscreen mode"
 msgstr ""
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:4
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:4
 msgid ""
 "The color that is used to fill the area behind the image. This option has "
 "effect only if use-custom is enabled."
@@ -133,19 +133,19 @@ msgstr ""
 msgid "Use custom color:"
 msgstr ""
 
-#: ../plugins/map/eog-map-plugin.c:401
+#: ../plugins/map/xviewer-map-plugin.c:401
 msgid "Jump to current image's location"
 msgstr "Salta a la ubicació de la imatge actual"
 
-#: ../plugins/map/eog-map-plugin.c:413
+#: ../plugins/map/xviewer-map-plugin.c:413
 msgid "Zoom in"
 msgstr "Amplia"
 
-#: ../plugins/map/eog-map-plugin.c:421
+#: ../plugins/map/xviewer-map-plugin.c:421
 msgid "Zoom out"
 msgstr "Redueix"
 
-#: ../plugins/map/eog-map-plugin.c:436
+#: ../plugins/map/xviewer-map-plugin.c:436
 #: ../plugins/map/map.plugin.desktop.in.h:1
 msgid "Map"
 msgstr "Mapa"
@@ -154,54 +154,54 @@ msgstr "Mapa"
 msgid "Display the geolocation of the image on a map"
 msgstr "Visualitza la localització geogràfica de la imatge en un mapa"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:126
+#: ../plugins/postasa/xviewer-postasa-plugin.c:126
 msgid "Upload to PicasaWeb"
 msgstr "Puja al Picasa Web"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:128
+#: ../plugins/postasa/xviewer-postasa-plugin.c:128
 #: ../plugins/postasa/postasa.plugin.desktop.in.h:2
 msgid "Upload your pictures to PicasaWeb"
 msgstr "Puja les imatges al Picasa Web"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:323
+#: ../plugins/postasa/xviewer-postasa-plugin.c:323
 msgid "Uploading..."
 msgstr "S'està pujant..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:369
+#: ../plugins/postasa/xviewer-postasa-plugin.c:369
 msgid "Uploaded"
 msgstr "Pujat"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:373
+#: ../plugins/postasa/xviewer-postasa-plugin.c:373
 msgid "Cancelled"
 msgstr "Cancel·lat"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:376
+#: ../plugins/postasa/xviewer-postasa-plugin.c:376
 msgid "Failed"
 msgstr "Ha fallat"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:599
+#: ../plugins/postasa/xviewer-postasa-plugin.c:599
 #, c-format
 msgid "Login failed. %s"
 msgstr "No s'ha pogut entrar. %s"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:603
+#: ../plugins/postasa/xviewer-postasa-plugin.c:603
 msgid "Logged in successully."
 msgstr "S'ha entrat correctament."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:604
+#: ../plugins/postasa/xviewer-postasa-plugin.c:604
 msgid "Close"
 msgstr "Tanca"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:625
+#: ../plugins/postasa/xviewer-postasa-plugin.c:625
 msgid "Cancel"
 msgstr "Cancel·la"
 
 #. TODO: want to handle passwords more securely
-#: ../plugins/postasa/eog-postasa-plugin.c:631
+#: ../plugins/postasa/xviewer-postasa-plugin.c:631
 msgid "Logging in..."
 msgstr "S'està entrant..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:676
+#: ../plugins/postasa/xviewer-postasa-plugin.c:676
 msgid "Please log in to continue upload."
 msgstr "Entreu per continuar el procés de pujada."
 
@@ -253,11 +253,11 @@ msgstr "Cancel·la-ho tot"
 msgid "PicasaWeb Uploader"
 msgstr "Gestor de pujades al Picasa Web"
 
-#: ../plugins/postr/eog-postr-plugin.c:62
+#: ../plugins/postr/xviewer-postr-plugin.c:62
 msgid "Upload to Flickr"
 msgstr "Puja al Flickr"
 
-#: ../plugins/postr/eog-postr-plugin.c:64
+#: ../plugins/postr/xviewer-postr-plugin.c:64
 #: ../plugins/postr/postr.plugin.desktop.in.h:2
 msgid "Upload your pictures to Flickr"
 msgstr "Puja les fotos al Flickr"
@@ -274,38 +274,38 @@ msgstr ""
 msgid "_Error color:"
 msgstr ""
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:1
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:1
 msgid "Command Text Color"
 msgstr ""
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:2
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:2
 msgid "The color used for commands."
 msgstr ""
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:3
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:3
 msgid "Error Text Color"
 msgstr ""
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:4
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:4
 msgid "The color used for errors."
 msgstr ""
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:5
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:5
 msgid "Whether to use the system font"
 msgstr ""
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:6
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:6
 msgid ""
 "If true, the terminal will use the desktop-global standard font if it's "
 "monospace (and the most similar font it can come up with otherwise)."
 msgstr ""
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:7
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:7
 #, fuzzy
 msgid "Font used by Python Console"
 msgstr "Consola de Python"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:8
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:8
 msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
 msgstr ""
 
@@ -314,14 +314,14 @@ msgid "Python Console"
 msgstr "Consola de Python"
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for Eye of GNOME"
-msgstr "Consola de Python per a l'Eye of GNOME"
+msgid "Python console for xviewer"
+msgstr "Consola de Python per xviewer"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:63
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
 msgid "Send by Mail"
 msgstr "Envia per correu electrònic"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:65
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:65
 msgid "Send the selected images by mail"
 msgstr "Envia les imatges seleccionades per correu electrònic"
 

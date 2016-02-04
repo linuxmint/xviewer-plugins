@@ -1,23 +1,23 @@
 # LightTheme plugin
-plugindir = $(libdir)/eog/plugins
+plugindir = $(libdir)/xviewer/plugins
 appstreamdir = $(datadir)/appdata
 
 AM_CPPFLAGS = \
 	-I$(top_srcdir)/src 				\
-	$(EOG_CFLAGS) 					\
+	$(XVIEWER_CFLAGS) 					\
 	$(WARN_CFLAGS)					\
-	-DEOG_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
+	-DXVIEWER_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
 
 plugin_LTLIBRARIES = liblight-theme.la
 
 liblight_theme_la_SOURCES = \
-	eog-light-theme-plugin.h			\
-	eog-light-theme-plugin.c
+	xviewer-light-theme-plugin.h			\
+	xviewer-light-theme-plugin.c
 
 liblight_theme_la_LDFLAGS = \
 	-avoid-version -module
 
-liblight_theme_la_LIBADD = $(EOG_LIBS)
+liblight_theme_la_LIBADD = $(XVIEWER_LIBS)
 
 # Plugin Info
 
@@ -27,7 +27,7 @@ plugin_in_files = light-theme.plugin.desktop.in
 
 plugin_DATA = $(plugin_in_files:.plugin.desktop.in=.plugin)
 
-appstream_in_files = eog-light-theme.metainfo.xml.in
+appstream_in_files = xviewer-light-theme.metainfo.xml.in
 
 appstream_DATA = $(appstream_in_files:.xml.in=.xml)
 @INTLTOOL_XML_RULE@

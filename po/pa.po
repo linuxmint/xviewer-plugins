@@ -1,13 +1,13 @@
-# Punjabi translation of eog-plugins.
-# Copyright (C) 2009 eog-plugins's COPYRIGHT HOLDER
-# This file is distributed under the same license as the eog-plugins package.
+# Punjabi translation of xviewer-plugins.
+# Copyright (C) 2009 xviewer-plugins's COPYRIGHT HOLDER
+# This file is distributed under the same license as the xviewer-plugins package.
 #
 # A S Alam <aalam@users.sf.net>, 2009, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: eog-plugins master\n"
+"Project-Id-Version: xviewer-plugins master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
-"cgi?product=eog-plugins&component=general\n"
+"cgi?product=xviewer-plugins&component=general\n"
 "POT-Creation-Date: 2010-02-10 19:23+0000\n"
 "PO-Revision-Date: 2010-09-10 23:38+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
@@ -18,13 +18,13 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../plugins/exif-display/eog-exif-display-plugin.c:136
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:136
 msgid " (invalid Unicode)"
 msgstr " (ਗਲਤ ਯੂਨੀਕੋਡ)"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:212
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:212
 #, c-format
 msgid "%.1fmm (lens)"
 msgstr "%.1fmm (ਲੈਨਜ਼)"
@@ -32,7 +32,7 @@ msgstr "%.1fmm (ਲੈਨਜ਼)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:223
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:223
 #, c-format
 msgid "%.1fmm (35mm film)"
 msgstr "%.1fmm (35mm ਫਿਲਮ)"
@@ -57,11 +57,11 @@ msgstr "ਹਾਲਤਪੱਟੀ ਵਿੱਚ ਕੈਮਰਾ ਸੈਟਿੰਗ
 msgid "Display per-channel histogram"
 msgstr "ਪ੍ਰਤੀਚੈਨਲ ਹਿਸਟੋਗਰਾਮ ਵੇਖੋ"
 
-#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:1
+#: ../plugins/exif-display/exif-display.xviewer-plugin.desktop.in.h:1
 msgid "Displays camera settings and histogram"
 msgstr "ਕੈਮਰਾ ਸੈਟਿੰਗ ਅਤੇ ਹਿਸਟੋਗਰਾਮ ਵੇਖੋ"
 
-#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:2
+#: ../plugins/exif-display/exif-display.xviewer-plugin.desktop.in.h:2
 msgid "Exif display"
 msgstr "Exif ਵੇਖੋ"
 
@@ -93,88 +93,88 @@ msgstr "ਮੀਟੀਰਿੰਗ:"
 msgid "Zoom:"
 msgstr "ਜ਼ੂਮ:"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:85
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:85
 msgid "Fit to width"
 msgstr "ਚੌੜਾਈ ਲਈ ਫਿੱਟ"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:87
-#: ../plugins/fit-to-width/fit-to-width.eog-plugin.desktop.in.h:1
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:87
+#: ../plugins/fit-to-width/fit-to-width.xviewer-plugin.desktop.in.h:1
 msgid "Zoom to fit image width"
 msgstr "ਚਿੱਤਰ ਚੌੜਾਈ ਲਈ ਫਿੱਟ ਵਾਸਤੇ ਜ਼ੂਮ"
 
-#: ../plugins/map/eog-map-plugin.c:321
+#: ../plugins/map/xviewer-map-plugin.c:321
 msgid "Jump to current image's location"
 msgstr "ਮੌਜੂਦਾ ਚਿੱਤਰ ਦੇ ਟਿਕਾਣੇ ਉੱਤੇ ਜਾਓ"
 
-#: ../plugins/map/eog-map-plugin.c:333
+#: ../plugins/map/xviewer-map-plugin.c:333
 msgid "Zoom in"
 msgstr "ਜ਼ੂਮ ਇਨ"
 
-#: ../plugins/map/eog-map-plugin.c:341
+#: ../plugins/map/xviewer-map-plugin.c:341
 msgid "Zoom out"
 msgstr "ਜ਼ੂਮ ਆਊਟ"
 
-#: ../plugins/map/eog-map-plugin.c:355
-#: ../plugins/map/map.eog-plugin.desktop.in.h:2
+#: ../plugins/map/xviewer-map-plugin.c:355
+#: ../plugins/map/map.xviewer-plugin.desktop.in.h:2
 msgid "Map"
 msgstr "ਨਕਸ਼ਾ"
 
-#: ../plugins/map/map.eog-plugin.desktop.in.h:1
+#: ../plugins/map/map.xviewer-plugin.desktop.in.h:1
 msgid "Display the geolocation of the image on a map"
 msgstr "ਨਕਸ਼ੇ ਉੱਤੇ ਚਿੱਤਰ ਦੀ ਭੂਗੋਲਿਕ ਸਥਿਤੀ ਵੇਖੋ"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:124
+#: ../plugins/postasa/xviewer-postasa-plugin.c:124
 #| msgid "Upload to Flickr"
 msgid "Upload to PicasaWeb"
 msgstr "ਪਿਕਾਸਾਵੈੱਬ ਉੱਤੇ ਅੱਪਲੋਡ"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:126
-#: ../plugins/postasa/postasa.eog-plugin.desktop.in.h:2
+#: ../plugins/postasa/xviewer-postasa-plugin.c:126
+#: ../plugins/postasa/postasa.xviewer-plugin.desktop.in.h:2
 #| msgid "Upload your pictures to Flickr"
 msgid "Upload your pictures to PicasaWeb"
 msgstr "ਆਪਣੀਆਂ ਫੋਟੋ ਪਿਕਾਸਾਵੈੱਬ ਉੱਤੇ ਅੱਪਲੋਡ ਕਰੋ"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:321
+#: ../plugins/postasa/xviewer-postasa-plugin.c:321
 msgid "Uploading..."
 msgstr "ਅੱਪਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:368
+#: ../plugins/postasa/xviewer-postasa-plugin.c:368
 #| msgid "Flickr Uploader"
 msgid "Uploaded"
 msgstr "ਅੱਪਲੋਡ ਕੀਤਾ"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:372
+#: ../plugins/postasa/xviewer-postasa-plugin.c:372
 msgid "Cancelled"
 msgstr "ਰੱਦ ਕੀਤਾ"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:375
+#: ../plugins/postasa/xviewer-postasa-plugin.c:375
 msgid "Failed"
 msgstr "ਫੇਲ੍ਹ ਹੈ"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:523
+#: ../plugins/postasa/xviewer-postasa-plugin.c:523
 #, c-format
 msgid "Login failed. %s"
 msgstr "ਲਾਗਇਨ ਫੇਲ੍ਹ ਹੈ। %s"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:527
+#: ../plugins/postasa/xviewer-postasa-plugin.c:527
 msgid "Logged in successully."
 msgstr "ਲਾਗਇਨ ਸਫ਼ਲ ਰਿਹਾ ਹੈ।"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:528
+#: ../plugins/postasa/xviewer-postasa-plugin.c:528
 msgid "Close"
 msgstr "ਬੰਦ ਕਰੋ"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:549
+#: ../plugins/postasa/xviewer-postasa-plugin.c:549
 #: ../plugins/postasa/postasa-config.xml.h:1
 msgid "Cancel"
 msgstr "ਰੱਦ ਕੀਤਾ"
 
 #. TODO: want to handle passwords more securely
-#: ../plugins/postasa/eog-postasa-plugin.c:555
+#: ../plugins/postasa/xviewer-postasa-plugin.c:555
 msgid "Logging in..."
 msgstr "ਲਾਗਇਨ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:583
+#: ../plugins/postasa/xviewer-postasa-plugin.c:583
 msgid "Please log in to continue upload."
 msgstr "ਅੱਪਲੋਡ ਕਰਨ ਲਈ ਲਾਗਇਨ ਕਰੋ ਜੀ।"
 
@@ -206,53 +206,53 @@ msgstr "ਚੁਣੇ ਰੱਦ ਕਰੋ"
 msgid "Uploads:"
 msgstr "ਅੱਪਲੋਡ:"
 
-#: ../plugins/postasa/postasa.eog-plugin.desktop.in.h:1
+#: ../plugins/postasa/postasa.xviewer-plugin.desktop.in.h:1
 #| msgid "Flickr Uploader"
 msgid "PicasaWeb Uploader"
 msgstr "ਪਿਕਾਸਾਵੈੱਬ ਅੱਪਲੋਡਰ"
 
-#: ../plugins/postr/eog-postr-plugin.c:57
+#: ../plugins/postr/xviewer-postr-plugin.c:57
 msgid "Upload to Flickr"
 msgstr "ਫਲਿੱਕਰ ਉੱਤੇ ਅੱਪਲੋਡ"
 
-#: ../plugins/postr/eog-postr-plugin.c:59
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
+#: ../plugins/postr/xviewer-postr-plugin.c:59
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:2
 msgid "Upload your pictures to Flickr"
 msgstr "ਆਪਣੀਆਂ ਫੋਟੋ ਫਲਿੱਕਰ ਉੱਤੇ ਅੱਪਲੋਡ ਕਰੋ"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:1
 msgid "Flickr Uploader"
 msgstr "ਫਲਿੱਕਰ ਅੱਪਲੋਡਰ"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:1
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:1
 msgid "Python Console"
 msgstr "ਪਾਈਥਨ ਕਨਸੋਲ"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:2
-msgid "Python console for Eye of GNOME"
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:2
+msgid "Python console for xplayer"
 msgstr "ਗਨੋਮ ਦੀ ਅੱਖ ਲਈ ਪਾਈਥਨ ਕਨਸੋਲ"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:60
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:60
 msgid "Send by Mail"
 msgstr "ਮੇਲ ਰਾਹੀਂ ਭੇਜੋ"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:62
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:62
 msgid "Send the selected images by mail"
 msgstr "ਚੁਣੇ ਚਿੱਤਰ ਮੇਲ ਰਾਹੀਂ ਭੇਜੋ"
 
-#: ../plugins/send-by-mail/send-by-mail.eog-plugin.desktop.in.h:1
+#: ../plugins/send-by-mail/send-by-mail.xviewer-plugin.desktop.in.h:1
 msgid "Send By Mail"
 msgstr "ਮੇਲ ਰਾਹੀਂ ਭੇਜੋ"
 
-#: ../plugins/send-by-mail/send-by-mail.eog-plugin.desktop.in.h:2
+#: ../plugins/send-by-mail/send-by-mail.xviewer-plugin.desktop.in.h:2
 msgid "Sends an image attached to a new mail"
 msgstr "ਚਿੱਤਰ ਨਵੀਂ ਮੇਲ 'ਚ ਨੱਥੀ ਕਰਕੇ ਭੇਜੋ"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:1
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:1
 msgid "Shuffles images in slideshow mode"
 msgstr "ਸਲਾਈਡ ਸ਼ੋ ਮੋਡ ਵਿੱਚ ਚਿੱਤਰ ਰਲਵੇਂ ਵੇਖੋ"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:2
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:2
 msgid "Slideshow Shuffle"
 msgstr "ਰਲਵਾਂ ਸਲਾਈਡ-ਸ਼ੋ"
 

@@ -25,13 +25,13 @@
 #     Copyright (C), 2005 Adam Hooper <adamh@densi.com>
 #     Copyrignt (C), 2005 Raphaël Slinckx
 
-from gi.repository import GObject, Gtk, Eog, PeasGtk
+from gi.repository import GObject, Gtk, Xviewer, PeasGtk
 
 from .console import PythonConsole
 from .config import PythonConsoleConfigWidget
 
 import gettext
-_ = gettext.translation('eog-plugins', fallback=True).gettext
+_ = gettext.translation('xviewer-plugins', fallback=True).gettext
 
 _UI_STR = """
     <ui>
@@ -46,10 +46,10 @@ _UI_STR = """
     """
 
 
-class PythonConsolePlugin(GObject.Object, Eog.WindowActivatable, PeasGtk.Configurable):
+class PythonConsolePlugin(GObject.Object, Xviewer.WindowActivatable, PeasGtk.Configurable):
 
-    # Override EogWindowActivatable's window property
-    window = GObject.property(type=Eog.Window)
+    # Override XviewerWindowActivatable's window property
+    window = GObject.property(type=Xviewer.Window)
     action_group = None
 
     def __init__(self):
@@ -79,7 +79,7 @@ class PythonConsolePlugin(GObject.Object, Eog.WindowActivatable, PeasGtk.Configu
         if not self.console_window:
             self.console_window = Gtk.Window()
             console = PythonConsole(namespace = {'__builtins__' : __builtins__,
-                                                 'Eog' : Eog,
+                                                 'Xviewer' : Xviewer,
                                                  'window' : window})
             console.set_size_request(600, 400)
             console.eval('print("You can access the main window through ' \

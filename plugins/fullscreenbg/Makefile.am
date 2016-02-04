@@ -1,15 +1,15 @@
 # Fullscreen Background plugin
-plugindir = $(EOG_PLUGINS_LIBS_DIR)
+plugindir = $(XVIEWER_PLUGINS_LIBS_DIR)
 appstreamdir = $(datadir)/appdata
 plugin_in_files = fullscreenbg.plugin.desktop.in
-appstream_in_files = eog-fullscreenbg.metainfo.xml.in
+appstream_in_files = xviewer-fullscreenbg.metainfo.xml.in
 
-gsettings_SCHEMAS = org.gnome.eog.plugins.fullscreenbg.gschema.xml
-gsettings_SCHEMAS_in_files = org.gnome.eog.plugins.fullscreenbg.gschema.xml.in
+gsettings_SCHEMAS = org.x.viewer.plugins.fullscreenbg.gschema.xml
+gsettings_SCHEMAS_in_files = org.x.viewer.plugins.fullscreenbg.gschema.xml.in
 
 
 ui_DATA = preferences_dialog.ui
-uidir = $(EOG_PLUGINS_DATA_DIR)/fullscreenbg
+uidir = $(XVIEWER_PLUGINS_DATA_DIR)/fullscreenbg
 
 plugin_PYTHON = \
 	fullscreenbg.py

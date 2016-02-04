@@ -1,11 +1,11 @@
-# Norwegian translation of eog (bokmål dialect).
+# Norwegian translation of xviewer (bokmål dialect).
 # Copyright (C) 1999-2004, 2005 Free Software Foundation, Inc.
 # Kjartan Maraas <kmaraas@gnome.org>, 1999-2008.
 # Terance Edward Sola <terance@lyse.net>, 2005.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eog 2.24.x\n"
+"Project-Id-Version: xviewer 2.24.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-07 18:26+0200\n"
 "PO-Revision-Date: 2008-10-07 18:27+0200\n"
@@ -16,16 +16,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:1
 msgid "Flickr Uploader"
 msgstr "Last opp til Flickr"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
-#: ../plugins/postr/eog-postr-plugin.c:50
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:2
+#: ../plugins/postr/xviewer-postr-plugin.c:50
 msgid "Upload your pictures to Flickr"
 msgstr "Last opp dine bilder til Flickr"
 
-#: ../plugins/postr/eog-postr-plugin.c:48
+#: ../plugins/postr/xviewer-postr-plugin.c:48
 msgid "Upload to Flickr"
 msgstr "Last opp til Flickr"
 

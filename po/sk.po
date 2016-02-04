@@ -1,12 +1,12 @@
-# Slovak translation for eog-plugins.
-# Copyright (C) 2012 eog-plugins's COPYRIGHT HOLDER
-# This file is distributed under the same license as the eog-plugins package.
+# Slovak translation for xviewer-plugins.
+# Copyright (C) 2012 xviewer-plugins's COPYRIGHT HOLDER
+# This file is distributed under the same license as the xviewer-plugins package.
 # Richard Stanislavský <kenny.vv@gmail.com>, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eog-plugins master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eog-"
+"Project-Id-Version: xviewer-plugins master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=xviewer-"
 "plugins&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2013-03-01 15:28+0000\n"
 "PO-Revision-Date: 2013-03-03 16:18+0100\n"
@@ -19,13 +19,13 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
 "X-Generator: Poedit 1.5.5\n"
 
-#: ../plugins/exif-display/eog-exif-display-plugin.c:105
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:105
 msgid " (invalid Unicode)"
 msgstr " (neplatný Unicode)"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:183
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:183
 #, c-format
 msgid "%.1fmm (lens)"
 msgstr "%.1fmm (objektív)"
@@ -33,7 +33,7 @@ msgstr "%.1fmm (objektív)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:194
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:194
 #, c-format
 msgid "%.1fmm (35mm film)"
 msgstr "%.1fmm (35mm film)"
@@ -124,12 +124,12 @@ msgid "_Export"
 msgstr "_Exportovať"
 
 # gsettings summary
-#: ../plugins/export-to-folder/org.gnome.eog.plugins.export-to-folder.gschema.xml.in.in.h:1
+#: ../plugins/export-to-folder/org.x.viewer.plugins.export-to-folder.gschema.xml.in.in.h:1
 msgid "The folder to export to"
 msgstr "Priečinok na exportovanie do"
 
 # gsettings description
-#: ../plugins/export-to-folder/org.gnome.eog.plugins.export-to-folder.gschema.xml.in.in.h:2
+#: ../plugins/export-to-folder/org.x.viewer.plugins.export-to-folder.gschema.xml.in.in.h:2
 msgid ""
 "This is the folder the plugin will place the exported files in. Plugin will "
 "export to $HOME/exported-images if not set."
@@ -144,12 +144,12 @@ msgid "Export directory:"
 msgstr "Adresár pre export:"
 
 # action entry
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:91
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:91
 msgid "Fit to width"
 msgstr "Prispôsobiť šírke"
 
 # tooltip
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:93
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:93
 msgid "Fit the image to the window width"
 msgstr "Prispôsobí obrázok šírke okna"
 
@@ -174,23 +174,23 @@ msgid "Enables changing background in fullscreen mode"
 msgstr "Povolí zmenu pozadia v celoobrazovkovom režime"
 
 # gsettings summary
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:1
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:1
 msgid "Use custom background settings"
 msgstr "Použiť vlastné nastavenia pozadia"
 
 # gsettings description
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:2
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:2
 msgid "Whether the plugin should use global settings or its own."
 msgstr ""
 "Či by mal zásuvný modul používať globálne nastavenia, alebo svoje vlastné."
 
 # gsettings summary
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:3
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:3
 msgid "Background color in fullscreen mode"
 msgstr "Farba pozadia v celoobrazovkovom režime"
 
 # gsettings description
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:4
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:4
 msgid ""
 "The color that is used to fill the area behind the image. This option has "
 "effect only if use-custom is enabled."
@@ -210,7 +210,7 @@ msgstr "Skryť titulok okna"
 
 # plugin description
 #: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
-msgid "Hides the titlebar of maximized Eye of GNOME windows"
+msgid "Hides the titlebar of maximized xplayer windows"
 msgstr "Skryje titulok okna pri maximalizovanom okne programu Oko GNOME"
 
 # plugin name
@@ -220,26 +220,26 @@ msgstr "Zákaz tmavej témy"
 
 # plugin description
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
-msgid "Disables Eye of GNOME's preference of dark theme variants"
+msgid "Disables xplayer's preference of dark theme variants"
 msgstr "Zakáže nastavenie tmavých variant tém programu Oko GNOME"
 
 # tooltip
-#: ../plugins/map/eog-map-plugin.c:401
+#: ../plugins/map/xviewer-map-plugin.c:401
 msgid "Jump to current image's location"
 msgstr "Skočí na umiestnenie aktuálneho obrázku"
 
 # tooltip
-#: ../plugins/map/eog-map-plugin.c:413
+#: ../plugins/map/xviewer-map-plugin.c:413
 msgid "Zoom in"
 msgstr "Zväčší"
 
 # tooltip
-#: ../plugins/map/eog-map-plugin.c:421
+#: ../plugins/map/xviewer-map-plugin.c:421
 msgid "Zoom out"
 msgstr "Zmenší"
 
 # sidebar page; plugin name
-#: ../plugins/map/eog-map-plugin.c:436
+#: ../plugins/map/xviewer-map-plugin.c:436
 #: ../plugins/map/map.plugin.desktop.in.h:1
 msgid "Map"
 msgstr "Mapa"
@@ -250,55 +250,55 @@ msgid "Display the geolocation of the image on a map"
 msgstr "Zobrazí geologické umiestnenie z obrázku na mape"
 
 # action entry
-#: ../plugins/postasa/eog-postasa-plugin.c:127
+#: ../plugins/postasa/xviewer-postasa-plugin.c:127
 msgid "Upload to PicasaWeb"
 msgstr "Odovzdať na PicasaWeb"
 
 # action entry tooltip; plugin description
-#: ../plugins/postasa/eog-postasa-plugin.c:129
+#: ../plugins/postasa/xviewer-postasa-plugin.c:129
 #: ../plugins/postasa/postasa.plugin.desktop.in.h:2
 msgid "Upload your pictures to PicasaWeb"
 msgstr "Odovzdá vaše obrázky na PicasaWeb"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:325
+#: ../plugins/postasa/xviewer-postasa-plugin.c:325
 msgid "Uploading..."
 msgstr "Odovzdáva sa..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:371
+#: ../plugins/postasa/xviewer-postasa-plugin.c:371
 msgid "Uploaded"
 msgstr "Odovzdané"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:375
+#: ../plugins/postasa/xviewer-postasa-plugin.c:375
 msgid "Cancelled"
 msgstr "Zrušené"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:378
+#: ../plugins/postasa/xviewer-postasa-plugin.c:378
 msgid "Failed"
 msgstr "Zlyhalo"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:601
+#: ../plugins/postasa/xviewer-postasa-plugin.c:601
 #, c-format
 msgid "Login failed. %s"
 msgstr "Prihlásenie zlyhalo. %s"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:605
+#: ../plugins/postasa/xviewer-postasa-plugin.c:605
 msgid "Logged in successully."
 msgstr "Úspešné prihlásenie."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:606
+#: ../plugins/postasa/xviewer-postasa-plugin.c:606
 msgid "Close"
 msgstr "Zavrieť"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:627
+#: ../plugins/postasa/xviewer-postasa-plugin.c:627
 msgid "Cancel"
 msgstr "Zrušiť"
 
 #. TODO: want to handle passwords more securely
-#: ../plugins/postasa/eog-postasa-plugin.c:633
+#: ../plugins/postasa/xviewer-postasa-plugin.c:633
 msgid "Logging in..."
 msgstr "Prihlasuje sa..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:678
+#: ../plugins/postasa/xviewer-postasa-plugin.c:678
 msgid "Please log in to continue upload."
 msgstr "Ak chcete pokračovať v odovzdávaní, prosím, prihláste sa"
 
@@ -363,12 +363,12 @@ msgid "PicasaWeb Uploader"
 msgstr "Odovzdávanie na PicasaWeb"
 
 # action entry
-#: ../plugins/postr/eog-postr-plugin.c:62
+#: ../plugins/postr/xviewer-postr-plugin.c:62
 msgid "Upload to Flickr"
 msgstr "Odovzdať na Flickr"
 
 # action entry tooltip; plugin description
-#: ../plugins/postr/eog-postr-plugin.c:64
+#: ../plugins/postr/xviewer-postr-plugin.c:64
 #: ../plugins/postr/postr.plugin.desktop.in.h:2
 msgid "Upload your pictures to Flickr"
 msgstr "Odovzdá tvoje obrázky na Flickr"
@@ -399,32 +399,32 @@ msgid "_Error color:"
 msgstr "_Farba chyby:"
 
 # gsetting summary
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:1
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:1
 msgid "Command Text Color"
 msgstr "Farba textu príkazu"
 
 # gsetting description
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:2
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:2
 msgid "The color used for commands."
 msgstr "Farba použitá pre príkazy."
 
 # gsetting summary
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:3
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:3
 msgid "Error Text Color"
 msgstr "Farba textu chyby"
 
 # gsetting description
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:4
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:4
 msgid "The color used for errors."
 msgstr "Farba použitá pre chyby."
 
 # gsetting summary
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:5
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:5
 msgid "Whether to use the system font"
 msgstr "Či sa má použiť systémové písmo"
 
 # gsetting description
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:6
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:6
 msgid ""
 "If true, the terminal will use the desktop-global standard font if it's "
 "monospace (and the most similar font it can come up with otherwise)."
@@ -434,27 +434,27 @@ msgstr ""
 "písmo)."
 
 # gsetting summary
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:7
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:7
 msgid "Font used by Python Console"
 msgstr "Písmo použité pre konzolu Python"
 
 # gsetting description
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:8
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:8
 msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
 msgstr "Názov písma pre Pango. Napríklad „Sans 12“ alebo „Monospace Bold 14“."
 
 # plugin description
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for Eye of GNOME"
+msgid "Python console for xplayer"
 msgstr "Konzola jazyka Python pre program Oko GNOME"
 
 # action entry
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:63
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
 msgid "Send by Mail"
 msgstr "Poslať emailom"
 
 # action entry tooltip
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:65
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:65
 msgid "Send the selected images by mail"
 msgstr "Pošle vybrané obrázky emailom"
 

@@ -1,23 +1,23 @@
 # Fit-to-width plugin
-plugindir = $(libdir)/eog/plugins
+plugindir = $(libdir)/xviewer/plugins
 appstreamdir = $(datadir)/appdata
 
 AM_CPPFLAGS = \
 	-I$(top_srcdir)/src 				\
-	$(EOG_CFLAGS) 					\
+	$(XVIEWER_CFLAGS) 					\
 	$(WARN_CFLAGS)					\
-	-DEOG_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
+	-DXVIEWER_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
 
 plugin_LTLIBRARIES = libfit-to-width.la
 
 libfit_to_width_la_SOURCES = \
-	eog-fit-to-width-plugin.h			\
-	eog-fit-to-width-plugin.c
+	xviewer-fit-to-width-plugin.h			\
+	xviewer-fit-to-width-plugin.c
 
 libfit_to_width_la_LDFLAGS = \
 	-avoid-version -module
 
-libfit_to_width_la_LIBADD = $(EOG_LIBS)
+libfit_to_width_la_LIBADD = $(XVIEWER_LIBS)
 
 # Plugin Info
 
@@ -27,7 +27,7 @@ plugin_in_files = fit-to-width.plugin.desktop.in
 
 plugin_DATA = $(plugin_in_files:.plugin.desktop.in=.plugin)
 
-appstream_in_files = eog-fit-to-width.metainfo.xml.in
+appstream_in_files = xviewer-fit-to-width.metainfo.xml.in
 
 appstream_DATA = $(appstream_in_files:.xml.in=.xml)
 @INTLTOOL_XML_RULE@

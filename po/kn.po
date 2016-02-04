@@ -1,12 +1,12 @@
-# translation of eog-plugins.master.kn.po to Kannada
+# translation of xviewer-plugins.master.kn.po to Kannada
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Shankar Prasad <svenkate@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: eog-plugins.master.kn\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eog-plugins&component=general\n"
+"Project-Id-Version: xviewer-plugins.master.kn\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=xviewer-plugins&component=general\n"
 "POT-Creation-Date: 2009-10-25 18:38+0000\n"
 "PO-Revision-Date: 2009-10-26 12:51+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
@@ -17,22 +17,22 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
-#: ../plugins/champlain/champlain.eog-plugin.desktop.in.h:1
+#: ../plugins/champlain/champlain.xviewer-plugin.desktop.in.h:1
 msgid "Display the geolocation of the image on a map"
 msgstr "ಚಿತ್ರದ ಭೂಸ್ಥಳವನ್ನು ನಕ್ಷೆಯನ್ನು ತೋರಿಸು"
 
-#: ../plugins/champlain/champlain.eog-plugin.desktop.in.h:2
-#: ../plugins/champlain/eog-champlain-plugin.c:312
+#: ../plugins/champlain/champlain.xviewer-plugin.desktop.in.h:2
+#: ../plugins/champlain/xviewer-champlain-plugin.c:312
 msgid "Map"
 msgstr "ನಕ್ಷೆ"
 
-#: ../plugins/exif-display/eog-exif-display-plugin.c:136
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:136
 msgid " (invalid Unicode)"
 msgstr " (ಅಮಾನ್ಯ ಯುನಿಕೋಡ್)"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:212
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:212
 #, c-format
 msgid "%.1fmm (lens)"
 msgstr "%.1fmm (ಲೆನ್ಸ್)"
@@ -40,7 +40,7 @@ msgstr "%.1fmm (ಲೆನ್ಸ್)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:223
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:223
 #, c-format
 msgid "%.1fmm (35mm film)"
 msgstr "%.1fmm (35mm film)"
@@ -65,11 +65,11 @@ msgstr "ಕ್ಯಾಮೆರ ಸಿದ್ಧತೆಗಳನ್ನು ಸ್ಥ�
 msgid "Display per-channel histogram"
 msgstr "ಪ್ರತಿ ಚಾನಲ್ ಹಿಸ್ಟೊಗ್ರಾಮ್ ಅನ್ನು ತೋರಿಸು"
 
-#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:1
+#: ../plugins/exif-display/exif-display.xviewer-plugin.desktop.in.h:1
 msgid "Displays camera settings and histogram"
 msgstr "ಕ್ಯಾಮೆರ ಸಿದ್ಧತೆಗಳನ್ನು ಹಾಗು ಹಿಸ್ಟೊಗ್ರಾಮ್ ಅನ್ನು ತೋರಿಸುತ್ತದೆ"
 
-#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:2
+#: ../plugins/exif-display/exif-display.xviewer-plugin.desktop.in.h:2
 msgid "Exif display"
 msgstr "Exif ಪ್ರದರ್ಶಕ"
 
@@ -102,57 +102,57 @@ msgstr "ಮೀಟರಿಂಗ್:"
 msgid "Zoom:"
 msgstr "ಝೂಮ್‌:"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:82
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:82
 msgid "Fit to width"
 msgstr "ಅಗಲಕ್ಕೆ ಹೊಂದಿಸು"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:84
-#: ../plugins/fit-to-width/fit-to-width.eog-plugin.desktop.in.h:1
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:84
+#: ../plugins/fit-to-width/fit-to-width.xviewer-plugin.desktop.in.h:1
 msgid "Zoom to fit image width"
 msgstr "ಚಿತ್ರದ ಅಗಲಕ್ಕೆ ಹೊಂದುವಂತೆ ಹಿಗ್ಗಿಸು"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:60
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:60
 msgid "Send by Mail"
 msgstr "ಮೈಲ್‌ ಮೂಲಕ ಕಳುಹಿಸು"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:62
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:62
 msgid "Send the selected images by mail"
 msgstr "ಆಯ್ಕೆ ಮಾಡಲಾದ ಚಿತ್ರಗಳನ್ನು ಮೈಲ್‌ ಮೂಲಕ ಕಳುಹಿಸು"
 
-#: ../plugins/send-by-mail/send-by-mail.eog-plugin.desktop.in.h:1
+#: ../plugins/send-by-mail/send-by-mail.xviewer-plugin.desktop.in.h:1
 msgid "Send By Mail"
 msgstr "ಮೈಲ್‌ ಮೂಲಕ ಕಳುಹಿಸು"
 
-#: ../plugins/send-by-mail/send-by-mail.eog-plugin.desktop.in.h:2
+#: ../plugins/send-by-mail/send-by-mail.xviewer-plugin.desktop.in.h:2
 msgid "Sends an image attached to a new mail"
 msgstr "ಆಯ್ಕೆ ಮಾಡಲಾದ ಚಿತ್ರವನ್ನು ಹೊಸ ಮೈಲ್‌ ಮೂಲಕ ಕಳುಹಿಸು"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:1
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:1
 msgid "Shuffles images in slideshow mode"
 msgstr "ಚಿತ್ರಗಳನ್ನು ಜಾರುಫಲಕ ಪ್ರದರ್ಶನ ವಿಧಾನದಲ್ಲಿ ಕಲೆಸು"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:2
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:2
 msgid "Slideshow Shuffle"
 msgstr "ಜಾರುಫಲಕ ಪ್ರದರ್ಶನದ ಕಲೆಸುವಿಕೆ"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:1
 msgid "Flickr Uploader"
 msgstr "Flickr ಅಪ್‌ಲೋಡರ್"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
-#: ../plugins/postr/eog-postr-plugin.c:59
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:2
+#: ../plugins/postr/xviewer-postr-plugin.c:59
 msgid "Upload your pictures to Flickr"
 msgstr "Flickr ಗೆ ನಿಮ್ಮ ಚಿತ್ರಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
 
-#: ../plugins/postr/eog-postr-plugin.c:57
+#: ../plugins/postr/xviewer-postr-plugin.c:57
 msgid "Upload to Flickr"
 msgstr "Flickr ಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:1
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:1
 msgid "Python Console"
 msgstr "ಪೈಥಾನ್ ಕನ್ಸೋಲ್‌"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:2
-msgid "Python console for Eye of GNOME"
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:2
+msgid "Python console for xplayer"
 msgstr "ಐ ಆಫ್‌ GNOME ಗಾಗಿನ ಪೈಥಾನ್ ಕನ್ಸೋಲ್"
 

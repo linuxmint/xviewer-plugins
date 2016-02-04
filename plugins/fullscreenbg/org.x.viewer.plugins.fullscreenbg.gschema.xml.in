@@ -1,5 +1,5 @@
 <schemalist>
-  <schema id="org.gnome.eog.plugins.fullscreenbg" path="/org/gnome/eog/plugins/fullscreenbg/" gettext-domain="@GETTEXT_PACKAGE@">
+  <schema id="org.x.viewer.plugins.fullscreenbg" path="/org/x/viewer/plugins/fullscreenbg/" gettext-domain="@GETTEXT_PACKAGE@">
     <key name="use-custom" type="b">
       <default>true</default>
       <summary>Use custom background settings</summary>

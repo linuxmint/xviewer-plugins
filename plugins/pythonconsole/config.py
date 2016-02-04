@@ -32,7 +32,7 @@ __all__ = ('PythonConsoleConfigWidget')
 
 class PythonConsoleConfigWidget(object):
 
-    CONSOLE_KEY_BASE = 'org.gnome.eog.plugins.pythonconsole'
+    CONSOLE_KEY_BASE = 'org.x.viewer.plugins.pythonconsole'
     CONSOLE_KEY_COMMAND_COLOR = 'command-color'
     CONSOLE_KEY_ERROR_COLOR = 'error-color'
 
@@ -42,7 +42,7 @@ class PythonConsoleConfigWidget(object):
         self._ui_path = os.path.join(datadir, 'config.ui')
         self._settings = Gio.Settings.new(self.CONSOLE_KEY_BASE)
         self._ui = Gtk.Builder()
-        self._ui.set_translation_domain('eog-plugins')
+        self._ui.set_translation_domain('xviewer-plugins')
 
     def configure_widget(self):
         self._ui.add_objects_from_file(self._ui_path, ["grid"])

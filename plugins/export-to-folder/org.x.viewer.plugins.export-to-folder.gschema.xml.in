@@ -1,5 +1,5 @@
 <schemalist>
-  <schema id="org.gnome.eog.plugins.export-to-folder" path="/org/gnome/eog/plugins/export-to-folder/" gettext-domain="@GETTEXT_PACKAGE@">
+  <schema id="org.x.viewer.plugins.export-to-folder" path="/org/x/viewer/plugins/export-to-folder/" gettext-domain="@GETTEXT_PACKAGE@">
     <key name="target-folder" type="s">
       <default>""</default>
       <summary>The folder to export to</summary>

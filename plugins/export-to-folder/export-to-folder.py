@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# export.py -- export plugin for eog
+# export.py -- export plugin for xviewer
 #
 # Copyright (c) 2012  Jendrik Seipp (jendrikseipp@web.de)
 #
@@ -21,7 +21,7 @@
 import os
 import shutil
 
-from gi.repository import GObject, Eog, Gio, Gtk, PeasGtk
+from gi.repository import GObject, Xviewer, Gio, Gtk, PeasGtk
 
 
 ui_str = """
@@ -37,10 +37,10 @@ ui_str = """
 """
 
 EXPORT_DIR = os.path.join(os.path.expanduser('~'), 'exported-images')
-BASE_KEY = 'org.gnome.eog.plugins.export-to-folder'
+BASE_KEY = 'org.x.viewer.plugins.export-to-folder'
 
-class ExportPlugin(GObject.Object, Eog.WindowActivatable):
-    window = GObject.property(type=Eog.Window)
+class ExportPlugin(GObject.Object, Xviewer.WindowActivatable):
+    window = GObject.property(type=Xviewer.Window)
 
     def __init__(self):
         GObject.Object.__init__(self)
@@ -93,7 +93,7 @@ class ExportConfigurable(GObject.Object, PeasGtk.Configurable):
         # Create preference dialog
         signals = {'current_folder_changed_cb': self.current_folder_changed_cb}
         builder = Gtk.Builder()
-        builder.set_translation_domain('eog-plugins')
+        builder.set_translation_domain('xviewer-plugins')
         builder.add_from_file(os.path.join(self.plugin_info.get_data_dir(),
                                            'preferences_dialog.ui'))
         builder.connect_signals(signals)

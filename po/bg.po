@@ -1,11 +1,11 @@
-# Bulgarian translation of eog-plugins po-file.
+# Bulgarian translation of xviewer-plugins po-file.
 # Copyright (C) 2009 Free Software Foundation, Inc.
-# This file is distributed under the same license as the eog-plugins package.
+# This file is distributed under the same license as the xviewer-plugins package.
 # Yavor Doganov <yavor@gnu.org>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eog-plugins master\n"
+"Project-Id-Version: xviewer-plugins master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-20 14:42+0300\n"
 "PO-Revision-Date: 2009-09-20 14:42+0300\n"
@@ -16,22 +16,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../plugins/champlain/champlain.eog-plugin.desktop.in.h:1
+#: ../plugins/champlain/champlain.xviewer-plugin.desktop.in.h:1
 msgid "Display the geolocation of the image on a map"
 msgstr "Показване на географското положение на изображението на карта"
 
-#: ../plugins/champlain/champlain.eog-plugin.desktop.in.h:2
-#: ../plugins/champlain/eog-champlain-plugin.c:312
+#: ../plugins/champlain/champlain.xviewer-plugin.desktop.in.h:2
+#: ../plugins/champlain/xviewer-champlain-plugin.c:312
 msgid "Map"
 msgstr "Карта"
 
-#: ../plugins/exif-display/eog-exif-display-plugin.c:136
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:136
 msgid " (invalid Unicode)"
 msgstr " (неправилен Уникод)"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:212
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:212
 #, c-format
 msgid "%.1fmm (lens)"
 msgstr "%.1f мм (лещи)"
@@ -39,7 +39,7 @@ msgstr "%.1f мм (лещи)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:223
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:223
 #, c-format
 msgid "%.1fmm (35mm film)"
 msgstr "%.1f мм (филм 35 мм)"
@@ -64,11 +64,11 @@ msgstr "Показване на настройките на фотоапарат
 msgid "Display per-channel histogram"
 msgstr "Показване на хистограма за всеки канал"
 
-#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:1
+#: ../plugins/exif-display/exif-display.xviewer-plugin.desktop.in.h:1
 msgid "Displays camera settings and histogram"
 msgstr "Показване на настройки на фотоапарата и хистограма"
 
-#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:2
+#: ../plugins/exif-display/exif-display.xviewer-plugin.desktop.in.h:2
 msgid "Exif display"
 msgstr "Данни на Exif"
 
@@ -100,40 +100,40 @@ msgstr "Режим на мерене:"
 msgid "Zoom:"
 msgstr "Обектив:"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:82
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:82
 msgid "Fit to width"
 msgstr "Напасване по широчина"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:84
-#: ../plugins/fit-to-width/fit-to-width.eog-plugin.desktop.in.h:1
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:84
+#: ../plugins/fit-to-width/fit-to-width.xviewer-plugin.desktop.in.h:1
 msgid "Zoom to fit image width"
 msgstr "Мащабиране до напасване по широчината на изображението"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:1
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:1
 msgid "Shuffles images in slideshow mode"
 msgstr "Превключва изображения като прожекция"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:2
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:2
 msgid "Slideshow Shuffle"
 msgstr "Прожекция"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:1
 msgid "Flickr Uploader"
 msgstr "Качване във Flickr"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
-#: ../plugins/postr/eog-postr-plugin.c:59
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:2
+#: ../plugins/postr/xviewer-postr-plugin.c:59
 msgid "Upload your pictures to Flickr"
 msgstr "Качване на снимки във Flickr"
 
-#: ../plugins/postr/eog-postr-plugin.c:57
+#: ../plugins/postr/xviewer-postr-plugin.c:57
 msgid "Upload to Flickr"
 msgstr "Качване във Flickr"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:1
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:1
 msgid "Python Console"
 msgstr "Конзола на Питон"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:2
-msgid "Python console for Eye of GNOME"
-msgstr "Конзола на Питон за Eog"
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:2
+msgid "Python console for xviewer"
+msgstr "Конзола на Питон за Xviewer"

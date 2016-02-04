@@ -1,10 +1,10 @@
 # Python Console plugin
-plugindir = $(EOG_PLUGINS_LIBS_DIR)
+plugindir = $(XVIEWER_PLUGINS_LIBS_DIR)
 appstreamdir = $(datadir)/appdata
 pythonconsoledir = $(plugindir)/pythonconsole
-uidir = $(EOG_PLUGINS_DATA_DIR)/pythonconsole
+uidir = $(XVIEWER_PLUGINS_DATA_DIR)/pythonconsole
 plugin_in_files = pythonconsole.plugin.desktop.in
-appstream_in_files = eog-pythonconsole.metainfo.xml.in
+appstream_in_files = xviewer-pythonconsole.metainfo.xml.in
 
 pythonconsole_PYTHON =	\
 	__init__.py	\
@@ -21,14 +21,14 @@ plugin_DATA = $(plugin_in_files:.plugin.desktop.in=.plugin)
 appstream_DATA = $(appstream_in_files:.xml.in=.xml)
 @INTLTOOL_XML_RULE@
 
-gsettings_SCHEMAS = org.gnome.eog.plugins.pythonconsole.gschema.xml
+gsettings_SCHEMAS = org.x.viewer.plugins.pythonconsole.gschema.xml
 @GSETTINGS_RULES@
 
 EXTRA_DIST = \
 	$(plugin_in_files)	\
 	$(appstream_in_files)	\
 	$(UI_FILES)		\
-	org.gnome.eog.plugins.pythonconsole.gschema.xml.in
+	org.x.viewer.plugins.pythonconsole.gschema.xml.in
 
 
 CLEANFILES = $(plugin_DATA) $(appstream_DATA) $(gsettings_SCHEMAS)

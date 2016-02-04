@@ -1,12 +1,12 @@
-# Italian translation og Eye of GNOME plugins.
+# Italian translation og xplayer plugins.
 # Copyright (C) 2009 Free Software Foundation, Inc.
-# This file is distributed under the same license as the eog-plugins package.
+# This file is distributed under the same license as the xviewer-plugins package.
 # Gianvito Cavasoli <gianvito@gmx.it>, 2009, 2010, 2011, 2012, 2013.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eog-plugins\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eog-"
+"Project-Id-Version: xviewer-plugins\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=xviewer-"
 "plugins&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2013-03-14 22:16+0000\n"
 "PO-Revision-Date: 2013-03-16 14:15+0100\n"
@@ -19,13 +19,13 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
-#: ../plugins/exif-display/eog-exif-display-plugin.c:105
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:105
 msgid " (invalid Unicode)"
 msgstr " (Unicode non valido)"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:183
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:183
 #, c-format
 msgid "%.1fmm (lens)"
 msgstr "%.1fmm (obiettivo)"
@@ -33,7 +33,7 @@ msgstr "%.1fmm (obiettivo)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:194
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:194
 #, c-format
 msgid "%.1fmm (35mm film)"
 msgstr "%.1fmm (equiv. 35mm)"
@@ -106,11 +106,11 @@ msgstr "Esporta l'immagine attuale in una directory separata"
 msgid "_Export"
 msgstr "_Esporta"
 
-#: ../plugins/export-to-folder/org.gnome.eog.plugins.export-to-folder.gschema.xml.in.in.h:1
+#: ../plugins/export-to-folder/org.x.viewer.plugins.export-to-folder.gschema.xml.in.in.h:1
 msgid "The folder to export to"
 msgstr "La cartella in cui esportare"
 
-#: ../plugins/export-to-folder/org.gnome.eog.plugins.export-to-folder.gschema.xml.in.in.h:2
+#: ../plugins/export-to-folder/org.x.viewer.plugins.export-to-folder.gschema.xml.in.in.h:2
 msgid ""
 "This is the folder the plugin will place the exported files in. Plugin will "
 "export to $HOME/exported-images if not set."
@@ -122,11 +122,11 @@ msgstr ""
 msgid "Export directory:"
 msgstr "Directory di esportazione:"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:91
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:91
 msgid "Fit to width"
 msgstr "Adatta alla larghezza"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:93
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:93
 msgid "Fit the image to the window width"
 msgstr "Adatta l'immagine alla larghezza della finestra"
 
@@ -146,19 +146,19 @@ msgstr "Sfondo a schermo intero"
 msgid "Enables changing background in fullscreen mode"
 msgstr "Consente la modifica dello sfondo nella modalità a schermo intero"
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:1
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:1
 msgid "Use custom background settings"
 msgstr "Usa impostazioni sfondo personalizzate"
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:2
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:2
 msgid "Whether the plugin should use global settings or its own."
 msgstr "Indica se il plugin deve usare le impostazioni globali o le proprie."
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:3
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:3
 msgid "Background color in fullscreen mode"
 msgstr "Colore sfondo nella modalità schermo intero"
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:4
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:4
 msgid ""
 "The color that is used to fill the area behind the image. This option has "
 "effect only if use-custom is enabled."
@@ -175,7 +175,7 @@ msgid "Hide Titlebar"
 msgstr "Nascondi barra del titolo"
 
 #: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
-msgid "Hides the titlebar of maximized Eye of GNOME windows"
+msgid "Hides the titlebar of maximized xplayer windows"
 msgstr ""
 "Nasconde la barra del titolo delle finestre massimizzate dell'applicazione"
 
@@ -184,22 +184,22 @@ msgid "Disable dark theme"
 msgstr "Disabilita tema scuro"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
-msgid "Disables Eye of GNOME's preference of dark theme variants"
+msgid "Disables xplayer's preference of dark theme variants"
 msgstr "Disabilita le varianti per il tema scuro dell'applicazione"
 
-#: ../plugins/map/eog-map-plugin.c:401
+#: ../plugins/map/xviewer-map-plugin.c:401
 msgid "Jump to current image's location"
 msgstr "Va all'attuale posizione dell'immagine"
 
-#: ../plugins/map/eog-map-plugin.c:413
+#: ../plugins/map/xviewer-map-plugin.c:413
 msgid "Zoom in"
 msgstr "Aumenta l'ingrandimento"
 
-#: ../plugins/map/eog-map-plugin.c:421
+#: ../plugins/map/xviewer-map-plugin.c:421
 msgid "Zoom out"
 msgstr "Diminuisce l'ingrandimento"
 
-#: ../plugins/map/eog-map-plugin.c:436
+#: ../plugins/map/xviewer-map-plugin.c:436
 #: ../plugins/map/map.plugin.desktop.in.h:1
 msgid "Map"
 msgstr "Mappa"
@@ -208,54 +208,54 @@ msgstr "Mappa"
 msgid "Display the geolocation of the image on a map"
 msgstr "Visualizza la posizione geografica dell'immagine su una mappa"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:127
+#: ../plugins/postasa/xviewer-postasa-plugin.c:127
 msgid "Upload to PicasaWeb"
 msgstr "Carica su PicasaWeb"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:129
+#: ../plugins/postasa/xviewer-postasa-plugin.c:129
 #: ../plugins/postasa/postasa.plugin.desktop.in.h:2
 msgid "Upload your pictures to PicasaWeb"
 msgstr "Carica le immagini su PicasaWeb"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:325
+#: ../plugins/postasa/xviewer-postasa-plugin.c:325
 msgid "Uploading..."
 msgstr "Caricamento..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:371
+#: ../plugins/postasa/xviewer-postasa-plugin.c:371
 msgid "Uploaded"
 msgstr "Caricate"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:375
+#: ../plugins/postasa/xviewer-postasa-plugin.c:375
 msgid "Cancelled"
 msgstr "Annullato"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:378
+#: ../plugins/postasa/xviewer-postasa-plugin.c:378
 msgid "Failed"
 msgstr "Non riuscito"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:601
+#: ../plugins/postasa/xviewer-postasa-plugin.c:601
 #, c-format
 msgid "Login failed. %s"
 msgstr "Accesso non riuscito. %s"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:605
+#: ../plugins/postasa/xviewer-postasa-plugin.c:605
 msgid "Logged in successully."
 msgstr "Accesso effettuato con successo."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:606
+#: ../plugins/postasa/xviewer-postasa-plugin.c:606
 msgid "Close"
 msgstr "Chiudi"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:627
+#: ../plugins/postasa/xviewer-postasa-plugin.c:627
 msgid "Cancel"
 msgstr "Annulla"
 
 #. TODO: want to handle passwords more securely
-#: ../plugins/postasa/eog-postasa-plugin.c:633
+#: ../plugins/postasa/xviewer-postasa-plugin.c:633
 msgid "Logging in..."
 msgstr "Accesso in corso..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:678
+#: ../plugins/postasa/xviewer-postasa-plugin.c:678
 msgid "Please log in to continue upload."
 msgstr "Accedere per continuare il caricamento."
 
@@ -307,11 +307,11 @@ msgstr "Annulla tutto"
 msgid "PicasaWeb Uploader"
 msgstr "Caricatore PicasaWeb"
 
-#: ../plugins/postr/eog-postr-plugin.c:62
+#: ../plugins/postr/xviewer-postr-plugin.c:62
 msgid "Upload to Flickr"
 msgstr "Carica su Flickr"
 
-#: ../plugins/postr/eog-postr-plugin.c:64
+#: ../plugins/postr/xviewer-postr-plugin.c:64
 #: ../plugins/postr/postr.plugin.desktop.in.h:2
 msgid "Upload your pictures to Flickr"
 msgstr "Carica le immagini su Flickr"
@@ -337,27 +337,27 @@ msgstr "Colore c_omando:"
 msgid "_Error color:"
 msgstr "Colore _errore:"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:1
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:1
 msgid "Command Text Color"
 msgstr "Colore testo dei comandi"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:2
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:2
 msgid "The color used for commands."
 msgstr "Il colore usato per i comandi."
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:3
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:3
 msgid "Error Text Color"
 msgstr "Colore testo degli errori"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:4
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:4
 msgid "The color used for errors."
 msgstr "Il colore usato per gli errori."
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:5
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:5
 msgid "Whether to use the system font"
 msgstr "Indica se usare i caratteri di sistema"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:6
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:6
 msgid ""
 "If true, the terminal will use the desktop-global standard font if it's "
 "monospace (and the most similar font it can come up with otherwise)."
@@ -366,24 +366,24 @@ msgstr ""
 "se è a spaziatura fissa (diversamente il carattere più simile che viene "
 "trovato)."
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:7
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:7
 msgid "Font used by Python Console"
 msgstr "Carattere usato dalla console Python"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:8
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:8
 msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
 msgstr ""
 "Un nome di carattere Pango. Esempi sono «Sans 12» oppure «Monospace Bold 14»."
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for Eye of GNOME"
-msgstr "Console Python per Eye of GNOME"
+msgid "Python console for xplayer"
+msgstr "Console Python per xplayer"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:63
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
 msgid "Send by Mail"
 msgstr "Invia per email"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:65
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:65
 msgid "Send the selected images by mail"
 msgstr "Invia le immagini selezionate via email"
 

@@ -1,5 +1,5 @@
-# Korean translation for the eog-plugins
-# This file is distributed under the same license as the eog-plugins package.
+# Korean translation for the xviewer-plugins
+# This file is distributed under the same license as the xviewer-plugins package.
 #
 # Seong-ho Cho <darkcircle.0426@gmail.com>, 2012.
 # Changwoo Ryu  <cwryu@debian.org>, 2011, 2014.
@@ -11,8 +11,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eog-plugins\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eog-plugins&keywords=I18N+L10N&component=general\n"
+"Project-Id-Version: xviewer-plugins\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=xviewer-plugins&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-09-13 15:30+0000\n"
 "PO-Revision-Date: 2014-09-14 02:21+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
@@ -23,13 +23,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../plugins/exif-display/eog-exif-display-plugin.c:105
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:105
 msgid " (invalid Unicode)"
 msgstr " (잘못된 유니코드)"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:183
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:183
 #, c-format
 msgid "%.1fmm (lens)"
 msgstr "%.1fmm (렌즈)"
@@ -37,7 +37,7 @@ msgstr "%.1fmm (렌즈)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:194
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:194
 #, c-format
 msgid "%.1fmm (35mm film)"
 msgstr "%.1fmm (35mm 필름)"
@@ -63,7 +63,7 @@ msgid "Display camera settings in statusbar"
 msgstr "카메라 설정을 상태 표시줄에 표시"
 
 #: ../plugins/exif-display/exif-display.plugin.desktop.in.h:1
-#: ../plugins/exif-display/eog-exif-display.metainfo.xml.in.h:1
+#: ../plugins/exif-display/xviewer-exif-display.metainfo.xml.in.h:1
 msgid "Exif Display"
 msgstr "EXIF 표시"
 
@@ -71,7 +71,7 @@ msgstr "EXIF 표시"
 msgid "Displays camera settings and histogram"
 msgstr "카메라 설정과 히스토그램 표시"
 
-#: ../plugins/exif-display/eog-exif-display.metainfo.xml.in.h:2
+#: ../plugins/exif-display/xviewer-exif-display.metainfo.xml.in.h:2
 msgid "Displays Exif tags in the side panel and optionally the statusbar"
 msgstr "가장자리 창에서 EXIF 태그를 표시하고, 선택에 따라 상태 표시줄에도 표시합니다"
 
@@ -104,12 +104,12 @@ msgstr "노출 보정:"
 msgid "Description:"
 msgstr "설명:"
 
-#: ../plugins/export-to-folder/eog-export-to-folder.metainfo.xml.in.h:1
+#: ../plugins/export-to-folder/xviewer-export-to-folder.metainfo.xml.in.h:1
 #: ../plugins/export-to-folder/export-to-folder.plugin.desktop.in.h:1
 msgid "Export to Folder"
 msgstr "폴더로 내보내기"
 
-#: ../plugins/export-to-folder/eog-export-to-folder.metainfo.xml.in.h:2
+#: ../plugins/export-to-folder/xviewer-export-to-folder.metainfo.xml.in.h:2
 #: ../plugins/export-to-folder/export-to-folder.plugin.desktop.in.h:2
 msgid "Export the current image to a separate directory"
 msgstr "현재 이미지를 각각의 디렉터리로 내보냅니다"
@@ -118,11 +118,11 @@ msgstr "현재 이미지를 각각의 디렉터리로 내보냅니다"
 msgid "_Export"
 msgstr "내보내기(_E)"
 
-#: ../plugins/export-to-folder/org.gnome.eog.plugins.export-to-folder.gschema.xml.in.h:1
+#: ../plugins/export-to-folder/org.x.viewer.plugins.export-to-folder.gschema.xml.in.h:1
 msgid "The folder to export to"
 msgstr "내보낼 폴더"
 
-#: ../plugins/export-to-folder/org.gnome.eog.plugins.export-to-folder.gschema.xml.in.h:2
+#: ../plugins/export-to-folder/org.x.viewer.plugins.export-to-folder.gschema.xml.in.h:2
 msgid ""
 "This is the folder the plugin will place the exported files in. Plugin will "
 "export to $HOME/exported-images if not set."
@@ -132,20 +132,20 @@ msgstr "플러그인이 내보낼 파일을 저장할 폴더. 설정하지 않�
 msgid "Export directory:"
 msgstr "내보낼 디렉터리:"
 
-#: ../plugins/fit-to-width/eog-fit-to-width.metainfo.xml.in.h:1
+#: ../plugins/fit-to-width/xviewer-fit-to-width.metainfo.xml.in.h:1
 #: ../plugins/fit-to-width/fit-to-width.plugin.desktop.in.h:1
 msgid "Zoom to Fit Image Width"
 msgstr "이미지 너비 맞춰 확대/축소"
 
-#: ../plugins/fit-to-width/eog-fit-to-width.metainfo.xml.in.h:2
+#: ../plugins/fit-to-width/xviewer-fit-to-width.metainfo.xml.in.h:2
 msgid "Adjusts the zoom to have the image's width fit into the window"
 msgstr "이미지 너비가 창에 맞게 확대/축소"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:91
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:91
 msgid "Fit to width"
 msgstr "너비에 맞추기"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:93
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:93
 msgid "Fit the image to the window width"
 msgstr "이미지를 창 너비에 맞춥니다"
 
@@ -153,29 +153,29 @@ msgstr "이미지를 창 너비에 맞춥니다"
 msgid "Fit images to the window width"
 msgstr "이미지를 창 너비에 맞춥니다"
 
-#: ../plugins/fullscreenbg/eog-fullscreenbg.metainfo.xml.in.h:1
+#: ../plugins/fullscreenbg/xviewer-fullscreenbg.metainfo.xml.in.h:1
 #: ../plugins/fullscreenbg/fullscreenbg.plugin.desktop.in.h:1
 msgid "Fullscreen Background"
 msgstr "최대 화면 배경"
 
-#: ../plugins/fullscreenbg/eog-fullscreenbg.metainfo.xml.in.h:2
+#: ../plugins/fullscreenbg/xviewer-fullscreenbg.metainfo.xml.in.h:2
 #: ../plugins/fullscreenbg/fullscreenbg.plugin.desktop.in.h:2
 msgid "Enables changing background in fullscreen mode"
 msgstr "최대 화면 모드의 배경을 바꿀 수 있게 합니다"
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.h:1
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.h:1
 msgid "Use custom background settings"
 msgstr "사용자 지정한 배경 설정 사용"
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.h:2
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.h:2
 msgid "Whether the plugin should use global settings or its own."
 msgstr "플러그인이 전체 설정을 사용할지, 자체 설정을 사용할지 결정합니다."
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.h:3
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.h:3
 msgid "Background color in fullscreen mode"
 msgstr "최대 화면 모드의 배경색"
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.h:4
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.h:4
 msgid ""
 "The color that is used to fill the area behind the image. This option has "
 "effect only if use-custom is enabled."
@@ -185,51 +185,51 @@ msgstr "이미지 뒤 영역을 채우는데 사용할 색. 이 옵션은 use-cu
 msgid "Use custom color:"
 msgstr "사용자 정의 색:"
 
-#: ../plugins/hide-titlebar/eog-hide-titlebar.metainfo.xml.in.h:1
+#: ../plugins/hide-titlebar/xviewer-hide-titlebar.metainfo.xml.in.h:1
 #: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:1
 msgid "Hide Titlebar"
 msgstr "제목 표시줄 숨기기"
 
-#: ../plugins/hide-titlebar/eog-hide-titlebar.metainfo.xml.in.h:2
+#: ../plugins/hide-titlebar/xviewer-hide-titlebar.metainfo.xml.in.h:2
 msgid "Hides the titlebar of maximized windows"
 msgstr "최대화 한 창의 제목 표시줄을 숨깁니다"
 
 #: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
-msgid "Hides the titlebar of maximized Eye of GNOME windows"
+msgid "Hides the titlebar of maximized xplayer windows"
 msgstr "최대화한 그놈의 눈 창의 제목 표시줄을 숨깁니다"
 
-#: ../plugins/light-theme/eog-light-theme.metainfo.xml.in.h:1
+#: ../plugins/light-theme/xviewer-light-theme.metainfo.xml.in.h:1
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:1
 msgid "Disable Dark Theme"
 msgstr "어두운 테마 비활성화"
 
-#: ../plugins/light-theme/eog-light-theme.metainfo.xml.in.h:2
+#: ../plugins/light-theme/xviewer-light-theme.metainfo.xml.in.h:2
 msgid "Disables dark theme"
 msgstr "어두운 테마 비활성화"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
-msgid "Disables Eye of GNOME's preference of dark theme variants"
+msgid "Disables xplayer's preference of dark theme variants"
 msgstr "그놈의 눈 기본 설정의 어두운 테마 버전을 비활성화 합니다"
 
-#: ../plugins/map/eog-map.metainfo.xml.in.h:1
-#: ../plugins/map/eog-map-plugin.c:438
+#: ../plugins/map/xviewer-map.metainfo.xml.in.h:1
+#: ../plugins/map/xviewer-map-plugin.c:438
 #: ../plugins/map/map.plugin.desktop.in.h:1
 msgid "Map"
 msgstr "지도"
 
-#: ../plugins/map/eog-map.metainfo.xml.in.h:2
+#: ../plugins/map/xviewer-map.metainfo.xml.in.h:2
 msgid "Displays on a map in the side panel where the picture was taken"
 msgstr "사진을 찍은 위치를 가장자리 창에서 지도로 표시합니다."
 
-#: ../plugins/map/eog-map-plugin.c:403
+#: ../plugins/map/xviewer-map-plugin.c:403
 msgid "Jump to current image's location"
 msgstr "현재 이미지의 위치로 이동"
 
-#: ../plugins/map/eog-map-plugin.c:415
+#: ../plugins/map/xviewer-map-plugin.c:415
 msgid "Zoom in"
 msgstr "확대"
 
-#: ../plugins/map/eog-map-plugin.c:423
+#: ../plugins/map/xviewer-map-plugin.c:423
 msgid "Zoom out"
 msgstr "축소"
 
@@ -237,62 +237,62 @@ msgstr "축소"
 msgid "Display the geolocation of the image on a map"
 msgstr "지도에서 사진의 지리적 위치를 표시합니다"
 
-#: ../plugins/postasa/eog-postasa.metainfo.xml.in.h:1
+#: ../plugins/postasa/xviewer-postasa.metainfo.xml.in.h:1
 msgid "Picasa Web Uploader"
 msgstr "피카사웹 업로드"
 
-#: ../plugins/postasa/eog-postasa.metainfo.xml.in.h:2
+#: ../plugins/postasa/xviewer-postasa.metainfo.xml.in.h:2
 msgid "Supports uploading photos to Google Picasa Web"
 msgstr "사진을 구글의 피카사웹으로 업로드하는 기능"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:127
+#: ../plugins/postasa/xviewer-postasa-plugin.c:127
 msgid "Upload to PicasaWeb"
 msgstr "피카사웹에 업로드"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:129
+#: ../plugins/postasa/xviewer-postasa-plugin.c:129
 #: ../plugins/postasa/postasa.plugin.desktop.in.h:2
 msgid "Upload your pictures to PicasaWeb"
 msgstr "사진을 피카사웹에 업로드합니다"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:325
+#: ../plugins/postasa/xviewer-postasa-plugin.c:325
 msgid "Uploading..."
 msgstr "업로드 중..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:371
+#: ../plugins/postasa/xviewer-postasa-plugin.c:371
 msgid "Uploaded"
 msgstr "업로드함"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:375
+#: ../plugins/postasa/xviewer-postasa-plugin.c:375
 msgid "Cancelled"
 msgstr "취소함"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:378
+#: ../plugins/postasa/xviewer-postasa-plugin.c:378
 msgid "Failed"
 msgstr "실패함"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:601
+#: ../plugins/postasa/xviewer-postasa-plugin.c:601
 #, c-format
 msgid "Login failed. %s"
 msgstr "로그인 실패. %s"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:605
+#: ../plugins/postasa/xviewer-postasa-plugin.c:605
 msgid "Logged in successully."
 msgstr "성공적으로 로그인."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:606
+#: ../plugins/postasa/xviewer-postasa-plugin.c:606
 msgid "Close"
 msgstr "닫기"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:627
+#: ../plugins/postasa/xviewer-postasa-plugin.c:627
 msgid "Cancel"
 msgstr "취소"
 
 #. TODO: want to handle passwords more securely
-#: ../plugins/postasa/eog-postasa-plugin.c:633
+#: ../plugins/postasa/xviewer-postasa-plugin.c:633
 msgid "Logging in..."
 msgstr "로그인하는 중..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:678
+#: ../plugins/postasa/xviewer-postasa-plugin.c:678
 msgid "Please log in to continue upload."
 msgstr "업로드를 계속 하려면 로그인하십시오."
 
@@ -345,19 +345,19 @@ msgid "Cancel All"
 msgstr "모두 취소"
 
 # TODO: 더 창의적인 이름을 생각해 보자
-#: ../plugins/postr/eog-postr.metainfo.xml.in.h:1
+#: ../plugins/postr/xviewer-postr.metainfo.xml.in.h:1
 msgid "Postr"
 msgstr "올리커"
 
-#: ../plugins/postr/eog-postr.metainfo.xml.in.h:2
+#: ../plugins/postr/xviewer-postr.metainfo.xml.in.h:2
 msgid "Supports uploading photos to Flickr"
 msgstr "플리커에 사진을 업로드하는 기능"
 
-#: ../plugins/postr/eog-postr-plugin.c:62
+#: ../plugins/postr/xviewer-postr-plugin.c:62
 msgid "Upload to Flickr"
 msgstr "플리커에 업로드"
 
-#: ../plugins/postr/eog-postr-plugin.c:64
+#: ../plugins/postr/xviewer-postr-plugin.c:64
 #: ../plugins/postr/postr.plugin.desktop.in.h:2
 msgid "Upload your pictures to Flickr"
 msgstr "사진을 플리커에 업로드합니다"
@@ -374,13 +374,13 @@ msgstr "명령 색(_O):"
 msgid "_Error color:"
 msgstr "오류 색(_E):"
 
-#: ../plugins/pythonconsole/eog-pythonconsole.metainfo.xml.in.h:1
+#: ../plugins/pythonconsole/xviewer-pythonconsole.metainfo.xml.in.h:1
 #: ../plugins/pythonconsole/__init__.py:87
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
 msgid "Python Console"
 msgstr "파이썬 콘솔"
 
-#: ../plugins/pythonconsole/eog-pythonconsole.metainfo.xml.in.h:2
+#: ../plugins/pythonconsole/xviewer-pythonconsole.metainfo.xml.in.h:2
 msgid "Adds a Python console"
 msgstr "파이썬 콘솔 추가"
 
@@ -388,55 +388,55 @@ msgstr "파이썬 콘솔 추가"
 msgid "P_ython Console"
 msgstr "파이썬 콘솔(_Y)"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.h:1
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:1
 msgid "Command Text Color"
 msgstr "명령 텍스트 색"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.h:2
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:2
 msgid "The color used for commands."
 msgstr "명령에 사용할 색."
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.h:3
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:3
 msgid "Error Text Color"
 msgstr "오류 텍스트 색"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.h:4
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:4
 msgid "The color used for errors."
 msgstr "오류를 표시할 때 사용할 색."
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.h:5
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:5
 msgid "Whether to use the system font"
 msgstr "시스템 글꼴 사용 여부"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.h:6
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:6
 msgid ""
 "If true, the terminal will use the desktop-global standard font if it's "
 "monospace (and the most similar font it can come up with otherwise)."
 msgstr "참이면, 터미널에서 데스크톱의 표준 고정폭(고정폭이 아니면 마찬가지로 비슷한) 글꼴을 사용합니다."
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.h:7
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:7
 msgid "Font used by Python Console"
 msgstr "파이썬 콘솔에서 사용하는 글꼴"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.h:8
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:8
 msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
 msgstr "판고 글꼴 이름. 예를 들어 \"Sans 12\" 또는 \"Monospace Bold 14\"."
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for Eye of GNOME"
+msgid "Python console for xplayer"
 msgstr "그놈의 눈 파이썬 콘솔"
 
-#: ../plugins/send-by-mail/eog-send-by-mail.metainfo.xml.in.h:1
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:63
+#: ../plugins/send-by-mail/xviewer-send-by-mail.metainfo.xml.in.h:1
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
 msgid "Send by Mail"
 msgstr "메일로 보내기"
 
-#: ../plugins/send-by-mail/eog-send-by-mail.metainfo.xml.in.h:2
+#: ../plugins/send-by-mail/xviewer-send-by-mail.metainfo.xml.in.h:2
 #: ../plugins/send-by-mail/send-by-mail.plugin.desktop.in.h:2
 msgid "Sends an image attached to a new mail"
 msgstr "이미지를 메일에 첨부해서 보냅니다"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:65
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:65
 msgid "Send the selected images by mail"
 msgstr "선택한 이미지를 메일로 보냅니다"
 
@@ -444,12 +444,12 @@ msgstr "선택한 이미지를 메일로 보냅니다"
 msgid "Send By Mail"
 msgstr "메일로 보내기"
 
-#: ../plugins/slideshowshuffle/eog-slideshowshuffle.metainfo.xml.in.h:1
+#: ../plugins/slideshowshuffle/xviewer-slideshowshuffle.metainfo.xml.in.h:1
 #: ../plugins/slideshowshuffle/slideshowshuffle.plugin.desktop.in.h:1
 msgid "Slideshow Shuffle"
 msgstr "슬라이드 쇼 임의 모드"
 
-#: ../plugins/slideshowshuffle/eog-slideshowshuffle.metainfo.xml.in.h:2
+#: ../plugins/slideshowshuffle/xviewer-slideshowshuffle.metainfo.xml.in.h:2
 msgid "Shuffles the photos in slideshow mode"
 msgstr "슬라이드쇼 모드에서 임의 순서로 사진 보기"
 

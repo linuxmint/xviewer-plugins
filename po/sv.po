@@ -1,11 +1,11 @@
-# Swedish translation for eog-plugins.
+# Swedish translation for xviewer-plugins.
 # Copyright (C) 2007-2012 Free Software Foundation, Inc.
-# This file is distributed under the same license as the eog-plugins package.
+# This file is distributed under the same license as the xviewer-plugins package.
 # Daniel Nylander <po@danielnylander.se>, 2007, 2008, 2009, 2010, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eog-plugins\n"
+"Project-Id-Version: xviewer-plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-28 08:38+0100\n"
 "PO-Revision-Date: 2012-02-28 08:41+0100\n"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../plugins/exif-display/eog-exif-display-plugin.c:105
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:105
 msgid " (invalid Unicode)"
 msgstr " (ogiltig Unicode)"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:183
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:183
 #, c-format
 msgid "%.1fmm (lens)"
 msgstr "%.1fmm (lins)"
@@ -30,7 +30,7 @@ msgstr "%.1fmm (lins)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:194
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:194
 #, c-format
 msgid "%.1fmm (35mm film)"
 msgstr "%.1fmm (35mm film)"
@@ -91,11 +91,11 @@ msgstr "Exponeringskomp.:"
 msgid "Description:"
 msgstr "Beskrivning:"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:91
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:91
 msgid "Fit to width"
 msgstr "Anpassa till bredd"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:93
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:93
 #: ../plugins/fit-to-width/fit-to-width.plugin.desktop.in.h:1
 msgid "Zoom to fit image width"
 msgstr "Zooma för att passa bildens bredd"
@@ -108,19 +108,19 @@ msgstr "Helskärmsbakgrund"
 msgid "Enables changing background in fullscreen mode"
 msgstr "Aktiverar ändring av bakgrund i helskärmsläge"
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:1
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:1
 msgid "Use custom background settings"
 msgstr "Använd anpassade bakgrundsinställningar"
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:2
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:2
 msgid "Whether the plugin should use global settings or its own."
 msgstr "Huruvida insticksmodulen ska använda allmänna inställningar eller sina egna."
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:3
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:3
 msgid "Background color in fullscreen mode"
 msgstr "Bakgrundsfärg i helskärmsläge"
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:4
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:4
 msgid "The color that is used to fill the area behind the image. This option has effect only if use-custom is enabled."
 msgstr "Färgen som används för att fylla området bakom bilden. Detta alternativ har endast effekt om use-custom är aktiverad."
 
@@ -128,19 +128,19 @@ msgstr "Färgen som används för att fylla området bakom bilden. Detta alterna
 msgid "Use custom color:"
 msgstr "Använd anpassad färg:"
 
-#: ../plugins/map/eog-map-plugin.c:401
+#: ../plugins/map/xviewer-map-plugin.c:401
 msgid "Jump to current image's location"
 msgstr "Hoppa till platsen för aktuell bild"
 
-#: ../plugins/map/eog-map-plugin.c:413
+#: ../plugins/map/xviewer-map-plugin.c:413
 msgid "Zoom in"
 msgstr "Zooma in"
 
-#: ../plugins/map/eog-map-plugin.c:421
+#: ../plugins/map/xviewer-map-plugin.c:421
 msgid "Zoom out"
 msgstr "Zooma ut"
 
-#: ../plugins/map/eog-map-plugin.c:436
+#: ../plugins/map/xviewer-map-plugin.c:436
 #: ../plugins/map/map.plugin.desktop.in.h:1
 msgid "Map"
 msgstr "Karta"
@@ -149,54 +149,54 @@ msgstr "Karta"
 msgid "Display the geolocation of the image on a map"
 msgstr "Visa den geografiska platsen för bilden på en karta"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:126
+#: ../plugins/postasa/xviewer-postasa-plugin.c:126
 msgid "Upload to PicasaWeb"
 msgstr "Skicka upp till PicasaWeb"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:128
+#: ../plugins/postasa/xviewer-postasa-plugin.c:128
 #: ../plugins/postasa/postasa.plugin.desktop.in.h:2
 msgid "Upload your pictures to PicasaWeb"
 msgstr "Skicka upp dina bilder till PicasaWeb"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:323
+#: ../plugins/postasa/xviewer-postasa-plugin.c:323
 msgid "Uploading..."
 msgstr "Skickar upp..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:369
+#: ../plugins/postasa/xviewer-postasa-plugin.c:369
 msgid "Uploaded"
 msgstr "Skickades upp"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:373
+#: ../plugins/postasa/xviewer-postasa-plugin.c:373
 msgid "Cancelled"
 msgstr "Avbruten"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:376
+#: ../plugins/postasa/xviewer-postasa-plugin.c:376
 msgid "Failed"
 msgstr "Misslyckades"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:599
+#: ../plugins/postasa/xviewer-postasa-plugin.c:599
 #, c-format
 msgid "Login failed. %s"
 msgstr "Inloggningen misslyckades. %s"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:603
+#: ../plugins/postasa/xviewer-postasa-plugin.c:603
 msgid "Logged in successully."
 msgstr "Loggade in."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:604
+#: ../plugins/postasa/xviewer-postasa-plugin.c:604
 msgid "Close"
 msgstr "Stäng"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:625
+#: ../plugins/postasa/xviewer-postasa-plugin.c:625
 msgid "Cancel"
 msgstr "Avbryt"
 
 #. TODO: want to handle passwords more securely
-#: ../plugins/postasa/eog-postasa-plugin.c:631
+#: ../plugins/postasa/xviewer-postasa-plugin.c:631
 msgid "Logging in..."
 msgstr "Loggar in..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:676
+#: ../plugins/postasa/xviewer-postasa-plugin.c:676
 msgid "Please log in to continue upload."
 msgstr "Logga in för att fortsätta skicka upp."
 
@@ -248,11 +248,11 @@ msgstr "Avbryt alla"
 msgid "PicasaWeb Uploader"
 msgstr "Skicka till PicasaWeb"
 
-#: ../plugins/postr/eog-postr-plugin.c:62
+#: ../plugins/postr/xviewer-postr-plugin.c:62
 msgid "Upload to Flickr"
 msgstr "Skicka upp till Flickr"
 
-#: ../plugins/postr/eog-postr-plugin.c:64
+#: ../plugins/postr/xviewer-postr-plugin.c:64
 #: ../plugins/postr/postr.plugin.desktop.in.h:2
 msgid "Upload your pictures to Flickr"
 msgstr "Skicka upp dina bilder till Flickr"
@@ -278,47 +278,47 @@ msgstr "K_ommandofärg:"
 msgid "_Error color:"
 msgstr "Färg för f_el:"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:1
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:1
 msgid "Command Text Color"
 msgstr "Textfärg för kommando"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:2
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:2
 msgid "The color used for commands."
 msgstr "Färgen som används för kommandon."
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:3
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:3
 msgid "Error Text Color"
 msgstr "Textfärg för fel"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:4
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:4
 msgid "The color used for errors."
 msgstr "Färgen som används för fel."
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:5
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:5
 msgid "Whether to use the system font"
 msgstr "Huruvida systemtypsnittet ska användas"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:6
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:6
 msgid "If true, the terminal will use the desktop-global standard font if it's monospace (and the most similar font it can come up with otherwise)."
 msgstr "Om true så kommer terminalen att använda skrivbordets allmänna typsnitt om det är monospace (och det typsnitt som mest liknar det kan visas annars)."
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:7
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:7
 msgid "Font used by Python Console"
 msgstr "Typsnitt som används av Python-konsoll"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:8
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:8
 msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
 msgstr "Ett Pango-typsnittsnamn. Exempel \"Sans 12\" eller \"Monospace Bold 14\"."
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for Eye of GNOME"
-msgstr "Python-konsoll för Eye of GNOME"
+msgid "Python console for xplayer"
+msgstr "Python-konsoll för xplayer"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:63
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
 msgid "Send by Mail"
 msgstr "Skicka med e-post"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:65
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:65
 msgid "Send the selected images by mail"
 msgstr "Skicka markerade bilder med e-post"
 

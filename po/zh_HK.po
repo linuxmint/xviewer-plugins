@@ -1,11 +1,11 @@
-# Chinese (Hong Kong) translation of eog-plugins.
+# Chinese (Hong Kong) translation of xviewer-plugins.
 # Copyright (C) 2008 Free Software Foundation, Inc.
-# This file is distributed under the same license as the eog-plugins package.
+# This file is distributed under the same license as the xviewer-plugins package.
 # Hialan Liu <hialan.liu@gmail.com>, 2008.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eog-plugins 2.20\n"
+"Project-Id-Version: xviewer-plugins 2.20\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-06 04:55+0000\n"
 "PO-Revision-Date: 2008-03-08 21:19+0800\n"
@@ -15,34 +15,34 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:1
 msgid "Flickr Uploader"
 msgstr "Flickr 上傳器"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
-#: ../plugins/postr/eog-postr-plugin.c:50
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:2
+#: ../plugins/postr/xviewer-postr-plugin.c:50
 msgid "Upload your pictures to Flickr"
 msgstr "將你的圖片上傳至 Flickr"
 
-#: ../plugins/postr/eog-postr-plugin.c:48
+#: ../plugins/postr/xviewer-postr-plugin.c:48
 msgid "Upload to Flickr"
 msgstr "上傳至 Flickr"
 
-#: ../plugins/reload/reload.eog-plugin.desktop.in.h:1
-#: ../plugins/reload/eog-reload-plugin.c:47
+#: ../plugins/reload/reload.xviewer-plugin.desktop.in.h:1
+#: ../plugins/reload/xviewer-reload-plugin.c:47
 msgid "Reload Image"
 msgstr "重新載入圖像"
 
-#: ../plugins/reload/reload.eog-plugin.desktop.in.h:2
-#: ../plugins/reload/eog-reload-plugin.c:49
+#: ../plugins/reload/reload.xviewer-plugin.desktop.in.h:2
+#: ../plugins/reload/xviewer-reload-plugin.c:49
 msgid "Reload current image"
 msgstr "重新載入當前圖像"
 
-#: ../plugins/fullscreen/fullscreen.eog-plugin.desktop.in.h:1
+#: ../plugins/fullscreen/fullscreen.xviewer-plugin.desktop.in.h:1
 msgid "Activate fullscreen mode with double-click"
 msgstr "啟用使用連按兩下進入全螢幕模式"
 
-#: ../plugins/fullscreen/fullscreen.eog-plugin.desktop.in.h:2
+#: ../plugins/fullscreen/fullscreen.xviewer-plugin.desktop.in.h:2
 msgid "Fullscreen with double-click"
 msgstr "連按兩下進入全螢幕"
 

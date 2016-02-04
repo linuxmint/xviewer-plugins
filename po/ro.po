@@ -1,13 +1,13 @@
-# Romanian translation for eog-plugins.
-# Copyright (C) 2010 eog-plugins's COPYRIGHT HOLDER
-# This file is distributed under the same license as the eog-plugins package.
+# Romanian translation for xviewer-plugins.
+# Copyright (C) 2010 xviewer-plugins's COPYRIGHT HOLDER
+# This file is distributed under the same license as the xviewer-plugins package.
 # Nichita Uțiu <nikita.utiu@gmail.com>, 2010.
 # Nichita Utiu <nikita.utiu@gmail.com>, 2010.
 # Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: eog-plugins master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eog-"
+"Project-Id-Version: xviewer-plugins master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=xviewer-"
 "plugins&component=general\n"
 "POT-Creation-Date: 2010-10-30 15:08+0000\n"
 "PO-Revision-Date: 2010-11-27 21:43+0300\n"
@@ -21,13 +21,13 @@ msgstr ""
 "20)) ? 1 : 2);;\n"
 "X-Generator: Virtaal 0.6.1\n"
 
-#: ../plugins/exif-display/eog-exif-display-plugin.c:136
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:136
 msgid " (invalid Unicode)"
 msgstr " (Unicode nevalid)"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:212
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:212
 #, c-format
 msgid "%.1fmm (lens)"
 msgstr "%.1fmm (lentilă)"
@@ -35,7 +35,7 @@ msgstr "%.1fmm (lentilă)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:223
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:223
 #, c-format
 msgid "%.1fmm (35mm film)"
 msgstr "%.1fmm (film de 35mm)"
@@ -60,11 +60,11 @@ msgstr "Afișează configurările camerei în bara de stare"
 msgid "Display per-channel histogram"
 msgstr "Afișează histogramă per canal"
 
-#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:1
+#: ../plugins/exif-display/exif-display.xviewer-plugin.desktop.in.h:1
 msgid "Displays camera settings and histogram"
 msgstr "Afișează configurările camerei și histograma"
 
-#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:2
+#: ../plugins/exif-display/exif-display.xviewer-plugin.desktop.in.h:2
 msgid "Exif display"
 msgstr "Afișaj Exif"
 
@@ -97,85 +97,85 @@ msgstr "Măsurare:"
 msgid "Zoom:"
 msgstr "Zoom:"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:85
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:85
 msgid "Fit to width"
 msgstr "Potrivește la lățime"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:87
-#: ../plugins/fit-to-width/fit-to-width.eog-plugin.desktop.in.h:1
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:87
+#: ../plugins/fit-to-width/fit-to-width.xviewer-plugin.desktop.in.h:1
 msgid "Zoom to fit image width"
 msgstr "Modifică zoomul pentru a se se potrivi cu lățimea imaginii"
 
-#: ../plugins/map/eog-map-plugin.c:321
+#: ../plugins/map/xviewer-map-plugin.c:321
 msgid "Jump to current image's location"
 msgstr "Sari la locația imaginii curente"
 
-#: ../plugins/map/eog-map-plugin.c:333
+#: ../plugins/map/xviewer-map-plugin.c:333
 msgid "Zoom in"
 msgstr "Apropie"
 
-#: ../plugins/map/eog-map-plugin.c:341
+#: ../plugins/map/xviewer-map-plugin.c:341
 msgid "Zoom out"
 msgstr "Depărtează"
 
-#: ../plugins/map/eog-map-plugin.c:355
-#: ../plugins/map/map.eog-plugin.desktop.in.h:2
+#: ../plugins/map/xviewer-map-plugin.c:355
+#: ../plugins/map/map.xviewer-plugin.desktop.in.h:2
 msgid "Map"
 msgstr "Hartă"
 
-#: ../plugins/map/map.eog-plugin.desktop.in.h:1
+#: ../plugins/map/map.xviewer-plugin.desktop.in.h:1
 msgid "Display the geolocation of the image on a map"
 msgstr "Afișează geolocația imaginii pe o hartă"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:124
+#: ../plugins/postasa/xviewer-postasa-plugin.c:124
 msgid "Upload to PicasaWeb"
 msgstr "Încarcă pe PicasaWeb"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:126
-#: ../plugins/postasa/postasa.eog-plugin.desktop.in.h:2
+#: ../plugins/postasa/xviewer-postasa-plugin.c:126
+#: ../plugins/postasa/postasa.xviewer-plugin.desktop.in.h:2
 msgid "Upload your pictures to PicasaWeb"
 msgstr "Încărcați-vă imaginile pe PicasaWeb"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:320
+#: ../plugins/postasa/xviewer-postasa-plugin.c:320
 msgid "Uploading..."
 msgstr "Se încarcă..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:366
+#: ../plugins/postasa/xviewer-postasa-plugin.c:366
 msgid "Uploaded"
 msgstr "Încărcat"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:370
+#: ../plugins/postasa/xviewer-postasa-plugin.c:370
 msgid "Cancelled"
 msgstr "Anulat"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:373
+#: ../plugins/postasa/xviewer-postasa-plugin.c:373
 msgid "Failed"
 msgstr "Eșuat"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:520
+#: ../plugins/postasa/xviewer-postasa-plugin.c:520
 #, c-format
 msgid "Login failed. %s"
 msgstr "Autentificarea a eșuat. %s"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:524
+#: ../plugins/postasa/xviewer-postasa-plugin.c:524
 msgid "Logged in successully."
 msgstr "Autentificat cu succes."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:525
+#: ../plugins/postasa/xviewer-postasa-plugin.c:525
 msgid "Close"
 msgstr "Închide"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:546
+#: ../plugins/postasa/xviewer-postasa-plugin.c:546
 #: ../plugins/postasa/postasa-config.xml.h:1
 msgid "Cancel"
 msgstr "Anulează"
 
 #. TODO: want to handle passwords more securely
-#: ../plugins/postasa/eog-postasa-plugin.c:552
+#: ../plugins/postasa/xviewer-postasa-plugin.c:552
 msgid "Logging in..."
 msgstr "Se autentifică..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:580
+#: ../plugins/postasa/xviewer-postasa-plugin.c:580
 msgid "Please log in to continue upload."
 msgstr "Autentificați-vă pentru a continua încărcarea."
 
@@ -207,51 +207,51 @@ msgstr "Anulează cele selectate"
 msgid "Uploads:"
 msgstr "Încărcări:"
 
-#: ../plugins/postasa/postasa.eog-plugin.desktop.in.h:1
+#: ../plugins/postasa/postasa.xviewer-plugin.desktop.in.h:1
 msgid "PicasaWeb Uploader"
 msgstr "Serviciu de încărcare pentru PicasaWeb"
 
-#: ../plugins/postr/eog-postr-plugin.c:57
+#: ../plugins/postr/xviewer-postr-plugin.c:57
 msgid "Upload to Flickr"
 msgstr "Încarcă pe Flickr"
 
-#: ../plugins/postr/eog-postr-plugin.c:59
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
+#: ../plugins/postr/xviewer-postr-plugin.c:59
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:2
 msgid "Upload your pictures to Flickr"
 msgstr "Încărcați-vă pozele pe Flickr"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:1
 msgid "Flickr Uploader"
 msgstr "Serviciu de încărcare pentru Flickr"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:1
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:1
 msgid "Python Console"
 msgstr "Consolă Python"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:2
-msgid "Python console for Eye of GNOME"
-msgstr "Consolă Python pentru Eye of GNOME"
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:2
+msgid "Python console for xplayer"
+msgstr "Consolă Python pentru xplayer"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:60
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:60
 msgid "Send by Mail"
 msgstr "Trimite prin email"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:62
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:62
 msgid "Send the selected images by mail"
 msgstr "Trimite imaginile selectate prin email"
 
-#: ../plugins/send-by-mail/send-by-mail.eog-plugin.desktop.in.h:1
+#: ../plugins/send-by-mail/send-by-mail.xviewer-plugin.desktop.in.h:1
 msgid "Send By Mail"
 msgstr "Trimitere prin email"
 
-#: ../plugins/send-by-mail/send-by-mail.eog-plugin.desktop.in.h:2
+#: ../plugins/send-by-mail/send-by-mail.xviewer-plugin.desktop.in.h:2
 msgid "Sends an image attached to a new mail"
 msgstr "Trimite o imagine atașată unui nou email"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:1
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:1
 msgid "Shuffles images in slideshow mode"
 msgstr "Amestecă imaginile în modul de succesiune automată a imaginilor"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:2
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:2
 msgid "Slideshow Shuffle"
 msgstr "Succesiune automată a imaginilor în ordine aleatoare"

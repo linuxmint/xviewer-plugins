@@ -1,13 +1,13 @@
 # translation of bn_IN.po to Bengali INDIA
-# Bengali (India) translation of eog-plugins.
-# Copyright (C) 2009 eog-plugins's COPYRIGHT HOLDER
-# This file is distributed under the same license as the eog-plugins package.
+# Bengali (India) translation of xviewer-plugins.
+# Copyright (C) 2009 xviewer-plugins's COPYRIGHT HOLDER
+# This file is distributed under the same license as the xviewer-plugins package.
 #
 # Runa Bhattacharjee <runab@redhat.com>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: bn_IN\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eog-plugins&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=xviewer-plugins&component=general\n"
 "POT-Creation-Date: 2009-08-12 19:50+0000\n"
 "PO-Revision-Date: 2009-08-13 14:30+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
@@ -18,22 +18,22 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../plugins/champlain/champlain.eog-plugin.desktop.in.h:1
+#: ../plugins/champlain/champlain.xviewer-plugin.desktop.in.h:1
 msgid "Display the geolocation of the image on a map"
 msgstr "মানচিত্রের মধ্যে ছবির ভৌগলিক অবস্থান প্রদর্শন করা হবে"
 
-#: ../plugins/champlain/champlain.eog-plugin.desktop.in.h:2
-#: ../plugins/champlain/eog-champlain-plugin.c:333
+#: ../plugins/champlain/champlain.xviewer-plugin.desktop.in.h:2
+#: ../plugins/champlain/xviewer-champlain-plugin.c:333
 msgid "Map"
 msgstr "মানচিত্র"
 
-#: ../plugins/exif-display/eog-exif-display-plugin.c:137
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:137
 msgid " (invalid Unicode)"
 msgstr " (অবৈধ Unicode)"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:213
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:213
 #, c-format
 msgid "%.1fmm (lens)"
 msgstr "%.1fmm (লেন্স)"
@@ -41,7 +41,7 @@ msgstr "%.1fmm (লেন্স)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:224
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:224
 #, c-format
 msgid "%.1fmm (35mm film)"
 msgstr "%.1fmm (৩৫মিমি ফিল্ম)"
@@ -66,11 +66,11 @@ msgstr "অবস্থাসূচক বারের মধ্যে ক্য
 msgid "Display per-channel histogram"
 msgstr "প্রতি-চ্যানেলের জন্য স্তম্ভচিত্র প্রদর্শন করা হবে"
 
-#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:1
+#: ../plugins/exif-display/exif-display.xviewer-plugin.desktop.in.h:1
 msgid "Displays camera settings and histogram"
 msgstr "ক্যামেরার বৈশিষ্ট্য ও স্তম্ভচিত্র প্রদর্শন করা হবে"
 
-#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:2
+#: ../plugins/exif-display/exif-display.xviewer-plugin.desktop.in.h:2
 msgid "Exif display"
 msgstr "Exif প্রদর্শন"
 
@@ -102,41 +102,41 @@ msgstr "মিটারের মান:"
 msgid "Zoom:"
 msgstr "প্রদর্শনের মাপ:"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:82
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:82
 msgid "Fit to width"
 msgstr "প্রস্থ অনুযায়ী মাপ নির্ধারণ"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:84
-#: ../plugins/fit-to-width/fit-to-width.eog-plugin.desktop.in.h:1
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:84
+#: ../plugins/fit-to-width/fit-to-width.xviewer-plugin.desktop.in.h:1
 msgid "Zoom to fit image width"
 msgstr "প্রস্থ অনুযায়ী ছবির প্রদর্শনের মাপ নির্ধারণ করা হবে"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:1
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:1
 msgid "Shuffles images in slideshow mode"
 msgstr "স্লাইড-শো মোডে অনির্দিষ্ট ক্রমে ছবি প্রদর্শন করা হবে"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:2
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:2
 msgid "Slideshow Shuffle"
 msgstr "অনির্দিষ্ট ক্রমে স্লাইড-শো"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:1
 msgid "Flickr Uploader"
 msgstr "Flickr Uploader"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
-#: ../plugins/postr/eog-postr-plugin.c:50
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:2
+#: ../plugins/postr/xviewer-postr-plugin.c:50
 msgid "Upload your pictures to Flickr"
 msgstr "Flickr-এ ছবি আপলোড করুন"
 
-#: ../plugins/postr/eog-postr-plugin.c:48
+#: ../plugins/postr/xviewer-postr-plugin.c:48
 msgid "Upload to Flickr"
 msgstr "Flickr-এ আপলোড করুন"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:1
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:1
 msgid "Python Console"
 msgstr "Python কনসোল"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:2
-msgid "Python console for Eye of GNOME"
-msgstr "Eye of GNOME-র সাথে ব্যবহারযোগ্য python কনসোল"
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:2
+msgid "Python console for xviewer"
+msgstr "xviewer-র সাথে ব্যবহারযোগ্য python কনসোল"
 

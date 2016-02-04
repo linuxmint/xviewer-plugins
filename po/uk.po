@@ -1,12 +1,12 @@
-# Ukrainian translation for eog-plugins.
+# Ukrainian translation for xviewer-plugins.
 # Copyright (C) 2010 Free Software Foundation
-# This file is distributed under the same license as the eog-plugins package.
+# This file is distributed under the same license as the xviewer-plugins package.
 # Maxim V. Dziumanenko <dziumanenko@gmail.com>, 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eog-plugins master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eog-"
+"Project-Id-Version: xviewer-plugins master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=xviewer-"
 "plugins&component=general\n"
 "POT-Creation-Date: 2010-04-01 13:03+0000\n"
 "PO-Revision-Date: 2010-04-01 15:53+0300\n"
@@ -18,13 +18,13 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../plugins/exif-display/eog-exif-display-plugin.c:136
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:136
 msgid " (invalid Unicode)"
 msgstr " (неправильний Юнікод)"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:212
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:212
 #, c-format
 msgid "%.1fmm (lens)"
 msgstr "%.1fмм (лінза)"
@@ -32,7 +32,7 @@ msgstr "%.1fмм (лінза)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:223
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:223
 #, c-format
 msgid "%.1fmm (35mm film)"
 msgstr "%.1fмм (35мм плівка)"
@@ -57,11 +57,11 @@ msgstr "Показати параметри камери у панелі ста�
 msgid "Display per-channel histogram"
 msgstr "Показати гістограму по каналах"
 
-#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:1
+#: ../plugins/exif-display/exif-display.xviewer-plugin.desktop.in.h:1
 msgid "Displays camera settings and histogram"
 msgstr "Показати параметри камери та гістограму"
 
-#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:2
+#: ../plugins/exif-display/exif-display.xviewer-plugin.desktop.in.h:2
 msgid "Exif display"
 msgstr "Показати Exif"
 
@@ -93,88 +93,88 @@ msgstr "Вимірювання:"
 msgid "Zoom:"
 msgstr "Зум:"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:85
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:85
 msgid "Fit to width"
 msgstr "Підігнати за шириною"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:87
-#: ../plugins/fit-to-width/fit-to-width.eog-plugin.desktop.in.h:1
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:87
+#: ../plugins/fit-to-width/fit-to-width.xviewer-plugin.desktop.in.h:1
 msgid "Zoom to fit image width"
 msgstr "Змінити масштаб, щоб умістити сторінку по ширині"
 
-#: ../plugins/map/eog-map-plugin.c:321
+#: ../plugins/map/xviewer-map-plugin.c:321
 msgid "Jump to current image's location"
 msgstr "Перейти до теки поточного зображення"
 
-#: ../plugins/map/eog-map-plugin.c:333
+#: ../plugins/map/xviewer-map-plugin.c:333
 msgid "Zoom in"
 msgstr "Збільшити"
 
-#: ../plugins/map/eog-map-plugin.c:341
+#: ../plugins/map/xviewer-map-plugin.c:341
 msgid "Zoom out"
 msgstr "Зменшити"
 
-#: ../plugins/map/eog-map-plugin.c:355
-#: ../plugins/map/map.eog-plugin.desktop.in.h:2
+#: ../plugins/map/xviewer-map-plugin.c:355
+#: ../plugins/map/map.xviewer-plugin.desktop.in.h:2
 msgid "Map"
 msgstr "Мапа"
 
-#: ../plugins/map/map.eog-plugin.desktop.in.h:1
+#: ../plugins/map/map.xviewer-plugin.desktop.in.h:1
 msgid "Display the geolocation of the image on a map"
 msgstr "Показує географічне розташування зображення на мапі"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:124
+#: ../plugins/postasa/xviewer-postasa-plugin.c:124
 #| msgid "Upload to Flickr"
 msgid "Upload to PicasaWeb"
 msgstr "Вивантаження на PicasaWeb"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:126
-#: ../plugins/postasa/postasa.eog-plugin.desktop.in.h:2
+#: ../plugins/postasa/xviewer-postasa-plugin.c:126
+#: ../plugins/postasa/postasa.xviewer-plugin.desktop.in.h:2
 #| msgid "Upload your pictures to Flickr"
 msgid "Upload your pictures to PicasaWeb"
 msgstr "Вивантажити зображення до сайту PicasaWeb"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:320
+#: ../plugins/postasa/xviewer-postasa-plugin.c:320
 msgid "Uploading..."
 msgstr "Вивантаження..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:366
+#: ../plugins/postasa/xviewer-postasa-plugin.c:366
 #| msgid "Flickr Uploader"
 msgid "Uploaded"
 msgstr "Вивантажено"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:370
+#: ../plugins/postasa/xviewer-postasa-plugin.c:370
 msgid "Cancelled"
 msgstr "Скасовано"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:373
+#: ../plugins/postasa/xviewer-postasa-plugin.c:373
 msgid "Failed"
 msgstr "Помилка"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:520
+#: ../plugins/postasa/xviewer-postasa-plugin.c:520
 #, c-format
 msgid "Login failed. %s"
 msgstr "Помилка реєстрації. %s"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:524
+#: ../plugins/postasa/xviewer-postasa-plugin.c:524
 msgid "Logged in successully."
 msgstr "Вхід успашно виконано."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:525
+#: ../plugins/postasa/xviewer-postasa-plugin.c:525
 msgid "Close"
 msgstr "Закрити"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:546
+#: ../plugins/postasa/xviewer-postasa-plugin.c:546
 #: ../plugins/postasa/postasa-config.xml.h:1
 msgid "Cancel"
 msgstr "Скасувати"
 
 #. TODO: want to handle passwords more securely
-#: ../plugins/postasa/eog-postasa-plugin.c:552
+#: ../plugins/postasa/xviewer-postasa-plugin.c:552
 msgid "Logging in..."
 msgstr "Триває вхід..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:580
+#: ../plugins/postasa/xviewer-postasa-plugin.c:580
 msgid "Please log in to continue upload."
 msgstr "Увійдіть для продовження завантаження."
 
@@ -206,52 +206,52 @@ msgstr "Скасувати вибране"
 msgid "Uploads:"
 msgstr "Вивантажено:"
 
-#: ../plugins/postasa/postasa.eog-plugin.desktop.in.h:1
+#: ../plugins/postasa/postasa.xviewer-plugin.desktop.in.h:1
 #| msgid "Flickr Uploader"
 msgid "PicasaWeb Uploader"
 msgstr "Вивантаження до PicasaWeb"
 
-#: ../plugins/postr/eog-postr-plugin.c:57
+#: ../plugins/postr/xviewer-postr-plugin.c:57
 msgid "Upload to Flickr"
 msgstr "Вивантаження на Flickr"
 
-#: ../plugins/postr/eog-postr-plugin.c:59
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
+#: ../plugins/postr/xviewer-postr-plugin.c:59
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:2
 msgid "Upload your pictures to Flickr"
 msgstr "Вивантажити зображення до сайту Flickr"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:1
 msgid "Flickr Uploader"
 msgstr "Вивантаження до Flickr"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:1
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:1
 msgid "Python Console"
 msgstr "Консоль python"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:2
-msgid "Python console for Eye of GNOME"
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:2
+msgid "Python console for xplayer"
 msgstr "Консоль Python до Ока GNOME."
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:60
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:60
 msgid "Send by Mail"
 msgstr "Надіслати електронною поштою"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:62
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:62
 msgid "Send the selected images by mail"
 msgstr "Надсилати обрані зображення електронною поштою"
 
-#: ../plugins/send-by-mail/send-by-mail.eog-plugin.desktop.in.h:1
+#: ../plugins/send-by-mail/send-by-mail.xviewer-plugin.desktop.in.h:1
 msgid "Send By Mail"
 msgstr "Надіслати електронною поштою"
 
-#: ../plugins/send-by-mail/send-by-mail.eog-plugin.desktop.in.h:2
+#: ../plugins/send-by-mail/send-by-mail.xviewer-plugin.desktop.in.h:2
 msgid "Sends an image attached to a new mail"
 msgstr "Надсилати приєднане зображення електронною поштою"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:1
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:1
 msgid "Shuffles images in slideshow mode"
 msgstr "Перемішати зображення при показі слайдів"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:2
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:2
 msgid "Slideshow Shuffle"
 msgstr "Перемішати слайдшоу"

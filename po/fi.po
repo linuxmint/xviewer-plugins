@@ -1,4 +1,4 @@
-# Finnish messages for eog-plugins.
+# Finnish messages for xviewer-plugins.
 # Copyright (C) 2008 Free Software Foundation.
 # Suomennos: http://gnome.fi/
 #
@@ -9,8 +9,8 @@
 # Lasse Liehu <lasse.liehu@gmail.com>, 2014.
 msgid ""
 msgstr ""
-"Project-Id-Version: eog-plugins\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eog-"
+"Project-Id-Version: xviewer-plugins\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=xviewer-"
 "plugins&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-05-03 15:28+0000\n"
 "PO-Revision-Date: 2014-05-04 02:58+0300\n"
@@ -23,13 +23,13 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: ../plugins/exif-display/eog-exif-display-plugin.c:105
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:105
 msgid " (invalid Unicode)"
 msgstr " (virheellistä Unicodea)"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:183
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:183
 #, c-format
 msgid "%.1fmm (lens)"
 msgstr "%.1f mm (linssi)"
@@ -37,7 +37,7 @@ msgstr "%.1f mm (linssi)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:194
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:194
 #, c-format
 msgid "%.1fmm (35mm film)"
 msgstr "%.1f mm (35 mm filmi)"
@@ -110,11 +110,11 @@ msgstr "Vie nykyinen kuva erilliseen kansioon"
 msgid "_Export"
 msgstr "_Vie"
 
-#: ../plugins/export-to-folder/org.gnome.eog.plugins.export-to-folder.gschema.xml.in.in.h:1
+#: ../plugins/export-to-folder/org.x.viewer.plugins.export-to-folder.gschema.xml.in.in.h:1
 msgid "The folder to export to"
 msgstr "Vientikansio"
 
-#: ../plugins/export-to-folder/org.gnome.eog.plugins.export-to-folder.gschema.xml.in.in.h:2
+#: ../plugins/export-to-folder/org.x.viewer.plugins.export-to-folder.gschema.xml.in.in.h:2
 msgid ""
 "This is the folder the plugin will place the exported files in. Plugin will "
 "export to $HOME/exported-images if not set."
@@ -127,11 +127,11 @@ msgstr ""
 msgid "Export directory:"
 msgstr "Vientikansio:"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:91
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:91
 msgid "Fit to width"
 msgstr "Sovita leveyteen"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:93
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:93
 msgid "Fit the image to the window width"
 msgstr "Sovita kuva ikkunan leveyteen"
 
@@ -151,19 +151,19 @@ msgstr "Koko näytön taustakuva"
 msgid "Enables changing background in fullscreen mode"
 msgstr "Mahdollistaa taustan vaihtamisen koko näytön tilassa"
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:1
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:1
 msgid "Use custom background settings"
 msgstr "Käytä omavalintaisia taustakuvan asetuksia"
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:2
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:2
 msgid "Whether the plugin should use global settings or its own."
 msgstr "Käyttääkö liitännäinen yleisiä vai omia asetuksia."
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:3
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:3
 msgid "Background color in fullscreen mode"
 msgstr "Taustan väri koko näytön tilassa"
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:4
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:4
 msgid ""
 "The color that is used to fill the area behind the image. This option has "
 "effect only if use-custom is enabled."
@@ -180,7 +180,7 @@ msgid "Hide Titlebar"
 msgstr "Piilota otsikkopalkki"
 
 #: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
-msgid "Hides the titlebar of maximized Eye of GNOME windows"
+msgid "Hides the titlebar of maximized xviewer windows"
 msgstr "Piilottaa kuvakatselimen suurennetun ikkunan otsikkopalkin"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:1
@@ -188,22 +188,22 @@ msgid "Disable dark theme"
 msgstr "Poista tumma teema käytöstä"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
-msgid "Disables Eye of GNOME's preference of dark theme variants"
+msgid "Disables xviewer's preference of dark theme variants"
 msgstr "Poistaa käytöstä kuvakatselimen tumman teeman suosimisen"
 
-#: ../plugins/map/eog-map-plugin.c:401
+#: ../plugins/map/xviewer-map-plugin.c:401
 msgid "Jump to current image's location"
 msgstr "Siirry nykyisen kuvan sijaintiin"
 
-#: ../plugins/map/eog-map-plugin.c:413
+#: ../plugins/map/xviewer-map-plugin.c:413
 msgid "Zoom in"
 msgstr "Lähennä"
 
-#: ../plugins/map/eog-map-plugin.c:421
+#: ../plugins/map/xviewer-map-plugin.c:421
 msgid "Zoom out"
 msgstr "Loitonna"
 
-#: ../plugins/map/eog-map-plugin.c:436 ../plugins/map/map.plugin.desktop.in.h:1
+#: ../plugins/map/xviewer-map-plugin.c:436 ../plugins/map/map.plugin.desktop.in.h:1
 msgid "Map"
 msgstr "Kartta"
 
@@ -211,54 +211,54 @@ msgstr "Kartta"
 msgid "Display the geolocation of the image on a map"
 msgstr "Näyttää kuvan paikkatiedon kartalla"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:127
+#: ../plugins/postasa/xviewer-postasa-plugin.c:127
 msgid "Upload to PicasaWeb"
 msgstr "Vie PicasaWebiin"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:129
+#: ../plugins/postasa/xviewer-postasa-plugin.c:129
 #: ../plugins/postasa/postasa.plugin.desktop.in.h:2
 msgid "Upload your pictures to PicasaWeb"
 msgstr "Vie valokuvasi PicasaWebiin"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:325
+#: ../plugins/postasa/xviewer-postasa-plugin.c:325
 msgid "Uploading..."
 msgstr "Lähetetään..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:371
+#: ../plugins/postasa/xviewer-postasa-plugin.c:371
 msgid "Uploaded"
 msgstr "Lähetetty"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:375
+#: ../plugins/postasa/xviewer-postasa-plugin.c:375
 msgid "Cancelled"
 msgstr "Peruttu"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:378
+#: ../plugins/postasa/xviewer-postasa-plugin.c:378
 msgid "Failed"
 msgstr "Epäonnistui"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:601
+#: ../plugins/postasa/xviewer-postasa-plugin.c:601
 #, c-format
 msgid "Login failed. %s"
 msgstr "Kirjautuminen epäonnistui. %s"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:605
+#: ../plugins/postasa/xviewer-postasa-plugin.c:605
 msgid "Logged in successully."
 msgstr "Kirjautuminen onnistui."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:606
+#: ../plugins/postasa/xviewer-postasa-plugin.c:606
 msgid "Close"
 msgstr "Sulje"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:627
+#: ../plugins/postasa/xviewer-postasa-plugin.c:627
 msgid "Cancel"
 msgstr "Peru"
 
 #. TODO: want to handle passwords more securely
-#: ../plugins/postasa/eog-postasa-plugin.c:633
+#: ../plugins/postasa/xviewer-postasa-plugin.c:633
 msgid "Logging in..."
 msgstr "Kirjaudutaan..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:678
+#: ../plugins/postasa/xviewer-postasa-plugin.c:678
 msgid "Please log in to continue upload."
 msgstr "Kirjaudu sisään jatkaaksesi lähetystä."
 
@@ -310,11 +310,11 @@ msgstr "Peru kaikki"
 msgid "PicasaWeb Uploader"
 msgstr "PicasaWeb-vienti"
 
-#: ../plugins/postr/eog-postr-plugin.c:62
+#: ../plugins/postr/xviewer-postr-plugin.c:62
 msgid "Upload to Flickr"
 msgstr "Vie Flickr-palveluun"
 
-#: ../plugins/postr/eog-postr-plugin.c:64
+#: ../plugins/postr/xviewer-postr-plugin.c:64
 #: ../plugins/postr/postr.plugin.desktop.in.h:2
 msgid "Upload your pictures to Flickr"
 msgstr "Vie valokuvasi Flickr-palveluun"
@@ -340,49 +340,49 @@ msgstr "_Komentojen väri:"
 msgid "_Error color:"
 msgstr "_Virheväri:"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:1
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:1
 msgid "Command Text Color"
 msgstr "Komentojen tekstin väri"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:2
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:2
 msgid "The color used for commands."
 msgstr "Komennoissa käytettävän tekstin väri."
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:3
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:3
 msgid "Error Text Color"
 msgstr "Virhetekstin väri"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:4
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:4
 msgid "The color used for errors."
 msgstr "Virheissä käytettävä tekstin väri."
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:5
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:5
 msgid "Whether to use the system font"
 msgstr "Käytetäänkö järjestelmän fonttia"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:6
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:6
 msgid ""
 "If true, the terminal will use the desktop-global standard font if it's "
 "monospace (and the most similar font it can come up with otherwise)."
 msgstr ""
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:7
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:7
 msgid "Font used by Python Console"
 msgstr "Python-konsolin käyttämä fontti"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:8
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:8
 msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
 msgstr ""
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for Eye of GNOME"
+msgid "Python console for xviewer"
 msgstr "Python-konsoli kuvakatselimelle"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:63
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
 msgid "Send by Mail"
 msgstr "Lähetä sähköpostitse"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:65
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:65
 msgid "Send the selected images by mail"
 msgstr "Lähetä valittu kuva sähköpostitse"
 

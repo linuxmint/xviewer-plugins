@@ -1,12 +1,12 @@
-# Catalan translation of eog-plugins.
+# Catalan translation of xviewer-plugins.
 # Copyright (C) 2007, 2008 Free Software Foundation, Inc.
-# This file is distributed under the same license as the eog-plugins package.
+# This file is distributed under the same license as the xviewer-plugins package.
 # Gil Forcada  <gilforcada@guifi.net>, 2007.
 # Marc Dabad <marcdabad@yahoo.ca>, 2010. 
 msgid ""
 msgstr ""
-"Project-Id-Version: eog-plugins\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eog-"
+"Project-Id-Version: xviewer-plugins\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=xviewer-"
 "plugins&component=general\n"
 "POT-Creation-Date: 2010-08-07 18:25+0000\n"
 "PO-Revision-Date: 2010-03-18 23:07+0100\n"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../plugins/exif-display/eog-exif-display-plugin.c:136
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:136
 msgid " (invalid Unicode)"
 msgstr "(Unicode no vàlid)"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:212
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:212
 #, c-format
 msgid "%.1fmm (lens)"
 msgstr "%.1fmm (lent)"
@@ -30,7 +30,7 @@ msgstr "%.1fmm (lent)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:223
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:223
 #, c-format
 msgid "%.1fmm (35mm film)"
 msgstr "%.1fmm (film de 35mm)"
@@ -55,11 +55,11 @@ msgstr "Visualitza els paràmetres de la càmera a la barra d'estat"
 msgid "Display per-channel histogram"
 msgstr "Visualitza l'histograma per canal"
 
-#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:1
+#: ../plugins/exif-display/exif-display.xviewer-plugin.desktop.in.h:1
 msgid "Displays camera settings and histogram"
 msgstr "Visualitza els paràmetres de la càmera i l'histograma"
 
-#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:2
+#: ../plugins/exif-display/exif-display.xviewer-plugin.desktop.in.h:2
 msgid "Exif display"
 msgstr "Visualitza l'EXIF"
 
@@ -91,85 +91,85 @@ msgstr "Mesura:"
 msgid "Zoom:"
 msgstr "Ampliació:"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:85
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:85
 msgid "Fit to width"
 msgstr "Ajusta a l'amplada"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:87
-#: ../plugins/fit-to-width/fit-to-width.eog-plugin.desktop.in.h:1
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:87
+#: ../plugins/fit-to-width/fit-to-width.xviewer-plugin.desktop.in.h:1
 msgid "Zoom to fit image width"
 msgstr "Amplia per ajustar-se a l'amplada de la imatge"
 
-#: ../plugins/map/eog-map-plugin.c:321
+#: ../plugins/map/xviewer-map-plugin.c:321
 msgid "Jump to current image's location"
 msgstr "Salta a la ubicació de la imatge actual"
 
-#: ../plugins/map/eog-map-plugin.c:333
+#: ../plugins/map/xviewer-map-plugin.c:333
 msgid "Zoom in"
 msgstr "Amplia"
 
-#: ../plugins/map/eog-map-plugin.c:341
+#: ../plugins/map/xviewer-map-plugin.c:341
 msgid "Zoom out"
 msgstr "Redueix"
 
-#: ../plugins/map/eog-map-plugin.c:355
-#: ../plugins/map/map.eog-plugin.desktop.in.h:2
+#: ../plugins/map/xviewer-map-plugin.c:355
+#: ../plugins/map/map.xviewer-plugin.desktop.in.h:2
 msgid "Map"
 msgstr "Mapa"
 
-#: ../plugins/map/map.eog-plugin.desktop.in.h:1
+#: ../plugins/map/map.xviewer-plugin.desktop.in.h:1
 msgid "Display the geolocation of the image on a map"
 msgstr "Visualitza la posició de la imatge en el mapa"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:124
+#: ../plugins/postasa/xviewer-postasa-plugin.c:124
 msgid "Upload to PicasaWeb"
 msgstr "Puja al PicasaWeb"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:126
-#: ../plugins/postasa/postasa.eog-plugin.desktop.in.h:2
+#: ../plugins/postasa/xviewer-postasa-plugin.c:126
+#: ../plugins/postasa/postasa.xviewer-plugin.desktop.in.h:2
 msgid "Upload your pictures to PicasaWeb"
 msgstr "Puja les imatges al PicasaWeb"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:320
+#: ../plugins/postasa/xviewer-postasa-plugin.c:320
 msgid "Uploading..."
 msgstr "S'està pujant..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:366
+#: ../plugins/postasa/xviewer-postasa-plugin.c:366
 msgid "Uploaded"
 msgstr "Pujat"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:370
+#: ../plugins/postasa/xviewer-postasa-plugin.c:370
 msgid "Cancelled"
 msgstr "Cancel·lat"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:373
+#: ../plugins/postasa/xviewer-postasa-plugin.c:373
 msgid "Failed"
 msgstr "Ha fallat"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:520
+#: ../plugins/postasa/xviewer-postasa-plugin.c:520
 #, c-format
 msgid "Login failed. %s"
 msgstr "No s'ha pogut entrar. %s"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:524
+#: ../plugins/postasa/xviewer-postasa-plugin.c:524
 msgid "Logged in successully."
 msgstr "S'ha entrat correctament."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:525
+#: ../plugins/postasa/xviewer-postasa-plugin.c:525
 msgid "Close"
 msgstr "Tanca"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:546
+#: ../plugins/postasa/xviewer-postasa-plugin.c:546
 #: ../plugins/postasa/postasa-config.xml.h:1
 msgid "Cancel"
 msgstr "Cancel·la"
 
 #. TODO: want to handle passwords more securely
-#: ../plugins/postasa/eog-postasa-plugin.c:552
+#: ../plugins/postasa/xviewer-postasa-plugin.c:552
 msgid "Logging in..."
 msgstr "S'està entrant..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:580
+#: ../plugins/postasa/xviewer-postasa-plugin.c:580
 msgid "Please log in to continue upload."
 msgstr "Entreu per continuar pujant."
 
@@ -201,52 +201,52 @@ msgstr "Cancel·la la selecció"
 msgid "Uploads:"
 msgstr "Pujades:"
 
-#: ../plugins/postasa/postasa.eog-plugin.desktop.in.h:1
+#: ../plugins/postasa/postasa.xviewer-plugin.desktop.in.h:1
 msgid "PicasaWeb Uploader"
 msgstr "Gestor de pujades al PicasaWeb"
 
-#: ../plugins/postr/eog-postr-plugin.c:57
+#: ../plugins/postr/xviewer-postr-plugin.c:57
 msgid "Upload to Flickr"
 msgstr "Puja al Flickr"
 
-#: ../plugins/postr/eog-postr-plugin.c:59
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
+#: ../plugins/postr/xviewer-postr-plugin.c:59
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:2
 msgid "Upload your pictures to Flickr"
 msgstr "Puja les fotos al Flickr"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:1
 msgid "Flickr Uploader"
 msgstr "Gestor de pujades al Flickr"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:1
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:1
 msgid "Python Console"
 msgstr "Consola de Python"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:2
-msgid "Python console for Eye of GNOME"
-msgstr "Consola de Python per a l'Eye of GNOME"
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:2
+msgid "Python console for xviewer"
+msgstr "Consola de Python per a xviewer"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:60
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:60
 msgid "Send by Mail"
 msgstr "Envia per correu electrònic"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:62
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:62
 msgid "Send the selected images by mail"
 msgstr "Envia les imatges seleccionades per correu electrònic"
 
-#: ../plugins/send-by-mail/send-by-mail.eog-plugin.desktop.in.h:1
+#: ../plugins/send-by-mail/send-by-mail.xviewer-plugin.desktop.in.h:1
 msgid "Send By Mail"
 msgstr "Envia per correu electrònic"
 
-#: ../plugins/send-by-mail/send-by-mail.eog-plugin.desktop.in.h:2
+#: ../plugins/send-by-mail/send-by-mail.xviewer-plugin.desktop.in.h:2
 msgid "Sends an image attached to a new mail"
 msgstr "Envia un correu electrònic nou amb una imatge adjuntada"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:1
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:1
 msgid "Shuffles images in slideshow mode"
 msgstr "Mescla les imatges en el mode de presentació amb diapositives"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:2
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:2
 msgid "Slideshow Shuffle"
 msgstr "Presentació amb diapositives mesclades"
 

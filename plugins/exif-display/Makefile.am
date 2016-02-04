@@ -1,38 +1,38 @@
 # ExifDisplay plugin
-plugindir = $(EOG_PLUGINS_LIBS_DIR)
+plugindir = $(XVIEWER_PLUGINS_LIBS_DIR)
 appstreamdir = $(datadir)/appdata
-uidir = $(EOG_PLUGINS_DATA_DIR)/exif-display
+uidir = $(XVIEWER_PLUGINS_DATA_DIR)/exif-display
 
 AM_CPPFLAGS = \
 	-I$(top_srcdir)/src 				\
-	$(EOG_CFLAGS) 					\
+	$(XVIEWER_CFLAGS) 					\
 	$(WARN_CFLAGS)					\
 	$(EXIFDISPLAY_CFLAGS)				\
-	-DEOG_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
-	-DEOG_EXIF_DISPLAY_DATA_DIR=\""$(uidir)"\"
+	-DXVIEWER_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+	-DXVIEWER_EXIF_DISPLAY_DATA_DIR=\""$(uidir)"\"
 
 plugin_LTLIBRARIES = libexif-display.la
 
 BUILT_SOURCES = \
-	eog-exif-display-plugin-resources.c
+	xviewer-exif-display-plugin-resources.c
 
 libexif_display_la_SOURCES = \
 	${BUILT_SOURCES}				\
-	eog-exif-display-plugin.h			\
-	eog-exif-display-plugin.c			\
-	eog-exif-display-plugin-settings.h		\
-	eog-exif-display-plugin-setup.c			\
-	eog-exif-display-plugin-setup.h
+	xviewer-exif-display-plugin.h			\
+	xviewer-exif-display-plugin.c			\
+	xviewer-exif-display-plugin-settings.h		\
+	xviewer-exif-display-plugin-setup.c			\
+	xviewer-exif-display-plugin-setup.h
 
 libexif_display_la_LDFLAGS = \
 	-avoid-version -module
 
 libexif_display_la_LIBADD = \
-	$(EOG_LIBS)		\
+	$(XVIEWER_LIBS)		\
 	$(EXIFDISPLAY_LIBS)
 
-eog-exif-display-plugin-resources.c: eog-exif-display-plugin.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --sourcedir=$(srcdir) --generate-dependencies $(srcdir)/eog-exif-display-plugin.gresource.xml)
-	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --internal --target=$@ --sourcedir=$(srcdir) --generate-source $(srcdir)/eog-exif-display-plugin.gresource.xml
+xviewer-exif-display-plugin-resources.c: xviewer-exif-display-plugin.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --sourcedir=$(srcdir) --generate-dependencies $(srcdir)/xviewer-exif-display-plugin.gresource.xml)
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --internal --target=$@ --sourcedir=$(srcdir) --generate-source $(srcdir)/xviewer-exif-display-plugin.gresource.xml
 
 # Plugin Info
 
@@ -42,12 +42,12 @@ plugin_in_files = exif-display.plugin.desktop.in
 
 plugin_DATA = $(plugin_in_files:.plugin.desktop.in=.plugin)
 
-appstream_in_files = eog-exif-display.metainfo.xml.in
+appstream_in_files = xviewer-exif-display.metainfo.xml.in
 
 appstream_DATA = $(appstream_in_files:.xml.in=.xml)
 @INTLTOOL_XML_RULE@
 
-gsettings_SCHEMAS = org.gnome.eog.plugins.exif-display.gschema.xml
+gsettings_SCHEMAS = org.x.viewer.plugins.exif-display.gschema.xml
 @GSETTINGS_RULES@
 
 EXTRA_DIST = \
@@ -55,8 +55,8 @@ EXTRA_DIST = \
 	$(appstream_in_files)	\
 	exif-display.ui		\
 	exif-display-config.ui	\
-	eog-exif-display-plugin.gresource.xml	\
-	org.gnome.eog.plugins.exif-display.gschema.xml.in
+	xviewer-exif-display-plugin.gresource.xml	\
+	org.x.viewer.plugins.exif-display.gschema.xml.in
 
 CLEANFILES = \
 	${BUILT_SOURCES}	\

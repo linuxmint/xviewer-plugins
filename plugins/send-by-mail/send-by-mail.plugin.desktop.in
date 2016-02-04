@@ -6,4 +6,4 @@ Icon=mail-send
 _Description=Sends an image attached to a new mail
 Authors=Felix Riemann <friemann@gnome.org>
 Copyright=Copyright © 2009 Felix Riemann
-Website=http://www.gnome.org/projects/eog
+Website=http://github.com/linuxmint/xviewer

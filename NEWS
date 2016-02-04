@@ -9,7 +9,7 @@ Version 3.13.92
 Plugin changes:
 
 - Map
- - #735914, EOG's Map plugin crashes on invalid GPS coordinates (Felix Riemann)
+ - #735914, XVIEWER's Map plugin crashes on invalid GPS coordinates (Felix Riemann)
 
 New and updated translations:
 
@@ -79,7 +79,7 @@ Plugin changes:
  - Convert to Python 3 (Felix Riemann)
 
 - Fullscreen Background
- - Adapt to API changes in eog 3.11.3 (Felix Riemann)
+ - Adapt to API changes in xviewer 3.11.3 (Felix Riemann)
  - Convert to Python 3 (Felix Riemann)
 
 - Python Console
@@ -88,7 +88,7 @@ Plugin changes:
 Other changes:
 
 - Modernize build system (Felix Riemann)
-- Raise Python and eog dependencies (Felix Riemann)
+- Raise Python and xviewer dependencies (Felix Riemann)
 
 Version 3.10.1
 --------------
@@ -115,7 +115,7 @@ Version 3.9.5
 Plugin changes:
 
 - Exif Display
- - #704081, Fails to build against eog trunk (Dominique Leuenberger)
+ - #704081, Fails to build against xviewer trunk (Dominique Leuenberger)
 
 Version 3.8.1
 -------------
@@ -219,7 +219,7 @@ Version 3.5.5
 New Plugins:
 
 - Hide Titlebar
-  Hides the titlebar of eog's main window if supported by the window manager.
+  Hides the titlebar of xviewer's main window if supported by the window manager.
   The menubar will move up into the place of the titlebar. (Claudio Saavedra)
 
 - Disable dark theme
@@ -242,7 +242,7 @@ Plugin changes:
 
 - Exif Display
  - Remove markup from translatable UI strings (Piotr Drąg)
- - #676735, eog crashes when quickly clicking the Back button twice
+ - #676735, xviewer crashes when quickly clicking the Back button twice
 
 New and updated translations:
 
@@ -475,7 +475,7 @@ Plugin changes:
 
 Other changes:
 
-- Disable python plugins until they work correctly with eog-3.0 (Felix Riemann)
+- Disable python plugins until they work correctly with xviewer-3.0 (Felix Riemann)
 
 New and updated translations:
 
@@ -623,7 +623,7 @@ Version 2.28.1
 Plugin changes:
 
 - Exif Display (Exif-display):
- - #596452, eog-plugins must depend on libgconf (Felix Riemann)
+ - #596452, xviewer-plugins must depend on libgconf (Felix Riemann)
  - Code improvements (Felix Riemann)
 
 - Fit to Width:
@@ -673,8 +673,8 @@ New and updated translations:
 Version 2.27.91
 ---------------
 
-This is the first tarball release of eog-plugins. It's a collection of plugins
-for use with the Eye of GNOME Image Viewer.
+This is the first tarball release of xviewer-plugins. It's a collection of plugins
+for use with the xplayer Image Viewer.
 
 New Plugins:
 

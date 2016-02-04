@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mr\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eog-plugins&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=xviewer-plugins&component=general\n"
 "POT-Creation-Date: 2009-06-16 14:00+0000\n"
 "PO-Revision-Date: 2009-06-29 16:18+0530\n"
 "Last-Translator: Sandeep Shedmake <sandeep.shedmake@gmail.com>\n"
@@ -17,21 +17,21 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: ../plugins/champlain/champlain.eog-plugin.desktop.in.h:1
+#: ../plugins/champlain/champlain.xviewer-plugin.desktop.in.h:1
 msgid "Display the geolocation of the image on a map"
 msgstr "प्रतिमाचे geolocation ठिकाण नकाशावर दाखवा"
 
-#: ../plugins/champlain/champlain.eog-plugin.desktop.in.h:2
+#: ../plugins/champlain/champlain.xviewer-plugin.desktop.in.h:2
 msgid "Map"
 msgstr "नकाशा"
 
-#: ../plugins/exif-display/eog-exif-display-plugin.c:137
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:137
 msgid " (invalid Unicode)"
 msgstr " (अवैध Unicode)"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:213
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:213
 #, c-format
 msgid "%.1fmm (lens)"
 msgstr "%.1fmm (lens)"
@@ -39,7 +39,7 @@ msgstr "%.1fmm (lens)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:224
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:224
 #, c-format
 msgid "%.1fmm (35mm film)"
 msgstr "%.1fmm (35mm film)"
@@ -67,11 +67,11 @@ msgstr "कॅमेरा संयोजना स्थितीपट्ट�
 msgid "Display per-channel histogram"
 msgstr "कॅमेरा संयोजना व हिस्टोग्राम दाखवतो"
 
-#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:1
+#: ../plugins/exif-display/exif-display.xviewer-plugin.desktop.in.h:1
 msgid "Displays camera settings and histogram"
 msgstr "कॅमेरा संयोजना व हिस्टोग्राम दाखवतो"
 
-#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:2
+#: ../plugins/exif-display/exif-display.xviewer-plugin.desktop.in.h:2
 msgid "Exif display"
 msgstr "Exif दृष्य"
 
@@ -99,41 +99,41 @@ msgstr "मिटरींग:"
 msgid "Zoom:"
 msgstr "दृष्य बदल:"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:82
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:82
 msgid "Fit to width"
 msgstr "रूंदीत बसवा"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:84
-#: ../plugins/fit-to-width/fit-to-width.eog-plugin.desktop.in.h:1
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:84
+#: ../plugins/fit-to-width/fit-to-width.xviewer-plugin.desktop.in.h:1
 msgid "Zoom to fit image width"
 msgstr "प्रतिमा रूंदीत बसवण्याकरीता दृष्य बदल करा"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:1
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:1
 msgid "Shuffles images in slideshow mode"
 msgstr "स्लाईडशो पद्धत अंतर्गत प्रतिमा पटापट चाळा"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:2
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:2
 msgid "Slideshow Shuffle"
 msgstr "Slideshow Shuffle"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:1
 msgid "Flickr Uploader"
 msgstr "Flickr Uploader"
 
-#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
-#: ../plugins/postr/eog-postr-plugin.c:50
+#: ../plugins/postr/postr.xviewer-plugin.desktop.in.h:2
+#: ../plugins/postr/xviewer-postr-plugin.c:50
 msgid "Upload your pictures to Flickr"
 msgstr "Flickr चित्रवर अपलोड करा"
 
-#: ../plugins/postr/eog-postr-plugin.c:48
+#: ../plugins/postr/xviewer-postr-plugin.c:48
 msgid "Upload to Flickr"
 msgstr "Flickr वर अपलोड करा"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:1
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:1
 msgid "Python Console"
 msgstr "Python Console"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:2
-msgid "Python console for Eye of GNOME"
-msgstr "Eye of GNOME करीता Python कन्सोल"
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:2
+msgid "Python console for xplayer"
+msgstr "xplayer करीता Python कन्सोल"
 

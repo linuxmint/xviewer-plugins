@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Fullscreen Background Plugin for Eye of GNOME
+# Fullscreen Background Plugin for xviewer
 # Copyright (C) 2012 Adrian Zgorzałek <a.zgorzalek@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
@@ -17,15 +17,15 @@
 # along with this program; if not, write to the Free Software Foundation,
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-from gi.repository import GObject, Gdk, Gio, Gtk, Eog, PeasGtk
+from gi.repository import GObject, Gdk, Gio, Gtk, Xviewer, PeasGtk
 from os.path import join
 
 
-class BackgroundChanger(GObject.Object, Eog.WindowActivatable, \
+class BackgroundChanger(GObject.Object, Xviewer.WindowActivatable, \
     PeasGtk.Configurable):
     """Class implementing custom background in fullscreen mode"""
-    BASE_KEY = 'org.gnome.eog.plugins.fullscreenbg'
-    window = GObject.property(type=Eog.Window)
+    BASE_KEY = 'org.x.viewer.plugins.fullscreenbg'
+    window = GObject.property(type=Xviewer.Window)
     preferences_dialog_created = False
 
     def __init__(self):
@@ -48,8 +48,8 @@ class BackgroundChanger(GObject.Object, Eog.WindowActivatable, \
         else:
             color = scroll_view.get_property('background-color')
 
-        if mode == Eog.WindowMode(Eog.WindowMode.FULLSCREEN)\
-            or mode == Eog.WindowMode(Eog.WindowMode.SLIDESHOW):
+        if mode == Xviewer.WindowMode(Xviewer.WindowMode.FULLSCREEN)\
+            or mode == Xviewer.WindowMode(Xviewer.WindowMode.SLIDESHOW):
             scroll_view.override_bg_color(color)
 
     def do_create_configure_widget(self):
@@ -58,7 +58,7 @@ class BackgroundChanger(GObject.Object, Eog.WindowActivatable, \
             signals = {'use_global_settings_cb': self.use_global_settings_cb,
                        'hide_colorbutton_cb': self.hide_colorbutton_cb}
             builder = Gtk.Builder()
-            builder.set_translation_domain('eog-plugins')
+            builder.set_translation_domain('xviewer-plugins')
             builder.add_from_file(join(self.plugin_info.get_data_dir(), \
                                        'preferences_dialog.ui'))
             builder.connect_signals(signals)

@@ -1,7 +1,7 @@
 SUBDIRS = $(BUILD_PLUGINS)
 DIST_SUBDIRS = $(DIST_PLUGINS)
 
-plugindir = $(libdir)/eog/plugins
+plugindir = $(libdir)/xviewer/plugins
 plugin_PYTHON =
 
 DISTCLEANFILES =

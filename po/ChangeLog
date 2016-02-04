@@ -159,7 +159,7 @@
 
 2008-10-13  Claudio Saavedra  <csaavedra@igalia.com>
 
-	* POTFILES.in: Add plugins/champlain/champlain.eog-plugin.desktop.in
+	* POTFILES.in: Add plugins/champlain/champlain.xviewer-plugin.desktop.in
 
 2008-10-07  Kjartan Maraas  <kmaraas@gnome.org>
 

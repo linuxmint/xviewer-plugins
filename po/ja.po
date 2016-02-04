@@ -1,13 +1,13 @@
-# eog-plugins ja.po.
+# xviewer-plugins ja.po.
 # Copyright (C) 2009-2012 Free Software Foundation, Inc.
-# This file is distributed under the same license as the eog-plugins package.
+# This file is distributed under the same license as the xviewer-plugins package.
 # Takeshi AIHANA <takeshi.aihana@gmail.com>, 2009-2011.
 # Jiro Matsuzawa <jmatsuzawa@src.gnome.org>, 2011, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eog-plugins master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eog-"
+"Project-Id-Version: xviewer-plugins master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=xviewer-"
 "plugins&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2012-02-20 18:18+0000\n"
 "PO-Revision-Date: 2012-02-19 18:30+0900\n"
@@ -18,13 +18,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ja\n"
 
-#: ../plugins/exif-display/eog-exif-display-plugin.c:105
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:105
 msgid " (invalid Unicode)"
 msgstr " (Unicode が不正です)"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:183
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:183
 #, c-format
 msgid "%.1fmm (lens)"
 msgstr "%.1fmm (レンズ)"
@@ -32,7 +32,7 @@ msgstr "%.1fmm (レンズ)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:194
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:194
 #, c-format
 msgid "%.1fmm (35mm film)"
 msgstr "%.1fmm (35mm フィルム)"
@@ -95,11 +95,11 @@ msgstr "露出補正値:"
 msgid "Description:"
 msgstr "説明:"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:91
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:91
 msgid "Fit to width"
 msgstr "幅に合わせる"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:93
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:93
 #: ../plugins/fit-to-width/fit-to-width.plugin.desktop.in.h:1
 msgid "Zoom to fit image width"
 msgstr "画像の幅にズームを合わせる"
@@ -112,20 +112,20 @@ msgstr "フルスクリーンの背景"
 msgid "Enables changing background in fullscreen mode"
 msgstr "フルスクリーンモードでの背景色を変更します"
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:1
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:1
 msgid "Use custom background settings"
 msgstr "設定した選択色を使用する"
 
 # 原文がおかしい? キー名でもわかるとおり、動作的にはtrueならits ownが有効
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:2
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:2
 msgid "Whether the plugin should use global settings or its own."
 msgstr ""
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:3
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:3
 msgid "Background color in fullscreen mode"
 msgstr "フルスクリーンモードで使用する背景色"
 
-#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:4
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.in.h:4
 msgid ""
 "The color that is used to fill the area behind the image. This option has "
 "effect only if use-custom is enabled."
@@ -137,19 +137,19 @@ msgstr ""
 msgid "Use custom color:"
 msgstr "選択色を使用する:"
 
-#: ../plugins/map/eog-map-plugin.c:401
+#: ../plugins/map/xviewer-map-plugin.c:401
 msgid "Jump to current image's location"
 msgstr "この画像の撮影場所へジャンプします"
 
-#: ../plugins/map/eog-map-plugin.c:413
+#: ../plugins/map/xviewer-map-plugin.c:413
 msgid "Zoom in"
 msgstr "拡大します"
 
-#: ../plugins/map/eog-map-plugin.c:421
+#: ../plugins/map/xviewer-map-plugin.c:421
 msgid "Zoom out"
 msgstr "縮小します"
 
-#: ../plugins/map/eog-map-plugin.c:436
+#: ../plugins/map/xviewer-map-plugin.c:436
 #: ../plugins/map/map.plugin.desktop.in.h:1
 msgid "Map"
 msgstr "マップ"
@@ -158,54 +158,54 @@ msgstr "マップ"
 msgid "Display the geolocation of the image on a map"
 msgstr "画像に含まれた情報から地理的位置をマップに表示します"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:126
+#: ../plugins/postasa/xviewer-postasa-plugin.c:126
 msgid "Upload to PicasaWeb"
 msgstr "PicasaWeb へアップロード"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:128
+#: ../plugins/postasa/xviewer-postasa-plugin.c:128
 #: ../plugins/postasa/postasa.plugin.desktop.in.h:2
 msgid "Upload your pictures to PicasaWeb"
 msgstr "お気に入りの写真を PicasaWeb へアップロードします"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:323
+#: ../plugins/postasa/xviewer-postasa-plugin.c:323
 msgid "Uploading..."
 msgstr "アップロード中..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:369
+#: ../plugins/postasa/xviewer-postasa-plugin.c:369
 msgid "Uploaded"
 msgstr "アップロード完了"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:373
+#: ../plugins/postasa/xviewer-postasa-plugin.c:373
 msgid "Cancelled"
 msgstr "キャンセルしました"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:376
+#: ../plugins/postasa/xviewer-postasa-plugin.c:376
 msgid "Failed"
 msgstr "失敗しました"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:599
+#: ../plugins/postasa/xviewer-postasa-plugin.c:599
 #, c-format
 msgid "Login failed. %s"
 msgstr "ログインできませんでした: %s"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:603
+#: ../plugins/postasa/xviewer-postasa-plugin.c:603
 msgid "Logged in successully."
 msgstr "ログインが完了しました"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:604
+#: ../plugins/postasa/xviewer-postasa-plugin.c:604
 msgid "Close"
 msgstr "閉じる"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:625
+#: ../plugins/postasa/xviewer-postasa-plugin.c:625
 msgid "Cancel"
 msgstr "キャンセル"
 
 #. TODO: want to handle passwords more securely
-#: ../plugins/postasa/eog-postasa-plugin.c:631
+#: ../plugins/postasa/xviewer-postasa-plugin.c:631
 msgid "Logging in..."
 msgstr "ログイン中..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:676
+#: ../plugins/postasa/xviewer-postasa-plugin.c:676
 msgid "Please log in to continue upload."
 msgstr "アップロードするにはログインが必要です。"
 
@@ -257,11 +257,11 @@ msgstr "全てキャンセル"
 msgid "PicasaWeb Uploader"
 msgstr "PicasaWeb アップローダー"
 
-#: ../plugins/postr/eog-postr-plugin.c:62
+#: ../plugins/postr/xviewer-postr-plugin.c:62
 msgid "Upload to Flickr"
 msgstr "Flickr へアップロード"
 
-#: ../plugins/postr/eog-postr-plugin.c:64
+#: ../plugins/postr/xviewer-postr-plugin.c:64
 #: ../plugins/postr/postr.plugin.desktop.in.h:2
 msgid "Upload your pictures to Flickr"
 msgstr "お気に入りの写真を Flickr へアップロードします"
@@ -289,49 +289,49 @@ msgstr "コマンドの色(_O):"
 msgid "_Error color:"
 msgstr "エラーの色(_E):"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:1
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:1
 msgid "Command Text Color"
 msgstr "コマンドの色"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:2
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:2
 msgid "The color used for commands."
 msgstr "コマンドに使用する色です。"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:3
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:3
 msgid "Error Text Color"
 msgstr "エラーメッセージの色"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:4
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:4
 msgid "The color used for errors."
 msgstr "エラーメッセージに使用する色です。"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:5
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:5
 msgid "Whether to use the system font"
 msgstr "システムフォントを使用する"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:6
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:6
 msgid ""
 "If true, the terminal will use the desktop-global standard font if it's "
 "monospace (and the most similar font it can come up with otherwise)."
 msgstr ""
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:7
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:7
 msgid "Font used by Python Console"
 msgstr "Python 端末で使用するフォント"
 
-#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:8
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.in.h:8
 msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
 msgstr ""
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for Eye of GNOME"
-msgstr "Eye of GNOME 専用の Python 端末を表示します"
+msgid "Python console for xplayer"
+msgstr "xplayer 専用の Python 端末を表示します"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:63
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
 msgid "Send by Mail"
 msgstr "メールで送信する"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:65
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:65
 msgid "Send the selected images by mail"
 msgstr "選択した画像をメールで送信します"
 

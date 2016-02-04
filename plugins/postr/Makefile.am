@@ -1,23 +1,23 @@
 # Postr plugin
-plugindir = $(libdir)/eog/plugins
+plugindir = $(libdir)/xviewer/plugins
 appstreamdir = $(datadir)/appdata
 
 AM_CPPFLAGS = \
 	-I$(top_srcdir) 				\
-	$(EOG_CFLAGS) 					\
+	$(XVIEWER_CFLAGS) 					\
 	$(WARN_CFLAGS)					\
-	-DEOG_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
+	-DXVIEWER_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
 
 plugin_LTLIBRARIES = libpostr.la
 
 libpostr_la_SOURCES = \
-	eog-postr-plugin.h				\
-	eog-postr-plugin.c
+	xviewer-postr-plugin.h				\
+	xviewer-postr-plugin.c
 
 libpostr_la_LDFLAGS = \
 	$(PLUGIN_LIBTOOL_FLAGS)
 
-libpostr_la_LIBADD = $(EOG_LIBS)
+libpostr_la_LIBADD = $(XVIEWER_LIBS)
 
 
 # Plugin Info
@@ -28,7 +28,7 @@ plugin_in_files = postr.plugin.desktop.in
 
 plugin_DATA = $(plugin_in_files:.plugin.desktop.in=.plugin)
 
-appstream_in_files = eog-postr.metainfo.xml.in
+appstream_in_files = xviewer-postr.metainfo.xml.in
 
 appstream_DATA = $(appstream_in_files:.xml.in=.xml)
 @INTLTOOL_XML_RULE@

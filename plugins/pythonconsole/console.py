@@ -42,7 +42,7 @@ class PythonConsole(Gtk.ScrolledWindow):
 
     DEFAULT_FONT = "Monospace 11"
 
-    CONSOLE_KEY_BASE = 'org.gnome.eog.plugins.pythonconsole'
+    CONSOLE_KEY_BASE = 'org.x.viewer.plugins.pythonconsole'
     SETTINGS_INTERFACE_DIR = "org.gnome.desktop.interface"
 
     CONSOLE_KEY_COMMAND_COLOR = 'command-color'
@@ -102,7 +102,7 @@ class PythonConsole(Gtk.ScrolledWindow):
         buf.connect("mark-set", self.__mark_set_cb)
 
     def get_profile_settings(self):
-        #FIXME return either the gnome-terminal settings or the eog one
+        #FIXME return either the gnome-terminal settings or the xviewer one
         return Gio.Settings.new(self.CONSOLE_KEY_BASE)
 
     def do_grab_focus(self):

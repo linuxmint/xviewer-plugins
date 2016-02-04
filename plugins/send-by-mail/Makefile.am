@@ -1,23 +1,23 @@
 # SendByMail plugin
-plugindir = $(libdir)/eog/plugins
+plugindir = $(libdir)/xviewer/plugins
 appstreamdir = $(datadir)/appdata
 
 AM_CPPFLAGS = \
 	-I$(top_srcdir)/src 				\
-	$(EOG_CFLAGS) 					\
+	$(XVIEWER_CFLAGS) 					\
 	$(WARN_CFLAGS)					\
-	-DEOG_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
+	-DXVIEWER_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
 
 plugin_LTLIBRARIES = libsend-by-mail.la
 
 libsend_by_mail_la_SOURCES = \
-	eog-send-by-mail-plugin.h			\
-	eog-send-by-mail-plugin.c
+	xviewer-send-by-mail-plugin.h			\
+	xviewer-send-by-mail-plugin.c
 
 libsend_by_mail_la_LDFLAGS = \
 	-avoid-version -module
 
-libsend_by_mail_la_LIBADD = $(EOG_LIBS)
+libsend_by_mail_la_LIBADD = $(XVIEWER_LIBS)
 
 # Plugin Info
 
@@ -27,7 +27,7 @@ plugin_in_files = send-by-mail.plugin.desktop.in
 
 plugin_DATA = $(plugin_in_files:.plugin.desktop.in=.plugin)
 
-appstream_in_files = eog-send-by-mail.metainfo.xml.in
+appstream_in_files = xviewer-send-by-mail.metainfo.xml.in
 
 appstream_DATA = $(appstream_in_files:.xml.in=.xml)
 @INTLTOOL_XML_RULE@

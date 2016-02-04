@@ -1,8 +1,8 @@
 # Slideshow Shuffle plugin
-plugindir = $(libdir)/eog/plugins
+plugindir = $(libdir)/xviewer/plugins
 appstreamdir = $(datadir)/appdata
 plugin_in_files = slideshowshuffle.plugin.desktop.in
-appstream_in_files = eog-slideshowshuffle.metainfo.xml.in
+appstream_in_files = xviewer-slideshowshuffle.metainfo.xml.in
 
 plugin_PYTHON = \
 	slideshowshuffle.py

@@ -1,14 +1,14 @@
  Process this file with autoconf to produce a configure script.
 
-EOG_MAJOR=3.0.0
-EOG_PLUGINS_MAJOR=3.0.0
+XVIEWER_MAJOR=3.0.0
+XVIEWER_PLUGINS_MAJOR=3.0.0
 
 AC_INIT([xviewer-plugins], [1.0.0], [http://github.com/linuxmint/xviewer-plugins/issues])
 
 AC_CONFIG_SRCDIR([plugins])
 AC_PREFIX_PROGRAM([xviewer])
 
-AC_SUBST(EOG_PLUGINS_MAJOR)
+AC_SUBST(XVIEWER_PLUGINS_MAJOR)
 
 AC_PREREQ(2.59)
 
@@ -34,7 +34,7 @@ AC_PROG_MAKE_SET
 AM_GLIB_GNU_GETTEXT
 IT_PROG_INTLTOOL([0.50.1])
 
-GETTEXT_PACKAGE=eog-plugins
+GETTEXT_PACKAGE=xviewer-plugins
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package])
 
@@ -42,21 +42,21 @@ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package])
 # GNOME Libs 
 # **********
 
-PKG_CHECK_MODULES([EOG], [
+PKG_CHECK_MODULES([XVIEWER], [
 	glib-2.0 >= 2.32.0
 	gtk+-3.0 >= 3.3.8
 	libpeas-1.0 >= 0.7.4
 	xviewer
 ])
-AC_SUBST(EOG_LIBS)
-AC_SUBST(EOG_CFLAGS)
+AC_SUBST(XVIEWER_LIBS)
+AC_SUBST(XVIEWER_CFLAGS)
 
 # *******
 # Plugins
 # *******
 
 #FIXME
-EOG_HAS_PYTHON=1
+XVIEWER_HAS_PYTHON=1
 #/FIXME
 
 AC_MSG_CHECKING([which plugins to build])
@@ -71,13 +71,13 @@ PYTHON_DEFAULT_PLUGINS="slideshowshuffle pythonconsole fullscreenbg export-to-fo
 
 DIST_PLUGINS="$ALL_PLUGINS $PYTHON_ALL_PLUGINS"
 
-if test $EOG_HAS_PYTHON
+if test $XVIEWER_HAS_PYTHON
 then
 	ALL_PLUGINS="$ALL_PLUGINS $PYTHON_ALL_PLUGINS"
 	USEFUL_PLUGINS="$USEFUL_PLUGINS $PYTHON_USEFUL_PLUGINS"
 	DEFAULT_PLUGINS="$DEFAULT_PLUGINS $PYTHON_DEFAULT_PLUGINS"
 else
-	AC_MSG_WARN([eog compiled without python support, plugins $PYTHON_ALL_PLUGINS will not be available])
+	AC_MSG_WARN([xviewer compiled without python support, plugins $PYTHON_ALL_PLUGINS will not be available])
 fi
 AC_ARG_WITH([plugins],
 	    [AS_HELP_STRING([--with-plugins=LIST],
@@ -97,7 +97,7 @@ fi
 need_python=no
 explicit_plugins=
 PLUGINS=
-IFS="${IFS=	}"; eogpl_save_ifs="$IFS"; IFS=","
+IFS="${IFS=	}"; xviewerpl_save_ifs="$IFS"; IFS=","
 for pl in $plugins
 do
 	if echo "$ALL_PLUGINS" | egrep "(^| )$pl(\$| )" > /dev/null
@@ -114,7 +114,7 @@ do
 	then
 		PLUGINS="$PLUGINS $ALL_PLUGINS"
 	else
-		IFS=$eogpl_save_ifs
+		IFS=$xviewerpl_save_ifs
 		AC_MSG_ERROR([the specified plugin $pl does not exist])
 	fi
 	
@@ -123,7 +123,7 @@ do
 		need_python=yes
 	fi
 done
-IFS="$eogpl_save_ifs"
+IFS="$xviewerpl_save_ifs"
 
 AC_MSG_RESULT([$PLUGINS])
 
@@ -326,11 +326,11 @@ AC_PATH_PROG(GLIB_COMPILE_RESOURCES, glib-compile-resources)
 PLUGIN_LIBTOOL_FLAGS="-module -avoid-version"
 AC_SUBST(PLUGIN_LIBTOOL_FLAGS)
 
-EOG_PLUGINS_LIBS_DIR="$libdir/eog/plugins"
-AC_SUBST(EOG_PLUGINS_LIBS_DIR)
+XVIEWER_PLUGINS_LIBS_DIR="$libdir/xviewer/plugins"
+AC_SUBST(XVIEWER_PLUGINS_LIBS_DIR)
 
-EOG_PLUGINS_DATA_DIR="$datadir/eog/plugins"
-AC_SUBST(EOG_PLUGINS_DATA_DIR)
+XVIEWER_PLUGINS_DATA_DIR="$datadir/xviewer/plugins"
+AC_SUBST(XVIEWER_PLUGINS_DATA_DIR)
 
 AC_CONFIG_FILES([
 Makefile
@@ -338,11 +338,11 @@ plugins/Makefile
 plugins/map/Makefile
 plugins/fit-to-width/Makefile
 plugins/exif-display/Makefile
-plugins/exif-display/org.gnome.eog.plugins.exif-display.gschema.xml
+plugins/exif-display/org.x.viewer.plugins.exif-display.gschema.xml
 plugins/export-to-folder/Makefile
-plugins/export-to-folder/org.gnome.eog.plugins.export-to-folder.gschema.xml
+plugins/export-to-folder/org.x.viewer.plugins.export-to-folder.gschema.xml
 plugins/fullscreenbg/Makefile
-plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml
+plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml
 plugins/hide-titlebar/Makefile
 plugins/light-theme/Makefile
 plugins/send-by-mail/Makefile
@@ -350,7 +350,7 @@ plugins/slideshowshuffle/Makefile
 plugins/postr/Makefile
 plugins/postasa/Makefile
 plugins/pythonconsole/Makefile
-plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml
+plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml
 po/Makefile.in])
 
 AC_OUTPUT
@@ -365,7 +365,7 @@ Configure summary:
 	Plugins ...............: $PLUGINS
 	Disabled plugins ......: $disabled_plugins
 
-Note: you have to install these plugins into the same prefix than your eog
+Note: you have to install these plugins into the same prefix than your xviewer
 installation (probably /usr if you're using your distro packages, /usr/local
 if you have compiled it on your own).
 "

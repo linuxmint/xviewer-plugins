@@ -5,7 +5,7 @@
 # Khaled Hosny <khaledhosny@eglug.org>, 2009, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: eog-plugins\n"
+"Project-Id-Version: xviewer-plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-02-13 17:58+0200\n"
 "PO-Revision-Date: 2011-02-13 17:58+0300\n"
@@ -20,13 +20,13 @@ msgstr ""
 "X-Generator: Virtaal 0.6.1\n"
 "X-Poedit-Language: Arabic\n"
 
-#: ../plugins/exif-display/eog-exif-display-plugin.c:105
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:105
 msgid " (invalid Unicode)"
 msgstr " (يونيكود غير سليم)"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:183
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:183
 #, c-format
 msgid "%.1fmm (lens)"
 msgstr "‏%.1fمم (عدسة)"
@@ -34,7 +34,7 @@ msgstr "‏%.1fمم (عدسة)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../plugins/exif-display/eog-exif-display-plugin.c:194
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:194
 #, c-format
 msgid "%.1fmm (35mm film)"
 msgstr "‏%.1fمم (فيلم 35مم)"
@@ -95,85 +95,85 @@ msgstr "القياس:"
 msgid "Zoom:"
 msgstr "التقريب:"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:91
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:91
 msgid "Fit to width"
 msgstr "لائم العرض"
 
-#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:93
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:93
 #: ../plugins/fit-to-width/fit-to-width.plugin.desktop.in.h:1
 msgid "Zoom to fit image width"
 msgstr "قرّب لتلائم عرض الصورة"
 
-#: ../plugins/map/eog-map-plugin.c:376
+#: ../plugins/map/xviewer-map-plugin.c:376
 msgid "Jump to current image's location"
 msgstr "انقل إلى موضع الصورة الحالية"
 
-#: ../plugins/map/eog-map-plugin.c:388
+#: ../plugins/map/xviewer-map-plugin.c:388
 msgid "Zoom in"
 msgstr "قرّب"
 
-#: ../plugins/map/eog-map-plugin.c:396
+#: ../plugins/map/xviewer-map-plugin.c:396
 msgid "Zoom out"
 msgstr "بعّد"
 
-#: ../plugins/map/eog-map-plugin.c:410
-#: ../plugins/map/map.eog-plugin.desktop.in.h:2
+#: ../plugins/map/xviewer-map-plugin.c:410
+#: ../plugins/map/map.xviewer-plugin.desktop.in.h:2
 msgid "Map"
 msgstr "خريطة"
 
-#: ../plugins/map/map.eog-plugin.desktop.in.h:1
+#: ../plugins/map/map.xviewer-plugin.desktop.in.h:1
 msgid "Display the geolocation of the image on a map"
 msgstr "اعرض الموقع الجغرافي للصورة على الخريطة"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:124
+#: ../plugins/postasa/xviewer-postasa-plugin.c:124
 msgid "Upload to PicasaWeb"
 msgstr "ارفع إلى PicasaWeb"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:126
-#: ../plugins/postasa/postasa.eog-plugin.desktop.in.h:2
+#: ../plugins/postasa/xviewer-postasa-plugin.c:126
+#: ../plugins/postasa/postasa.xviewer-plugin.desktop.in.h:2
 msgid "Upload your pictures to PicasaWeb"
 msgstr "ارفع صورك إلى PicasaWeb"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:320
+#: ../plugins/postasa/xviewer-postasa-plugin.c:320
 msgid "Uploading..."
 msgstr "يرفع..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:366
+#: ../plugins/postasa/xviewer-postasa-plugin.c:366
 msgid "Uploaded"
 msgstr "رُفِعت"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:370
+#: ../plugins/postasa/xviewer-postasa-plugin.c:370
 msgid "Cancelled"
 msgstr "أُلغِيَ"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:373
+#: ../plugins/postasa/xviewer-postasa-plugin.c:373
 msgid "Failed"
 msgstr "فشل"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:581
+#: ../plugins/postasa/xviewer-postasa-plugin.c:581
 #, c-format
 msgid "Login failed. %s"
 msgstr "فشل الولوج. %s"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:585
+#: ../plugins/postasa/xviewer-postasa-plugin.c:585
 msgid "Logged in successully."
 msgstr "نجح الولوج."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:586
+#: ../plugins/postasa/xviewer-postasa-plugin.c:586
 msgid "Close"
 msgstr "أغلق"
 
-#: ../plugins/postasa/eog-postasa-plugin.c:607
+#: ../plugins/postasa/xviewer-postasa-plugin.c:607
 #: ../plugins/postasa/postasa-config.xml.h:1
 msgid "Cancel"
 msgstr "ألغِ"
 
 #. TODO: want to handle passwords more securely
-#: ../plugins/postasa/eog-postasa-plugin.c:613
+#: ../plugins/postasa/xviewer-postasa-plugin.c:613
 msgid "Logging in..."
 msgstr "يلِج..."
 
-#: ../plugins/postasa/eog-postasa-plugin.c:641
+#: ../plugins/postasa/xviewer-postasa-plugin.c:641
 msgid "Please log in to continue upload."
 msgstr "عليك الولوج لإكمال الرفع."
 
@@ -205,15 +205,15 @@ msgstr "ألغِ المحددة"
 msgid "Uploads:"
 msgstr "الرفع:"
 
-#: ../plugins/postasa/postasa.eog-plugin.desktop.in.h:1
+#: ../plugins/postasa/postasa.xviewer-plugin.desktop.in.h:1
 msgid "PicasaWeb Uploader"
 msgstr "رافِع PicasaWeb"
 
-#: ../plugins/postr/eog-postr-plugin.c:62
+#: ../plugins/postr/xviewer-postr-plugin.c:62
 msgid "Upload to Flickr"
 msgstr "ارفع إلى فلِكر"
 
-#: ../plugins/postr/eog-postr-plugin.c:64
+#: ../plugins/postr/xviewer-postr-plugin.c:64
 #: ../plugins/postr/postr.plugin.desktop.in.h:2
 msgid "Upload your pictures to Flickr"
 msgstr "ارفع صورك إلى فلِكر"
@@ -222,19 +222,19 @@ msgstr "ارفع صورك إلى فلِكر"
 msgid "Flickr Uploader"
 msgstr "رافِع فلِكر"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:1
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:1
 msgid "Python Console"
 msgstr "مرقاب بيثون"
 
-#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:2
-msgid "Python console for Eye of GNOME"
+#: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:2
+msgid "Python console for xviewer"
 msgstr "مرقاب بيثون لعين جنوم"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:63
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
 msgid "Send by Mail"
 msgstr "أرسِل بالبريد"
 
-#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:65
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:65
 msgid "Send the selected images by mail"
 msgstr "أرسل الصور المحددة بالبريد"
 
@@ -246,11 +246,11 @@ msgstr "أرسِل بالبريد"
 msgid "Sends an image attached to a new mail"
 msgstr "أرسل صورة مرفقة برسالة بريد جديدة"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:1
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:1
 msgid "Shuffles images in slideshow mode"
 msgstr "اخلط الصور في نمط عرض الشرائح"
 
-#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:2
+#: ../plugins/slideshowshuffle/slideshowshuffle.xviewer-plugin.desktop.in.h:2
 msgid "Slideshow Shuffle"
 msgstr "خلط عرض الشرائح"
 

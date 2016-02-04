@@ -1,5 +1,5 @@
 <schemalist>
-  <schema gettext-domain="@GETTEXT_PACKAGE@" id="org.gnome.eog.plugins.pythonconsole" path="/org/gnome/eog/plugins/pythonconsole/">
+  <schema gettext-domain="@GETTEXT_PACKAGE@" id="org.x.viewer.plugins.pythonconsole" path="/org/x/viewer/plugins/pythonconsole/">
     <key name="command-color" type="s">
       <default>'#0000FF'</default>
       <summary>Command Text Color</summary>

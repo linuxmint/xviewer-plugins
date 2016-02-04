@@ -1,4 +1,4 @@
-# Slideshow Shuffle Plugin for Eye of GNOME
+# Slideshow Shuffle Plugin for xviewer
 # Copyright (C) 2008  Johannes Marbach <jm@rapidrabbit.de>
 #
 # This program is free software; you can redistribute it and/or
@@ -15,13 +15,13 @@
 # along with this program; if not, write to the Free Software Foundation,
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-from gi.repository import GObject, Gtk, Eog
+from gi.repository import GObject, Gtk, Xviewer
 import random
 
-class SlideshowShufflePlugin(GObject.Object, Eog.WindowActivatable):
+class SlideshowShufflePlugin(GObject.Object, Xviewer.WindowActivatable):
 
-    # Override EogWindowActivatable's window property
-    window = GObject.property(type=Eog.Window)
+    # Override XviewerWindowActivatable's window property
+    window = GObject.property(type=Xviewer.Window)
 
     def __init__(self):
         GObject.Object.__init__(self)
@@ -36,12 +36,12 @@ class SlideshowShufflePlugin(GObject.Object, Eog.WindowActivatable):
         self.window.disconnect(self.state_handler_id)
 
     # The callback functions are done statically to avoid causing additional
-    # references on the window property causing eog to not quit correctly.
+    # references on the window property causing xviewer to not quit correctly.
     @staticmethod
     def state_changed_cb(window, event, self):
         mode = self.window.get_mode()
 
-        if mode == Eog.WindowMode.SLIDESHOW and not self.slideshow:
+        if mode == Xviewer.WindowMode.SLIDESHOW and not self.slideshow:
             # Slideshow starts
             self.slideshow = True
 
@@ -62,7 +62,7 @@ class SlideshowShufflePlugin(GObject.Object, Eog.WindowActivatable):
             # Put random sort function in place
             self.window.get_store().\
                 set_default_sort_func(self.random_sort_function, self)
-        elif mode == Eog.WindowMode.NORMAL and self.slideshow:
+        elif mode == Xviewer.WindowMode.NORMAL and self.slideshow:
             # Slideshow ends
             self.slideshow = False
 

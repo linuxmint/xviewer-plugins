@@ -1,23 +1,23 @@
 # HideTitlebar plugin
-plugindir = $(libdir)/eog/plugins
+plugindir = $(libdir)/xviewer/plugins
 appstreamdir = $(datadir)/appdata
 
 AM_CPPFLAGS = \
 	-I$(top_srcdir)/src 				\
-	$(EOG_CFLAGS) 					\
+	$(XVIEWER_CFLAGS) 					\
 	$(WARN_CFLAGS)					\
-	-DEOG_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
+	-DXVIEWER_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
 
 plugin_LTLIBRARIES = libhide-titlebar.la
 
 libhide_titlebar_la_SOURCES = \
-	eog-hide-titlebar-plugin.h			\
-	eog-hide-titlebar-plugin.c
+	xviewer-hide-titlebar-plugin.h			\
+	xviewer-hide-titlebar-plugin.c
 
 libhide_titlebar_la_LDFLAGS = \
 	-avoid-version -module
 
-libhide_titlebar_la_LIBADD = $(EOG_LIBS)
+libhide_titlebar_la_LIBADD = $(XVIEWER_LIBS)
 
 # Plugin Info
 
@@ -27,7 +27,7 @@ plugin_in_files = hide-titlebar.plugin.desktop.in
 
 plugin_DATA = $(plugin_in_files:.plugin.desktop.in=.plugin)
 
-appstream_in_files = eog-hide-titlebar.metainfo.xml.in
+appstream_in_files = xviewer-hide-titlebar.metainfo.xml.in
 
 appstream_DATA = $(appstream_in_files:.xml.in=.xml)
 @INTLTOOL_XML_RULE@
