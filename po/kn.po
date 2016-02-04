@@ -1,0 +1,158 @@
+# translation of eog-plugins.master.kn.po to Kannada
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Shankar Prasad <svenkate@redhat.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: eog-plugins.master.kn\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eog-plugins&component=general\n"
+"POT-Creation-Date: 2009-10-25 18:38+0000\n"
+"PO-Revision-Date: 2009-10-26 12:51+0530\n"
+"Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
+"Language-Team: Kannada <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: ../plugins/champlain/champlain.eog-plugin.desktop.in.h:1
+msgid "Display the geolocation of the image on a map"
+msgstr "ಚಿತ್ರದ ಭೂಸ್ಥಳವನ್ನು ನಕ್ಷೆಯನ್ನು ತೋರಿಸು"
+
+#: ../plugins/champlain/champlain.eog-plugin.desktop.in.h:2
+#: ../plugins/champlain/eog-champlain-plugin.c:312
+msgid "Map"
+msgstr "ನಕ್ಷೆ"
+
+#: ../plugins/exif-display/eog-exif-display-plugin.c:136
+msgid " (invalid Unicode)"
+msgstr " (ಅಮಾನ್ಯ ಯುನಿಕೋಡ್)"
+
+#. TRANSLATORS: This is the actual focal length used when
+#. the image was taken.
+#: ../plugins/exif-display/eog-exif-display-plugin.c:212
+#, c-format
+msgid "%.1fmm (lens)"
+msgstr "%.1fmm (ಲೆನ್ಸ್)"
+
+#. Print as float to get a similar look as above.
+#. TRANSLATORS: This is the equivalent focal length assuming
+#. a 35mm film camera.
+#: ../plugins/exif-display/eog-exif-display-plugin.c:223
+#, c-format
+msgid "%.1fmm (35mm film)"
+msgstr "%.1fmm (35mm film)"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:1
+msgid "General"
+msgstr "ಸಾಮಾನ್ಯ"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:2
+msgid "Histogram"
+msgstr "ಹಿಸ್ಟೊಗ್ರಾಮ್"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:3
+msgid "Display RGB histogram"
+msgstr "RGB ಹಿಸ್ಟೊಗ್ರಾಮ್ ಅನ್ನು ತೋರಿಸು"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:4
+msgid "Display camera settings in statusbar"
+msgstr "ಕ್ಯಾಮೆರ ಸಿದ್ಧತೆಗಳನ್ನು ಸ್ಥಿತಿ ಪಟ್ಟಿಕೆಯಲ್ಲಿ ತೋರಿಸು"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:5
+msgid "Display per-channel histogram"
+msgstr "ಪ್ರತಿ ಚಾನಲ್ ಹಿಸ್ಟೊಗ್ರಾಮ್ ಅನ್ನು ತೋರಿಸು"
+
+#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:1
+msgid "Displays camera settings and histogram"
+msgstr "ಕ್ಯಾಮೆರ ಸಿದ್ಧತೆಗಳನ್ನು ಹಾಗು ಹಿಸ್ಟೊಗ್ರಾಮ್ ಅನ್ನು ತೋರಿಸುತ್ತದೆ"
+
+#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:2
+msgid "Exif display"
+msgstr "Exif ಪ್ರದರ್ಶಕ"
+
+#: ../plugins/exif-display/exif-display.ui.h:1
+msgid "Aperture:"
+msgstr "ಕಿಂಡಿ:"
+
+#: ../plugins/exif-display/exif-display.ui.h:2
+#| msgid "Metering:"
+msgid "Description:"
+msgstr "ವಿವರಣೆ:"
+
+#: ../plugins/exif-display/exif-display.ui.h:3
+msgid "Expo. Time:"
+msgstr "ಎಕ್ಸ್‌ಪೊ. ಸಮಯ:"
+
+#: ../plugins/exif-display/exif-display.ui.h:4
+msgid "Expo. bias:"
+msgstr "ಎಕ್ಸ್‌ಪೊ. ಬಯಾಸ್:"
+
+#: ../plugins/exif-display/exif-display.ui.h:5
+msgid "ISO speed:"
+msgstr "ISO ವೇಗ:"
+
+#: ../plugins/exif-display/exif-display.ui.h:6
+msgid "Metering:"
+msgstr "ಮೀಟರಿಂಗ್:"
+
+#: ../plugins/exif-display/exif-display.ui.h:7
+msgid "Zoom:"
+msgstr "ಝೂಮ್‌:"
+
+#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:82
+msgid "Fit to width"
+msgstr "ಅಗಲಕ್ಕೆ ಹೊಂದಿಸು"
+
+#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:84
+#: ../plugins/fit-to-width/fit-to-width.eog-plugin.desktop.in.h:1
+msgid "Zoom to fit image width"
+msgstr "ಚಿತ್ರದ ಅಗಲಕ್ಕೆ ಹೊಂದುವಂತೆ ಹಿಗ್ಗಿಸು"
+
+#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:60
+msgid "Send by Mail"
+msgstr "ಮೈಲ್‌ ಮೂಲಕ ಕಳುಹಿಸು"
+
+#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:62
+msgid "Send the selected images by mail"
+msgstr "ಆಯ್ಕೆ ಮಾಡಲಾದ ಚಿತ್ರಗಳನ್ನು ಮೈಲ್‌ ಮೂಲಕ ಕಳುಹಿಸು"
+
+#: ../plugins/send-by-mail/send-by-mail.eog-plugin.desktop.in.h:1
+msgid "Send By Mail"
+msgstr "ಮೈಲ್‌ ಮೂಲಕ ಕಳುಹಿಸು"
+
+#: ../plugins/send-by-mail/send-by-mail.eog-plugin.desktop.in.h:2
+msgid "Sends an image attached to a new mail"
+msgstr "ಆಯ್ಕೆ ಮಾಡಲಾದ ಚಿತ್ರವನ್ನು ಹೊಸ ಮೈಲ್‌ ಮೂಲಕ ಕಳುಹಿಸು"
+
+#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:1
+msgid "Shuffles images in slideshow mode"
+msgstr "ಚಿತ್ರಗಳನ್ನು ಜಾರುಫಲಕ ಪ್ರದರ್ಶನ ವಿಧಾನದಲ್ಲಿ ಕಲೆಸು"
+
+#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:2
+msgid "Slideshow Shuffle"
+msgstr "ಜಾರುಫಲಕ ಪ್ರದರ್ಶನದ ಕಲೆಸುವಿಕೆ"
+
+#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+msgid "Flickr Uploader"
+msgstr "Flickr ಅಪ್‌ಲೋಡರ್"
+
+#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
+#: ../plugins/postr/eog-postr-plugin.c:59
+msgid "Upload your pictures to Flickr"
+msgstr "Flickr ಗೆ ನಿಮ್ಮ ಚಿತ್ರಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+
+#: ../plugins/postr/eog-postr-plugin.c:57
+msgid "Upload to Flickr"
+msgstr "Flickr ಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+
+#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:1
+msgid "Python Console"
+msgstr "ಪೈಥಾನ್ ಕನ್ಸೋಲ್‌"
+
+#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:2
+msgid "Python console for Eye of GNOME"
+msgstr "ಐ ಆಫ್‌ GNOME ಗಾಗಿನ ಪೈಥಾನ್ ಕನ್ಸೋಲ್"
+

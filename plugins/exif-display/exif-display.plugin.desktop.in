@@ -1,0 +1,9 @@
+[Plugin]
+Module=exif-display
+IAge=2
+_Name=Exif Display
+Icon=zoom-fit-best
+_Description=Displays camera settings and histogram
+Authors=Emmanuel Touzery
+Copyright=Copyright © 2009 Emmanuel Touzery
+Website=http://www.gnome.org/projects/eog

@@ -1,0 +1,13 @@
+<schemalist>
+  <schema gettext-domain="@GETTEXT_PACKAGE@" id="org.gnome.eog.plugins.exif-display" path="/org/gnome/eog/plugins/exif-display/">
+    <key name="channels-histogram" type="b">
+      <default>false</default>
+    </key>
+    <key name="rgb-histogram" type="b">
+      <default>false</default>
+    </key>
+    <key name="exif-in-statusbar" type="b">
+      <default>false</default>
+    </key>
+  </schema>
+</schemalist>

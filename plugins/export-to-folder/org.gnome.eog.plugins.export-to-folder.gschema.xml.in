@@ -1,0 +1,9 @@
+<schemalist>
+  <schema id="org.gnome.eog.plugins.export-to-folder" path="/org/gnome/eog/plugins/export-to-folder/" gettext-domain="@GETTEXT_PACKAGE@">
+    <key name="target-folder" type="s">
+      <default>""</default>
+      <summary>The folder to export to</summary>
+      <description>This is the folder the plugin will place the exported files in. Plugin will export to $HOME/exported-images if not set.</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,405 @@
+# translation of gl.po to Galego
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Ignacio Casal Quinteiro <icq@svn.gnome.org>, 2007.
+# Fran Diéguez <frandieguez@ubuntu.com>, 2010.
+# Xosé M. Lamas <correo.xmgz@gmail.com>, 2012.
+# Fran Dieguez <frandieguez@gnome.org>, 2009, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: gl\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-28 01:14+0200\n"
+"PO-Revision-Date: 2013-08-28 01:15+0200\n"
+"Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
+"Language-Team: gnome-l10n-gl@gnome.org\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+
+#: ../plugins/exif-display/eog-exif-display-plugin.c:105
+msgid " (invalid Unicode)"
+msgstr "(Unicode inválido)"
+
+#. TRANSLATORS: This is the actual focal length used when
+#. the image was taken.
+#: ../plugins/exif-display/eog-exif-display-plugin.c:183
+#, c-format
+msgid "%.1fmm (lens)"
+msgstr "%.1fmm (lentes)"
+
+#. Print as float to get a similar look as above.
+#. TRANSLATORS: This is the equivalent focal length assuming
+#. a 35mm film camera.
+#: ../plugins/exif-display/eog-exif-display-plugin.c:194
+#, c-format
+msgid "%.1fmm (35mm film)"
+msgstr "%.1fmm (película de 35mm)"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:1
+msgid "Histogram"
+msgstr "Histograma"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:2
+msgid "Display per-channel histogram"
+msgstr "Mostrar histograma por canle"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:3
+msgid "Display RGB histogram"
+msgstr "Mostrar histograma RGB"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:4
+msgid "General"
+msgstr "Xeral"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:5
+msgid "Display camera settings in statusbar"
+msgstr "Mostrar configuracións da cámara na barra de estado"
+
+#: ../plugins/exif-display/exif-display.plugin.desktop.in.h:1
+msgid "Exif display"
+msgstr "Mostrar Exif"
+
+#: ../plugins/exif-display/exif-display.plugin.desktop.in.h:2
+msgid "Displays camera settings and histogram"
+msgstr "Mostrar configuracións da cámara e histograma"
+
+#: ../plugins/exif-display/exif-display.ui.h:1
+msgid "ISO speed:"
+msgstr "Velocidade ISO:"
+
+#: ../plugins/exif-display/exif-display.ui.h:2
+msgid "Expo. Time:"
+msgstr "Tempo de expo.:"
+
+#: ../plugins/exif-display/exif-display.ui.h:3
+msgid "Aperture:"
+msgstr "Apertura:"
+
+#: ../plugins/exif-display/exif-display.ui.h:4
+msgid "Zoom:"
+msgstr "Zoom:"
+
+#: ../plugins/exif-display/exif-display.ui.h:5
+msgid "Metering:"
+msgstr "Medición:"
+
+#: ../plugins/exif-display/exif-display.ui.h:6
+msgid "Expo. bias:"
+msgstr "Tendencia da expo.:"
+
+#: ../plugins/exif-display/exif-display.ui.h:7
+msgid "Description:"
+msgstr "Descrición:"
+
+#: ../plugins/export-to-folder/export-to-folder.plugin.desktop.in.h:1
+msgid "Export to Folder"
+msgstr "Exportar a un cartafol"
+
+#: ../plugins/export-to-folder/export-to-folder.plugin.desktop.in.h:2
+msgid "Export the current image to a separate directory"
+msgstr "Exportar a imaxe actual a outro cartafol"
+
+#: ../plugins/export-to-folder/export-to-folder.py:62
+msgid "_Export"
+msgstr "_Exportar"
+
+#: ../plugins/export-to-folder/org.gnome.eog.plugins.export-to-folder.gschema.xml.in.in.h:1
+msgid "The folder to export to"
+msgstr "O cartafol ao que exportar"
+
+#: ../plugins/export-to-folder/org.gnome.eog.plugins.export-to-folder.gschema.xml.in.in.h:2
+msgid ""
+"This is the folder the plugin will place the exported files in. Plugin will "
+"export to $HOME/exported-images if not set."
+msgstr ""
+"Este é o cartafol no que o engadido colocará os ficheiros exportados. Se non "
+"está estabelecido, o engadido empregará o cartafol $HOME/exported-images."
+
+#: ../plugins/export-to-folder/preferences_dialog.ui.h:1
+msgid "Export directory:"
+msgstr "Cartafol de exporación:"
+
+#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:91
+msgid "Fit to width"
+msgstr "Axustar ao ancho"
+
+#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:93
+msgid "Fit the image to the window width"
+msgstr "Axustar a imaxe ao ancho da xanela"
+
+#: ../plugins/fit-to-width/fit-to-width.plugin.desktop.in.h:1
+msgid "Zoom to fit image width"
+msgstr "Facer zoom para axustar ao ancho da imaxe"
+
+#: ../plugins/fit-to-width/fit-to-width.plugin.desktop.in.h:2
+msgid "Fit images to the window width"
+msgstr "Axustar imaxes ao ancho da xanela"
+
+#: ../plugins/fullscreenbg/fullscreenbg.plugin.desktop.in.h:1
+msgid "Fullscreen Background"
+msgstr "Fondo de escritorio a pantalla completa"
+
+#: ../plugins/fullscreenbg/fullscreenbg.plugin.desktop.in.h:2
+msgid "Enables changing background in fullscreen mode"
+msgstr "Activa o cambio de fondo no modo a pantalla completa"
+
+#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:1
+msgid "Use custom background settings"
+msgstr "Usar configuración de fondo personalizada"
+
+#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:2
+msgid "Whether the plugin should use global settings or its own."
+msgstr ""
+"Indica se o engadido debe usar unha configuración global ou a súa propia."
+
+#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:3
+msgid "Background color in fullscreen mode"
+msgstr "Cor de fondo en modo a pantalla completa"
+
+#: ../plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml.in.in.h:4
+msgid ""
+"The color that is used to fill the area behind the image. This option has "
+"effect only if use-custom is enabled."
+msgstr ""
+"O cor usado para encher a área de detrás da imaxe. Esta opción só ten efecto "
+"se se usa un cor personalizado."
+
+#: ../plugins/fullscreenbg/preferences_dialog.ui.h:1
+msgid "Use custom color:"
+msgstr "Usar cor personalizado:"
+
+#: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:1
+msgid "Hide Titlebar"
+msgstr "Ocultar a barra de título"
+
+#: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
+msgid "Hides the titlebar of maximized Eye of GNOME windows"
+msgstr ""
+"Oculta a barra de título das xanelas maximizadas do Visor de imaxes EOG"
+
+#: ../plugins/light-theme/light-theme.plugin.desktop.in.h:1
+msgid "Disable dark theme"
+msgstr "Desactivar o tema escuro"
+
+#: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
+msgid "Disables Eye of GNOME's preference of dark theme variants"
+msgstr "Desactivar as preferencias das variantes do tema escuro"
+
+#: ../plugins/map/eog-map-plugin.c:401
+msgid "Jump to current image's location"
+msgstr "Saltar á localización da imaxe actual"
+
+#: ../plugins/map/eog-map-plugin.c:413
+msgid "Zoom in"
+msgstr "Acercar"
+
+#: ../plugins/map/eog-map-plugin.c:421
+msgid "Zoom out"
+msgstr "Afastar"
+
+#: ../plugins/map/eog-map-plugin.c:436
+#: ../plugins/map/map.plugin.desktop.in.h:1
+msgid "Map"
+msgstr "Mapa"
+
+#: ../plugins/map/map.plugin.desktop.in.h:2
+msgid "Display the geolocation of the image on a map"
+msgstr "Mostra a xeolocalización da imaxe nun mapa"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:127
+msgid "Upload to PicasaWeb"
+msgstr "Subir a PicasaWeb"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:129
+#: ../plugins/postasa/postasa.plugin.desktop.in.h:2
+msgid "Upload your pictures to PicasaWeb"
+msgstr "Suba as súas fotografías a PicasaWeb"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:325
+msgid "Uploading..."
+msgstr "Subindo..."
+
+#: ../plugins/postasa/eog-postasa-plugin.c:371
+msgid "Uploaded"
+msgstr "Subido"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:375
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:378
+msgid "Failed"
+msgstr "Fallado"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:601
+#, c-format
+msgid "Login failed. %s"
+msgstr "Produciuse un fallo ao autenticarse. %s"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:605
+msgid "Logged in successully."
+msgstr "Autenticación correcta."
+
+#: ../plugins/postasa/eog-postasa-plugin.c:606
+msgid "Close"
+msgstr "Pechar"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:627
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. TODO: want to handle passwords more securely
+#: ../plugins/postasa/eog-postasa-plugin.c:633
+msgid "Logging in..."
+msgstr "Autenticándose..."
+
+#: ../plugins/postasa/eog-postasa-plugin.c:678
+msgid "Please log in to continue upload."
+msgstr "Autentíquese para continuar a subida."
+
+#: ../plugins/postasa/postasa-config.xml.h:1
+msgid "PicasaWeb Login"
+msgstr "Autenticación de PicasaWeb"
+
+#: ../plugins/postasa/postasa-config.xml.h:2
+msgid "_Cancel"
+msgstr "_Cancelar"
+
+#: ../plugins/postasa/postasa-config.xml.h:3
+msgid "_Login"
+msgstr "_Entrada"
+
+#: ../plugins/postasa/postasa-config.xml.h:4
+msgid "_Username:"
+msgstr "Nome de _usuario:"
+
+#: ../plugins/postasa/postasa-config.xml.h:5
+msgid "_Password:"
+msgstr "C_ontrasinal:"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:1
+msgid "Uploads:"
+msgstr "Subidas:"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:2
+msgid "File"
+msgstr "Ficheiro"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:3
+msgid "Size"
+msgstr "Tamaño"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:4
+msgid "Status"
+msgstr "Estado"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:5
+msgid "Cancel Selected"
+msgstr "Cancelar o seleccionado"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:6
+msgid "Cancel All"
+msgstr "Cancelar todo"
+
+#: ../plugins/postasa/postasa.plugin.desktop.in.h:1
+msgid "PicasaWeb Uploader"
+msgstr "Cargador para PicasaWeb"
+
+#: ../plugins/postr/eog-postr-plugin.c:62
+msgid "Upload to Flickr"
+msgstr "Subir a Flickr"
+
+#: ../plugins/postr/eog-postr-plugin.c:64
+#: ../plugins/postr/postr.plugin.desktop.in.h:2
+msgid "Upload your pictures to Flickr"
+msgstr "Suba as súas fotografías a Flickr"
+
+#: ../plugins/postr/postr.plugin.desktop.in.h:1
+msgid "Flickr Uploader"
+msgstr "Cargador para Flickr"
+
+#: ../plugins/pythonconsole/__init__.py:64
+msgid "P_ython Console"
+msgstr "Consola de P_ython"
+
+#: ../plugins/pythonconsole/__init__.py:88
+#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
+msgid "Python Console"
+msgstr "Consola Python"
+
+#: ../plugins/pythonconsole/config.ui.h:1
+msgid "C_ommand color:"
+msgstr "Cor da _orde:"
+
+#: ../plugins/pythonconsole/config.ui.h:2
+msgid "_Error color:"
+msgstr "Cor do _erro:"
+
+#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:1
+msgid "Command Text Color"
+msgstr "Cor do texto da orde"
+
+#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:2
+msgid "The color used for commands."
+msgstr "A cor usado para as ordes."
+
+#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:3
+msgid "Error Text Color"
+msgstr "Cor do texto de erro"
+
+#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:4
+msgid "The color used for errors."
+msgstr "A cor usada para os erros."
+
+#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:5
+msgid "Whether to use the system font"
+msgstr "Indica se se debe usar a tipografía do sistema"
+
+#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:6
+msgid ""
+"If true, the terminal will use the desktop-global standard font if it's "
+"monospace (and the most similar font it can come up with otherwise)."
+msgstr ""
+"Se é certo, o terminal usará o tipo de letra global estándar do escritorio "
+"se esta é de ancho fixo (e o tipo de letra máis parecida a esta)."
+
+#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:7
+msgid "Font used by Python Console"
+msgstr "Tipo de letra usada pola consola de Python"
+
+#: ../plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml.in.in.h:8
+msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
+msgstr ""
+"Un nome de tipo de letra Pango. Por exemplo «Sans 12» ou «Monospace Bold 14»."
+
+#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
+msgid "Python console for Eye of GNOME"
+msgstr "Consola Python para Eye of GNOME"
+
+#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:63
+msgid "Send by Mail"
+msgstr "Enviar por correo electrónico"
+
+#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:65
+msgid "Send the selected images by mail"
+msgstr "Enviar as imaxes seleccionadas por correo electrónico"
+
+#: ../plugins/send-by-mail/send-by-mail.plugin.desktop.in.h:1
+msgid "Send By Mail"
+msgstr "Enviar por correo lectrónico"
+
+#: ../plugins/send-by-mail/send-by-mail.plugin.desktop.in.h:2
+msgid "Sends an image attached to a new mail"
+msgstr "Envía unha imaxe anexada a un novo correo electrónico"
+
+#: ../plugins/slideshowshuffle/slideshowshuffle.plugin.desktop.in.h:1
+msgid "Slideshow Shuffle"
+msgstr "Presentación barallada"
+
+#: ../plugins/slideshowshuffle/slideshowshuffle.plugin.desktop.in.h:2
+msgid "Shuffles images in slideshow mode"
+msgstr "Baralla as imaxes no modo presentación"

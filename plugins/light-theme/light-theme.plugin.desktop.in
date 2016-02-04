@@ -1,0 +1,9 @@
+[Plugin]
+Module=light-theme
+IAge=2
+_Name=Disable Dark Theme
+Icon=eog-plugin
+_Description=Disables Eye of GNOME's preference of dark theme variants
+Authors=Felix Riemann <friemann@gnome.org>
+Copyright=Copyright © 2012 Felix Riemann
+Website=http://www.gnome.org/projects/eog

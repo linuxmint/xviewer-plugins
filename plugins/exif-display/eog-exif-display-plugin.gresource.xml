@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/gnome/eog/plugins/exif-display">
+    <file compressed="true" preprocess="xml-stripblanks">exif-display-config.ui</file>
+    <file preprocess="xml-stripblanks">exif-display.ui</file>
+  </gresource>
+</gresources>

@@ -1,0 +1,223 @@
+2009-08-29  Felix Riemann  <friemann@gnome.org>
+
+	* plugins/champlain/eog-champlain-plugin.c:
+	* plugins/exif-display/eog-exif-display-plugin.c:
+	Fix various compiler warnings.
+
+2009-08-25  Felix Riemann  <friemann@gnome.org>
+
+	* plugins/postr/eog-postr-plugin.c:
+	Use GIO to determine the images' file path. This makes it possible to
+	use files from GIO FUSE mounts. Fixes bug #592984.
+
+2009-08-25  Felix Riemann  <friemann@gnome.org>
+
+	* plugins/exif-display/eog-exif-display-plugin.c:
+	Only draw to the GtkDrawingArea when it is realized. Fixes crashes
+	when multiple plugins use the sidebar. Fixes bug #593003.
+
+2009-08-24  Felix Riemann  <friemann@gnome.org>
+
+	* NEWS: Prepare for initial release.
+
+2009-08-24  Felix Riemann  <friemann@gnome.org>
+
+	* plugins/champlain/eog-champlain-plugin.c (impl_activate):
+	Place the champlain widget inside a GtkFrame instead of a viewport.
+	This is just a temporary workaround until there is a solution for the
+	X errors mentioned in bug 590692.
+
+2009-08-24  Felix Riemann  <friemann@gnome.org>
+
+	* configure.ac:
+	* plugins/champlain/eog-champlain-plugin.c:
+	Update champlain plugin to work with libchamplain-0.3 and clutter-1.0.
+	Fixes bug #588397 (Pierre-Luc Beaudoin).
+
+2009-08-12  Felix Riemann  <friemann@gnome.org>
+
+	* plugins/exif-display/eog-exif-display-plugin.c (impl_activate),
+	(impl_create_config_dialog):
+	Set translation domain on GtkBuilder instances or else UI strings are
+	only partially translated because the strings are searched for in
+	eog's translations.
+
+2009-08-12  Felix Riemann  <friemann@gnome.org>
+
+	* plugins/exif-display/eog-exif-display-plugin.c:
+	* plugins/exif-display/exif-display.ui:
+	Add description tag to the list of displayed exif tags and improve
+	widget alignment (Jonathan Michalon).
+
+2009-08-11  Felix Riemann  <friemann@gnome.org>
+
+	* configure.ac:
+	* plugins/*/Makefile.am:
+	Add support for Automake 1.11's silent build rules.
+
+2009-07-18  Felix Riemann  <friemann@gnome.org>
+
+	* configure.ac: Raise gtk+ dependency to at least 2.12.
+
+2009-07-18  Felix Riemann  <friemann@gnome.org>
+
+	* plugins/champlain/eog-champlain-plugin.c (impl_activate):
+	Make the sidebar's page title translatable.
+
+2009-06-27  Felix Riemann  <friemann@gnome.org>
+
+	* plugins/exif-display/eog-exif-display-plugin.c:
+	* plugins/slideshowshuffle/slideshowshuffle.py:
+	Strip trailing whitespaces.
+
+2009-06-16  Felix Riemann  <friemann@svn.gnome.org>
+
+	* plugins/exif-display/exif-display-config.ui:
+	Mark empty labels untranslatable.
+
+2009-06-16  Felix Riemann  <friemann@svn.gnome.org>
+
+	* plugins/exif-display/Makefile.am:
+	* plugins/exif-display/eog-exif-display-plugin.c:
+	Don't install UI files into the plugins folder directly.
+
+2009-06-12  Felix Riemann  <friemann@svn.gnome.org>
+
+	* configure.ac:
+	* plugins/exif-display/eog-exif-display-plugin.c
+	(_eog_util_make_valid_utf8), (eog_exif_set_label):
+	Duplicate eog_util_make_valid_utf8 into the plugin as it is not
+	exported anymore by the current eog version.
+
+2009-06-12  Felix Riemann  <friemann@svn.gnome.org>
+
+	* plugins/exif-display/Makefile.am:
+	* plugins/exif-display/eog-exif-display-plugin.c:
+	* plugins/exif-display/eog-exif-display-plugin.h:
+	* plugins/exif-display/exif-display-config.ui:
+	* plugins/exif-display/exif-display.eog-plugin.desktop.in:
+	* plugins/exif-display/exif-display.ui:
+	* configure.ac:
+	Add exif-display plugin by Emmanuel Touzery.
+
+2009-05-05  Felix Riemann  <friemann@svn.gnome.org>
+
+	* configure.ac: Make --with-plugins parameter appear nice with a list
+	of the included plugins.
+
+2009-05-05  Felix Riemann  <friemann@svn.gnome.org>
+
+	* autogen.sh:
+	* configure.ac:
+	Match required build tool version in autogen.sh and configure.ac.
+
+2009-04-27  Felix Riemann  <friemann@svn.gnome.org>
+
+	* plugins/fit-to-width/eog-fit-to-width-plugin.c:
+	* plugins/postr/eog-postr-plugin.c:
+	Remove trailing whitespaces.
+
+2009-04-27  Felix Riemann  <friemann@svn.gnome.org>
+
+	* plugins/fit-to-width/eog-fit-to-width-plugin.c
+	(eog_fit_to_width_plugin_class_init):
+	Remove unused functions from fit-to-width plugin.
+
+2009-04-27  Felix Riemann  <friemann@svn.gnome.org>
+
+	* configure.ac:
+	* plugins/fit-to-width/Makefile.am:
+	* plugins/fit-to-width/eog-fit-to-width-plugin.c:
+	* plugins/fit-to-width/eog-fit-to-width-plugin.h:
+	* plugins/fit-to-width/fit-to-width.eog-plugin.desktop.in:
+	Add fit-to-width plugin which tries to make the image width fit the
+	window. Fixes bug #438642 (Javier Sánchez).
+
+2009-04-12  Felix Riemann  <friemann@svn.gnome.org>
+
+	* configure.ac:
+	* plugins/slideshowshuffle/Makefile.am:
+	* plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in:
+	* plugins/slideshowshuffle/slideshowshuffle.py:
+	Add plugin to randomize image order during slideshows.
+	Fixes bug #562135 (Johannes Marbach).
+
+2009-02-15  Felix Riemann  <friemann@svn.gnome.org>
+
+	* Makefile.am: Forgot to remove gnome-doc-utils from the Makefile.
+
+2009-02-15  Felix Riemann  <friemann@svn.gnome.org>
+
+	* configure.ac: There is no need for gnome-doc-utils.
+
+2009-02-15  Felix Riemann  <friemann@svn.gnome.org>
+
+	* configure.ac: Add configure bits missing from last commit.
+
+2009-02-15  Felix Riemann  <friemann@svn.gnome.org>
+
+	* Makefile.am:
+	* autogen.sh:
+	Require at least intltool-0.40.0.
+
+2009-02-15  Felix Riemann  <friemann@svn.gnome.org>
+
+	* configure.ac: Fix Bugzilla URI and remove unneeded dependencies
+	on libglade and GnomeVFS.
+
+2009-02-15  Felix Riemann  <friemann@svn.gnome.org>
+
+	* configure.ac:
+	* plugins/pythonconsole/*:
+	Add pythonconsole plugin based on the gedit plugin of the same name.
+	Fixes bug #462338 (Diego Escalante Urrelo, Francisco Rojas).
+
+2008-10-17  Felix Riemann  <friemann@svn.gnome.org>
+
+	* configure.ac:
+	* plugins/champlain/eog-champlain-plugin.c:
+	Update plugin to work with latest libchamplain (Pierre-Luc Beaudoin).
+
+2008-10-12  Lucas Rocha  <lucasr@gnome.org>
+
+	* configure.ac, plugins/champlain/*: new geo tagging plugin based on
+	libchamplain. Patch from Pierre-Luc Beaudoin <pierre-luc@pierlux.com>.
+
+2008-04-08  Lucas Rocha  <lucasr@gnome.org>
+
+	* configure.ac: property check postr program and disable plugin
+	accordingly in case the program is not installed.
+
+2008-03-17  Lucas Rocha  <lucasr@gnome.org>
+
+	* configure.ac, plugins/Makefile.am, plugins/fullscreen/*,
+	plugins/reload/*: moved fullscreen and reload to main eog
+	module as default plugins.
+
+2007-11-13  Lucas Rocha  <lucasr@gnome.org>
+
+	* reload/eog-reload-plugin.c, reload/eog-reload-plugin.h,
+	reload/reload.eog-plugin.desktop.in, reload/Makefile.am, configure.ac:
+	new "Fullscreen with double-click" plugin. Fixes bug #478695.
+
+2007-11-13  Lucas Rocha  <lucasr@gnome.org>
+
+	* reload/eog-reload-plugin.c, reload/eog-reload-plugin.h,
+	reload/reload.eog-plugin.desktop.in, reload/Makefile.am, configure.ac:
+	new "Reload Image" plugin. Fixes bug #470185.
+
+2007-11-13  Lucas Rocha  <lucasr@gnome.org>
+
+	* plugin/postr/eog-postr-plugin.c: remove remaining junk code from
+	plugin.
+
+2007-11-13  Lucas Rocha  <lucasr@gnome.org>
+
+	* plugin/postr/eog-postr-plugin.c,
+	plugins/postr/postr.eog-plugin.desktop.in: general code cleanup and marked
+	strings for proper translation.
+	* MAINTAINERS: change file to official format.
+
+2007-08-06  Lucas Rocha  <lucasr@gnome.org>
+
+	* Initial import.

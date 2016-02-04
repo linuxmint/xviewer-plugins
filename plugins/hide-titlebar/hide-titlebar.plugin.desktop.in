@@ -1,0 +1,9 @@
+[Plugin]
+Module=hide-titlebar
+IAge=2
+_Name=Hide Titlebar
+Icon=eog-plugin
+_Description=Hides the titlebar of maximized Eye of GNOME windows
+Authors=Claudio Saavedra <csaavedra@igalia.com>, Felix Riemann <friemann@gnome.org>
+Copyright=Copyright © 2012 The Free Software Foundation
+Website=http://www.gnome.org/projects/eog

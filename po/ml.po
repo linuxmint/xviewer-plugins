@@ -1,0 +1,137 @@
+# translation of ml.po to
+# translation of eog-plugins.HEAD.ml.po to
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the eog-plugins package.
+# ANI PETER <apeter@redhat.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ml\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eog-plugins&component=general\n"
+"POT-Creation-Date: 2009-03-20 05:24+0000\n"
+"PO-Revision-Date: 2009-08-12 14:08+0530\n"
+"Last-Translator: ANI PETER <apeter@redhat.com>\n"
+"Language-Team: Swathanthra Malayalam Computing|സ്വതന്ത്ര മലയാളം കമ്പ്യൂട്ടിങ് <smc-discuss@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../plugins/champlain/champlain.eog-plugin.desktop.in.h:1
+msgid "Display the geolocation of the image on a map"
+msgstr "ഇമേജിന്റെ സ്ഥാനം ഒരു ഭൂപടത്തില്‍ കാണിക്കുക"
+
+#: ../plugins/champlain/champlain.eog-plugin.desktop.in.h:2
+#: ../plugins/champlain/eog-champlain-plugin.c:333
+msgid "Map"
+msgstr "ഭൂപടം"
+
+#: ../plugins/exif-display/eog-exif-display-plugin.c:137
+msgid " (invalid Unicode)"
+msgstr " (തെറ്റായ യൂണികോഡ്)"
+
+#. TRANSLATORS: This is the actual focal length used when
+#. the image was taken.
+#: ../plugins/exif-display/eog-exif-display-plugin.c:213
+#, c-format
+msgid "%.1fmm (lens)"
+msgstr "%.1fmm (ലെന്‍സ്)"
+
+#. Print as float to get a similar look as above.
+#. TRANSLATORS: This is the equivalent focal length assuming
+#. a 35mm film camera.
+#: ../plugins/exif-display/eog-exif-display-plugin.c:224
+#, c-format
+msgid "%.1fmm (35mm film)"
+msgstr "%.1fmm (35mm ഫിലിം)"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:1
+msgid "General"
+msgstr "സാധാരണ"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:2
+msgid "Histogram"
+msgstr "ഹിസ്റ്റോഗ്രാം"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:3
+msgid "Display RGB histogram"
+msgstr "RGB ഹിസ്റ്റോഗ്രാം കാണിക്കുക"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:4
+msgid "Display camera settings in statusbar"
+msgstr "സ്റ്റേറ്റസ് ബാറില്‍ ക്യമറാ ക്രമീകരണങ്ങള്‍ കാണിക്കുക"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:5
+msgid "Display per-channel histogram"
+msgstr "ഓരോ ചാനിലിന്റേയും ഹിസ്റ്റോഗ്രാം കാണിക്കുക"
+
+#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:1
+msgid "Displays camera settings and histogram"
+msgstr "ഹിസ്റ്റോഗ്രാമും ക്യാമറ ക്രമീകരണങ്ങളും കാണിക്കുന്നു"
+
+#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:2
+msgid "Exif display"
+msgstr "Exif ഡിസ്പ്ലേ"
+
+#: ../plugins/exif-display/exif-display.ui.h:1
+msgid "Aperture:"
+msgstr "അപേര്‍ച്ചര്‍:"
+
+#: ../plugins/exif-display/exif-display.ui.h:2
+msgid "Expo. Time:"
+msgstr "Expo. സമയം:"
+
+#: ../plugins/exif-display/exif-display.ui.h:3
+msgid "Expo. bias:"
+msgstr "Expo. bias:"
+
+#: ../plugins/exif-display/exif-display.ui.h:4
+msgid "ISO speed:"
+msgstr "ISO വേഗത:"
+
+#: ../plugins/exif-display/exif-display.ui.h:5
+msgid "Metering:"
+msgstr "മീറ്ററിങ്:"
+
+#: ../plugins/exif-display/exif-display.ui.h:6
+msgid "Zoom:"
+msgstr "വലുതാക്കുക:"
+
+#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:82
+msgid "Fit to width"
+msgstr "വീതി പാകത്തിനാക്കുക"
+
+#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:84
+#: ../plugins/fit-to-width/fit-to-width.eog-plugin.desktop.in.h:1
+msgid "Zoom to fit image width"
+msgstr "ചിതത്തിന്റെ വീതിയുടെ പാകത്തിനാക്കുക"
+
+#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:1
+msgid "Shuffles images in slideshow mode"
+msgstr "സ്ലൈഡ്ഷോ മോഡില്‍ ചിത്രങ്ങള്‍ ഷഫിള്‍ ചെയ്യുന്നു"
+
+#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:2
+msgid "Slideshow Shuffle"
+msgstr "സ്ലൈഡ്ഷോ ഷഫിള്‍ ചെയ്യുക"
+
+#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+msgid "Flickr Uploader"
+msgstr "Flickr അപ്‌ലോഡര്‍"
+
+#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
+#: ../plugins/postr/eog-postr-plugin.c:50
+msgid "Upload your pictures to Flickr"
+msgstr "Flickr-ലേക്കു് നിങ്ങളുടെ പടങ്ങള്‍ അപ്‌ലോഡ് ചെയ്യുക"
+
+#: ../plugins/postr/eog-postr-plugin.c:48
+msgid "Upload to Flickr"
+msgstr "Flickr-ലേക്കു് അപ്‌ലോഡ് ചെയ്യുക"
+
+#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:1
+msgid "Python Console"
+msgstr "പൈഥണ്‍ കണ്‍സോള്‍"
+
+#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:2
+msgid "Python console for Eye of GNOME"
+msgstr "ഐ ഓഫ് ഗ്നോമിനുള്ള പൈഥണ്‍ കണ്‍സോള്‍"
+

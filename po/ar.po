@@ -1,0 +1,267 @@
+# Arabic translations for PACKAGE package.
+# Copyright (C) 2007 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2007.
+# Khaled Hosny <khaledhosny@eglug.org>, 2009, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: eog-plugins\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-13 17:58+0200\n"
+"PO-Revision-Date: 2011-02-13 17:58+0300\n"
+"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
+"Language-Team: Arabic <doc@arabeyes.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Virtaal 0.6.1\n"
+"X-Poedit-Language: Arabic\n"
+
+#: ../plugins/exif-display/eog-exif-display-plugin.c:105
+msgid " (invalid Unicode)"
+msgstr " (يونيكود غير سليم)"
+
+#. TRANSLATORS: This is the actual focal length used when
+#. the image was taken.
+#: ../plugins/exif-display/eog-exif-display-plugin.c:183
+#, c-format
+msgid "%.1fmm (lens)"
+msgstr "‏%.1fمم (عدسة)"
+
+#. Print as float to get a similar look as above.
+#. TRANSLATORS: This is the equivalent focal length assuming
+#. a 35mm film camera.
+#: ../plugins/exif-display/eog-exif-display-plugin.c:194
+#, c-format
+msgid "%.1fmm (35mm film)"
+msgstr "‏%.1fمم (فيلم 35مم)"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:1
+msgid "General"
+msgstr "عام"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:2
+msgid "Histogram"
+msgstr "رسم بياني"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:3
+msgid "Display RGB histogram"
+msgstr "اعرض مدرّج ح‌خ‌ز تكراري"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:4
+msgid "Display camera settings in statusbar"
+msgstr "اعرض إعدادات الكمرة في شريط الحالة"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:5
+msgid "Display per-channel histogram"
+msgstr "اعرض مخطط تكراري لكل قناة"
+
+#: ../plugins/exif-display/exif-display.plugin.desktop.in.h:1
+msgid "Displays camera settings and histogram"
+msgstr "اعرض إعدادات الكمرة والمخطط التكراري"
+
+#: ../plugins/exif-display/exif-display.plugin.desktop.in.h:2
+msgid "Exif display"
+msgstr "عرض Exif"
+
+#: ../plugins/exif-display/exif-display.ui.h:1
+msgid "Aperture:"
+msgstr "الفتحة:"
+
+#: ../plugins/exif-display/exif-display.ui.h:2
+msgid "Description:"
+msgstr "الوصف:"
+
+#: ../plugins/exif-display/exif-display.ui.h:3
+msgid "Expo. Time:"
+msgstr "زمن التعرض:"
+
+#: ../plugins/exif-display/exif-display.ui.h:4
+msgid "Expo. bias:"
+msgstr "تحيّز التعرض:"
+
+#: ../plugins/exif-display/exif-display.ui.h:5
+msgid "ISO speed:"
+msgstr "سرعة ISO:"
+
+#: ../plugins/exif-display/exif-display.ui.h:6
+msgid "Metering:"
+msgstr "القياس:"
+
+#: ../plugins/exif-display/exif-display.ui.h:7
+msgid "Zoom:"
+msgstr "التقريب:"
+
+#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:91
+msgid "Fit to width"
+msgstr "لائم العرض"
+
+#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:93
+#: ../plugins/fit-to-width/fit-to-width.plugin.desktop.in.h:1
+msgid "Zoom to fit image width"
+msgstr "قرّب لتلائم عرض الصورة"
+
+#: ../plugins/map/eog-map-plugin.c:376
+msgid "Jump to current image's location"
+msgstr "انقل إلى موضع الصورة الحالية"
+
+#: ../plugins/map/eog-map-plugin.c:388
+msgid "Zoom in"
+msgstr "قرّب"
+
+#: ../plugins/map/eog-map-plugin.c:396
+msgid "Zoom out"
+msgstr "بعّد"
+
+#: ../plugins/map/eog-map-plugin.c:410
+#: ../plugins/map/map.eog-plugin.desktop.in.h:2
+msgid "Map"
+msgstr "خريطة"
+
+#: ../plugins/map/map.eog-plugin.desktop.in.h:1
+msgid "Display the geolocation of the image on a map"
+msgstr "اعرض الموقع الجغرافي للصورة على الخريطة"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:124
+msgid "Upload to PicasaWeb"
+msgstr "ارفع إلى PicasaWeb"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:126
+#: ../plugins/postasa/postasa.eog-plugin.desktop.in.h:2
+msgid "Upload your pictures to PicasaWeb"
+msgstr "ارفع صورك إلى PicasaWeb"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:320
+msgid "Uploading..."
+msgstr "يرفع..."
+
+#: ../plugins/postasa/eog-postasa-plugin.c:366
+msgid "Uploaded"
+msgstr "رُفِعت"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:370
+msgid "Cancelled"
+msgstr "أُلغِيَ"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:373
+msgid "Failed"
+msgstr "فشل"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:581
+#, c-format
+msgid "Login failed. %s"
+msgstr "فشل الولوج. %s"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:585
+msgid "Logged in successully."
+msgstr "نجح الولوج."
+
+#: ../plugins/postasa/eog-postasa-plugin.c:586
+msgid "Close"
+msgstr "أغلق"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:607
+#: ../plugins/postasa/postasa-config.xml.h:1
+msgid "Cancel"
+msgstr "ألغِ"
+
+#. TODO: want to handle passwords more securely
+#: ../plugins/postasa/eog-postasa-plugin.c:613
+msgid "Logging in..."
+msgstr "يلِج..."
+
+#: ../plugins/postasa/eog-postasa-plugin.c:641
+msgid "Please log in to continue upload."
+msgstr "عليك الولوج لإكمال الرفع."
+
+#: ../plugins/postasa/postasa-config.xml.h:2
+msgid "Login"
+msgstr "لُج"
+
+#: ../plugins/postasa/postasa-config.xml.h:3
+msgid "Password"
+msgstr "كلمة السرّ"
+
+#: ../plugins/postasa/postasa-config.xml.h:4
+msgid "PicasaWeb Login"
+msgstr "ولوج PicasaWeb"
+
+#: ../plugins/postasa/postasa-config.xml.h:5
+msgid "Username"
+msgstr "اسم المستخدم"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:1
+msgid "Cancel All"
+msgstr "ألغِ الكل"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:2
+msgid "Cancel Selected"
+msgstr "ألغِ المحددة"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:3
+msgid "Uploads:"
+msgstr "الرفع:"
+
+#: ../plugins/postasa/postasa.eog-plugin.desktop.in.h:1
+msgid "PicasaWeb Uploader"
+msgstr "رافِع PicasaWeb"
+
+#: ../plugins/postr/eog-postr-plugin.c:62
+msgid "Upload to Flickr"
+msgstr "ارفع إلى فلِكر"
+
+#: ../plugins/postr/eog-postr-plugin.c:64
+#: ../plugins/postr/postr.plugin.desktop.in.h:2
+msgid "Upload your pictures to Flickr"
+msgstr "ارفع صورك إلى فلِكر"
+
+#: ../plugins/postr/postr.plugin.desktop.in.h:1
+msgid "Flickr Uploader"
+msgstr "رافِع فلِكر"
+
+#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:1
+msgid "Python Console"
+msgstr "مرقاب بيثون"
+
+#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:2
+msgid "Python console for Eye of GNOME"
+msgstr "مرقاب بيثون لعين جنوم"
+
+#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:63
+msgid "Send by Mail"
+msgstr "أرسِل بالبريد"
+
+#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:65
+msgid "Send the selected images by mail"
+msgstr "أرسل الصور المحددة بالبريد"
+
+#: ../plugins/send-by-mail/send-by-mail.plugin.desktop.in.h:1
+msgid "Send By Mail"
+msgstr "أرسِل بالبريد"
+
+#: ../plugins/send-by-mail/send-by-mail.plugin.desktop.in.h:2
+msgid "Sends an image attached to a new mail"
+msgstr "أرسل صورة مرفقة برسالة بريد جديدة"
+
+#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:1
+msgid "Shuffles images in slideshow mode"
+msgstr "اخلط الصور في نمط عرض الشرائح"
+
+#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:2
+msgid "Slideshow Shuffle"
+msgstr "خلط عرض الشرائح"
+
+#~ msgid "Reload Image"
+#~ msgstr "اعد تحميل الصورة"
+
+#~ msgid "Reload current image"
+#~ msgstr "اعد تحميل الصورة الحالية"
+
+#~ msgid "Activate fullscreen mode with double-click"
+#~ msgstr "نشّط العرض على كامل الشاشة بنقرة مزدوجة"
+
+#~ msgid "Fullscreen with double-click"
+#~ msgstr "نشّط العرض على كامل الشاشة بنقرة مزدوجة"

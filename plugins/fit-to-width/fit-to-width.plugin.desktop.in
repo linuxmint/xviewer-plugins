@@ -1,0 +1,9 @@
+[Plugin]
+Module=fit-to-width
+IAge=2
+_Name=Zoom to Fit Image Width
+Icon=gtk-zoom-fit
+_Description=Fit images to the window width
+Authors=Javier Sánchez <jsanchez@deskblue.com>
+Copyright=Copyright © 2009 Javier Sánchez
+Website=http://www.gnome.org/projects/eog

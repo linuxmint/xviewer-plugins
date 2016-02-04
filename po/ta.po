@@ -1,0 +1,163 @@
+# translation of eog-plugins.master.ta.po to Tamil
+# Bengali (India) translation of eog-plugins.
+# Copyright (C) 2009 eog-plugins's COPYRIGHT HOLDER
+# This file is distributed under the same license as the eog-plugins package.
+#
+# I. Felix <ifelix@redhat.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: eog-plugins.master.ta\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eog-plugins&component=general\n"
+"POT-Creation-Date: 2009-10-25 18:38+0000\n"
+"PO-Revision-Date: 2009-10-28 15:31+0530\n"
+"Last-Translator: I. Felix <ifelix@redhat.com>\n"
+"Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\\n\n"
+"\n"
+"\n"
+"\n"
+"\n"
+
+#: ../plugins/champlain/champlain.eog-plugin.desktop.in.h:1
+msgid "Display the geolocation of the image on a map"
+msgstr "வரைபடத்தில் இருப்பிட படத்தை காட்டு"
+
+#: ../plugins/champlain/champlain.eog-plugin.desktop.in.h:2
+#: ../plugins/champlain/eog-champlain-plugin.c:312
+msgid "Map"
+msgstr "வரைபடம்"
+
+#: ../plugins/exif-display/eog-exif-display-plugin.c:136
+msgid " (invalid Unicode)"
+msgstr " (தவறான யுனிகோட்)"
+
+#. TRANSLATORS: This is the actual focal length used when
+#. the image was taken.
+#: ../plugins/exif-display/eog-exif-display-plugin.c:212
+#, c-format
+msgid "%.1fmm (lens)"
+msgstr "%.1fmm (லென்ஸ்)"
+
+#. Print as float to get a similar look as above.
+#. TRANSLATORS: This is the equivalent focal length assuming
+#. a 35mm film camera.
+#: ../plugins/exif-display/eog-exif-display-plugin.c:223
+#, c-format
+msgid "%.1fmm (35mm film)"
+msgstr "%.1fmm (35mm பிலிம்)்"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:1
+msgid "General"
+msgstr "பொதுவான"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:2
+msgid "Histogram"
+msgstr "ஹிஸ்டோகிராம்"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:3
+msgid "Display RGB histogram"
+msgstr "RGB ஹிஸ்டோகிராம் காட்டு"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:4
+msgid "Display camera settings in statusbar"
+msgstr "நிலைப்பட்டையில் கேமிரா அமைவுகளை காட்டு"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:5
+msgid "Display per-channel histogram"
+msgstr "சேனலுக்கு ஹிஸ்டோகிராமை காட்டு"
+
+#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:1
+msgid "Displays camera settings and histogram"
+msgstr "கேமிரா அமைவுகள் மற்றும் ஹிஸ்டோகிராமை காட்டுகிறது"
+
+#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:2
+msgid "Exif display"
+msgstr "Exif காட்சி"
+
+#: ../plugins/exif-display/exif-display.ui.h:1
+msgid "Aperture:"
+msgstr "அப்பாச்சர்:"
+
+#: ../plugins/exif-display/exif-display.ui.h:2
+#| msgid "Metering:"
+msgid "Description:"
+msgstr "விளக்கம்:"
+
+#: ../plugins/exif-display/exif-display.ui.h:3
+msgid "Expo. Time:"
+msgstr "Expo. நேரம்:"
+
+#: ../plugins/exif-display/exif-display.ui.h:4
+msgid "Expo. bias:"
+msgstr "Expo. bias:"
+
+#: ../plugins/exif-display/exif-display.ui.h:5
+msgid "ISO speed:"
+msgstr "ISO வேகம்:"
+
+#: ../plugins/exif-display/exif-display.ui.h:6
+msgid "Metering:"
+msgstr "மீட்டரிங்:"
+
+#: ../plugins/exif-display/exif-display.ui.h:7
+msgid "Zoom:"
+msgstr "அளவிடுதல்:"
+
+#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:82
+msgid "Fit to width"
+msgstr "அகலத்தில் பொருத்து"
+
+#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:84
+#: ../plugins/fit-to-width/fit-to-width.eog-plugin.desktop.in.h:1
+msgid "Zoom to fit image width"
+msgstr "பட அகலத்தை அளவிட பொருத்து"
+
+#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:60
+msgid "Send by Mail"
+msgstr "அஞ்சலால் அனுப்பு"
+
+#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:62
+msgid "Send the selected images by mail"
+msgstr "தேர்ந்தெடுக்கப்பட்ட படங்களை அஞ்சலால் அனுப்பு"
+
+#: ../plugins/send-by-mail/send-by-mail.eog-plugin.desktop.in.h:1
+msgid "Send By Mail"
+msgstr "அஞ்சலால் அனுப்பு"
+
+#: ../plugins/send-by-mail/send-by-mail.eog-plugin.desktop.in.h:2
+msgid "Sends an image attached to a new mail"
+msgstr "ஒரு புதிய அஞ்சலுடன் ஒரு படத்தை சேர்த்து அனுப்பு"
+
+#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:1
+msgid "Shuffles images in slideshow mode"
+msgstr "ஸ்லைடு காட்சி முறைமையில் படங்களை கலைக்கிறது"
+
+#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:2
+msgid "Slideshow Shuffle"
+msgstr "ஸ்லைடு காட்சி கலைத்தல்"
+
+#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+msgid "Flickr Uploader"
+msgstr "Flickr மேம்படுத்துபவர்"
+
+#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
+#: ../plugins/postr/eog-postr-plugin.c:59
+msgid "Upload your pictures to Flickr"
+msgstr "Flickr இல் உங்கள் படங்களை மேம்படுத்தவும்"
+
+#: ../plugins/postr/eog-postr-plugin.c:57
+msgid "Upload to Flickr"
+msgstr "Flickr இல் மேம்படுத்து"
+
+#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:1
+msgid "Python Console"
+msgstr "பைதான் பணியகம்"
+
+#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:2
+msgid "Python console for Eye of GNOME"
+msgstr "Eye of GNOMEக்கிற்கான பைத்தான் பணியகம்"
+

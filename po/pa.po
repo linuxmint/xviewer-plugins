@@ -1,0 +1,258 @@
+# Punjabi translation of eog-plugins.
+# Copyright (C) 2009 eog-plugins's COPYRIGHT HOLDER
+# This file is distributed under the same license as the eog-plugins package.
+#
+# A S Alam <aalam@users.sf.net>, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: eog-plugins master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
+"cgi?product=eog-plugins&component=general\n"
+"POT-Creation-Date: 2010-02-10 19:23+0000\n"
+"PO-Revision-Date: 2010-09-10 23:38+0530\n"
+"Last-Translator: A S Alam <aalam@users.sf.net>\n"
+"Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../plugins/exif-display/eog-exif-display-plugin.c:136
+msgid " (invalid Unicode)"
+msgstr " (ਗਲਤ ਯੂਨੀਕੋਡ)"
+
+#. TRANSLATORS: This is the actual focal length used when
+#. the image was taken.
+#: ../plugins/exif-display/eog-exif-display-plugin.c:212
+#, c-format
+msgid "%.1fmm (lens)"
+msgstr "%.1fmm (ਲੈਨਜ਼)"
+
+#. Print as float to get a similar look as above.
+#. TRANSLATORS: This is the equivalent focal length assuming
+#. a 35mm film camera.
+#: ../plugins/exif-display/eog-exif-display-plugin.c:223
+#, c-format
+msgid "%.1fmm (35mm film)"
+msgstr "%.1fmm (35mm ਫਿਲਮ)"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:1
+msgid "General"
+msgstr "ਆਮ"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:2
+msgid "Histogram"
+msgstr "ਹਿਸਟੋਗਰਾਮ"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:3
+msgid "Display RGB histogram"
+msgstr "RGB ਹਿਸਟੋਗਰਾਮ ਵੇਖੋ"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:4
+msgid "Display camera settings in statusbar"
+msgstr "ਹਾਲਤਪੱਟੀ ਵਿੱਚ ਕੈਮਰਾ ਸੈਟਿੰਗ ਵੇਖੋ"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:5
+msgid "Display per-channel histogram"
+msgstr "ਪ੍ਰਤੀਚੈਨਲ ਹਿਸਟੋਗਰਾਮ ਵੇਖੋ"
+
+#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:1
+msgid "Displays camera settings and histogram"
+msgstr "ਕੈਮਰਾ ਸੈਟਿੰਗ ਅਤੇ ਹਿਸਟੋਗਰਾਮ ਵੇਖੋ"
+
+#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:2
+msgid "Exif display"
+msgstr "Exif ਵੇਖੋ"
+
+#: ../plugins/exif-display/exif-display.ui.h:1
+msgid "Aperture:"
+msgstr "ਅਪਰਚਰ:"
+
+#: ../plugins/exif-display/exif-display.ui.h:2
+msgid "Description:"
+msgstr "ਵੇਰਵਾ:"
+
+#: ../plugins/exif-display/exif-display.ui.h:3
+msgid "Expo. Time:"
+msgstr "ਐਕਸਪੋਜ਼ਰ ਟਾਈਮ:"
+
+#: ../plugins/exif-display/exif-display.ui.h:4
+msgid "Expo. bias:"
+msgstr "ਐਕਸਪੋਜ਼ਰ bias:"
+
+#: ../plugins/exif-display/exif-display.ui.h:5
+msgid "ISO speed:"
+msgstr "ISO ਸਪੀਡ:"
+
+#: ../plugins/exif-display/exif-display.ui.h:6
+msgid "Metering:"
+msgstr "ਮੀਟੀਰਿੰਗ:"
+
+#: ../plugins/exif-display/exif-display.ui.h:7
+msgid "Zoom:"
+msgstr "ਜ਼ੂਮ:"
+
+#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:85
+msgid "Fit to width"
+msgstr "ਚੌੜਾਈ ਲਈ ਫਿੱਟ"
+
+#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:87
+#: ../plugins/fit-to-width/fit-to-width.eog-plugin.desktop.in.h:1
+msgid "Zoom to fit image width"
+msgstr "ਚਿੱਤਰ ਚੌੜਾਈ ਲਈ ਫਿੱਟ ਵਾਸਤੇ ਜ਼ੂਮ"
+
+#: ../plugins/map/eog-map-plugin.c:321
+msgid "Jump to current image's location"
+msgstr "ਮੌਜੂਦਾ ਚਿੱਤਰ ਦੇ ਟਿਕਾਣੇ ਉੱਤੇ ਜਾਓ"
+
+#: ../plugins/map/eog-map-plugin.c:333
+msgid "Zoom in"
+msgstr "ਜ਼ੂਮ ਇਨ"
+
+#: ../plugins/map/eog-map-plugin.c:341
+msgid "Zoom out"
+msgstr "ਜ਼ੂਮ ਆਊਟ"
+
+#: ../plugins/map/eog-map-plugin.c:355
+#: ../plugins/map/map.eog-plugin.desktop.in.h:2
+msgid "Map"
+msgstr "ਨਕਸ਼ਾ"
+
+#: ../plugins/map/map.eog-plugin.desktop.in.h:1
+msgid "Display the geolocation of the image on a map"
+msgstr "ਨਕਸ਼ੇ ਉੱਤੇ ਚਿੱਤਰ ਦੀ ਭੂਗੋਲਿਕ ਸਥਿਤੀ ਵੇਖੋ"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:124
+#| msgid "Upload to Flickr"
+msgid "Upload to PicasaWeb"
+msgstr "ਪਿਕਾਸਾਵੈੱਬ ਉੱਤੇ ਅੱਪਲੋਡ"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:126
+#: ../plugins/postasa/postasa.eog-plugin.desktop.in.h:2
+#| msgid "Upload your pictures to Flickr"
+msgid "Upload your pictures to PicasaWeb"
+msgstr "ਆਪਣੀਆਂ ਫੋਟੋ ਪਿਕਾਸਾਵੈੱਬ ਉੱਤੇ ਅੱਪਲੋਡ ਕਰੋ"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:321
+msgid "Uploading..."
+msgstr "ਅੱਪਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ..."
+
+#: ../plugins/postasa/eog-postasa-plugin.c:368
+#| msgid "Flickr Uploader"
+msgid "Uploaded"
+msgstr "ਅੱਪਲੋਡ ਕੀਤਾ"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:372
+msgid "Cancelled"
+msgstr "ਰੱਦ ਕੀਤਾ"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:375
+msgid "Failed"
+msgstr "ਫੇਲ੍ਹ ਹੈ"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:523
+#, c-format
+msgid "Login failed. %s"
+msgstr "ਲਾਗਇਨ ਫੇਲ੍ਹ ਹੈ। %s"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:527
+msgid "Logged in successully."
+msgstr "ਲਾਗਇਨ ਸਫ਼ਲ ਰਿਹਾ ਹੈ।"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:528
+msgid "Close"
+msgstr "ਬੰਦ ਕਰੋ"
+
+#: ../plugins/postasa/eog-postasa-plugin.c:549
+#: ../plugins/postasa/postasa-config.xml.h:1
+msgid "Cancel"
+msgstr "ਰੱਦ ਕੀਤਾ"
+
+#. TODO: want to handle passwords more securely
+#: ../plugins/postasa/eog-postasa-plugin.c:555
+msgid "Logging in..."
+msgstr "ਲਾਗਇਨ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ..."
+
+#: ../plugins/postasa/eog-postasa-plugin.c:583
+msgid "Please log in to continue upload."
+msgstr "ਅੱਪਲੋਡ ਕਰਨ ਲਈ ਲਾਗਇਨ ਕਰੋ ਜੀ।"
+
+#: ../plugins/postasa/postasa-config.xml.h:2
+msgid "Login"
+msgstr "ਲਾਗਇਨ"
+
+#: ../plugins/postasa/postasa-config.xml.h:3
+msgid "Password"
+msgstr "ਪਾਸਵਰਡ"
+
+#: ../plugins/postasa/postasa-config.xml.h:4
+msgid "PicasaWeb Login"
+msgstr "ਪਿਕਾਸਾਵੈੱਬ ਲਾਗਇਨ"
+
+#: ../plugins/postasa/postasa-config.xml.h:5
+msgid "Username"
+msgstr "ਯੂਜ਼ਰ ਨਾਂ"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:1
+msgid "Cancel All"
+msgstr "ਸਭ ਰੱਦ ਕਰੋ"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:2
+msgid "Cancel Selected"
+msgstr "ਚੁਣੇ ਰੱਦ ਕਰੋ"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:3
+msgid "Uploads:"
+msgstr "ਅੱਪਲੋਡ:"
+
+#: ../plugins/postasa/postasa.eog-plugin.desktop.in.h:1
+#| msgid "Flickr Uploader"
+msgid "PicasaWeb Uploader"
+msgstr "ਪਿਕਾਸਾਵੈੱਬ ਅੱਪਲੋਡਰ"
+
+#: ../plugins/postr/eog-postr-plugin.c:57
+msgid "Upload to Flickr"
+msgstr "ਫਲਿੱਕਰ ਉੱਤੇ ਅੱਪਲੋਡ"
+
+#: ../plugins/postr/eog-postr-plugin.c:59
+#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
+msgid "Upload your pictures to Flickr"
+msgstr "ਆਪਣੀਆਂ ਫੋਟੋ ਫਲਿੱਕਰ ਉੱਤੇ ਅੱਪਲੋਡ ਕਰੋ"
+
+#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+msgid "Flickr Uploader"
+msgstr "ਫਲਿੱਕਰ ਅੱਪਲੋਡਰ"
+
+#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:1
+msgid "Python Console"
+msgstr "ਪਾਈਥਨ ਕਨਸੋਲ"
+
+#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:2
+msgid "Python console for Eye of GNOME"
+msgstr "ਗਨੋਮ ਦੀ ਅੱਖ ਲਈ ਪਾਈਥਨ ਕਨਸੋਲ"
+
+#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:60
+msgid "Send by Mail"
+msgstr "ਮੇਲ ਰਾਹੀਂ ਭੇਜੋ"
+
+#: ../plugins/send-by-mail/eog-send-by-mail-plugin.c:62
+msgid "Send the selected images by mail"
+msgstr "ਚੁਣੇ ਚਿੱਤਰ ਮੇਲ ਰਾਹੀਂ ਭੇਜੋ"
+
+#: ../plugins/send-by-mail/send-by-mail.eog-plugin.desktop.in.h:1
+msgid "Send By Mail"
+msgstr "ਮੇਲ ਰਾਹੀਂ ਭੇਜੋ"
+
+#: ../plugins/send-by-mail/send-by-mail.eog-plugin.desktop.in.h:2
+msgid "Sends an image attached to a new mail"
+msgstr "ਚਿੱਤਰ ਨਵੀਂ ਮੇਲ 'ਚ ਨੱਥੀ ਕਰਕੇ ਭੇਜੋ"
+
+#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:1
+msgid "Shuffles images in slideshow mode"
+msgstr "ਸਲਾਈਡ ਸ਼ੋ ਮੋਡ ਵਿੱਚ ਚਿੱਤਰ ਰਲਵੇਂ ਵੇਖੋ"
+
+#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:2
+msgid "Slideshow Shuffle"
+msgstr "ਰਲਵਾਂ ਸਲਾਈਡ-ਸ਼ੋ"
+

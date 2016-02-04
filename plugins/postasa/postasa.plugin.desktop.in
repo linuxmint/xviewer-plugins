@@ -1,0 +1,9 @@
+[Plugin]
+Module=postasa
+IAge=2
+_Name=PicasaWeb Uploader
+Icon=postasa
+_Description=Upload your pictures to PicasaWeb
+Authors=Richard Schwarting <aquarichy@gmail.com>
+Copyright=Copyright © 2009 Richard Schwarting
+Website=http://www.gnome.org/projects/eog

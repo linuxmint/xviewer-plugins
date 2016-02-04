@@ -1,0 +1,47 @@
+# Biełaruski pierakład eog-plugins.
+# Copyright (C) 2008, Ihar Hrachyshka
+# This file is distributed under the same license as the eog-plugins package.
+# Ihar Hrachyshka <booxter@lacinka.org>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: eog-plugins.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-10 00:03+0200\n"
+"PO-Revision-Date: 2008-03-10 00:06+0200\n"
+"Last-Translator: Ihar Hrachyshka <booxter@lacinka.org>\n"
+"Language-Team: Belarusian Latin <i18n@mova.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+msgid "Flickr Uploader"
+msgstr "Zahruzka ŭ Flickr"
+
+#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
+#: ../plugins/postr/eog-postr-plugin.c:50
+msgid "Upload your pictures to Flickr"
+msgstr "Zahružaj svaje vyjavy ŭ Flickr"
+
+#: ../plugins/postr/eog-postr-plugin.c:48
+msgid "Upload to Flickr"
+msgstr "Zahruzi ŭ Flickr"
+
+#: ../plugins/reload/reload.eog-plugin.desktop.in.h:1
+#: ../plugins/reload/eog-reload-plugin.c:47
+msgid "Reload Image"
+msgstr "Pieračytaj vyjavu"
+
+#: ../plugins/reload/reload.eog-plugin.desktop.in.h:2
+#: ../plugins/reload/eog-reload-plugin.c:49
+msgid "Reload current image"
+msgstr "Pieračytaj hetuju vyjavu"
+
+#: ../plugins/fullscreen/fullscreen.eog-plugin.desktop.in.h:1
+msgid "Activate fullscreen mode with double-click"
+msgstr "Aktyvizuj poŭnaekranny režym dvuklikam"
+
+#: ../plugins/fullscreen/fullscreen.eog-plugin.desktop.in.h:2
+msgid "Fullscreen with double-click"
+msgstr "Poŭny ekran pa dvukliku"

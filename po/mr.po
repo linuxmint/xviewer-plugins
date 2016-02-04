@@ -1,0 +1,139 @@
+# translation of mr.po to marathi
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: mr\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eog-plugins&component=general\n"
+"POT-Creation-Date: 2009-06-16 14:00+0000\n"
+"PO-Revision-Date: 2009-06-29 16:18+0530\n"
+"Last-Translator: Sandeep Shedmake <sandeep.shedmake@gmail.com>\n"
+"Language-Team: marathi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: ../plugins/champlain/champlain.eog-plugin.desktop.in.h:1
+msgid "Display the geolocation of the image on a map"
+msgstr "प्रतिमाचे geolocation ठिकाण नकाशावर दाखवा"
+
+#: ../plugins/champlain/champlain.eog-plugin.desktop.in.h:2
+msgid "Map"
+msgstr "नकाशा"
+
+#: ../plugins/exif-display/eog-exif-display-plugin.c:137
+msgid " (invalid Unicode)"
+msgstr " (अवैध Unicode)"
+
+#. TRANSLATORS: This is the actual focal length used when
+#. the image was taken.
+#: ../plugins/exif-display/eog-exif-display-plugin.c:213
+#, c-format
+msgid "%.1fmm (lens)"
+msgstr "%.1fmm (lens)"
+
+#. Print as float to get a similar look as above.
+#. TRANSLATORS: This is the equivalent focal length assuming
+#. a 35mm film camera.
+#: ../plugins/exif-display/eog-exif-display-plugin.c:224
+#, c-format
+msgid "%.1fmm (35mm film)"
+msgstr "%.1fmm (35mm film)"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:1
+msgid "General"
+msgstr "सर्वसाधारण"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:2
+msgid "Histogram"
+msgstr "हिस्टोग्राम"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:3
+#| msgid "Displays camera settings and histogram"
+msgid "Display RGB histogram"
+msgstr "RGB हिस्टोग्राम दाखवा"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:4
+#| msgid "Displays camera settings and histogram"
+msgid "Display camera settings in statusbar"
+msgstr "कॅमेरा संयोजना स्थितीपट्टीत दाखवतो"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:5
+#| msgid "Displays camera settings and histogram"
+msgid "Display per-channel histogram"
+msgstr "कॅमेरा संयोजना व हिस्टोग्राम दाखवतो"
+
+#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:1
+msgid "Displays camera settings and histogram"
+msgstr "कॅमेरा संयोजना व हिस्टोग्राम दाखवतो"
+
+#: ../plugins/exif-display/exif-display.eog-plugin.desktop.in.h:2
+msgid "Exif display"
+msgstr "Exif दृष्य"
+
+#: ../plugins/exif-display/exif-display.ui.h:1
+msgid "Aperture:"
+msgstr "एपर्चर:"
+
+#: ../plugins/exif-display/exif-display.ui.h:2
+msgid "Expo. Time:"
+msgstr "Expo. वेळ:"
+
+#: ../plugins/exif-display/exif-display.ui.h:3
+msgid "Expo. bias:"
+msgstr "Expo. बयास:"
+
+#: ../plugins/exif-display/exif-display.ui.h:4
+msgid "ISO speed:"
+msgstr "ISO वेग:"
+
+#: ../plugins/exif-display/exif-display.ui.h:5
+msgid "Metering:"
+msgstr "मिटरींग:"
+
+#: ../plugins/exif-display/exif-display.ui.h:6
+msgid "Zoom:"
+msgstr "दृष्य बदल:"
+
+#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:82
+msgid "Fit to width"
+msgstr "रूंदीत बसवा"
+
+#: ../plugins/fit-to-width/eog-fit-to-width-plugin.c:84
+#: ../plugins/fit-to-width/fit-to-width.eog-plugin.desktop.in.h:1
+msgid "Zoom to fit image width"
+msgstr "प्रतिमा रूंदीत बसवण्याकरीता दृष्य बदल करा"
+
+#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:1
+msgid "Shuffles images in slideshow mode"
+msgstr "स्लाईडशो पद्धत अंतर्गत प्रतिमा पटापट चाळा"
+
+#: ../plugins/slideshowshuffle/slideshowshuffle.eog-plugin.desktop.in.h:2
+msgid "Slideshow Shuffle"
+msgstr "Slideshow Shuffle"
+
+#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+msgid "Flickr Uploader"
+msgstr "Flickr Uploader"
+
+#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
+#: ../plugins/postr/eog-postr-plugin.c:50
+msgid "Upload your pictures to Flickr"
+msgstr "Flickr चित्रवर अपलोड करा"
+
+#: ../plugins/postr/eog-postr-plugin.c:48
+msgid "Upload to Flickr"
+msgstr "Flickr वर अपलोड करा"
+
+#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:1
+msgid "Python Console"
+msgstr "Python Console"
+
+#: ../plugins/pythonconsole/pythonconsole.eog-plugin.desktop.in.h:2
+msgid "Python console for Eye of GNOME"
+msgstr "Eye of GNOME करीता Python कन्सोल"
+

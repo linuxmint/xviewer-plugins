@@ -1,0 +1,744 @@
+Version 3.14.0
+--------------
+
+* Re-release 3.13.92 as 3.14.0 to have an "official" 3.14-release.
+
+Version 3.13.92
+---------------
+
+Plugin changes:
+
+- Map
+ - #735914, EOG's Map plugin crashes on invalid GPS coordinates (Felix Riemann)
+
+New and updated translations:
+
+- Daniel Mustieles [es]
+- Balázs Úr [hu]
+- Andika Triwidada [id]
+- Changwoo Ryu [ko]
+
+Version 3.13.1
+--------------
+
+General changes:
+
+- #731676, add metainfo files for all available plugins
+          (Igor Gnatenko, Felix Riemann, Piotr Drąg)
+
+Plugin changes:
+
+- Exif Display
+ - Fix deprecated stock icon and GtkTable usage (Felix Riemann)
+
+New and updated translations:
+
+- Marek Černocký [cs]
+- Iñaki Larrañaga Murgoitio [eu]
+- Lasse Liehu [fi]
+- Piotr Drąg [pl]
+
+Version 3.12.1
+--------------
+
+Plugin changes:
+
+- Export to Folder
+ - #727218, Make export-to-folder plugin less chatty (Jasper Lievisse Adriaanse)
+
+- Slideshow Shuffle
+ - #727222, Switch slideshowshuffle to python3 loader (Jasper Lievisse Adriaanse)
+
+Version 3.12.0
+--------------
+
+* Re-release 3.11.92 as 3.12.0 to have an "official" 3.12-release.
+
+Version 3.11.92
+---------------
+
+Plugin changes:
+
+- Export to Folder
+ - Fix PyGObject deprecation warnings (Felix Riemann)
+
+- Python Console
+ - Fix PyGObject deprecation warnings (Felix Riemann)
+
+New and updated translations:
+
+- Benjamin Steinwender [de]
+- YunQiang Su [zh_CN]
+
+Version 3.11.4
+--------------
+
+Plugin changes:
+
+- Export to Folder
+ - Convert to Python 3 (Felix Riemann)
+
+- Fullscreen Background
+ - Adapt to API changes in eog 3.11.3 (Felix Riemann)
+ - Convert to Python 3 (Felix Riemann)
+
+- Python Console
+ - Convert to Python 3 (Felix Riemann)
+
+Other changes:
+
+- Modernize build system (Felix Riemann)
+- Raise Python and eog dependencies (Felix Riemann)
+
+Version 3.10.1
+--------------
+
+New and updated translations:
+
+- Andika Triwidada [id]
+- Rūdolfs Mazurs [lv]
+
+Version 3.10.0
+--------------
+
+New and updated translations:
+
+- Marek Černocký [cs]
+- Kris Thomsen [da]
+- Jiri Grönroos [fi]
+- Fran Dieguez [gl]
+- Yosef Or Boczko [he]
+
+Version 3.9.5
+-------------
+
+Plugin changes:
+
+- Exif Display
+ - #704081, Fails to build against eog trunk (Dominique Leuenberger)
+
+Version 3.8.1
+-------------
+
+New and updated translations:
+
+- Dimitris Spingos (Δημήτρης Σπίγγος) [el]
+
+Version 3.8.0
+-------------
+
+New and updated translations:
+
+- Christian Kirbach [de]
+- Gianvito Cavasoli [it]
+
+Version 3.7.92
+--------------
+
+New and updated translations:
+
+- Marek Černocký [cs]
+- Christian Kirbach [de]
+- Alexandre Franke [fr]
+- Balázs Úr [hu]
+- António Lima [pt]
+- Rafael Ferreira [pt_BR]
+- Matej Urbančič [sl]
+- Мирослав Николић [sr]
+- Miroslav Nikolić [sr@latin]
+
+Version 3.7.91
+--------------
+
+Plugin changes:
+
+- Exif Display
+ - Embed UI files into plugin using GResource (Felix Riemann)
+
+- Fit To Width
+ - Improve translatability of description strings (Felix Riemann)
+
+- PicasaWeb Uploader
+ - Embed UI files into plugin using GResource (Felix Riemann)
+
+New and updated translations:
+
+- Daniel Mustieles [es]
+- Aurimas Černius [lt]
+- Piotr Drąg [pl]
+- Florêncio Neves [pt_BR]
+- Yuri Myasoedov [ru]
+- Richard Stanislavský [sk]
+- Wylmer Wang [zh_CN]
+
+Version 3.6.1
+-------------
+
+Non-plugin changes:
+
+- #685356, Adjust egrep(1) usage to be more portable (Jasper Lievisse Adriaanse)
+
+New and updated translations:
+
+- Rūdolfs Mazurs [lv]
+
+Version 3.6.0
+-------------
+
+New and updated translations:
+
+- Gabor Kelemen [hu]
+- António Lima [pt]
+
+Version 3.5.92
+--------------
+
+New and updated translations:
+
+- Bruce Cowan [en_GB]
+- Andika Triwidada [id]
+- Gianvito Cavasoli [it]
+- Seong-ho Cho [ko]
+- Aurimas Černius [lt]
+- Matej Urbančič [sl]
+- Miroslav Nikolić [sr, sr@latin]
+
+Version 3.5.91
+--------------
+
+New and updated translations:
+
+- Marek Černocký [cs]
+- Daniel Mustieles [es]
+- Fran Dieguez [gl]
+- Piotr Drąg [pl]
+
+Version 3.5.5
+-------------
+
+New Plugins:
+
+- Hide Titlebar
+  Hides the titlebar of eog's main window if supported by the window manager.
+  The menubar will move up into the place of the titlebar. (Claudio Saavedra)
+
+- Disable dark theme
+  Disables the preference for dark theme variants and uses the default
+  theme variant instead. (Felix Riemann)
+
+- Export to Folder
+  Copies images to a predefined folder with one keypress. (Jendrick Seipp)
+
+New and updated translations:
+
+- Tom Tryfonidis [el]
+- Daniel Mustieles [es]
+- Aurimas Černius [lt]
+
+Version 3.4.1
+-------------
+
+Plugin changes:
+
+- Exif Display
+ - Remove markup from translatable UI strings (Piotr Drąg)
+ - #676735, eog crashes when quickly clicking the Back button twice
+
+New and updated translations:
+
+- Daniel Mustieles [es]
+- Alain Lojewski, Bruno Brouard [fr]
+- Rūdolfs Mazurs [lv]
+- tuhaihe [zh_CN]
+
+Version 3.4.0
+-------------
+
+New and updated translations:
+
+- Marek Černocký [cs]
+- Fran Dieguez [gl]
+- Jiro Matsuzawa [ja]
+- Мирослав Николић [sr]
+- Miroslav Nikolić [sr@latin]
+
+Version 3.3.92
+--------------
+
+New and updated translations:
+
+- Gabor Kelemen [hu]
+- Gianvito Cavasoli [it]
+- Rūdolfs Mazurs [lv]
+- Piotr Drąg [pl]
+- António Lima [pt]
+
+Version 3.3.91
+--------------
+
+Plugin changes:
+
+- Exif Display
+ - Drop unused variable (Felix Riemann)
+
+- Fullscreen Background
+ - Actually make use of translations in config dialog (Felix Riemann)
+
+- Python Console
+ - Actually make use of translations in config dialog (Felix Riemann)
+
+New and updated translations:
+
+- Mario Blättermann [de]
+- Daniel Mustieles [es]
+- Matej Urbančič [sl]
+- Daniel Nylander [sv]
+
+Version 3.3.90
+--------------
+
+Plugin changes:
+
+- Fullscreen Background
+ - Various code improvements (Adrian Zgorzałek, Felix Riemann)
+
+- Python Console
+ - Import latest code from gedit's Python Console plugin (Felix Riemann)
+ - Coding style improvements (Felix Riemann)
+
+- Slideshow Shuffle
+ - Code improvements (Adrian Zgorzałek)
+
+New and updated translations:
+
+- Gil Forcada [ca]
+- Adam Matoušek [cs]
+- Daniel Mustieles [es]
+- Matej Urbančič [sl]
+
+Version 3.3.5
+-------------
+
+New plugins:
+
+- Fullscreen Background (fullscreenbg)
+  #667979, Allows changing the image view background color in fullscreen and
+           slideshow modes (Adrian Zgorzałek).
+
+Plugin changes:
+
+- Map
+ - #643769, map plugin doesn't react to mouse events (Felix Riemann)
+ - Miscellaneous code improvements (Felix Riemann)
+
+- Exif Display
+ - Fixed possible memory leak (Felix Riemann)
+
+New and updated translations:
+
+- Jiro Matsuzawa [ja]
+- Matej Urbančič [sl]
+- Praveen Illa [te]
+
+Version 3.2.2
+-------------
+
+Plugin changes:
+
+- PicasaWeb Uploader
+ - #663494, The column titles in the postasa-uploads-view are
+            not translatable. (Jiro Matsuzawa)
+
+New and updated translations:
+
+- Sílvia Miranda [ca]
+- Marek Černocký [cs]
+- Mario Blättermann [de]
+- Daniel Mustieles [es]
+- Piotr Drąg [pl]
+
+Version 3.2.1
+-------------
+
+New and updated translations:
+
+- Rūdofls Mazurs [lv]
+- Daniel Nylander [sv]
+
+Version 3.2.0
+-------------
+
+New and updated translations:
+
+- Changwoo Ryu [ko]
+
+Version 3.1.3
+-------------
+
+Plugin changes:
+
+- Map
+ - #658349, Support libchamplain 0.11/0.12 (Claudio Saavedra)
+
+New and updated translations:
+
+- Bruce Cowan [en_GB]
+- Claude Paroz [fr]
+- Balazs Ur [hu]
+- Gianvito Cavasoli [it]
+- Yasumichi Akahoshi [ja]
+- Piotr Drąg [pl]
+- António Lima [pt]
+- Yuri Myasoedov [ru]
+
+Version 3.1.2
+-------------
+
+Plugin changes:
+
+- Map
+ - #654650, Wrong location of photos with map plugin (Felix Riemann)
+
+- Exif Display
+ - Move GtkBuilder files out of /usr/lib into /usr/share (Felix Riemann)
+
+- PicasaWeb Uploader
+ - #654302, postasa plugin doesn't build with libgdata 0.9.x (Felix Riemann)
+ - Move GtkBuilder files out of /usr/lib into /usr/share (Felix Riemann)
+ - Various small code and UI improvements (Felix Riemann)
+
+New and updated translations:
+
+- Marek Černocký [cs]
+- Mario Blättermann [de]
+- Daniel Mustieles [es]
+- Takeshi AIHANA [ja]
+- Matej Urbančič [sl]
+
+Version 3.1.1
+-------------
+
+Plugin changes:
+
+- Python Console
+ - Install code files into subfolder for a cleaner plugin folder (Felix Riemann)
+
+- PicasaWeb Uploader
+ - Port to libpeas-base plugin API (Felix Riemann)
+
+New and updated translations:
+
+- Yuri Myasoedov [ru]
+
+Version 3.0.0
+-------------
+
+* Re-release 2.91.90 as 3.0.0 to have an "official" 3.0-release.
+
+Version 2.91.90
+---------------
+
+Plugin changes:
+
+- Python Console
+ - Port to libpeas-based plugin API (Felix Riemann)
+
+- Slideshow Shuffle
+ - Port to libpeas-based plugin API (Felix Riemann)
+
+Version 2.91.7
+--------------
+
+Plugin changes:
+
+- Exif Display
+ - Convert to libpeas-based plugin API (Felix Riemann)
+ - Migrate from GConf to GSettings (Felix Riemann)
+
+- Fit to Width:
+ - Convert to libpeas-based plugin API (Felix Riemann)
+
+- Map
+ - #642802, Use libchamplain 0.10 for the map plugin (Jiří Techet)
+ - Convert to libpeas-based plugin API (Felix Riemann)
+ - Mark all images from the collection on the map (Pierre-Luc Beaudoin)
+ - Make markers clickable to change the current picture (Pierre-Luc Beaudoin)
+
+- PicasaWeb Uploader
+ - #639261, Fails to build against libgdata 0.8.0 (Felix Riemann)
+
+- Postr
+ - Convert to libpeas-based plugin API (Felix Riemann)
+
+- Send By Mail 
+ - Convert to libpeas-based plugin API (Felix Riemann)
+
+Other changes:
+
+- Disable python plugins until they work correctly with eog-3.0 (Felix Riemann)
+
+New and updated translations:
+
+- Khaled Hosny [ar]
+
+Version 2.30.2
+--------------
+
+Plugin changes:
+
+- Map (map)
+ - #628079, Use libchamplain 0.7.1 or newer for the map plugin (Jiří Techet)
+
+New and updated translations:
+
+- Khaled Hosny [ar]
+- Marc Dabad [ca]
+- Marc Dabad, Carles Ferrando [ca@valencia]
+- Yaron Shahrabani [he]
+- Takeshi AIHANA [ja]
+- A S Alam [pa]
+- Lucian Adrian Grijincu, Nichita Utiu [ro]
+
+Version 2.30.1
+--------------
+
+New and updated translations:
+
+- Imam Musthaqim, Andika Triwidada [id]
+- Antonio Fernandes C. Neto [pt_BR]
+- Matej Urbančič [sl]
+- Maxim V. Dziumanenko [uk]
+
+Version 2.30.0
+---------------
+
+Plugin changes:
+
+- Exif Display
+ - #612692, Finish GSEAL support (André Klapper)
+
+New and updated translations:
+
+- Iñaki Larrañaga Murgoitio [eu]
+- Fran Diéguez [gl]
+- Gianvito Cavasoli [it]
+- Žygimantas Beručka [lt]
+- Piotr Drąg [pl]
+- Daniel Nylander [sv]
+
+Version 2.29.91
+---------------
+
+Plugin changes:
+
+- PicasaWeb Uploader (postasa)
+ - Fix missing translations (Felix Riemann)
+
+New and updated translations:
+
+- Adrian Guniš [cs]
+- Mario Blättermann [de]
+- Jorge González [es]
+- Claude Paroz [fr]
+- Gabor Kelemen [hu]
+- António Lima [pt]
+- Matej Urbančič [sl]
+- Eleanor Chen [zh_CN]
+
+Version 2.29.90
+---------------
+
+New plugins:
+
+- PicasaWeb Uploader (postasa)
+  Uploads selected images to Google's PicasaWeb service using libgdata.
+  Requires yet unreleased libgdata-0.6.0; take from git. (Richard Schwarting).
+
+Plugin changes:
+
+- Map (map)
+ - Rename plugin from champlain to map (Pierre-Luc Beaudoin)
+ - Add button to jump to current image location (Pierre-Luc Beaudoin)
+ - Display scale if libchamplain is new enough (Pierre-Luc Beaudoin)
+ - Keep zoom level when changing image (Pierre-Luc Beaudoin)
+
+New and updated translations:
+
+- Gianvito Cavasoli [it]
+- Matej Urbančič [sl]
+
+Version 2.29.5
+--------------
+
+Plugin changes:
+
+- Exif Display
+ - Near complete GSEAL-support (Felix Riemann)
+
+- Fit to Width:
+ - Achieve full GSEAL-compatibility (Felix Riemann)
+
+New and updated translations:
+
+- Khaled Hosny [ar]
+- Gabor Kelemen [hu]
+- António Lima [pt]
+- Djavan Fagundes [pt_BR]
+- albertxiaoyu [zh_CN]
+
+Version 2.29.2
+--------------
+
+New and updated translations
+
+- Khaled Hosny [ar]
+- Mario Blättermann [de]
+- Jorge González [es]
+- Sweta Kothari [gu]
+- Matej Urbančič [sl]
+- Daniel Nylander [sv]
+- I. Felix [ta]
+
+Version 2.29.1
+--------------
+
+New plugins:
+
+- Send By Mail (send-by-mail)
+  Opens a new email in the default email editor and attaches
+  the selected images to it. (Felix Riemann)
+
+Other changes:
+- ChangeLog is autogenerated from Git on make dist (Felix Riemann)
+
+New and updated translations
+
+- Krishna Babu K [te]
+- Shankar Prasad [kn]
+- Sweta Kothari [gu]
+
+Version 2.28.1
+--------------
+
+Plugin changes:
+
+- Exif Display (Exif-display):
+ - #596452, eog-plugins must depend on libgconf (Felix Riemann)
+ - Code improvements (Felix Riemann)
+
+- Fit to Width:
+ - Code improvements (Felix Riemann)
+
+New and updated translations:
+
+- Matej Urbančič [sl]
+
+Version 2.28.0
+--------------
+
+Plugin Changes:
+
+- Map (champlain)
+ - Build with stable libchamplain (Pierre-Luc Beaudoin)
+
+New and updated translations:
+- Yavor Doganov [bg]
+- Felix Riemann [de]
+- Kostas Papadimas [el]
+- Philip Withnall [en_GB]
+
+Version 2.27.92
+---------------
+
+Plugin Changes:
+
+- Map (champlain):
+ - Build fixes (Felix Riemann)
+
+- Exif Display (exif-display):
+ - #593003, crash in exif view (Felix Riemann)
+ - Build fixes (Felix Riemann)
+
+- Postr:
+ - #592984, cannot upload to flickr (Felix Riemann)
+
+New and updated translations:
+- Iñaki Larrañaga Murgoitio [eu]
+- Gianvito Cavasoli [it]
+- Takeshi AIHANA [ja]
+- A S Alam [pa]
+- António Lima [pt]
+- Jonh Wendell [pt_BR]
+
+Version 2.27.91
+---------------
+
+This is the first tarball release of eog-plugins. It's a collection of plugins
+for use with the Eye of GNOME Image Viewer.
+
+New Plugins:
+
+- Map
+  Provides a map view in the sidebar showing you where the current picture was
+  taken if it carries the neccessary GPS tags. Written by Pierre-Luc Beaudoin.
+  Requires libchamplain 0.3 and Clutter 1.0.
+
+- Exif Display
+  Adds a page displaying a few selected Exif tags to the sidebar. It's also
+  possible to display a RGB histogram. Written by Emmanuel Touzery and extended
+  by Jonathan Michalon.
+
+- Zoom to fit image width
+  Adds a menu entry that adjusts the zoom factor so the image's width fits into
+  the window. Written by Javier Sánchez.
+
+- Postr
+  Allows uploading images to Flickr using Postr. It's the oldest plugin and we
+  actually don't know if it is of use anymore as there are better ways to do
+  that now. Written by Lucas Rocha.
+
+- Python Console
+  A port of the gedit plugin with the same name. Written in Python.
+  Ported by Diego Escalante Urrelo and Francisco Rojas.
+
+- Slideshow Shuffle
+  The second plugin written in Python. It randomizes the image order during
+  slideshows. Written by Johannes Marbach.
+
+New and updated translations:
+- Djihed Afifi [ar]
+- Amitakhya Phukan [as]
+- Ihar Hrachyshka [be@latin]
+- Runa Bhattacharjee [bn_IN]
+- Gil Forcada [ca]
+- Kamil Paral, Adrian Guniš [cs]
+- Kris Hansen [da]
+- Mario Blättermann [de]
+- Philip Withnall, Jen Ockwell [en_GB]
+- Jorge González [es]
+- Iñaki Larrañaga Murgoitio [eu]
+- Ilkka Tuohela, Tommi Vainikainen [fi]
+- Marc Veillet, Claude Paroz [fr]
+- Ignacio Casal Quinteiro, Fran Dieguez [gl]
+- Sweta Kothari [gu]
+- Gergely Szarka, Gabor Kelemen [hu]
+- Gianvito Cavasoli [it]
+- Shankar Prasad [kn]
+- Gintautas Miliauskas, Žygimantas Beručka [lt]
+- Ani Peter [ml]
+- Arangel Angov [mk]
+- Sandeep Shedmake [mr]
+- Kjartan Maraas [nb]
+- Manoj Kumar Giri [or]
+- A S Alam [pa]
+- GNOME PL Team, Piotr Drąg, Tomasz Dominikowski [pl]
+- António Lima [pt]
+- Og Maciel, Carlos Eduardo Santos, Vladimir Melo [pt_BR]
+- Matej Urbančič [sl]
+- Laurent Dhima [sq]
+- Daniel Nylander [sv]
+- I. Felix [ta]
+- Krishna Babu K [te]
+- Clytie Siddall [vi]
+- Aron Xu [zh_CN]
+- Hialan Liu [zh_HK, zh_TW]

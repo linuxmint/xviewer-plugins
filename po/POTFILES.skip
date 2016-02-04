@@ -1,0 +1,3 @@
+plugins/export-to-folder/org.gnome.eog.plugins.export-to-folder.gschema.xml
+plugins/fullscreenbg/org.gnome.eog.plugins.fullscreenbg.gschema.xml
+plugins/pythonconsole/org.gnome.eog.plugins.pythonconsole.gschema.xml

@@ -1,0 +1,30 @@
+# Përkthimi i eog-plugins në shqip.
+# Copyright (C) 2008 THE eog-plugins'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the eog-plugins package.
+#
+# Laurent Dhima <laurenti@alblinux.net>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: eog-plugins HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-13 10:44+0200\n"
+"PO-Revision-Date: 2008-09-12 19:32+0200\n"
+"Last-Translator: Laurent Dhima <laurenti@alblinux.net>\n"
+"Language-Team: albanian <gnome-albanian-perkthyesit@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../plugins/postr/postr.eog-plugin.desktop.in.h:1
+msgid "Flickr Uploader"
+msgstr "Ngarkues në Flickr"
+
+#: ../plugins/postr/postr.eog-plugin.desktop.in.h:2
+#: ../plugins/postr/eog-postr-plugin.c:50
+msgid "Upload your pictures to Flickr"
+msgstr "Ngarko figura në Flickr"
+
+#: ../plugins/postr/eog-postr-plugin.c:48
+msgid "Upload to Flickr"
+msgstr "Ngarko në Flickr"

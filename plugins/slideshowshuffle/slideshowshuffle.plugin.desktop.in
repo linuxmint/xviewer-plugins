@@ -1,0 +1,9 @@
+[Plugin]
+Loader=python3
+Module=slideshowshuffle
+IAge=2
+_Name=Slideshow Shuffle
+Icon=media-playlist-shuffle
+_Description=Shuffles images in slideshow mode
+Authors=Johannes Marbach <jm@rapidrabbit.de>
+Copyright=Copyright © 2008 Johannes Marbach

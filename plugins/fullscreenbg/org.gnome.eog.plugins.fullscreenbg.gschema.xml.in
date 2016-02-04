@@ -1,0 +1,14 @@
+<schemalist>
+  <schema id="org.gnome.eog.plugins.fullscreenbg" path="/org/gnome/eog/plugins/fullscreenbg/" gettext-domain="@GETTEXT_PACKAGE@">
+    <key name="use-custom" type="b">
+      <default>true</default>
+      <summary>Use custom background settings</summary>
+      <description>Whether the plugin should use global settings or its own.</description>
+    </key>
+    <key name="background-color" type="s">
+      <default>'#000000'</default>
+      <summary>Background color in fullscreen mode</summary>
+      <description>The color that is used to fill the area behind the image. This option has effect only if use-custom is enabled.</description>
+    </key>
+  </schema>
+</schemalist>
