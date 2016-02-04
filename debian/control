@@ -1,8 +1,7 @@
-Source: eog-plugins
+Source: xviewer-plugins
 Section: gnome
 Priority: optional
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Uploaders: Andreas Henriksson <andreas@fatal.se>, Michael Biebl <biebl@debian.org>
+Maintainer: Linux Mint <root@linuxmint.com>
 Build-Depends: cdbs,
                gnome-pkg-tools (>= 0.11),
                debhelper (>= 8),
@@ -11,7 +10,7 @@ Build-Depends: cdbs,
                libglib2.0-dev (>= 2.32.0),
                libgtk-3-dev (>= 3.3.8),
                libpeas-dev (>= 0.7.4),
-               eog-dev (>= 3.11.4),
+               xviewer-dev,
                python3 (>= 3.2),
                postr,
                libgdata-dev (>= 0.6),
@@ -22,33 +21,31 @@ Build-Depends: cdbs,
                libexif-dev (>= 0.6.16),
                gsettings-desktop-schemas-dev
 Standards-Version: 3.9.5
-Homepage: https://wiki.gnome.org/EyeOfGnome/Plugins
-Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/packages/unstable/eog-plugins
-Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/packages/unstable/eog-plugins/
+Homepage: https://github.com/linuxmint/xviewer-plugins
 X-Python-Version: >= 2.3
 
-Package: eog-plugins
+Package: xviewer-plugins
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          ${python3:Depends},
-         eog (>= 3.9.1),
+         xviewer,
          python3-gi,
          gir1.2-gtk-3.0,
          gsettings-desktop-schemas
 Suggests: postr
-Enhances: eog
-Description: set of plugins for eog
- eog-plugins contain a set of plugins for eog, Eye of GNOME.
+Enhances: xviewer
+Description: set of plugins for xviewer
+ xviewer-plugins contain a set of plugins for xviewer.
  .
  The following plugins are included:
   * Send By Mail: Sends an image attached to a new mail
   * Slideshow Shuffle: Shuffles images in slideshow mode
-  * Disable Dark Theme: Disables Eye of GNOME's preference of dark theme variants
-  * Hide Titlebar: Hides the titlebar of maximized Eye of GNOME windows
+  * Disable Dark Theme: Disables Xviewer's preference of dark theme variants
+  * Hide Titlebar: Hides the titlebar of maximized xviewer windows
   * PicasaWeb Uploader: Upload your pictures to PicasaWeb
   * Map: Display the geolocation of the image on a map
-  * Python Console: Python console for Eye of GNOME
+  * Python Console: Python console for Xviewer
   * Export to Folder: Export the current image to a separate directory
   * Zoom to Fit Image Width: Fit images to the window width
   * Flickr Uploader: Upload your pictures to Flickr

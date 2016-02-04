@@ -3,10 +3,10 @@
 EOG_MAJOR=3.0.0
 EOG_PLUGINS_MAJOR=3.0.0
 
-AC_INIT([eog-plugins], [3.14.0], [http://bugzilla.gnome.org/enter_bug.cgi?product=eog&component=plugins])
+AC_INIT([xviewer-plugins], [1.0.0], [http://github.com/linuxmint/xviewer-plugins/issues])
 
 AC_CONFIG_SRCDIR([plugins])
-AC_PREFIX_PROGRAM([eog])
+AC_PREFIX_PROGRAM([xviewer])
 
 AC_SUBST(EOG_PLUGINS_MAJOR)
 
@@ -46,7 +46,7 @@ PKG_CHECK_MODULES([EOG], [
 	glib-2.0 >= 2.32.0
 	gtk+-3.0 >= 3.3.8
 	libpeas-1.0 >= 0.7.4
-	eog >= 3.11.4
+	xviewer
 ])
 AC_SUBST(EOG_LIBS)
 AC_SUBST(EOG_CFLAGS)
