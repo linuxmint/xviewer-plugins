@@ -38,7 +38,7 @@
 
 #include <gdata/gdata.h>
 
-#define XVIEWER_POSTASA_RESOURCE_PREFIX "/org/x/player/plugins/postasa"
+#define XVIEWER_POSTASA_RESOURCE_PREFIX "/org/x/viewer/plugins/postasa"
 #define GTKBUILDER_CONFIG_FILE XVIEWER_POSTASA_RESOURCE_PREFIX"/postasa-config.xml"
 #define GTKBUILDER_UPLOAD_FILE XVIEWER_POSTASA_RESOURCE_PREFIX"/postasa-uploads.xml"
 

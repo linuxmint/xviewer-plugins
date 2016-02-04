@@ -22,7 +22,7 @@
 #ifndef __XVIEWER_EXIF_DISPLAY_PLUGIN_SETTINGS_H__
 #define __XVIEWER_EXIF_DISPLAY_PLUGIN_SETTINGS_H__
 
-#define XVIEWER_EXIF_DISPLAY_CONF_SCHEMA_ID "org.gnome.xviewer.plugins.exif-display"
+#define XVIEWER_EXIF_DISPLAY_CONF_SCHEMA_ID "org.x.viewer.plugins.exif-display"
 
 #define XVIEWER_EXIF_DISPLAY_CONF_CHANNELS_HISTOGRAM	"channels-histogram"
 #define XVIEWER_EXIF_DISPLAY_CONF_RGB_HISTOGRAM		"rgb-histogram"

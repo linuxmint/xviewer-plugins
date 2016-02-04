@@ -35,7 +35,7 @@
 
 #include "xviewer-exif-display-plugin-setup.h"
 
-#define GRESOURCE_PATH "/org/x/player/plugins/exif-display/exif-display-config.ui"
+#define GRESOURCE_PATH "/org/x/viewer/plugins/exif-display/exif-display-config.ui"
 
 
 static void

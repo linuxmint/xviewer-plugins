@@ -44,7 +44,7 @@
 #include "xviewer-exif-display-plugin-setup.h"
 #include "xviewer-exif-display-plugin.h"
 
-#define GRESOURCE_PATH "/org/x/player/plugins/exif-display/exif-display.ui"
+#define GRESOURCE_PATH "/org/x/viewer/plugins/exif-display/exif-display.ui"
 
 enum {
 	PROP_O,
