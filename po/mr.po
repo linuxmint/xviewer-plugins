@@ -134,6 +134,6 @@ msgid "Python Console"
 msgstr "Python Console"
 
 #: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:2
-msgid "Python console for xplayer"
-msgstr "xplayer करीता Python कन्सोल"
+msgid "Python console for xviewer"
+msgstr "xviewer करीता Python कन्सोल"
 

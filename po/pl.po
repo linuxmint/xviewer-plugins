@@ -201,7 +201,7 @@ msgid "Hides the titlebar of maximized windows"
 msgstr "Ukrywa pasek tytułowy zmaksymalizowanych okien"
 
 #: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
-msgid "Hides the titlebar of maximized xplayer windows"
+msgid "Hides the titlebar of maximized xviewer windows"
 msgstr "Ukrywa pasek tytułowy zmaksymalizowanych okien programu Oko GNOME"
 
 #: ../plugins/light-theme/xviewer-light-theme.metainfo.xml.in.h:1
@@ -214,7 +214,7 @@ msgid "Disables dark theme"
 msgstr "Wyłącza ciemny motyw"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
-msgid "Disables xplayer's preference of dark theme variants"
+msgid "Disables xviewer's preference of dark theme variants"
 msgstr "Wyłącza ciemny wariant motywu preferowany przez program Oko GNOME"
 
 #: ../plugins/map/xviewer-map.metainfo.xml.in.h:1
@@ -434,7 +434,7 @@ msgstr ""
 "14\"."
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for xplayer"
+msgid "Python console for xviewer"
 msgstr "Konsola języka Python dla programu Oko GNOME"
 
 #: ../plugins/send-by-mail/xviewer-send-by-mail.metainfo.xml.in.h:1

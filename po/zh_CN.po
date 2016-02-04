@@ -175,7 +175,7 @@ msgid "Hide Titlebar"
 msgstr "隐藏标题栏"
 
 #: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
-msgid "Hides the titlebar of maximized xplayer windows"
+msgid "Hides the titlebar of maximized xviewer windows"
 msgstr "隐藏图像查看器窗口最大化时的标题栏"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:1
@@ -183,7 +183,7 @@ msgid "Disable dark theme"
 msgstr "禁用黑色主题"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
-msgid "Disables xplayer's preference of dark theme variants"
+msgid "Disables xviewer's preference of dark theme variants"
 msgstr "禁用图像查看器首选的黑色主题风格"
 
 #: ../plugins/map/xviewer-map-plugin.c:401
@@ -373,7 +373,7 @@ msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
 msgstr "一个 Pango 字体名。例如，“Sans 12”或“Monospace Bold 14”。"
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for xplayer"
+msgid "Python console for xviewer"
 msgstr "图像查看器的 Python 控制台"
 
 #: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63

@@ -179,16 +179,16 @@ msgid "Hide Titlebar"
 msgstr "Slėpti pavadinimo juostą"
 
 #: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
-msgid "Hides the titlebar of maximized xplayer windows"
-msgstr "Slepia išdidintų xplayer langų pavadinimų juostas"
+msgid "Hides the titlebar of maximized xviewer windows"
+msgstr "Slepia išdidintų xviewer langų pavadinimų juostas"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:1
 msgid "Disable dark theme"
 msgstr "Išjungti tamsią temą"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
-msgid "Disables xplayer's preference of dark theme variants"
-msgstr "Išjungia xplayer tamsaus temos varianto pageidavimą"
+msgid "Disables xviewer's preference of dark theme variants"
+msgstr "Išjungia xviewer tamsaus temos varianto pageidavimą"
 
 #: ../plugins/map/xviewer-map-plugin.c:401
 msgid "Jump to current image's location"
@@ -377,8 +377,8 @@ msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
 msgstr "Pango šrifto pavadinimas. Pvz. „Sans 12“ arba „Monospace Bold 14“."
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for xplayer"
-msgstr "xplayer Python konsolė"
+msgid "Python console for xviewer"
+msgstr "xviewer Python konsolė"
 
 #: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
 msgid "Send by Mail"

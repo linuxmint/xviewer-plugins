@@ -324,8 +324,8 @@ msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
 msgstr ""
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for xplayer"
-msgstr "xplayer 専用の Python 端末を表示します"
+msgid "Python console for xviewer"
+msgstr "xviewer 専用の Python 端末を表示します"
 
 #: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
 msgid "Send by Mail"

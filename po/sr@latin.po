@@ -176,7 +176,7 @@ msgid "Hide Titlebar"
 msgstr "Sakrij naslov"
 
 #: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
-msgid "Hides the titlebar of maximized xplayer windows"
+msgid "Hides the titlebar of maximized xviewer windows"
 msgstr "Skriva naslovnu traku uvećanih prozora Gnomovog Oka"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:1
@@ -184,7 +184,7 @@ msgid "Disable dark theme"
 msgstr "Isključi tamnu temu"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
-msgid "Disables xplayer's preference of dark theme variants"
+msgid "Disables xviewer's preference of dark theme variants"
 msgstr "Isključuje tamnu temu u postavkama Gnomovog Oka"
 
 #: ../plugins/map/xviewer-map-plugin.c:401
@@ -374,7 +374,7 @@ msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
 msgstr "Naziv Pango pisma. Primeri su „Sans 12“ ili „Monospace Bold 14“."
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for xplayer"
+msgid "Python console for xviewer"
 msgstr "Pitonova konzola za Oko Gnoma"
 
 #: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63

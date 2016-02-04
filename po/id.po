@@ -197,8 +197,8 @@ msgid "Hides the titlebar of maximized windows"
 msgstr "Sembunyikan bilah judul dari jendela yang dimaksimalkan"
 
 #: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
-msgid "Hides the titlebar of maximized xplayer windows"
-msgstr "Sembunyikan bilah judul dari jendela xplayer yang dimaksimalkan"
+msgid "Hides the titlebar of maximized xviewer windows"
+msgstr "Sembunyikan bilah judul dari jendela xviewer yang dimaksimalkan"
 
 #: ../plugins/light-theme/xviewer-light-theme.metainfo.xml.in.h:1
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:1
@@ -210,8 +210,8 @@ msgid "Disables dark theme"
 msgstr "Nonaktifkan tema gelap"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
-msgid "Disables xplayer's preference of dark theme variants"
-msgstr "Nonaktifkan preferensi xplayer atas varian tema gelap"
+msgid "Disables xviewer's preference of dark theme variants"
+msgstr "Nonaktifkan preferensi xviewer atas varian tema gelap"
 
 #: ../plugins/map/xviewer-map.metainfo.xml.in.h:1
 #: ../plugins/map/xviewer-map-plugin.c:438
@@ -428,7 +428,7 @@ msgstr ""
 "Nama fonta Pango. Sebagai contoh \"Sans 12\" atau \"Monospace Bold 14\"."
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for xplayer"
+msgid "Python console for xviewer"
 msgstr "Konsol Python untuk Mata GNOME"
 
 #: ../plugins/send-by-mail/xviewer-send-by-mail.metainfo.xml.in.h:1

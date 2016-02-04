@@ -132,6 +132,6 @@ msgid "Python Console"
 msgstr "പൈഥണ്‍ കണ്‍സോള്‍"
 
 #: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:2
-msgid "Python console for xplayer"
+msgid "Python console for xviewer"
 msgstr "ഐ ഓഫ് ഗ്നോമിനുള്ള പൈഥണ്‍ കണ്‍സോള്‍"
 

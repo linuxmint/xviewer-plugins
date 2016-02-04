@@ -311,8 +311,8 @@ msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
 msgstr "Ett Pango-typsnittsnamn. Exempel \"Sans 12\" eller \"Monospace Bold 14\"."
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for xplayer"
-msgstr "Python-konsoll för xplayer"
+msgid "Python console for xviewer"
+msgstr "Python-konsoll för xviewer"
 
 #: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
 msgid "Send by Mail"

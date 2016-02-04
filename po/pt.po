@@ -174,7 +174,7 @@ msgid "Hide Titlebar"
 msgstr "Ocultar Barra de Título"
 
 #: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
-msgid "Hides the titlebar of maximized xplayer windows"
+msgid "Hides the titlebar of maximized xviewer windows"
 msgstr ""
 "Oculta a barra de título das janelas maximizadas do Visualizador de Imagens"
 
@@ -183,7 +183,7 @@ msgid "Disable dark theme"
 msgstr "Desativar o tema escuro"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
-msgid "Disables xplayer's preference of dark theme variants"
+msgid "Disables xviewer's preference of dark theme variants"
 msgstr ""
 "Desativa a preferência de variantes do tema escuro do Visualizador de Imagens"
 
@@ -375,8 +375,8 @@ msgstr ""
 "Um nome de fonte Pango. Exemplos são \"Sans 12\" ou \"Monospace Bold 14\"."
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for xplayer"
-msgstr "Consola Python para o xplayer"
+msgid "Python console for xviewer"
+msgstr "Consola Python para o xviewer"
 
 #: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
 msgid "Send by Mail"

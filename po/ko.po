@@ -195,7 +195,7 @@ msgid "Hides the titlebar of maximized windows"
 msgstr "최대화 한 창의 제목 표시줄을 숨깁니다"
 
 #: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
-msgid "Hides the titlebar of maximized xplayer windows"
+msgid "Hides the titlebar of maximized xviewer windows"
 msgstr "최대화한 그놈의 눈 창의 제목 표시줄을 숨깁니다"
 
 #: ../plugins/light-theme/xviewer-light-theme.metainfo.xml.in.h:1
@@ -208,7 +208,7 @@ msgid "Disables dark theme"
 msgstr "어두운 테마 비활성화"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
-msgid "Disables xplayer's preference of dark theme variants"
+msgid "Disables xviewer's preference of dark theme variants"
 msgstr "그놈의 눈 기본 설정의 어두운 테마 버전을 비활성화 합니다"
 
 #: ../plugins/map/xviewer-map.metainfo.xml.in.h:1
@@ -423,7 +423,7 @@ msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
 msgstr "판고 글꼴 이름. 예를 들어 \"Sans 12\" 또는 \"Monospace Bold 14\"."
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for xplayer"
+msgid "Python console for xviewer"
 msgstr "그놈의 눈 파이썬 콘솔"
 
 #: ../plugins/send-by-mail/xviewer-send-by-mail.metainfo.xml.in.h:1

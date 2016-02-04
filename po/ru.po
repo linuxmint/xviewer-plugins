@@ -170,7 +170,7 @@ msgid "Hide Titlebar"
 msgstr "Скрывать панель заголовка"
 
 #: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
-msgid "Hides the titlebar of maximized xplayer windows"
+msgid "Hides the titlebar of maximized xviewer windows"
 msgstr "Скрывает панель заголовка окна, если окно развёрнуто на весь экран"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:1
@@ -178,7 +178,7 @@ msgid "Disable dark theme"
 msgstr "Не использовать тёмную тему"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
-msgid "Disables xplayer's preference of dark theme variants"
+msgid "Disables xviewer's preference of dark theme variants"
 msgstr "Отключает тёмную тему оформления приложения"
 
 #: ../plugins/map/xviewer-map-plugin.c:401
@@ -370,8 +370,8 @@ msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
 msgstr "Имя шрифта Pango. Примеры: «Sans 12», «Monospace Bold 14»."
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for xplayer"
-msgstr "Консоль Python для xplayer"
+msgid "Python console for xviewer"
+msgstr "Консоль Python для xviewer"
 
 #: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
 msgid "Send by Mail"

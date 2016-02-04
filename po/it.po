@@ -1,4 +1,4 @@
-# Italian translation og xplayer plugins.
+# Italian translation og xviewer plugins.
 # Copyright (C) 2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the xviewer-plugins package.
 # Gianvito Cavasoli <gianvito@gmx.it>, 2009, 2010, 2011, 2012, 2013.
@@ -175,7 +175,7 @@ msgid "Hide Titlebar"
 msgstr "Nascondi barra del titolo"
 
 #: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
-msgid "Hides the titlebar of maximized xplayer windows"
+msgid "Hides the titlebar of maximized xviewer windows"
 msgstr ""
 "Nasconde la barra del titolo delle finestre massimizzate dell'applicazione"
 
@@ -184,7 +184,7 @@ msgid "Disable dark theme"
 msgstr "Disabilita tema scuro"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
-msgid "Disables xplayer's preference of dark theme variants"
+msgid "Disables xviewer's preference of dark theme variants"
 msgstr "Disabilita le varianti per il tema scuro dell'applicazione"
 
 #: ../plugins/map/xviewer-map-plugin.c:401
@@ -376,8 +376,8 @@ msgstr ""
 "Un nome di carattere Pango. Esempi sono «Sans 12» oppure «Monospace Bold 14»."
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for xplayer"
-msgstr "Console Python per xplayer"
+msgid "Python console for xviewer"
+msgstr "Console Python per xviewer"
 
 #: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
 msgid "Send by Mail"

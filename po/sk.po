@@ -210,7 +210,7 @@ msgstr "Skryť titulok okna"
 
 # plugin description
 #: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
-msgid "Hides the titlebar of maximized xplayer windows"
+msgid "Hides the titlebar of maximized xviewer windows"
 msgstr "Skryje titulok okna pri maximalizovanom okne programu Oko GNOME"
 
 # plugin name
@@ -220,7 +220,7 @@ msgstr "Zákaz tmavej témy"
 
 # plugin description
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
-msgid "Disables xplayer's preference of dark theme variants"
+msgid "Disables xviewer's preference of dark theme variants"
 msgstr "Zakáže nastavenie tmavých variant tém programu Oko GNOME"
 
 # tooltip
@@ -445,7 +445,7 @@ msgstr "Názov písma pre Pango. Napríklad „Sans 12“ alebo „Monospace Bol
 
 # plugin description
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for xplayer"
+msgid "Python console for xviewer"
 msgstr "Konzola jazyka Python pre program Oko GNOME"
 
 # action entry

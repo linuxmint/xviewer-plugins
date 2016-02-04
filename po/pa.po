@@ -229,7 +229,7 @@ msgid "Python Console"
 msgstr "ਪਾਈਥਨ ਕਨਸੋਲ"
 
 #: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:2
-msgid "Python console for xplayer"
+msgid "Python console for xviewer"
 msgstr "ਗਨੋਮ ਦੀ ਅੱਖ ਲਈ ਪਾਈਥਨ ਕਨਸੋਲ"
 
 #: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:60

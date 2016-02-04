@@ -153,6 +153,6 @@ msgid "Python Console"
 msgstr "ಪೈಥಾನ್ ಕನ್ಸೋಲ್‌"
 
 #: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:2
-msgid "Python console for xplayer"
+msgid "Python console for xviewer"
 msgstr "ಐ ಆಫ್‌ GNOME ಗಾಗಿನ ಪೈಥಾನ್ ಕನ್ಸೋಲ್"
 

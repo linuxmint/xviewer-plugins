@@ -229,8 +229,8 @@ msgid "Python Console"
 msgstr "Consolă Python"
 
 #: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:2
-msgid "Python console for xplayer"
-msgstr "Consolă Python pentru xplayer"
+msgid "Python console for xviewer"
+msgstr "Consolă Python pentru xviewer"
 
 #: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:60
 msgid "Send by Mail"

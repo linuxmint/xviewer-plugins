@@ -179,16 +179,16 @@ msgid "Hide Titlebar"
 msgstr "Esconder barra de título"
 
 #: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
-msgid "Hides the titlebar of maximized xplayer windows"
-msgstr "Esconde a barra de título de janelas maximizadas do xplayer"
+msgid "Hides the titlebar of maximized xviewer windows"
+msgstr "Esconde a barra de título de janelas maximizadas do xviewer"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:1
 msgid "Disable dark theme"
 msgstr "Desabilitar tema escuro"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
-msgid "Disables xplayer's preference of dark theme variants"
-msgstr "Desabilita a preferência do xplayer pela variante escura de temas"
+msgid "Disables xviewer's preference of dark theme variants"
+msgstr "Desabilita a preferência do xviewer pela variante escura de temas"
 
 #: ../plugins/map/xviewer-map-plugin.c:401
 msgid "Jump to current image's location"
@@ -379,7 +379,7 @@ msgstr ""
 "Um nome de fonte Pango. Exemplos são \"Sans 12\" ou \"Monospace Bold 14\"."
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for xplayer"
+msgid "Python console for xviewer"
 msgstr "Console Python para o Visualisador de imagens GNOME"
 
 #: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63

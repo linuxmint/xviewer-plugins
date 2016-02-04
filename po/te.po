@@ -245,8 +245,8 @@ msgid "Python Console"
 msgstr "పైథాన్ కన్సోల్"
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for xplayer"
-msgstr "xplayer కొరకు పైథాన్ కన్సోలు"
+msgid "Python console for xviewer"
+msgstr "xviewer కొరకు పైథాన్ కన్సోలు"
 
 #: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
 msgid "Send by Mail"

@@ -158,6 +158,6 @@ msgid "Python Console"
 msgstr "பைதான் பணியகம்"
 
 #: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:2
-msgid "Python console for xplayer"
-msgstr "xplayerக்கிற்கான பைத்தான் பணியகம்"
+msgid "Python console for xviewer"
+msgstr "xviewerக்கிற்கான பைத்தான் பணியகம்"
 

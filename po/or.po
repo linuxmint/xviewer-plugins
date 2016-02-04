@@ -133,6 +133,6 @@ msgid "Python Console"
 msgstr "Python କୋନସୋଲ"
 
 #: ../plugins/pythonconsole/pythonconsole.xviewer-plugin.desktop.in.h:2
-msgid "Python console for xplayer"
-msgstr "xplayer ପାଇଁ Python କୋନସୋଲ"
+msgid "Python console for xviewer"
+msgstr "xviewer ପାଇଁ Python କୋନସୋଲ"
 

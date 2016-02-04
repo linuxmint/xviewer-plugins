@@ -175,16 +175,16 @@ msgid "Hide Titlebar"
 msgstr "Slēpt virsraksta joslu"
 
 #: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
-msgid "Hides the titlebar of maximized xplayer windows"
-msgstr "Slēpj virsraksta joslu, kad maksimizē xplayer logus"
+msgid "Hides the titlebar of maximized xviewer windows"
+msgstr "Slēpj virsraksta joslu, kad maksimizē xviewer logus"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:1
 msgid "Disable dark theme"
 msgstr "Deaktivēt tumšo motīvu"
 
 #: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
-msgid "Disables xplayer's preference of dark theme variants"
-msgstr "Deaktivē xplayer iestatījumus tumšā motīva variantiem"
+msgid "Disables xviewer's preference of dark theme variants"
+msgstr "Deaktivē xviewer iestatījumus tumšā motīva variantiem"
 
 #: ../plugins/map/xviewer-map-plugin.c:401
 msgid "Jump to current image's location"
@@ -373,8 +373,8 @@ msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
 msgstr "Pango fonta nosaukums. Piemēri: \"Sans 12\" vai \"Monospace Bold 14\"."
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-msgid "Python console for xplayer"
-msgstr "Python konsole lietotnei xplayer"
+msgid "Python console for xviewer"
+msgstr "Python konsole lietotnei xviewer"
 
 #: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
 msgid "Send by Mail"
