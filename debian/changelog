@@ -1,3 +1,9 @@
+xviewer-plugins (1.0.1) sarah; urgency=medium
+
+  * Migration
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 06 Feb 2016 16:47:35 +0000
+
 xviewer-plugins (1.0.0) unstable; urgency=medium
 
   * Initial release
