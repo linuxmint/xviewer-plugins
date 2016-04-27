@@ -1,0 +1,458 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# gogo <trebelnik2@gmail.com>, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: xviewer-plugins\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 16:34+0200\n"
+"PO-Revision-Date: 2016-04-27 18:17+0200\n"
+"Last-Translator: gogo <trebelnik2@gmail.com>\n"
+"Language-Team: Croatian <hr@li.org>\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Project-Style: gnome\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:105
+msgid " (invalid Unicode)"
+msgstr " (neispravan Unikôd)"
+
+#. TRANSLATORS: This is the actual focal length used when
+#. the image was taken.
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:183
+#, c-format
+msgid "%.1fmm (lens)"
+msgstr "%.1fmm (objektiv)"
+
+#. Print as float to get a similar look as above.
+#. TRANSLATORS: This is the equivalent focal length assuming
+#. a 35mm film camera.
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:194
+#, c-format
+msgid "%.1fmm (35mm film)"
+msgstr "%.1fmm (35mm film)"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:1
+msgid "Histogram"
+msgstr "Histogram"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:2
+msgid "Display per-channel histogram"
+msgstr "Prikaži histogram po kanalu"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:3
+msgid "Display RGB histogram"
+msgstr "Prikaži RGB histogram"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:4
+msgid "General"
+msgstr "Općenito"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:5
+msgid "Display camera settings in statusbar"
+msgstr "Prikaži postavke fotoaparata na traci stanja"
+
+#: ../plugins/exif-display/exif-display.plugin.desktop.in.h:1
+#: ../plugins/exif-display/xviewer-exif-display.metainfo.xml.in.h:1
+msgid "Exif Display"
+msgstr "Eksif prikaz"
+
+#: ../plugins/exif-display/exif-display.plugin.desktop.in.h:2
+msgid "Displays camera settings and histogram"
+msgstr "Prikazuje postavke fotoaparata i histogram"
+
+#: ../plugins/exif-display/xviewer-exif-display.metainfo.xml.in.h:2
+msgid "Displays Exif tags in the side panel and optionally the statusbar"
+msgstr "Prikazuje Exif oznake u bočnom panelu i neobavezno u traci stanja"
+
+#: ../plugins/exif-display/exif-display.ui.h:1
+msgid "ISO speed:"
+msgstr "ISO brzina:"
+
+#: ../plugins/exif-display/exif-display.ui.h:2
+msgid "Expo. Time:"
+msgstr "Vrijeme ekspozicije:"
+
+#: ../plugins/exif-display/exif-display.ui.h:3
+msgid "Aperture:"
+msgstr "Promjer optičke leće:"
+
+#: ../plugins/exif-display/exif-display.ui.h:4
+msgid "Zoom:"
+msgstr "Uvećanje:"
+
+#: ../plugins/exif-display/exif-display.ui.h:5
+msgid "Metering:"
+msgstr "Mjerenje:"
+
+#: ../plugins/exif-display/exif-display.ui.h:6
+msgid "Expo. bias:"
+msgstr "Težnja ekspozicije:"
+
+#: ../plugins/exif-display/exif-display.ui.h:7
+msgid "Description:"
+msgstr "Opis:"
+
+#: ../plugins/export-to-folder/xviewer-export-to-folder.metainfo.xml.in.h:1
+#: ../plugins/export-to-folder/export-to-folder.plugin.desktop.in.h:1
+msgid "Export to Folder"
+msgstr "Izvezi u mapu"
+
+#: ../plugins/export-to-folder/xviewer-export-to-folder.metainfo.xml.in.h:2
+#: ../plugins/export-to-folder/export-to-folder.plugin.desktop.in.h:2
+msgid "Export the current image to a separate directory"
+msgstr "Izvezi trenutnu sliku u posebnu mapu"
+
+#: ../plugins/export-to-folder/export-to-folder.py:61
+msgid "_Export"
+msgstr "_Izvezi"
+
+#: ../plugins/export-to-folder/org.x.viewer.plugins.export-to-folder.gschema.xml.in.h:1
+msgid "The folder to export to"
+msgstr "Mapa za izvoz"
+
+#: ../plugins/export-to-folder/org.x.viewer.plugins.export-to-folder.gschema.xml.in.h:2
+msgid ""
+"This is the folder the plugin will place the exported files in. Plugin will "
+"export to $HOME/exported-images if not set."
+msgstr ""
+"Ovo je mapa u koju će priključak smjestiti izvezene datoteke. Ako ovo nije "
+"postavljeno, priključak će ih izvesti u $HOME/izvezene-slike."
+
+#: ../plugins/export-to-folder/preferences_dialog.ui.h:1
+msgid "Export directory:"
+msgstr "Mapa izvoza:"
+
+#: ../plugins/fit-to-width/xviewer-fit-to-width.metainfo.xml.in.h:1
+#: ../plugins/fit-to-width/fit-to-width.plugin.desktop.in.h:1
+msgid "Zoom to Fit Image Width"
+msgstr "Uvećaj za popunu širine slike"
+
+#: ../plugins/fit-to-width/xviewer-fit-to-width.metainfo.xml.in.h:2
+msgid "Adjusts the zoom to have the image's width fit into the window"
+msgstr "Prilagodi uvećanje kako bi širina slike pristajala u prozor"
+
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:91
+msgid "Fit to width"
+msgstr "Prilagodi po širini"
+
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:93
+msgid "Fit the image to the window width"
+msgstr "Prilagodi sliku po širini prozora"
+
+#: ../plugins/fit-to-width/fit-to-width.plugin.desktop.in.h:2
+msgid "Fit images to the window width"
+msgstr "Prilagodi slike po širini prozora"
+
+#: ../plugins/fullscreenbg/xviewer-fullscreenbg.metainfo.xml.in.h:1
+#: ../plugins/fullscreenbg/fullscreenbg.plugin.desktop.in.h:1
+msgid "Fullscreen Background"
+msgstr "Cijelozaslonska pozadina"
+
+#: ../plugins/fullscreenbg/xviewer-fullscreenbg.metainfo.xml.in.h:2
+#: ../plugins/fullscreenbg/fullscreenbg.plugin.desktop.in.h:2
+msgid "Enables changing background in fullscreen mode"
+msgstr "Omogućuje promjenu pozadine u cijelozaslonskom prikazu"
+
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.h:1
+msgid "Use custom background settings"
+msgstr "Koristi pralagođene postavke pozadine"
+
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.h:2
+msgid "Whether the plugin should use global settings or its own."
+msgstr "Treba li priključak koristiti opće postavke ili vlastite."
+
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.h:3
+msgid "Background color in fullscreen mode"
+msgstr "Boja pozadine u cijelozaslonskom prikazu"
+
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.h:4
+msgid ""
+"The color that is used to fill the area behind the image. This option has "
+"effect only if use-custom is enabled."
+msgstr ""
+"Boja koja se koristi za popunjavanje područja iza slike. Ova mogućnost ima "
+"učinak samo ako je omogućeno koristi-prilagođeno."
+
+#: ../plugins/fullscreenbg/preferences_dialog.ui.h:1
+msgid "Use custom color:"
+msgstr "Prilagođena boja:"
+
+#: ../plugins/hide-titlebar/xviewer-hide-titlebar.metainfo.xml.in.h:1
+#: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:1
+msgid "Hide Titlebar"
+msgstr "Sakrij naslovnu traku"
+
+#: ../plugins/hide-titlebar/xviewer-hide-titlebar.metainfo.xml.in.h:2
+msgid "Hides the titlebar of maximized windows"
+msgstr "Sakriva naslovnu traku uvećanih prozora"
+
+#: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
+msgid "Hides the titlebar of maximized xviewer windows"
+msgstr "Sakriva naslovnu traku uvećanih xviewer prozora"
+
+#: ../plugins/light-theme/xviewer-light-theme.metainfo.xml.in.h:1
+#: ../plugins/light-theme/light-theme.plugin.desktop.in.h:1
+msgid "Disable Dark Theme"
+msgstr "Onemogući tamnu temu"
+
+#: ../plugins/light-theme/xviewer-light-theme.metainfo.xml.in.h:2
+msgid "Disables dark theme"
+msgstr "Onemogući tamnu temu"
+
+#: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
+msgid "Disables xviewer's preference of dark theme variants"
+msgstr "Onemogućuje tamnu temu u xviewer postavkama"
+
+#: ../plugins/map/xviewer-map.metainfo.xml.in.h:1
+#: ../plugins/map/xviewer-map-plugin.c:438
+#: ../plugins/map/map.plugin.desktop.in.h:1
+msgid "Map"
+msgstr "Mapa"
+
+#: ../plugins/map/xviewer-map.metainfo.xml.in.h:2
+msgid "Displays on a map in the side panel where the picture was taken"
+msgstr "Prikazuje u mapi na bočnom panelu gdje je slika uslikana"
+
+#: ../plugins/map/xviewer-map-plugin.c:403
+msgid "Jump to current image's location"
+msgstr "Idi na trenutnu lokaciju slike"
+
+#: ../plugins/map/xviewer-map-plugin.c:415
+msgid "Zoom in"
+msgstr "Uvećaj"
+
+#: ../plugins/map/xviewer-map-plugin.c:423
+msgid "Zoom out"
+msgstr "Umanji"
+
+#: ../plugins/map/map.plugin.desktop.in.h:2
+msgid "Display the geolocation of the image on a map"
+msgstr "Prikaži geopoložaj slike na mapi"
+
+#: ../plugins/postasa/xviewer-postasa.metainfo.xml.in.h:1
+msgid "Picasa Web Uploader"
+msgstr "Pošiljatelj na Picasa web"
+
+#: ../plugins/postasa/xviewer-postasa.metainfo.xml.in.h:2
+msgid "Supports uploading photos to Google Picasa Web"
+msgstr "Podržava slanje fotografija na Google Picasa web"
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:127
+msgid "Upload to PicasaWeb"
+msgstr "Pošalji na Picasa web"
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:129
+#: ../plugins/postasa/postasa.plugin.desktop.in.h:2
+msgid "Upload your pictures to PicasaWeb"
+msgstr "Pošaljite svoje slike na Picasa web"
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:325
+msgid "Uploading..."
+msgstr "Šaljem..."
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:371
+msgid "Uploaded"
+msgstr "Poslano"
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:375
+msgid "Cancelled"
+msgstr "Prekinuto"
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:378
+msgid "Failed"
+msgstr "Neuspelo"
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:601
+#, c-format
+msgid "Login failed. %s"
+msgstr "Neuspješna prijava. %s"
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:605
+msgid "Logged in successully."
+msgstr "Uspješna prijava."
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:606
+msgid "Close"
+msgstr "Zatvori"
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:627
+msgid "Cancel"
+msgstr "Odustani"
+
+#. TODO: want to handle passwords more securely
+#: ../plugins/postasa/xviewer-postasa-plugin.c:633
+msgid "Logging in..."
+msgstr "Prijavljivanje..."
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:678
+msgid "Please log in to continue upload."
+msgstr "Prijavite se za nastavak slanja."
+
+#: ../plugins/postasa/postasa-config.xml.h:1
+msgid "PicasaWeb Login"
+msgstr "Picasa web prijava"
+
+#: ../plugins/postasa/postasa-config.xml.h:2
+msgid "_Cancel"
+msgstr "_Odustani"
+
+#: ../plugins/postasa/postasa-config.xml.h:3
+msgid "_Login"
+msgstr "_Prijava"
+
+#: ../plugins/postasa/postasa-config.xml.h:4
+msgid "_Username:"
+msgstr "_Korisničko ime:"
+
+#: ../plugins/postasa/postasa-config.xml.h:5
+msgid "_Password:"
+msgstr "_Lozinka:"
+
+#: ../plugins/postasa/postasa.plugin.desktop.in.h:1
+msgid "PicasaWeb Uploader"
+msgstr "Pošiljatelj na Picasa web"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:1
+msgid "Uploads:"
+msgstr "Slanja:"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:2
+msgid "File"
+msgstr "Datoteka"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:3
+msgid "Size"
+msgstr "Veličina"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:4
+msgid "Status"
+msgstr "Stanje"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:5
+msgid "Cancel Selected"
+msgstr "Ukloni odabir"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:6
+msgid "Cancel All"
+msgstr "Ukloni sve"
+
+#: ../plugins/postr/xviewer-postr.metainfo.xml.in.h:1
+msgid "Postr"
+msgstr "Postr"
+
+#: ../plugins/postr/xviewer-postr.metainfo.xml.in.h:2
+msgid "Supports uploading photos to Flickr"
+msgstr "Podržava slanje fotografija na Flickr"
+
+#: ../plugins/postr/xviewer-postr-plugin.c:62
+msgid "Upload to Flickr"
+msgstr "Pošalji na Flickr"
+
+#: ../plugins/postr/xviewer-postr-plugin.c:64
+#: ../plugins/postr/postr.plugin.desktop.in.h:2
+msgid "Upload your pictures to Flickr"
+msgstr "Pošaljite svoje slike na Flickr"
+
+#: ../plugins/postr/postr.plugin.desktop.in.h:1
+msgid "Flickr Uploader"
+msgstr "Pošiljatelj na Flickr"
+
+#: ../plugins/pythonconsole/config.ui.h:1
+msgid "C_ommand color:"
+msgstr "B_oja naredbe:"
+
+#: ../plugins/pythonconsole/config.ui.h:2
+msgid "_Error color:"
+msgstr "_Boja greške:"
+
+#: ../plugins/pythonconsole/xviewer-pythonconsole.metainfo.xml.in.h:1
+#: ../plugins/pythonconsole/__init__.py:87
+#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
+msgid "Python Console"
+msgstr "Python konzola"
+
+#: ../plugins/pythonconsole/xviewer-pythonconsole.metainfo.xml.in.h:2
+msgid "Adds a Python console"
+msgstr "Dodaje Python konzolu"
+
+#: ../plugins/pythonconsole/__init__.py:64
+msgid "P_ython Console"
+msgstr "_Python konzola"
+
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:1
+msgid "Command Text Color"
+msgstr "Boja teksta naredbe"
+
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:2
+msgid "The color used for commands."
+msgstr "Boja koja se koristi za naredbe."
+
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:3
+msgid "Error Text Color"
+msgstr "Boja teksta greške"
+
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:4
+msgid "The color used for errors."
+msgstr "Boja koja se koristi za greške."
+
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:5
+msgid "Whether to use the system font"
+msgstr "Treba li koristiti slova sustava"
+
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:6
+msgid ""
+"If true, the terminal will use the desktop-global standard font if it's "
+"monospace (and the most similar font it can come up with otherwise)."
+msgstr ""
+"Ako je odabrano, terminal će koristiti opća slova radne površine ako je "
+"monospace (ili u suprotnome najsličnija pronađena slova)."
+
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:7
+msgid "Font used by Python Console"
+msgstr "Slova koje koristi Python konzola"
+
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:8
+msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
+msgstr "Naziv Pango slova. Primjeri su „Sans 12“ ili „Monospace Bold 14“."
+
+#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
+msgid "Python console for xviewer"
+msgstr "Python konzola za xviewer"
+
+#: ../plugins/send-by-mail/xviewer-send-by-mail.metainfo.xml.in.h:1
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
+msgid "Send by Mail"
+msgstr "Pošalji e-poštom"
+
+#: ../plugins/send-by-mail/xviewer-send-by-mail.metainfo.xml.in.h:2
+#: ../plugins/send-by-mail/send-by-mail.plugin.desktop.in.h:2
+msgid "Sends an image attached to a new mail"
+msgstr "Pošaljite sliku priloženu u novoj pošti"
+
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:65
+msgid "Send the selected images by mail"
+msgstr "Pošaljite e-poštom odabrane slike"
+
+#: ../plugins/send-by-mail/send-by-mail.plugin.desktop.in.h:1
+msgid "Send By Mail"
+msgstr "Pošalji e-poštom"
+
+#: ../plugins/slideshowshuffle/xviewer-slideshowshuffle.metainfo.xml.in.h:1
+#: ../plugins/slideshowshuffle/slideshowshuffle.plugin.desktop.in.h:1
+msgid "Slideshow Shuffle"
+msgstr "Naizmjenična prezentacija"
+
+#: ../plugins/slideshowshuffle/xviewer-slideshowshuffle.metainfo.xml.in.h:2
+msgid "Shuffles the photos in slideshow mode"
+msgstr "Naizmjenično prikazuje  fotografije u prezentacijskom načinu"
+
+#: ../plugins/slideshowshuffle/slideshowshuffle.plugin.desktop.in.h:2
+msgid "Shuffles images in slideshow mode"
+msgstr "Naizmjenično prikazuje slike u prezentacijskom načinu"
