@@ -1,3 +1,9 @@
+xviewer-plugins (1.0.2) sarah; urgency=medium
+
+  * buil-dep on dh-autoreconf
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 27 Apr 2016 13:39:25 +0100
+
 xviewer-plugins (1.0.1) sarah; urgency=medium
 
   * Migration
