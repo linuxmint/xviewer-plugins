@@ -2,6 +2,6 @@
 <gresources>
   <gresource prefix="/org/x/viewer/plugins/exif-display">
     <file compressed="true" preprocess="xml-stripblanks">exif-display-config.ui</file>
-    <file preprocess="xml-stripblanks">exif-display.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks">exif-display.ui</file>
   </gresource>
 </gresources>
