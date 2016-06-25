@@ -1,3 +1,13 @@
+xviewer-plugins (1.0.3) sarah; urgency=medium
+
+  [ muzena ]
+  * Add hr.po
+
+  [ Clement Lefebvre ]
+  * Fixed EXIF plugin preferences not loading
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 25 Jun 2016 11:51:09 +0100
+
 xviewer-plugins (1.0.2) sarah; urgency=medium
 
   * buil-dep on dh-autoreconf
