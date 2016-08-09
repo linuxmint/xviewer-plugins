@@ -1,0 +1,10 @@
+[Plugin]
+Loader=python3
+Module=rename-file
+IAge=2
+Name=Rename-file
+Icon=xviewer
+Description=Opens a dialogbox to rename the current image
+Authors=Stephane Groleau <stefgroleau@gmail.com>
+Copyright=Copyright © 2016 Stephane Groleau
+Website=https://github.org/vgstef/xviewer-rename-file
