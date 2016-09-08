@@ -11,10 +11,6 @@ plugins/export-to-folder/export-to-folder.py
 plugins/fit-to-width/xviewer-fit-to-width.metainfo.xml.in
 plugins/fit-to-width/xviewer-fit-to-width-plugin.c
 plugins/fit-to-width/fit-to-width.plugin.desktop.in
-plugins/fullscreenbg/xviewer-fullscreenbg.metainfo.xml.in
-plugins/fullscreenbg/fullscreenbg.plugin.desktop.in
-[type: gettext/gsettings]plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in
-[type: gettext/glade]plugins/fullscreenbg/preferences_dialog.ui
 plugins/light-theme/xviewer-light-theme.metainfo.xml.in
 plugins/light-theme/light-theme.plugin.desktop.in
 plugins/map/xviewer-map.metainfo.xml.in
