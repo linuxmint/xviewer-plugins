@@ -1,9 +1,0 @@
-[Plugin]
-Module=hide-titlebar
-IAge=2
-_Name=Hide Titlebar
-Icon=xviewer-plugin
-_Description=Hides the titlebar of maximized xviewer windows
-Authors=Claudio Saavedra <csaavedra@igalia.com>, Felix Riemann <friemann@gnome.org>
-Copyright=Copyright © 2012 The Free Software Foundation
-Website=http://github.com/linuxmint/xviewer

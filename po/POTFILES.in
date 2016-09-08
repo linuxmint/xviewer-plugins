@@ -15,8 +15,6 @@ plugins/fullscreenbg/xviewer-fullscreenbg.metainfo.xml.in
 plugins/fullscreenbg/fullscreenbg.plugin.desktop.in
 [type: gettext/gsettings]plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in
 [type: gettext/glade]plugins/fullscreenbg/preferences_dialog.ui
-plugins/hide-titlebar/xviewer-hide-titlebar.metainfo.xml.in
-plugins/hide-titlebar/hide-titlebar.plugin.desktop.in
 plugins/light-theme/xviewer-light-theme.metainfo.xml.in
 plugins/light-theme/light-theme.plugin.desktop.in
 plugins/map/xviewer-map.metainfo.xml.in

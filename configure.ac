@@ -61,9 +61,9 @@ XVIEWER_HAS_PYTHON=1
 
 AC_MSG_CHECKING([which plugins to build])
 
-ALL_PLUGINS="postr map fit-to-width exif-display send-by-mail postasa hide-titlebar light-theme"
-USEFUL_PLUGINS="postr map fit-to-width exif-display send-by-mail postasa hide-titlebar light-theme"
-DEFAULT_PLUGINS="postr map fit-to-width exif-display send-by-mail postasa hide-titlebar light-theme"
+ALL_PLUGINS="postr map fit-to-width exif-display send-by-mail postasa light-theme"
+USEFUL_PLUGINS="postr map fit-to-width exif-display send-by-mail postasa light-theme"
+DEFAULT_PLUGINS="postr map fit-to-width exif-display send-by-mail postasa light-theme"
 
 PYTHON_ALL_PLUGINS="slideshowshuffle pythonconsole fullscreenbg export-to-folder"
 PYTHON_USEFUL_PLUGINS="slideshowshuffle pythonconsole fullscreenbg export-to-folder"
@@ -343,7 +343,6 @@ plugins/export-to-folder/Makefile
 plugins/export-to-folder/org.x.viewer.plugins.export-to-folder.gschema.xml
 plugins/fullscreenbg/Makefile
 plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml
-plugins/hide-titlebar/Makefile
 plugins/light-theme/Makefile
 plugins/send-by-mail/Makefile
 plugins/slideshowshuffle/Makefile
