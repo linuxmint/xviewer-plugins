@@ -265,9 +265,9 @@ selection_changed_cb (XviewerThumbView *view,
 			      "longitude", &lon,
 			      NULL);
 
-		champlain_view_center_on (CHAMPLAIN_VIEW (plugin->map),
-					  lat,
-					  lon);
+		champlain_view_go_to (CHAMPLAIN_VIEW (plugin->map),
+		                      lat,
+		                      lon);
 
 		/* Reset the previous selection */
 		if (plugin->marker)
@@ -304,9 +304,9 @@ jump_to (GtkWidget *widget,
 		      "longitude", &lon,
 		      NULL);
 
-	champlain_view_center_on (CHAMPLAIN_VIEW (plugin->map),
-				  lat,
-				  lon);
+	champlain_view_go_to (CHAMPLAIN_VIEW (plugin->map),
+	                      lat,
+	                      lon);
 }
 
 static void
