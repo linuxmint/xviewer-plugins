@@ -67,7 +67,7 @@ update_marker_image (ChamplainLabel *marker,
 	thumb = gtk_clutter_texture_new ();
 	gtk_clutter_texture_set_from_icon_name (GTK_CLUTTER_TEXTURE (thumb),
 						widget,
-						"image-x-generic",
+	                                        "mark-location",
 						size, NULL);
 	/* don't need to unref widget because it is floating */
 
