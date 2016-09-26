@@ -376,6 +376,12 @@ prepared_cb (XviewerWindow *window,
 	 */
 	selection_changed_cb (XVIEWER_THUMB_VIEW (plugin->thumbview), plugin);
 
+	/* zoom in and the be sure that all markers are visible.
+	 * This is useful to have a good starting zoom level where
+	 * you can see a available markers on the map
+	 */
+	champlain_view_set_zoom_level (plugin->map, 15);
+	champlain_view_ensure_layers_visible (plugin->map, FALSE);
 }
 
 static void
