@@ -58,17 +58,31 @@ xviewer_map_plugin_finalize (GObject *object)
 
 static void
 update_marker_image (ChamplainLabel *marker,
-		     GtkIconSize size)
+                     GtkIconSize size)
 {
 	GtkWidget *widget;
 	ClutterActor *thumb;
 
 	widget = gtk_button_new ();
 	thumb = gtk_clutter_texture_new ();
-	gtk_clutter_texture_set_from_icon_name (GTK_CLUTTER_TEXTURE (thumb),
-						widget,
-	                                        "mark-location",
-						size, NULL);
+	if (G_UNLIKELY (!gtk_clutter_texture_set_from_icon_name (GTK_CLUTTER_TEXTURE (thumb),
+	                                                         widget,
+	                                                         "mark-location",
+	                                                         size, NULL)))
+	{
+		/* mark-location doesn't appear to be a "standard" icon yet,
+		 * so try falling back to image-x-generic as before if
+		 * it is not available */
+		if (G_UNLIKELY (!gtk_clutter_texture_set_from_icon_name (GTK_CLUTTER_TEXTURE (thumb),
+		                                                         widget,
+		                                                         "image-x-generic",
+		                                                         size, NULL)))
+		{
+			g_warning ("Could not load icon for map marker. "
+			           "Please install a suitable icon theme!");
+		}
+	}
+
 	/* don't need to unref widget because it is floating */
 
 	champlain_label_set_image (marker, thumb);
