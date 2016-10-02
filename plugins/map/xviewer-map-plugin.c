@@ -349,6 +349,7 @@ static void
 prepared_cb (XviewerWindow *window,
 	     XviewerMapPlugin *plugin)
 {
+	GList *markers;
 
 	plugin->store = xviewer_window_get_store (plugin->window);
 
@@ -380,8 +381,13 @@ prepared_cb (XviewerWindow *window,
 	 * This is useful to have a good starting zoom level where
 	 * you can see a available markers on the map
 	 */
-	champlain_view_set_zoom_level (plugin->map, 15);
-	champlain_view_ensure_layers_visible (plugin->map, FALSE);
+	markers = champlain_marker_layer_get_markers (plugin->layer);
+	if(markers != NULL)
+	{
+		champlain_view_set_zoom_level (plugin->map, 15);
+		champlain_view_ensure_layers_visible (plugin->map, FALSE);
+		g_list_free (markers);
+	}
 }
 
 static void
