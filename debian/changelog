@@ -1,3 +1,10 @@
+xviewer-plugins (1.2.0) serena; urgency=medium
+
+  * Removed hide-titlebar plugin
+  * Removed fullscreenbg plugin
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 04 Nov 2016 15:16:01 +0000
+
 xviewer-plugins (1.0.3) sarah; urgency=medium
 
   [ muzena ]
