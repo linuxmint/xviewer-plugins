@@ -412,6 +412,7 @@ impl_activate (XviewerWindowActivatable *activatable)
 	g_object_set (G_OBJECT (plugin->map),
 		"zoom-level", 3,
 		"kinetic-mode", TRUE,
+		"goto-animation-duration", 1000,
 		NULL);
 	scale = champlain_scale_new ();
 	champlain_scale_connect_view (CHAMPLAIN_SCALE (scale), plugin->map);
