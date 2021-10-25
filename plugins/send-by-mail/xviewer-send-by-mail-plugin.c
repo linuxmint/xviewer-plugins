@@ -201,8 +201,10 @@ send_by_mail_cb (GtkAction *action, XviewerWindow *window)
 	GdkScreen *screen = NULL;
 	GtkWidget *tview = NULL;
 	GList *images = NULL, *image = NULL;
-	GString *uri = NULL;
 	gboolean first = TRUE;
+	GString *attachment_str = NULL;
+	gchar *attachment = NULL;
+	gchar *argv[] = { "thunderbird", "-compose", NULL, NULL };
 
 	g_return_if_fail (XVIEWER_IS_WINDOW (window));
 
@@ -211,12 +213,13 @@ send_by_mail_cb (GtkAction *action, XviewerWindow *window)
 
 	tview = xviewer_window_get_thumb_view (window);
 	images = xviewer_thumb_view_get_selected_images (XVIEWER_THUMB_VIEW (tview));
-	uri = g_string_new ("mailto:?attach=");
+
+	attachment_str = g_string_new ("attachment='");
 
 	for (image = images; image != NULL; image = image->next) {
 		XviewerImage *img = XVIEWER_IMAGE (image->data);
 		GFile *file;
-		gchar *path;
+		gchar *file_uri;
 
 		file = xviewer_image_get_file (img);
 		if (!file) {
@@ -224,23 +227,27 @@ send_by_mail_cb (GtkAction *action, XviewerWindow *window)
 			continue;
 		}
 
-		path = g_file_get_path (file);
+		file_uri = g_file_get_uri (file);
 		if (first) {
-			uri = g_string_append (uri, path);
+			g_string_append (attachment_str, file_uri);
 			first = FALSE;
 		} else {
-			g_string_append_printf (uri, "&attach=%s", path);
+			g_string_append_c (attachment_str, ',');
+			g_string_append (attachment_str, file_uri);
 		}
-		g_free (path);
+		g_free (file_uri);
 		g_object_unref (file);
 		g_object_unref (img);
 	}
+
+	g_string_append_c (attachment_str, '\'');
+	attachment = g_string_free (attachment_str, FALSE);
+	argv[2] = attachment;
+
+	g_spawn_async (NULL, argv, NULL, G_SPAWN_DEFAULT, NULL, NULL, NULL, NULL);
+
+	g_free (attachment);
 	g_list_free (images);
-
-	/* TODO: Error handling/reporting? */
-	gtk_show_uri (screen, uri->str, gtk_get_current_event_time (), NULL);
-
-	g_string_free (uri, TRUE);
 }
 
 G_MODULE_EXPORT void
