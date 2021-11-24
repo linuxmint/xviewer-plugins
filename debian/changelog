@@ -1,3 +1,22 @@
+xviewer-plugins (1.4.0) una; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Add CI configuration
+  * Packaging: Add missing dh-python to build-deps
+  * Packaging: Don't build postr plugin
+  * CI: Update targets
+
+  [ cat_in_136 ]
+  * Update map plugin (#7)
+
+  [ Oliver Kästner ]
+  * Fix send-by-mail (#9)
+
+  [ Clement Lefebvre ]
+  * Use symbolic icons
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 24 Nov 2021 13:21:02 +0000
+
 xviewer-plugins (1.2.0) serena; urgency=medium
 
   * Removed hide-titlebar plugin
