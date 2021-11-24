@@ -2,7 +2,7 @@
 Module=postr
 IAge=2
 _Name=Flickr Uploader
-Icon=postr
+Icon=emblem-shared-symbolic
 _Description=Upload your pictures to Flickr
 Authors=Lucas Rocha <lucasr@gnome.org>
 Copyright=Copyright © 2007 Lucas Rocha

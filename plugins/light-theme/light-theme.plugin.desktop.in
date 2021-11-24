@@ -2,7 +2,7 @@
 Module=light-theme
 IAge=2
 _Name=Disable Dark Theme
-Icon=xviewer-plugin
+Icon=preferences-color-symbolic
 _Description=Disables xviewer's preference of dark theme variants
 Authors=Felix Riemann <friemann@gnome.org>
 Copyright=Copyright © 2012 Felix Riemann

@@ -2,7 +2,7 @@
 Module=map
 IAge=2
 _Name=Map
-Icon=map
+Icon=mark-location-symbolic
 _Description=Display the geolocation of the image on a map
 Authors=Pierre-Luc Beaudoin <pierre-luc@pierlux.com>
 Copyright=Copyright © 2008, 2010 Pierre-Luc Beaudoin
