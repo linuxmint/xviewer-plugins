@@ -58,17 +58,31 @@ xviewer_map_plugin_finalize (GObject *object)
 
 static void
 update_marker_image (ChamplainLabel *marker,
-		     GtkIconSize size)
+                     GtkIconSize size)
 {
 	GtkWidget *widget;
 	ClutterActor *thumb;
 
 	widget = gtk_button_new ();
 	thumb = gtk_clutter_texture_new ();
-	gtk_clutter_texture_set_from_icon_name (GTK_CLUTTER_TEXTURE (thumb),
-						widget,
-						"gnome-mime-image",
-						size, NULL);
+	if (G_UNLIKELY (!gtk_clutter_texture_set_from_icon_name (GTK_CLUTTER_TEXTURE (thumb),
+	                                                         widget,
+	                                                         "mark-location",
+	                                                         size, NULL)))
+	{
+		/* mark-location doesn't appear to be a "standard" icon yet,
+		 * so try falling back to image-x-generic as before if
+		 * it is not available */
+		if (G_UNLIKELY (!gtk_clutter_texture_set_from_icon_name (GTK_CLUTTER_TEXTURE (thumb),
+		                                                         widget,
+		                                                         "image-x-generic",
+		                                                         size, NULL)))
+		{
+			g_warning ("Could not load icon for map marker. "
+			           "Please install a suitable icon theme!");
+		}
+	}
+
 	/* don't need to unref widget because it is floating */
 
 	champlain_label_set_image (marker, thumb);
@@ -251,9 +265,9 @@ selection_changed_cb (XviewerThumbView *view,
 			      "longitude", &lon,
 			      NULL);
 
-		champlain_view_center_on (CHAMPLAIN_VIEW (plugin->map),
-					  lat,
-					  lon);
+		champlain_view_go_to (CHAMPLAIN_VIEW (plugin->map),
+		                      lat,
+		                      lon);
 
 		/* Reset the previous selection */
 		if (plugin->marker)
@@ -290,9 +304,9 @@ jump_to (GtkWidget *widget,
 		      "longitude", &lon,
 		      NULL);
 
-	champlain_view_center_on (CHAMPLAIN_VIEW (plugin->map),
-				  lat,
-				  lon);
+	champlain_view_go_to (CHAMPLAIN_VIEW (plugin->map),
+	                      lat,
+	                      lon);
 }
 
 static void
@@ -335,6 +349,7 @@ static void
 prepared_cb (XviewerWindow *window,
 	     XviewerMapPlugin *plugin)
 {
+	GList *markers;
 
 	plugin->store = xviewer_window_get_store (plugin->window);
 
@@ -362,6 +377,17 @@ prepared_cb (XviewerWindow *window,
 	 */
 	selection_changed_cb (XVIEWER_THUMB_VIEW (plugin->thumbview), plugin);
 
+	/* zoom in and the be sure that all markers are visible.
+	 * This is useful to have a good starting zoom level where
+	 * you can see a available markers on the map
+	 */
+	markers = champlain_marker_layer_get_markers (plugin->layer);
+	if(markers != NULL)
+	{
+		champlain_view_set_zoom_level (plugin->map, 15);
+		champlain_view_ensure_layers_visible (plugin->map, FALSE);
+		g_list_free (markers);
+	}
 }
 
 static void
@@ -386,6 +412,7 @@ impl_activate (XviewerWindowActivatable *activatable)
 	g_object_set (G_OBJECT (plugin->map),
 		"zoom-level", 3,
 		"kinetic-mode", TRUE,
+		"goto-animation-duration", 1000,
 		NULL);
 	scale = champlain_scale_new ();
 	champlain_scale_connect_view (CHAMPLAIN_SCALE (scale), plugin->map);
@@ -399,7 +426,8 @@ impl_activate (XviewerWindowActivatable *activatable)
 	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	bbox = gtk_toolbar_new ();
 
-	button = GTK_WIDGET (gtk_tool_button_new_from_stock (GTK_STOCK_JUMP_TO));
+	button = GTK_WIDGET (gtk_tool_button_new (NULL, NULL));
+	gtk_tool_button_set_icon_name (GTK_TOOL_BUTTON (button), "go-jump-symbolic");
 	gtk_widget_set_tooltip_text (button, _("Jump to current image's location"));
 	g_signal_connect (button,
 			  "clicked",
@@ -411,7 +439,8 @@ impl_activate (XviewerWindowActivatable *activatable)
 	button = GTK_WIDGET (gtk_separator_tool_item_new ());
 	gtk_container_add (GTK_CONTAINER (bbox), button);
 
-	button = GTK_WIDGET (gtk_tool_button_new_from_stock (GTK_STOCK_ZOOM_IN));
+	button = GTK_WIDGET (gtk_tool_button_new (NULL, NULL));
+	gtk_tool_button_set_icon_name (GTK_TOOL_BUTTON (button), "zoom-in-symbolic");
 	gtk_widget_set_tooltip_text (button, _("Zoom in"));
 	g_signal_connect (button,
 			  "clicked",
@@ -419,7 +448,8 @@ impl_activate (XviewerWindowActivatable *activatable)
 			  plugin->map);
 	gtk_container_add (GTK_CONTAINER (bbox), button);
 
-	button = GTK_WIDGET (gtk_tool_button_new_from_stock (GTK_STOCK_ZOOM_OUT));
+	button = GTK_WIDGET (gtk_tool_button_new (NULL, NULL));
+	gtk_tool_button_set_icon_name (GTK_TOOL_BUTTON (button), "zoom-out-symbolic");
 	gtk_widget_set_tooltip_text (button, _("Zoom out"));
 	g_signal_connect (button,
 			  "clicked",
