@@ -1,3 +1,9 @@
+xviewer-plugins (1.4.1) una; urgency=medium
+
+  * Remove fit-to-width plugin
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 29 Nov 2021 10:13:27 +0000
+
 xviewer-plugins (1.4.0) una; urgency=medium
 
   [ Clement Lefebvre ]

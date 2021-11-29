@@ -3,7 +3,7 @@
 XVIEWER_MAJOR=3.0.0
 XVIEWER_PLUGINS_MAJOR=3.0.0
 
-AC_INIT([xviewer-plugins], [1.4.0], [http://github.com/linuxmint/xviewer-plugins/issues])
+AC_INIT([xviewer-plugins], [1.4.1], [http://github.com/linuxmint/xviewer-plugins/issues])
 
 AC_CONFIG_SRCDIR([plugins])
 AC_PREFIX_PROGRAM([xviewer])
