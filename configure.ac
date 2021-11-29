@@ -61,9 +61,9 @@ XVIEWER_HAS_PYTHON=1
 
 AC_MSG_CHECKING([which plugins to build])
 
-ALL_PLUGINS="postr map fit-to-width exif-display send-by-mail postasa light-theme"
-USEFUL_PLUGINS="postr map fit-to-width exif-display send-by-mail postasa light-theme"
-DEFAULT_PLUGINS="postr map fit-to-width exif-display send-by-mail postasa light-theme"
+ALL_PLUGINS="postr map exif-display send-by-mail postasa light-theme"
+USEFUL_PLUGINS="postr map exif-display send-by-mail postasa light-theme"
+DEFAULT_PLUGINS="postr map exif-display send-by-mail postasa light-theme"
 
 PYTHON_ALL_PLUGINS="slideshowshuffle pythonconsole export-to-folder"
 PYTHON_USEFUL_PLUGINS="slideshowshuffle pythonconsole export-to-folder"
@@ -82,7 +82,7 @@ fi
 AC_ARG_WITH([plugins],
 	    [AS_HELP_STRING([--with-plugins=LIST],
 			    [Comma-separated list specifying the plugins to build.
-			    Available: map, exif-display, fit-to-width,
+			    Available: map, exif-display,
 			    postr, postasa, pythonconsole,
 			    slideshowshuffle, as well as the aliases default,
 			    all, and really-all])],
@@ -336,7 +336,6 @@ AC_CONFIG_FILES([
 Makefile
 plugins/Makefile
 plugins/map/Makefile
-plugins/fit-to-width/Makefile
 plugins/exif-display/Makefile
 plugins/exif-display/org.x.viewer.plugins.exif-display.gschema.xml
 plugins/export-to-folder/Makefile
