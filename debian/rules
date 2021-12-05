@@ -1,16 +1,8 @@
 #!/usr/bin/make -f
 
-DISABLE_UPDATE_UPLOADERS := 1
-include /usr/share/cdbs/1/rules/autoreconf.mk
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/gnome.mk
-include /usr/share/cdbs/1/rules/utils.mk
--include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
+%:
+	dh $@ --with python3
 
-LDFLAGS += -Wl,--as-needed
-DEB_DH_MAKESHLIBS_ARGS_xviewer-plugins := --no-act
-DEB_CONFIGURE_EXTRA_FLAGS += --with-plugins=all --enable-python
-
-binary-install/xviewer-plugins::
-	dh_python3 -p$(cdbs_curpkg) --no-ext-rename /usr/lib/xviewer/plugins
-	find debian/$(cdbs_curpkg) -name '*.la' -print -delete
+# compile python3 extensions
+override_dh_python3:
+	dh_python3 --no-ext-rename /usr/lib/xviewer/plugins
