@@ -38,12 +38,8 @@ Description: set of plugins for xviewer
   * Send By Mail: Sends an image attached to a new mail
   * Slideshow Shuffle: Shuffles images in slideshow mode
   * Disable Dark Theme: Disables Xviewer's preference of dark theme variants
-  * Hide Titlebar: Hides the titlebar of maximized xviewer windows
   * PicasaWeb Uploader: Upload your pictures to PicasaWeb
   * Map: Display the geolocation of the image on a map
   * Python Console: Python console for Xviewer
   * Export to Folder: Export the current image to a separate directory
-  * Zoom to Fit Image Width: Fit images to the window width
-  * Flickr Uploader: Upload your pictures to Flickr
-  * Fullscreen Background: Enables changing background in fullscreen mode
   * Exif Display: Displays camera settings and histogram
