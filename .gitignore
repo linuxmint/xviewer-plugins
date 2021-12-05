@@ -1,0 +1,10 @@
+debian/.debhelper/
+debian/debhelper-build-stamp
+debian/files
+debian/tmp/
+debian/xviewer-plugins/
+debian/*.debhelper
+debian/*.substvars
+debian/*.log
+
+obj-x86_64-linux-gnu
