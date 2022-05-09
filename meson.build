@@ -54,5 +54,6 @@ config_h = declare_dependency(
 add_project_arguments('-DHAVE_CONFIG_H', language: 'c')
 add_project_arguments('-Wno-deprecated-declarations', language: 'c')
 
+subdir('install-scripts')
 subdir('plugins')
 subdir('po')
