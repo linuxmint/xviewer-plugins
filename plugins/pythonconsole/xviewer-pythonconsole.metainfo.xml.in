@@ -3,8 +3,8 @@
 <component type="addon">
   <id>xviewer-pythonconsole</id>
   <extends>xviewer.desktop</extends>
-  <_name>Python Console</_name>
-  <_summary>Adds a Python console</_summary>
+  <name>Python Console</name>
+  <summary>Adds a Python console</summary>
   <url type="homepage">https://github.com/linuxmint/xviewer-plugins</url>
   <url type="bugtracker">https://github.com/linuxmint/xviewer-plugins/issues</url>
   <metadata_license>CC0-1.0</metadata_license>

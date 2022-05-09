@@ -1,20 +1,21 @@
 plugin_name = 'light-theme'
 
 # plugin info
-custom_target(
-    '@0@-plugin-info'.format(plugin_name),
+i18n.merge_file(
     input: '@0@.plugin.desktop.in'.format(plugin_name),
     output: '@0@.plugin'.format(plugin_name),
-    command: [intltool_merge, '-d', '-u', po_dir, '@INPUT@', '@OUTPUT@'],
+    type: 'desktop',
+    args: ['--keyword=Name', '--keyword=Description'],
+    po_dir: po_dir,
     install: true,
     install_dir: plugin_libdir,
 )
 
-custom_target(
-    '@0@-metadata'.format(plugin_name),
+i18n.merge_file(
     input: 'xviewer-@0@.metainfo.xml.in'.format(plugin_name),
     output: 'xviewer-@0@.metainfo.xml'.format(plugin_name),
-    command: [intltool_merge, '-x', '-u', po_dir, '@INPUT@', '@OUTPUT@'],
+    type: 'xml',
+    po_dir: po_dir,
     install: true,
     install_dir: metainfo_dir
 )

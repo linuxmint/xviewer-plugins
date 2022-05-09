@@ -1,9 +1,9 @@
 [Plugin]
 Module=postr
 IAge=2
-_Name=Flickr Uploader
+Name=Flickr Uploader
 Icon=emblem-shared-symbolic
-_Description=Upload your pictures to Flickr
+Description=Upload your pictures to Flickr
 Authors=Lucas Rocha <lucasr@gnome.org>
 Copyright=Copyright © 2007 Lucas Rocha
 Website=http://github.com/linuxmint/xviewer

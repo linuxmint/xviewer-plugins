@@ -2,8 +2,8 @@
 Loader=python3
 Module=pythonconsole
 IAge=2
-_Name=Python Console
-_Description=Python console for xviewer
+Name=Python Console
+Description=Python console for xviewer
 Icon=applications-engineering-symbolic
 Authors=Diego Escalante Urrelo <diegoe@gnome.org>
 Copyright=Copyright © 2008 Diego Escalante Urrelo
