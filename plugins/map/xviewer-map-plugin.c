@@ -45,7 +45,10 @@ static void
 xviewer_map_plugin_init (XviewerMapPlugin *plugin)
 {
 	xviewer_debug_message (DEBUG_PLUGINS, "XviewerMapPlugin initializing");
-	gtk_clutter_init (NULL, NULL);
+	if (gtk_clutter_init (NULL, NULL) != CLUTTER_INIT_SUCCESS)
+	{
+		g_warning ("XviewerMapPlugin: gtk_clutter_init failed!");
+	}
 }
 
 static void
