@@ -50,11 +50,6 @@ enum {
 static void
 xviewer_window_activatable_iface_init (XviewerWindowActivatableInterface *iface);
 
-G_DEFINE_DYNAMIC_TYPE_EXTENDED (XviewerPostasaPlugin, xviewer_postasa_plugin,
-		PEAS_TYPE_EXTENSION_BASE, 0,
-		G_IMPLEMENT_INTERFACE_DYNAMIC(XVIEWER_TYPE_WINDOW_ACTIVATABLE,
-					xviewer_window_activatable_iface_init))
-
 /**
  * _XviewerPostasaPluginPrivate:
  *
@@ -86,6 +81,12 @@ struct _XviewerPostasaPluginPrivate
 	GtkTreeView  *uploads_view;
 	GtkListStore *uploads_store;
 };
+
+G_DEFINE_DYNAMIC_TYPE_EXTENDED (XviewerPostasaPlugin, xviewer_postasa_plugin,
+		PEAS_TYPE_EXTENSION_BASE, 0,
+		G_ADD_PRIVATE_DYNAMIC (XviewerPostasaPlugin)
+		G_IMPLEMENT_INTERFACE_DYNAMIC(XVIEWER_TYPE_WINDOW_ACTIVATABLE,
+					xviewer_window_activatable_iface_init))
 
 /**
  * PicasaWebUploadFileAsyncData:
@@ -860,7 +861,7 @@ xviewer_postasa_plugin_init (XviewerPostasaPlugin *plugin)
 {
 	xviewer_debug_message (DEBUG_PLUGINS, "XviewerPostasaPlugin initializing");
 
-	plugin->priv = G_TYPE_INSTANCE_GET_PRIVATE (plugin, XVIEWER_TYPE_POSTASA_PLUGIN, XviewerPostasaPluginPrivate);
+	plugin->priv = xviewer_postasa_plugin_get_instance_private (plugin);
 
 #ifdef HAVE_LIBGDATA_0_9
 	plugin->priv->authorizer = gdata_client_login_authorizer_new ("XviewerPostasa", GDATA_TYPE_PICASAWEB_SERVICE);
@@ -962,8 +963,6 @@ static void
 xviewer_postasa_plugin_class_init (XviewerPostasaPluginClass *klass)
 {
 	GObjectClass *object_class = G_OBJECT_CLASS (klass);
-
-	g_type_class_add_private (klass, sizeof (XviewerPostasaPluginPrivate));
 
 	object_class->dispose = xviewer_postasa_plugin_dispose;
 	object_class->set_property = xviewer_postasa_plugin_set_property;

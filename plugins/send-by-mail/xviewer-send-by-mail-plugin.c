@@ -198,7 +198,6 @@ xviewer_window_activatable_iface_init (XviewerWindowActivatableInterface *iface)
 static void
 send_by_mail_cb (GtkAction *action, XviewerWindow *window)
 {
-	GdkScreen *screen = NULL;
 	GtkWidget *tview = NULL;
 	GList *images = NULL, *image = NULL;
 	gboolean first = TRUE;
@@ -207,9 +206,6 @@ send_by_mail_cb (GtkAction *action, XviewerWindow *window)
 	gchar *argv[] = { "thunderbird", "-compose", NULL, NULL };
 
 	g_return_if_fail (XVIEWER_IS_WINDOW (window));
-
-	if (gtk_widget_has_screen (GTK_WIDGET (window)))
-		screen = gtk_widget_get_screen (GTK_WIDGET (window));
 
 	tview = xviewer_window_get_thumb_view (window);
 	images = xviewer_thumb_view_get_selected_images (XVIEWER_THUMB_VIEW (tview));
