@@ -3,8 +3,8 @@
 <component type="addon">
   <id>xviewer-export-to-folder</id>
   <extends>xviewer.desktop</extends>
-  <_name>Export to Folder</_name>
-  <_summary>Export the current image to a separate directory</_summary>
+  <name>Export to Folder</name>
+  <summary>Export the current image to a separate directory</summary>
   <url type="homepage">https://github.com/linuxmint/xviewer-plugins</url>
   <url type="bugtracker">https://github.com/linuxmint/xviewer-plugins/issues</url>
   <metadata_license>CC0-1.0</metadata_license>

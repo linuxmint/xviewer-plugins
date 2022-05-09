@@ -4,8 +4,8 @@ Priority: optional
 Maintainer: Linux Mint <root@linuxmint.com>
 Build-Depends: debhelper-compat (= 12),
                dh-python,
+               gettext,
                gsettings-desktop-schemas-dev,
-               intltool (>= 0.40.0),
                libchamplain-0.12-dev,
                libchamplain-gtk-0.12-dev,
                libclutter-1.0-dev (>= 1.9.4),

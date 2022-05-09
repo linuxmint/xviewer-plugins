@@ -1,9 +1,9 @@
 [Plugin]
 Module=light-theme
 IAge=2
-_Name=Disable Dark Theme
+Name=Disable Dark Theme
 Icon=preferences-color-symbolic
-_Description=Disables xviewer's preference of dark theme variants
+Description=Disables xviewer's preference of dark theme variants
 Authors=Felix Riemann <friemann@gnome.org>
 Copyright=Copyright © 2012 Felix Riemann
 Website=http://github.com/linuxmint/xviewer

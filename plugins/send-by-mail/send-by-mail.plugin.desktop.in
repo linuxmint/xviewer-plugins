@@ -1,9 +1,9 @@
 [Plugin]
 Module=send-by-mail
 IAge=2
-_Name=Send By Mail
+Name=Send By Mail
 Icon=mail-send-symbolic
-_Description=Sends an image attached to a new mail
+Description=Sends an image attached to a new mail
 Authors=Felix Riemann <friemann@gnome.org>
 Copyright=Copyright © 2009 Felix Riemann
 Website=http://github.com/linuxmint/xviewer
