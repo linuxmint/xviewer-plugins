@@ -113,7 +113,9 @@ impl_deactivate	(XviewerWindowActivatable *activatable)
 
 	gtk_ui_manager_remove_action_group (manager,
 					    plugin->ui_action_group);
-	plugin->ui_action_group = NULL;
+	gtk_ui_manager_ensure_update (manager);
+
+	g_clear_object (&plugin->ui_action_group);
 	plugin->ui_menuitem_id = 0;
 }
 
