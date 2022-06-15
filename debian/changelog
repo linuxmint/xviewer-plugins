@@ -1,3 +1,25 @@
+xviewer-plugins (1.4.2) vanessa; urgency=medium
+
+  [ okaestne ]
+  * Port to meson
+  * add .gitignore
+  * debian/control: update plugins in package desc
+
+  [ Clement Lefebvre ]
+  * Build-depend on libxapp-dev and libexempi-dev
+
+  [ okaestne ]
+  * build: migrate from intltool to gettext
+  * build: run glib-compile-schemas for non-debian builds
+  * build: fix some compiler warnings
+  * send-by-mail: fix runtime assertion error
+  * debian/control: build-depend on meson
+
+  [ Clement Lefebvre ]
+  * CI: Update targets
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 15 Jun 2022 13:49:25 +0200
+
 xviewer-plugins (1.4.1) una; urgency=medium
 
   * Remove fit-to-width plugin
