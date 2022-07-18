@@ -26,6 +26,7 @@ Homepage: https://github.com/linuxmint/xviewer-plugins
 Package: xviewer-plugins
 Architecture: any
 Depends: gir1.2-gtk-3.0,
+         gir1.2-xviewer-3.0,
          gsettings-desktop-schemas,
          python3-gi,
          xviewer,
