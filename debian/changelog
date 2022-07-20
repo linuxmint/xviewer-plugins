@@ -1,3 +1,10 @@
+xviewer-plugins (1.4.3) vanessa; urgency=medium
+
+  [ Michael Webster ]
+  * Add gir1.2-xviewer-3.0 as a runtime dependency.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 20 Jul 2022 08:01:59 +0200
+
 xviewer-plugins (1.4.2) vanessa; urgency=medium
 
   [ okaestne ]

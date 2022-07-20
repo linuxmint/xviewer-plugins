@@ -1,4 +1,4 @@
-project('xviewer-plugins', 'c', version: '1.4.2')
+project('xviewer-plugins', 'c', version: '1.4.3')
 
 gnome = import('gnome')
 i18n = import('i18n')
