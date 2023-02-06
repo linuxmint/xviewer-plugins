@@ -608,6 +608,8 @@ setup_statusbar_exif (XviewerExifDisplayPlugin *plugin)
 	if (plugin->enable_statusbar) {
 		plugin->statusbar_exif = gtk_statusbar_new ();
 		gtk_widget_set_size_request (plugin->statusbar_exif, 280, 10);
+		gtk_widget_set_margin_top (plugin->statusbar_exif, 0);
+		gtk_widget_set_margin_bottom (plugin->statusbar_exif, 0);
 		gtk_box_pack_end (GTK_BOX (statusbar),
 				  plugin->statusbar_exif,
 				  FALSE, FALSE, 0);
