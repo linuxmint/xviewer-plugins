@@ -8,8 +8,6 @@ plugins/export-to-folder/export-to-folder.plugin.desktop.in
 plugins/export-to-folder/export-to-folder.py
 [type: gettext/gsettings]plugins/export-to-folder/org.x.viewer.plugins.export-to-folder.gschema.xml.in
 [type: gettext/glade]plugins/export-to-folder/preferences_dialog.ui
-plugins/light-theme/xviewer-light-theme.metainfo.xml.in
-plugins/light-theme/light-theme.plugin.desktop.in
 plugins/map/xviewer-map.metainfo.xml.in
 plugins/map/xviewer-map-plugin.c
 plugins/map/map.plugin.desktop.in
