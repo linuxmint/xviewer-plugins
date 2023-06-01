@@ -1,3 +1,13 @@
+xviewer-plugins (3.4.0) victoria; urgency=medium
+
+  [ Matthew Petroff ]
+  * Prevent EXIF plugin from changing statusbar height. (#14)
+
+  [ Clement Lefebvre ]
+  * Remove light-theme plugin
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 01 Jun 2023 10:37:49 +0100
+
 xviewer-plugins (1.4.3) vanessa; urgency=medium
 
   [ Michael Webster ]
