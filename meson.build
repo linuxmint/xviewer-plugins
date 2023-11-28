@@ -21,7 +21,7 @@ po_dir = src_root / 'po'
 metainfo_dir = prefix / datadir / 'metainfo'
 gschemas_dir = prefix / datadir / 'glib-2.0' / 'schemas'
 
-plugin_libdir =  prefix / 'lib' / 'xviewer' / 'plugins'
+plugin_libdir =  prefix / libdir / 'xviewer' / 'plugins'
 plugin_datadir = prefix / datadir / 'xviewer' / 'plugins'
 
 champlain = dependency('champlain-0.12')
