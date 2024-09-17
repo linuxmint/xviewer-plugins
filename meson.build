@@ -29,7 +29,6 @@ champlain_gtk = dependency('champlain-gtk-0.12')
 clutter = dependency('clutter-1.0', version: '>=1.9.4')
 clutter_gtk = dependency('clutter-gtk-1.0', version: '>=1.1.2')
 exif = dependency('libexif', version: '>=0.6.16')
-gdata = dependency('libgdata', version: '>=0.9')
 glib = dependency('glib-2.0', version: '>=2.32.0')
 gtk = dependency('gtk+-3.0', version: '>=3.3.8')
 libpeas = dependency('libpeas-1.0', version: '>=0.7.4')
@@ -37,8 +36,6 @@ libpeas_gtk = dependency('libpeas-gtk-1.0', version: '>= 1.12.0')
 xviewer = dependency('xviewer', version: '>=3.2.1')
 
 proj_conf.set10('HAVE_EXIF', true)
-proj_conf.set10('HAVE_LIBGDATA_0_8', true)
-proj_conf.set10('HAVE_LIBGDATA_0_9', true)
 
 # generate config.h
 config_h_file = configure_file(

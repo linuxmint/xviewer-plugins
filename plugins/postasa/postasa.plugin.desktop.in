@@ -1,9 +1,0 @@
-[Plugin]
-Module=postasa
-IAge=2
-Name=PicasaWeb Uploader
-Icon=emblem-shared-symbolic
-Description=Upload your pictures to PicasaWeb
-Authors=Richard Schwarting <aquarichy@gmail.com>
-Copyright=Copyright © 2009 Richard Schwarting
-Website=http://github.com/linuxmint/xviewer

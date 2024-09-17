@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<gresources>
-  <gresource prefix="/org/x/viewer/plugins/postasa">
-    <file compressed="true" preprocess="xml-stripblanks">postasa-config.xml</file>
-    <file compressed="true" preprocess="xml-stripblanks">postasa-uploads.xml</file>
-  </gresource>
-</gresources>
