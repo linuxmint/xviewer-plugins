@@ -1,3 +1,10 @@
+xviewer-plugins (3.4.1) xia; urgency=medium
+
+  [ Michael Webster ]
+  * Remove postasa plugin.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 25 Nov 2024 10:21:02 +0000
+
 xviewer-plugins (3.4.0) victoria; urgency=medium
 
   [ Matthew Petroff ]
