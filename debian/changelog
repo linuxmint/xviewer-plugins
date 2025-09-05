@@ -1,3 +1,13 @@
+xviewer-plugins (3.4.2) gigi; urgency=medium
+
+  [ Yannis Gerlach ]
+  * add a README.md (#15)
+
+  [ Clement Lefebvre ]
+  * packaging: Add missing dependencies
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 05 Sep 2025 18:01:14 +0100
+
 xviewer-plugins (3.4.1) xia; urgency=medium
 
   [ Michael Webster ]
