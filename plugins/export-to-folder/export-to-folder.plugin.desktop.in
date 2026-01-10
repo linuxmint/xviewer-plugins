@@ -1,10 +1,10 @@
 [Plugin]
-Loader=python3
+Loader=C
 Module=export-to-folder
-IAge=2
+IAge=3
 Name=Export to Folder
 Icon=xsi-folder-symbolic
 Description=Export the current image to a separate directory
-Authors=Jendrik Seipp <jendrikseipp@web.de>
-Copyright=Copyright © 2012 Jendrik Seipp
-Website=https://bitbucket.org/jendrikseipp/xviewer-export
+Authors=Jendrik Seipp <jendrikseipp@web.de>, ItsZariep
+Copyright=Copyright © 2012 Jendrik Seipp, © 2026 ItsZariep
+Website=https://github.com/linuxmint/xviewer-plugins
