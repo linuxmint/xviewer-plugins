@@ -20,9 +20,7 @@
 
 #include <math.h>
 #include <string.h>
-#include <champlain/champlain.h>
-#include <champlain-gtk/champlain-gtk.h>
-#include <clutter-gtk/clutter-gtk.h>
+#include <osm-gps-map.h>
 #include <libexif/exif-data.h>
 #include <libexif/exif-tag.h>
 
@@ -39,16 +37,14 @@ G_DEFINE_DYNAMIC_TYPE_EXTENDED (XviewerMapPlugin, xviewer_map_plugin,
                 G_IMPLEMENT_INTERFACE_DYNAMIC (XVIEWER_TYPE_WINDOW_ACTIVATABLE,
                                         xviewer_window_activatable_iface_init))
 
-#define FACTOR 2.0
+#define MARKER_ICON_SMALL 16
+#define MARKER_ICON_LARGE 24
+#define MARKER_HIT_RADIUS_PX 16
 
 static void
 xviewer_map_plugin_init (XviewerMapPlugin *plugin)
 {
 	xviewer_debug_message (DEBUG_PLUGINS, "XviewerMapPlugin initializing");
-	if (gtk_clutter_init (NULL, NULL) != CLUTTER_INIT_SUCCESS)
-	{
-		g_warning ("XviewerMapPlugin: gtk_clutter_init failed!");
-	}
 }
 
 static void
@@ -59,36 +55,27 @@ xviewer_map_plugin_finalize (GObject *object)
 	G_OBJECT_CLASS (xviewer_map_plugin_parent_class)->finalize (object);
 }
 
-static void
-update_marker_image (ChamplainLabel *marker,
-                     GtkIconSize size)
+static GdkPixbuf *
+load_marker_pixbuf (gint size)
 {
-	GtkWidget *widget;
-	ClutterActor *thumb;
+	GtkIconTheme *theme = gtk_icon_theme_get_default ();
+	GdkPixbuf *pixbuf = NULL;
 
-	widget = gtk_button_new ();
-	thumb = gtk_clutter_texture_new ();
-	if (G_UNLIKELY (!gtk_clutter_texture_set_from_icon_name (GTK_CLUTTER_TEXTURE (thumb),
-	                                                         widget,
-	                                                         "mark-location",
-	                                                         size, NULL)))
-	{
-		/* mark-location doesn't appear to be a "standard" icon yet,
-		 * so try falling back to image-x-generic as before if
-		 * it is not available */
-		if (G_UNLIKELY (!gtk_clutter_texture_set_from_icon_name (GTK_CLUTTER_TEXTURE (thumb),
-		                                                         widget,
-		                                                         "image-x-generic",
-		                                                         size, NULL)))
-		{
-			g_warning ("Could not load icon for map marker. "
-			           "Please install a suitable icon theme!");
-		}
+	pixbuf = gtk_icon_theme_load_icon (theme, "mark-location", size,
+	                                   GTK_ICON_LOOKUP_FORCE_SIZE, NULL);
+	if (pixbuf == NULL) {
+		pixbuf = gtk_icon_theme_load_icon (theme, "image-x-generic",
+		                                   size,
+		                                   GTK_ICON_LOOKUP_FORCE_SIZE,
+		                                   NULL);
 	}
 
-	/* don't need to unref widget because it is floating */
+	if (pixbuf == NULL) {
+		g_warning ("Could not load icon for map marker. "
+		           "Please install a suitable icon theme!");
+	}
 
-	champlain_label_set_image (marker, thumb);
+	return pixbuf;
 }
 
 #define MAP_EXIF_ENTRY_IS_GPS_RATIONAL(e) ( e && \
@@ -190,22 +177,118 @@ get_coordinates (XviewerImage *image,
 	return FALSE;
 }
 
-static gboolean
-change_image (ChamplainLabel *marker,
-	      ClutterEvent *event,
-	      XviewerMapPlugin *plugin)
+static void
+get_marker_coords (OsmGpsMapImage *marker,
+                   gdouble *lat,
+                   gdouble *lon)
+{
+	const OsmGpsMapPoint *pt;
+	float flat = 0.0f, flon = 0.0f;
+
+	pt = osm_gps_map_image_get_point (marker);
+	if (pt) {
+		osm_gps_map_point_get_degrees ((OsmGpsMapPoint *) pt,
+		                               &flat, &flon);
+	}
+	*lat = (gdouble) flat;
+	*lon = (gdouble) flon;
+}
+
+static OsmGpsMapImage *
+replace_marker_pixbuf (XviewerMapPlugin *plugin,
+                       OsmGpsMapImage   *marker,
+                       GdkPixbuf        *pixbuf)
 {
 	XviewerImage *image;
+	OsmGpsMapImage *new_marker;
+	gdouble lat, lon;
+
+	if (!marker || !pixbuf)
+		return marker;
 
 	image = g_object_get_data (G_OBJECT (marker), "image");
+	get_marker_coords (marker, &lat, &lon);
 
+	plugin->markers = g_list_remove (plugin->markers, marker);
+	if (image)
+		g_object_set_data (G_OBJECT (image), "marker", NULL);
+	osm_gps_map_image_remove (plugin->map, marker);
+
+	new_marker = osm_gps_map_image_add_with_alignment (plugin->map,
+	                                                   (float) lat,
+	                                                   (float) lon,
+	                                                   pixbuf,
+	                                                   0.5f, 1.0f);
+	if (image) {
+		g_object_set_data (G_OBJECT (new_marker), "image", image);
+		g_object_set_data_full (G_OBJECT (image), "marker",
+		                        new_marker, NULL);
+	}
+	plugin->markers = g_list_prepend (plugin->markers, new_marker);
+
+	return new_marker;
+}
+
+static OsmGpsMapImage *
+find_marker_at_event (XviewerMapPlugin *plugin,
+                      GdkEventButton   *event)
+{
+	GList *l;
+	gint best_dist2 = MARKER_HIT_RADIUS_PX * MARKER_HIT_RADIUS_PX;
+	OsmGpsMapImage *best = NULL;
+
+	for (l = plugin->markers; l != NULL; l = l->next) {
+		OsmGpsMapImage *m = l->data;
+		const OsmGpsMapPoint *pt;
+		OsmGpsMapPoint tmp;
+		gint x = 0, y = 0, dx, dy, d2;
+		float flat = 0.0f, flon = 0.0f;
+
+		pt = osm_gps_map_image_get_point (m);
+		if (!pt)
+			continue;
+
+		osm_gps_map_point_get_degrees ((OsmGpsMapPoint *) pt,
+		                               &flat, &flon);
+		osm_gps_map_point_set_degrees (&tmp, flat, flon);
+		osm_gps_map_convert_geographic_to_screen (plugin->map,
+		                                          &tmp, &x, &y);
+
+		dx = (gint) event->x - x;
+		dy = (gint) event->y - y;
+		d2 = dx * dx + dy * dy;
+		if (d2 < best_dist2) {
+			best_dist2 = d2;
+			best = m;
+		}
+	}
+
+	return best;
+}
+
+static gboolean
+map_button_press_cb (GtkWidget        *widget,
+                     GdkEventButton   *event,
+                     XviewerMapPlugin *plugin)
+{
+	OsmGpsMapImage *marker;
+	XviewerImage *image;
+
+	if (event->button != GDK_BUTTON_PRIMARY ||
+	    event->type != GDK_BUTTON_PRESS)
+		return FALSE;
+
+	marker = find_marker_at_event (plugin, event);
+	if (!marker)
+		return FALSE;
+
+	image = g_object_get_data (G_OBJECT (marker), "image");
 	if (!image)
 		return FALSE;
 
 	xviewer_thumb_view_set_current_image (XVIEWER_THUMB_VIEW (plugin->thumbview),
-					  image, TRUE);
-
-	return FALSE;
+	                                  image, TRUE);
+	return TRUE;
 }
 
 static void
@@ -222,24 +305,21 @@ create_marker (XviewerImage *image,
 		return;
 
 	if (get_coordinates (image, &lat, &lon)) {
-		ChamplainLabel *marker;
+		OsmGpsMapImage *marker;
 
-		marker = CHAMPLAIN_LABEL (champlain_label_new ());
-		champlain_label_set_draw_background (CHAMPLAIN_LABEL (marker), FALSE);
-		update_marker_image (marker, GTK_ICON_SIZE_MENU);
+		if (!plugin->icon_small)
+			return;
 
-		g_object_set_data_full (G_OBJECT (image), "marker", marker, (GDestroyNotify) clutter_actor_destroy);
+		marker = osm_gps_map_image_add_with_alignment (plugin->map,
+		                                               (float) lat,
+		                                               (float) lon,
+		                                               plugin->icon_small,
+		                                               0.5f, 1.0f);
+
 		g_object_set_data (G_OBJECT (marker), "image", image);
-
-		champlain_location_set_location (CHAMPLAIN_LOCATION (marker),
-						    lat,
-						    lon);
-		champlain_marker_layer_add_marker (plugin->layer, CHAMPLAIN_MARKER (marker));
-
-		g_signal_connect (marker,
-				  "button-release-event",
-				  G_CALLBACK (change_image),
-				  plugin);
+		g_object_set_data_full (G_OBJECT (image), "marker",
+		                        marker, NULL);
+		plugin->markers = g_list_prepend (plugin->markers, marker);
 	}
 
 }
@@ -249,7 +329,7 @@ selection_changed_cb (XviewerThumbView *view,
 		      XviewerMapPlugin *plugin)
 {
 	XviewerImage *image;
-	ChamplainLabel *marker;
+	OsmGpsMapImage *marker;
 
 	if (!xviewer_thumb_view_get_n_selected (view))
 		return;
@@ -263,29 +343,29 @@ selection_changed_cb (XviewerThumbView *view,
 	if (marker) {
 		gdouble lat, lon;
 
-		g_object_get (marker,
-			      "latitude", &lat,
-			      "longitude", &lon,
-			      NULL);
-
-		champlain_view_go_to (CHAMPLAIN_VIEW (plugin->map),
-		                      lat,
-		                      lon);
+		get_marker_coords (marker, &lat, &lon);
+		osm_gps_map_set_center (plugin->map,
+		                        (float) lat, (float) lon);
 
 		/* Reset the previous selection */
-		if (plugin->marker)
-			update_marker_image (plugin->marker, GTK_ICON_SIZE_MENU);
+		if (plugin->marker && plugin->marker != marker) {
+			replace_marker_pixbuf (plugin, plugin->marker,
+			                       plugin->icon_small);
+		}
 
-		plugin->marker = marker;
-		update_marker_image (plugin->marker, GTK_ICON_SIZE_LARGE_TOOLBAR);
+		/* Highlight new selection */
+		plugin->marker = replace_marker_pixbuf (plugin, marker,
+		                                        plugin->icon_large);
 		gtk_widget_set_sensitive (plugin->jump_to_button, TRUE);
 	}
 	else {
 		gtk_widget_set_sensitive (plugin->jump_to_button, FALSE);
 
 		/* Reset the previous selection */
-		if (plugin->marker)
-			update_marker_image (plugin->marker, GTK_ICON_SIZE_MENU);
+		if (plugin->marker) {
+			replace_marker_pixbuf (plugin, plugin->marker,
+			                       plugin->icon_small);
+		}
 
 		plugin->marker = NULL;
 	}
@@ -297,33 +377,27 @@ static void
 jump_to (GtkWidget *widget,
 	 XviewerMapPlugin *plugin)
 {
+	gdouble lat, lon;
+
 	if (!plugin->marker)
 		return;
 
-	gdouble lat, lon;
-
-	g_object_get (plugin->marker,
-		      "latitude", &lat,
-		      "longitude", &lon,
-		      NULL);
-
-	champlain_view_go_to (CHAMPLAIN_VIEW (plugin->map),
-	                      lat,
-	                      lon);
+	get_marker_coords (plugin->marker, &lat, &lon);
+	osm_gps_map_set_center (plugin->map, (float) lat, (float) lon);
 }
 
 static void
 zoom_in (GtkWidget *widget,
-	 ChamplainView *view)
+	 XviewerMapPlugin *plugin)
 {
-	champlain_view_zoom_in (view);
+	osm_gps_map_zoom_in (plugin->map);
 }
 
 static void
 zoom_out (GtkWidget *widget,
-	  ChamplainView *view)
+	  XviewerMapPlugin *plugin)
 {
-	champlain_view_zoom_out (view);
+	osm_gps_map_zoom_out (plugin->map);
 }
 
 static gboolean
@@ -349,11 +423,41 @@ for_each_thumb (GtkTreeModel *model,
 }
 
 static void
+fit_all_markers (XviewerMapPlugin *plugin)
+{
+	GList *l;
+	gdouble min_lat = 90.0, max_lat = -90.0;
+	gdouble min_lon = 180.0, max_lon = -180.0;
+	gboolean any = FALSE;
+
+	for (l = plugin->markers; l != NULL; l = l->next) {
+		gdouble lat, lon;
+		get_marker_coords (l->data, &lat, &lon);
+		if (lat < min_lat) min_lat = lat;
+		if (lat > max_lat) max_lat = lat;
+		if (lon < min_lon) min_lon = lon;
+		if (lon > max_lon) max_lon = lon;
+		any = TRUE;
+	}
+
+	if (!any)
+		return;
+
+	if (min_lat == max_lat && min_lon == max_lon) {
+		osm_gps_map_set_center_and_zoom (plugin->map,
+		                                 (float) min_lat,
+		                                 (float) min_lon, 15);
+	} else {
+		osm_gps_map_zoom_fit_bbox (plugin->map,
+		                           (float) min_lat, (float) max_lat,
+		                           (float) min_lon, (float) max_lon);
+	}
+}
+
+static void
 prepared_cb (XviewerWindow *window,
 	     XviewerMapPlugin *plugin)
 {
-	GList *markers;
-
 	plugin->store = xviewer_window_get_store (plugin->window);
 
 	if (!plugin->store)
@@ -380,17 +484,7 @@ prepared_cb (XviewerWindow *window,
 	 */
 	selection_changed_cb (XVIEWER_THUMB_VIEW (plugin->thumbview), plugin);
 
-	/* zoom in and the be sure that all markers are visible.
-	 * This is useful to have a good starting zoom level where
-	 * you can see a available markers on the map
-	 */
-	markers = champlain_marker_layer_get_markers (plugin->layer);
-	if(markers != NULL)
-	{
-		champlain_view_set_zoom_level (plugin->map, 15);
-		champlain_view_ensure_layers_visible (plugin->map, FALSE);
-		g_list_free (markers);
-	}
+	fit_all_markers (plugin);
 }
 
 static void
@@ -398,33 +492,27 @@ impl_activate (XviewerWindowActivatable *activatable)
 {
 	XviewerMapPlugin *plugin = XVIEWER_MAP_PLUGIN (activatable);
 	GtkWidget *sidebar, *vbox, *bbox, *button, *viewport;
-	GtkWidget *embed;
-	ClutterActor *scale;
 
 	xviewer_debug (DEBUG_PLUGINS);
 
-	/* This is a workaround until bug 590692 is fixed. */
+	plugin->icon_small = load_marker_pixbuf (MARKER_ICON_SMALL);
+	plugin->icon_large = load_marker_pixbuf (MARKER_ICON_LARGE);
+
 	viewport = gtk_frame_new (NULL);
 	gtk_frame_set_shadow_type (GTK_FRAME (viewport), GTK_SHADOW_ETCHED_IN);
-	/*viewport = gtk_viewport_new (NULL, NULL);
-	gtk_viewport_set_shadow_type (GTK_VIEWPORT (viewport),
-				      GTK_SHADOW_ETCHED_IN);*/
 
-	embed = gtk_champlain_embed_new ();
-	plugin->map = gtk_champlain_embed_get_view (GTK_CHAMPLAIN_EMBED (embed));
+	plugin->map = OSM_GPS_MAP (osm_gps_map_new ());
 	g_object_set (G_OBJECT (plugin->map),
-		"zoom-level", 3,
-		"kinetic-mode", TRUE,
-		"goto-animation-duration", 1000,
-		NULL);
-	scale = champlain_scale_new ();
-	champlain_scale_connect_view (CHAMPLAIN_SCALE (scale), plugin->map);
-	/* align to the bottom left */
-	champlain_view_bin_layout_add (plugin->map, scale,
-		CLUTTER_BIN_ALIGNMENT_START,
-		CLUTTER_BIN_ALIGNMENT_END);
+	              "map-source", OSM_GPS_MAP_SOURCE_OPENSTREETMAP,
+	              NULL);
+	osm_gps_map_set_zoom (plugin->map, 3);
 
-	gtk_container_add (GTK_CONTAINER (viewport), embed);
+	plugin->button_press_id = g_signal_connect (plugin->map,
+	                                            "button-press-event",
+	                                            G_CALLBACK (map_button_press_cb),
+	                                            plugin);
+
+	gtk_container_add (GTK_CONTAINER (viewport), GTK_WIDGET (plugin->map));
 
 	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	bbox = gtk_toolbar_new ();
@@ -448,7 +536,7 @@ impl_activate (XviewerWindowActivatable *activatable)
 	g_signal_connect (button,
 			  "clicked",
 			  G_CALLBACK (zoom_in),
-			  plugin->map);
+			  plugin);
 	gtk_container_add (GTK_CONTAINER (bbox), button);
 
 	button = GTK_WIDGET (gtk_tool_button_new (NULL, NULL));
@@ -457,11 +545,8 @@ impl_activate (XviewerWindowActivatable *activatable)
 	g_signal_connect (button,
 			  "clicked",
 			  G_CALLBACK (zoom_out),
-			  plugin->map);
+			  plugin);
 	gtk_container_add (GTK_CONTAINER (bbox), button);
-
-	plugin->layer = champlain_marker_layer_new_full (CHAMPLAIN_SELECTION_SINGLE);
-	champlain_view_add_layer (CHAMPLAIN_VIEW (plugin->map), CHAMPLAIN_LAYER (plugin->layer));
 
 	sidebar = xviewer_window_get_sidebar (plugin->window);
 	plugin->viewport = vbox;
@@ -503,6 +588,12 @@ impl_deactivate (XviewerWindowActivatable *activatable)
 		plugin->win_prepared_id = 0;
 	}
 
+	g_list_free (plugin->markers);
+	plugin->markers = NULL;
+	plugin->marker = NULL;
+
+	g_clear_object (&plugin->icon_small);
+	g_clear_object (&plugin->icon_large);
 }
 
 static void

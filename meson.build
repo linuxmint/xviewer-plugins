@@ -24,10 +24,7 @@ gschemas_dir = prefix / datadir / 'glib-2.0' / 'schemas'
 plugin_libdir =  prefix / 'lib' / 'xviewer' / 'plugins'
 plugin_datadir = prefix / datadir / 'xviewer' / 'plugins'
 
-champlain = dependency('champlain-0.12')
-champlain_gtk = dependency('champlain-gtk-0.12')
-clutter = dependency('clutter-1.0', version: '>=1.9.4')
-clutter_gtk = dependency('clutter-gtk-1.0', version: '>=1.1.2')
+osmgpsmap = dependency('osmgpsmap-1.0', version: '>=1.1.0')
 exif = dependency('libexif', version: '>=0.6.16')
 glib = dependency('glib-2.0', version: '>=2.32.0')
 gtk = dependency('gtk+-3.0', version: '>=3.3.8')

@@ -24,7 +24,7 @@ i18n.merge_file(
 shared_library(
     plugin_name,
     'xviewer-map-plugin.c',
-    dependencies: [config_h, champlain_gtk, clutter_gtk, exif, glib, gtk, libpeas, xviewer],
+    dependencies: [config_h, osmgpsmap, exif, glib, gtk, libpeas, xviewer],
     install: true,
     install_dir: plugin_libdir,
 )

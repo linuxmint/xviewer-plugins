@@ -4,7 +4,7 @@
 #include <glib.h>
 #include <glib-object.h>
 #include <gtk/gtk.h>
-#include <champlain/champlain.h>
+#include <osm-gps-map.h>
 #include <xviewer/xviewer-list-store.h>
 #include <xviewer/xviewer-window.h>
 #include <libpeas/peas-extension-base.h>
@@ -41,19 +41,25 @@ struct _XviewerMapPlugin
 	/* Handlers ids */
 	gulong selection_changed_id;
 	gulong win_prepared_id;
+	gulong button_press_id;
 
 	GtkWidget *thumbview;
 	GtkWidget *viewport;
-	ChamplainView *map;
+	OsmGpsMap *map;
 
 	GtkWidget *jump_to_button;
 
-	ChamplainMarkerLayer *layer;
+	/* Marker pixbufs */
+	GdkPixbuf *icon_small;
+	GdkPixbuf *icon_large;
+
+	/* All markers (OsmGpsMapImage*) so we can hit-test them */
+	GList *markers;
 
 	XviewerListStore *store;
 
-	/* The current selected position */
-	ChamplainLabel *marker;
+	/* The current selected marker */
+	OsmGpsMapImage *marker;
 };
 
 /*
