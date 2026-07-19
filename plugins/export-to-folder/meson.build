@@ -1,5 +1,6 @@
 plugin_name = 'export-to-folder'
 
+# Plugin info
 i18n.merge_file(
     input: '@0@.plugin.desktop.in'.format(plugin_name),
     output: '@0@.plugin'.format(plugin_name),
@@ -26,12 +27,16 @@ configure_file(
     install_dir: gschemas_dir
 )
 
-install_data(
-    'preferences_dialog.ui',
-    install_dir: plugin_datadir / plugin_name
-)
+# Plugin sources
+plugin_export_sources = [
+    'export-to-folder.c'
+]
 
-install_data(
-    'export-to-folder.py',
-    install_dir: plugin_libdir
+# Build shared library
+shared_library(
+    plugin_name,
+    plugin_export_sources,
+    dependencies: [config_h, glib, gtk, libpeas, xviewer],
+    install: true,
+    install_dir: plugin_libdir,
 )
