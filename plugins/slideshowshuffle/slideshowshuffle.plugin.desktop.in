@@ -1,9 +1,10 @@
 [Plugin]
-Loader=python3
+Loader=C
 Module=slideshowshuffle
-IAge=2
+IAge=3
 Name=Slideshow Shuffle
 Icon=xsi-media-playlist-shuffle-symbolic
 Description=Shuffles images in slideshow mode
-Authors=Johannes Marbach <jm@rapidrabbit.de>
-Copyright=Copyright © 2008 Johannes Marbach
+Authors=Johannes Marbach <jm@rapidrabbit.de>, ItsZariep
+Copyright=Copyright © 2008 Johannes Marbach, © 2026 ItsZariep
+Website=https://github.com/linuxmint/xviewer-plugins
