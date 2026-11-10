@@ -1,0 +1,461 @@
+# Georgian translation for xviewer-plugins
+# Copyright (C) 2026 xviewer-plugins's authors
+# This file is distributed under the same license as the xviewer-plugins package.
+# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xviewer-plugins\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 16:34+0200\n"
+"PO-Revision-Date: 2026-01-13 08:02+0100\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <(nothing)>\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Project-Style: gnome\n"
+"X-Generator: Poedit 3.8\n"
+
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:105
+msgid " (invalid Unicode)"
+msgstr " (არასწორი უნიკოდი)"
+
+#. TRANSLATORS: This is the actual focal length used when
+#. the image was taken.
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:183
+#, c-format
+msgid "%.1fmm (lens)"
+msgstr "%.1fმმ (ლინზა)"
+
+#. Print as float to get a similar look as above.
+#. TRANSLATORS: This is the equivalent focal length assuming
+#. a 35mm film camera.
+#: ../plugins/exif-display/xviewer-exif-display-plugin.c:194
+#, c-format
+msgid "%.1fmm (35mm film)"
+msgstr "%.1fმმ (35მმ ლენტა)"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:1
+msgid "Histogram"
+msgstr "ჰისტოგრამა"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:2
+msgid "Display per-channel histogram"
+msgstr "თითოეული არხის ჰისტოგრამის ჩვენება"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:3
+msgid "Display RGB histogram"
+msgstr "RGB ჰისტოგრამის ჩვენება"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:4
+msgid "General"
+msgstr "ზოგადი"
+
+#: ../plugins/exif-display/exif-display-config.ui.h:5
+msgid "Display camera settings in statusbar"
+msgstr "კამერის პარამეტრების სტატუსის ზოლში ჩვენება"
+
+#: ../plugins/exif-display/exif-display.plugin.desktop.in.h:1
+#: ../plugins/exif-display/xviewer-exif-display.metainfo.xml.in.h:1
+msgid "Exif Display"
+msgstr "Exif -ის ჩვენება"
+
+#: ../plugins/exif-display/exif-display.plugin.desktop.in.h:2
+msgid "Displays camera settings and histogram"
+msgstr "კამერის პარამეტრების და ჰისტოგრამის ჩვენება"
+
+#: ../plugins/exif-display/xviewer-exif-display.metainfo.xml.in.h:2
+msgid "Displays Exif tags in the side panel and optionally the statusbar"
+msgstr ""
+"აჩვენებს Exif ჭდეებს გვერდით პანელში და, თუ სასურველია, სტატუსის ზოლშიც"
+
+#: ../plugins/exif-display/exif-display.ui.h:1
+msgid "ISO speed:"
+msgstr "ISO სიჩქარე:"
+
+#: ../plugins/exif-display/exif-display.ui.h:2
+msgid "Expo. Time:"
+msgstr "ექსპო. დრო:"
+
+#: ../plugins/exif-display/exif-display.ui.h:3
+msgid "Aperture:"
+msgstr "დიაფრაგმა:"
+
+#: ../plugins/exif-display/exif-display.ui.h:4
+msgid "Zoom:"
+msgstr "მასშტაბი:"
+
+#: ../plugins/exif-display/exif-display.ui.h:5
+msgid "Metering:"
+msgstr "გაზომვა:"
+
+#: ../plugins/exif-display/exif-display.ui.h:6
+msgid "Expo. bias:"
+msgstr ""
+
+#: ../plugins/exif-display/exif-display.ui.h:7
+msgid "Description:"
+msgstr "აღწერა:"
+
+#: ../plugins/export-to-folder/xviewer-export-to-folder.metainfo.xml.in.h:1
+#: ../plugins/export-to-folder/export-to-folder.plugin.desktop.in.h:1
+msgid "Export to Folder"
+msgstr "საქაღალდეში გატანა"
+
+#: ../plugins/export-to-folder/xviewer-export-to-folder.metainfo.xml.in.h:2
+#: ../plugins/export-to-folder/export-to-folder.plugin.desktop.in.h:2
+msgid "Export the current image to a separate directory"
+msgstr "მიმდინარე გამოსახულების ცალკე საქაღალდეში გატნა"
+
+#: ../plugins/export-to-folder/export-to-folder.py:61
+msgid "_Export"
+msgstr "_გატანა"
+
+#: ../plugins/export-to-folder/org.x.viewer.plugins.export-to-folder.gschema.xml.in.h:1
+msgid "The folder to export to"
+msgstr "გასატანი საქაღალდე"
+
+#: ../plugins/export-to-folder/org.x.viewer.plugins.export-to-folder.gschema.xml.in.h:2
+msgid ""
+"This is the folder the plugin will place the exported files in. Plugin will "
+"export to $HOME/exported-images if not set."
+msgstr ""
+"ეს საქაღალდეა, რასაც დამატება გატანილ ფაილებს მოათავსებს. თუ დაყენებული "
+"არაა, დამატება გატანას საქაღალდეში $HOME/exported-images მოახდენს."
+
+#: ../plugins/export-to-folder/preferences_dialog.ui.h:1
+msgid "Export directory:"
+msgstr "გატანის საქაღალდე:"
+
+#: ../plugins/fit-to-width/xviewer-fit-to-width.metainfo.xml.in.h:1
+#: ../plugins/fit-to-width/fit-to-width.plugin.desktop.in.h:1
+msgid "Zoom to Fit Image Width"
+msgstr "გადიდება გამოსახულების სიგანეში ჩასატევად"
+
+#: ../plugins/fit-to-width/xviewer-fit-to-width.metainfo.xml.in.h:2
+msgid "Adjusts the zoom to have the image's width fit into the window"
+msgstr "ასწორებს მასშტაბს, რომ გამოსახულების სიგანე ფანჯარაში ჩაეტიოს"
+
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:91
+msgid "Fit to width"
+msgstr "სიგანეში ჩატევა"
+
+#: ../plugins/fit-to-width/xviewer-fit-to-width-plugin.c:93
+msgid "Fit the image to the window width"
+msgstr "გამოსახულების ჩატევა ფანჯრის სიგანეში"
+
+#: ../plugins/fit-to-width/fit-to-width.plugin.desktop.in.h:2
+msgid "Fit images to the window width"
+msgstr "გამოსახულებების ჩატევა ფანჯრის სიგანეში"
+
+#: ../plugins/fullscreenbg/xviewer-fullscreenbg.metainfo.xml.in.h:1
+#: ../plugins/fullscreenbg/fullscreenbg.plugin.desktop.in.h:1
+msgid "Fullscreen Background"
+msgstr "სრული ეკრანის ფონი"
+
+#: ../plugins/fullscreenbg/xviewer-fullscreenbg.metainfo.xml.in.h:2
+#: ../plugins/fullscreenbg/fullscreenbg.plugin.desktop.in.h:2
+msgid "Enables changing background in fullscreen mode"
+msgstr "ჩართავს ფონის შეცვლას სრულეკრანიან რეჟიმში"
+
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.h:1
+msgid "Use custom background settings"
+msgstr "მომხმარებლის ფონის პარამეტრების გამოყენება"
+
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.h:2
+msgid "Whether the plugin should use global settings or its own."
+msgstr "დამატება იყენებს გლობალურ პარამეტრებს, თუ თავისას."
+
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.h:3
+msgid "Background color in fullscreen mode"
+msgstr "ფონის ფერი სრულეკრანიან რეჟიმში"
+
+#: ../plugins/fullscreenbg/org.x.viewer.plugins.fullscreenbg.gschema.xml.in.h:4
+msgid ""
+"The color that is used to fill the area behind the image. This option has "
+"effect only if use-custom is enabled."
+msgstr ""
+"ფერი, რომელიც გამოიყენება გამოსახულების უკან არეს შესავსებად. ეს პარამეტრი "
+"ძალაში, მხოლოდ, მაშინაა, თუ ჩართულია მომხმარებლის პარამეტრების გამოყენება."
+
+#: ../plugins/fullscreenbg/preferences_dialog.ui.h:1
+msgid "Use custom color:"
+msgstr "ფერის ხელით მითითება:"
+
+#: ../plugins/hide-titlebar/xviewer-hide-titlebar.metainfo.xml.in.h:1
+#: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:1
+msgid "Hide Titlebar"
+msgstr "სათაურის ზოლის დამალვა"
+
+#: ../plugins/hide-titlebar/xviewer-hide-titlebar.metainfo.xml.in.h:2
+msgid "Hides the titlebar of maximized windows"
+msgstr "დამალავს გაშლილი ფანჯრების სათაურის ზოლს"
+
+#: ../plugins/hide-titlebar/hide-titlebar.plugin.desktop.in.h:2
+msgid "Hides the titlebar of maximized xviewer windows"
+msgstr "დამალავს გაშლილი xviewer-ის ფანჯრების სათაურის ზოლს"
+
+#: ../plugins/light-theme/xviewer-light-theme.metainfo.xml.in.h:1
+#: ../plugins/light-theme/light-theme.plugin.desktop.in.h:1
+msgid "Disable Dark Theme"
+msgstr "ბნელი თემის გათიშვა"
+
+#: ../plugins/light-theme/xviewer-light-theme.metainfo.xml.in.h:2
+msgid "Disables dark theme"
+msgstr "ბნელი თემის გათიშვა"
+
+#: ../plugins/light-theme/light-theme.plugin.desktop.in.h:2
+msgid "Disables xviewer's preference of dark theme variants"
+msgstr "გამორთავს xviewer-ის უპირატესობის მინიჭებას მუქი თემის ვარიანტებზე"
+
+#: ../plugins/map/xviewer-map.metainfo.xml.in.h:1
+#: ../plugins/map/xviewer-map-plugin.c:438
+#: ../plugins/map/map.plugin.desktop.in.h:1
+msgid "Map"
+msgstr "რუკა"
+
+#: ../plugins/map/xviewer-map.metainfo.xml.in.h:2
+msgid "Displays on a map in the side panel where the picture was taken"
+msgstr "აჩვენებს გვერდით პანელზე რუკაზე, სად იყო სურათი გადაღებული"
+
+#: ../plugins/map/xviewer-map-plugin.c:403
+msgid "Jump to current image's location"
+msgstr "გადასვლა მიმდინარე გამოსახულების მდებარეობაზე"
+
+#: ../plugins/map/xviewer-map-plugin.c:415
+msgid "Zoom in"
+msgstr "გადიდება"
+
+#: ../plugins/map/xviewer-map-plugin.c:423
+msgid "Zoom out"
+msgstr "დაპატარავება"
+
+#: ../plugins/map/map.plugin.desktop.in.h:2
+msgid "Display the geolocation of the image on a map"
+msgstr "გამოსახულების გეოლოკაციის ჩვენება რუკაზე"
+
+#: ../plugins/postasa/xviewer-postasa.metainfo.xml.in.h:1
+msgid "Picasa Web Uploader"
+msgstr "Picasa -ის ვებზე ატვირთვა"
+
+#: ../plugins/postasa/xviewer-postasa.metainfo.xml.in.h:2
+msgid "Supports uploading photos to Google Picasa Web"
+msgstr "Google Picasa-ის ვებზე სურათების ატვირთვის მხარდაჭერა"
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:127
+msgid "Upload to PicasaWeb"
+msgstr "PicasaWeb-ზე ატვირთვა"
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:129
+#: ../plugins/postasa/postasa.plugin.desktop.in.h:2
+msgid "Upload your pictures to PicasaWeb"
+msgstr "ატვირთეთ თქვენი სურათები PicasaWeb-ზე"
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:325
+msgid "Uploading..."
+msgstr "ატვირთვა…"
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:371
+msgid "Uploaded"
+msgstr "ატვირთულია"
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:375
+msgid "Cancelled"
+msgstr "გაუქმებულია"
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:378
+msgid "Failed"
+msgstr "ჩავარდა"
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:601
+#, c-format
+msgid "Login failed. %s"
+msgstr "შესვლის შეცდომა. %s"
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:605
+msgid "Logged in successully."
+msgstr "შესვლა წარმატებულია."
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:606
+msgid "Close"
+msgstr "დახურვა"
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:627
+msgid "Cancel"
+msgstr "გაუქმება"
+
+#. TODO: want to handle passwords more securely
+#: ../plugins/postasa/xviewer-postasa-plugin.c:633
+msgid "Logging in..."
+msgstr "შესვლა..."
+
+#: ../plugins/postasa/xviewer-postasa-plugin.c:678
+msgid "Please log in to continue upload."
+msgstr "ატვირთვის გასაგრძელებლად შესვლა დაგჭირდებათ."
+
+#: ../plugins/postasa/postasa-config.xml.h:1
+msgid "PicasaWeb Login"
+msgstr "PicasaWeb -ზე შესვლა"
+
+#: ../plugins/postasa/postasa-config.xml.h:2
+msgid "_Cancel"
+msgstr "გაუ_ქმება"
+
+#: ../plugins/postasa/postasa-config.xml.h:3
+msgid "_Login"
+msgstr "_მომხმარებელი"
+
+#: ../plugins/postasa/postasa-config.xml.h:4
+msgid "_Username:"
+msgstr "_მომხმარებელი:"
+
+#: ../plugins/postasa/postasa-config.xml.h:5
+msgid "_Password:"
+msgstr "_პაროლი:"
+
+#: ../plugins/postasa/postasa.plugin.desktop.in.h:1
+msgid "PicasaWeb Uploader"
+msgstr "PicasaWeb ამტვირთავი"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:1
+msgid "Uploads:"
+msgstr "ატვირთვები:"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:2
+msgid "File"
+msgstr "ფაილი"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:3
+msgid "Size"
+msgstr "ზომა"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:4
+msgid "Status"
+msgstr "სტატუსი"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:5
+msgid "Cancel Selected"
+msgstr "მონიშნულის გაუქმება"
+
+#: ../plugins/postasa/postasa-uploads.xml.h:6
+msgid "Cancel All"
+msgstr "ყველას გაუქმება"
+
+#: ../plugins/postr/xviewer-postr.metainfo.xml.in.h:1
+msgid "Postr"
+msgstr "Postr"
+
+#: ../plugins/postr/xviewer-postr.metainfo.xml.in.h:2
+msgid "Supports uploading photos to Flickr"
+msgstr "Flickr-ის ვებზე სურათების ატვირთვის მხარდაჭერა"
+
+#: ../plugins/postr/xviewer-postr-plugin.c:62
+msgid "Upload to Flickr"
+msgstr "Flickr-ზე ატვირთვა"
+
+#: ../plugins/postr/xviewer-postr-plugin.c:64
+#: ../plugins/postr/postr.plugin.desktop.in.h:2
+msgid "Upload your pictures to Flickr"
+msgstr "ატვირთეთ თქვენი სურათები Flickr-ზე"
+
+#: ../plugins/postr/postr.plugin.desktop.in.h:1
+msgid "Flickr Uploader"
+msgstr "Flickr-ზე ატვირთვა"
+
+#: ../plugins/pythonconsole/config.ui.h:1
+msgid "C_ommand color:"
+msgstr "_ბრძანების ფერი:"
+
+#: ../plugins/pythonconsole/config.ui.h:2
+msgid "_Error color:"
+msgstr "_შეცდომის ფერი:"
+
+#: ../plugins/pythonconsole/xviewer-pythonconsole.metainfo.xml.in.h:1
+#: ../plugins/pythonconsole/__init__.py:87
+#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
+msgid "Python Console"
+msgstr "Python-ის კონსოლი"
+
+#: ../plugins/pythonconsole/xviewer-pythonconsole.metainfo.xml.in.h:2
+msgid "Adds a Python console"
+msgstr "Python-ის კონსოლის დამატება"
+
+#: ../plugins/pythonconsole/__init__.py:64
+msgid "P_ython Console"
+msgstr "_Python-ის კონსოლის"
+
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:1
+msgid "Command Text Color"
+msgstr "ბრძანების ტექსტის ფერი"
+
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:2
+msgid "The color used for commands."
+msgstr "ბრძანებებისთვის გამოყენებული ფერი."
+
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:3
+msgid "Error Text Color"
+msgstr "შეცდომის ტექსტის ფერი"
+
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:4
+msgid "The color used for errors."
+msgstr "შეცდომების ტექსტის ფერი."
+
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:5
+msgid "Whether to use the system font"
+msgstr "სისტემური ფონტის გამოყენება"
+
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:6
+msgid ""
+"If true, the terminal will use the desktop-global standard font if it's "
+"monospace (and the most similar font it can come up with otherwise)."
+msgstr ""
+"თუ ჭეშმარიტია, ტერმინალი გამოიყენებს სამუშაო მაგიდის გლობალურ სტანდარტულ "
+"ფონტს, თუ ის თანაბარზომიანია (და თუ არა, ფონტს, რომელიც ყველაზე მეტად "
+"ჰგავს)."
+
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:7
+msgid "Font used by Python Console"
+msgstr "Python-ის კონსოლის ფონტი"
+
+#: ../plugins/pythonconsole/org.x.viewer.plugins.pythonconsole.gschema.xml.in.h:8
+msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
+msgstr ""
+"Pango-ის ფონტის სახელი. მაგალითად: \"Sans 12\" ან \"Monospace Bold 14\"."
+
+#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
+msgid "Python console for xviewer"
+msgstr "Python-ის კონსოლი xviewer-ისთვის"
+
+#: ../plugins/send-by-mail/xviewer-send-by-mail.metainfo.xml.in.h:1
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:63
+msgid "Send by Mail"
+msgstr "ფოსტით გაგზავნა"
+
+#: ../plugins/send-by-mail/xviewer-send-by-mail.metainfo.xml.in.h:2
+#: ../plugins/send-by-mail/send-by-mail.plugin.desktop.in.h:2
+msgid "Sends an image attached to a new mail"
+msgstr "აგზავნის გამოსახულებას ახალ ელფოსტაზე მიმაგრებული სახით"
+
+#: ../plugins/send-by-mail/xviewer-send-by-mail-plugin.c:65
+msgid "Send the selected images by mail"
+msgstr "მონიშნული გამოსახულებების ელფოსტით გაგზავნა"
+
+#: ../plugins/send-by-mail/send-by-mail.plugin.desktop.in.h:1
+msgid "Send By Mail"
+msgstr "ფოსტით გაგზავნა"
+
+#: ../plugins/slideshowshuffle/xviewer-slideshowshuffle.metainfo.xml.in.h:1
+#: ../plugins/slideshowshuffle/slideshowshuffle.plugin.desktop.in.h:1
+msgid "Slideshow Shuffle"
+msgstr "სლაიდშოუს შემთხვევითობა"
+
+#: ../plugins/slideshowshuffle/xviewer-slideshowshuffle.metainfo.xml.in.h:2
+msgid "Shuffles the photos in slideshow mode"
+msgstr "ფოტოების არევა სლაიდშოუს რეჟიმში"
+
+#: ../plugins/slideshowshuffle/slideshowshuffle.plugin.desktop.in.h:2
+msgid "Shuffles images in slideshow mode"
+msgstr "აურევს ფოტოებს სლაიდშოუს რეჟიმში"
