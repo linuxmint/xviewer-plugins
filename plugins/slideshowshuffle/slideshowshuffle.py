@@ -16,6 +16,7 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 from gi.repository import GObject, Gtk, Xviewer
+from gi.module import get_introspection_module
 import random
 
 class SlideshowShufflePlugin(GObject.Object, Xviewer.WindowActivatable):
@@ -27,69 +28,88 @@ class SlideshowShufflePlugin(GObject.Object, Xviewer.WindowActivatable):
         GObject.Object.__init__(self)
 
     def do_activate(self):
-        random.seed()
-        self.slideshow = False
-        self.state_handler_id = \
-            self.window.connect('window-state-event', self.state_changed_cb, self)
+        self.store = None
+        self.handlers = []
+        for signal in ('window-state-event', 'prepared'):
+            self.handlers.append((self.window, self.window.connect_after(
+                signal, self.state_changed_cb, self)))
+
+        # Starting from fullscreen does not emit a window-state event.
+        for group in self.window.get_ui_manager().get_action_groups():
+            for name in ('ViewSlideshow', 'PauseSlideshow', 'ViewFullscreen'):
+                action = group.get_action(name)
+                if action is not None:
+                    self.handlers.append((action, action.connect_after(
+                        'toggled', self.state_changed_cb, self)))
+        self.state_changed_cb(self)
 
     def do_deactivate(self):
-        self.window.disconnect(self.state_handler_id)
+        for obj, handler in self.handlers:
+            obj.disconnect(handler)
+        self.handlers = []
+        self.restore_order()
 
     # The callback functions are done statically to avoid causing additional
     # references on the window property causing xviewer to not quit correctly.
     @staticmethod
-    def state_changed_cb(window, event, self):
+    def state_changed_cb(*args):
+        self = args[-1]
+        window = self.window
         mode = self.window.get_mode()
+        store = window.get_store()
+        if self.store is not None and store != self.store:
+            self.restore_order()
 
-        if mode == Xviewer.WindowMode.SLIDESHOW and not self.slideshow:
-            # Slideshow starts
-            self.slideshow = True
-
-            # Query position of current image
-            if not window.get_image():
-                pos = 0
+        if mode == Xviewer.WindowMode.SLIDESHOW and self.store is None:
+            if store is None or len(store) == 0:
+                return False
+            uris = [row[2].get_uri_for_display() for row in store]
+            self.original_order = dict(zip(uris, range(len(uris))))
+            # PyGObject's convenience wrapper hides DEFAULT/UNSORTED IDs.
+            _, self.sort_column, self.sort_order = get_introspection_module(
+                'Gtk').TreeSortable.get_sort_column_id(store)
+            current = window.get_image()
+            current_uri = current.get_uri_for_display() if current else uris[0]
+            if current_uri in uris:
+                uris.remove(current_uri)
+                random.shuffle(uris)
+                uris.insert(0, current_uri)
             else:
-                pos = window.get_store().get_pos_by_image(window.get_image())
+                random.shuffle(uris)
+            ranks = dict(zip(uris, range(len(uris))))
+            self.store = store
 
-            # Generate random map
-            uri_list = [row[2].get_uri_for_display() \
-                        for row in window.get_store()]
-            self.map = {uri_list.pop(pos): 0}
-            supply = list(range(1, len(uri_list) + 1))
-            for uri in uri_list:
-                self.map[uri] = supply.pop(random.randint(0, len(supply) - 1))
+            # Nemo supplies an explicitly ordered list, disabling GTK sorting.
+            # Select our comparator explicitly, leaving the native default intact.
+            store.set_sort_func(2, self.random_sort_function, ranks)
+            store.set_sort_column_id(2, Gtk.SortType.ASCENDING)
+        elif mode == Xviewer.WindowMode.NORMAL:
+            self.restore_order()
+        return False
 
-            # Put random sort function in place
-            self.window.get_store().\
-                set_default_sort_func(self.random_sort_function, self)
-        elif mode == Xviewer.WindowMode.NORMAL and self.slideshow:
-            # Slideshow ends
-            self.slideshow = False
-
-            # Put alphabetic sort function in place
-            self.window.get_store().\
-                set_default_sort_func(self.alphabetic_sort_function)
-
-    @staticmethod
-    def random_sort_function(store, iter1, iter2, self):
-        pos1 = self.map[store[iter1][2].get_uri_for_display()]
-        pos2 = self.map[store[iter2][2].get_uri_for_display()]
-
-        if  pos1 > pos2:
-            return 1
-        elif pos1 < pos2:
-            return -1
-        else:
-            return 0
+    def restore_order(self):
+        store = self.store
+        if store is None:
+            return
+        self.store = None
+        store.set_sort_column_id(self.sort_column, self.sort_order)
+        if self.sort_column == Gtk.TREE_SORTABLE_UNSORTED_SORT_COLUMN_ID:
+            # Unsorted means preserving Nemo's order, not alphabetizing it.
+            rows = list(store)
+            order = sorted(range(len(rows)), key=lambda i: self.original_order.get(
+                rows[i][2].get_uri_for_display(), len(self.original_order)))
+            store.reorder(order)
+        self.original_order = {}
 
     @staticmethod
-    def alphabetic_sort_function(store, iter1, iter2, data = None):
-        uri1 = store[iter1][2].get_uri_for_display().lower()
-        uri2 = store[iter2][2].get_uri_for_display().lower()
-
-        if uri1 > uri2:
-            return 1
-        elif uri1 < uri2:
-            return -1
-        else:
-            return 0
+    def random_sort_function(store, iter1, iter2, ranks):
+        positions = []
+        for tree_iter in (iter1, iter2):
+            image = store[tree_iter][2]
+            if image is None:
+                positions.append(-1)
+            else:
+                uri = image.get_uri_for_display()
+                # Folder monitors can add images during a slideshow.
+                positions.append(ranks.setdefault(uri, len(ranks)))
+        return (positions[0] > positions[1]) - (positions[0] < positions[1])
